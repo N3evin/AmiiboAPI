@@ -1,93 +1,93 @@
 # instead of space use tab
-# name tab head tab tail
+# name, head, tail
 
-Mario - Soccer	09C00101	02690E02
-Mario - Baseball	09C00201	026A0E02
-Mario - Tennis	09C00301	026B0E02
-Mario - Golf	09C00401	026C0E02
-Mario - Horse Racing	09C00501	026D0E02
-Luigi - Soccer	09C10101	026E0E02
-Luigi - Baseball	09C10201	026F0E02
-Luigi - Tennis	09C10301	02700E02
-Luigi - Golf	09C10401	02710E02
-Luigi - Horse Racing	09C10501	02720E02
-Peach - Soccer	09C20101	02730E02
-Peach - Baseball	09C20201	02740E02
-Peach - Tennis	09C20301	02750E02
-Peach - Golf	09C20401	02760E02
-Peach - Horse Racing	09C20501	02770E02
-Daisy - Soccer	09C30101	02780E02
-Daisy - Baseball	09C30201	02790E02
-Daisy - Tennis	09C30301	027A0E02
-Daisy - Golf	09C30401	027B0E02
-Daisy - Horse Racing	09C30501	027C0E02
-Yoshi - Soccer	09C40101	027D0E02
-Yoshi - Baseball	09C40201	027E0E02
-Yoshi - Tennis	09C40301	027F0E02
-Yoshi - Golf	09C40401	02800E02
-Yoshi - Horse Racing	09C40501	02810E02
-Wario - Soccer	09C50101	02820E02
-Wario - Baseball	09C50201	02830E02
-Wario - Tennis	09C50301	02840E02
-Wario - Golf	09C50401	02850E02
-Wario - Horse Racing	09C50501	02860E02
-Waluigi - Soccer	09C60101	02870E02
-Waluigi - Baseball	09C60201	02880E02
-Waluigi - Tennis	09C60301	02890E02
-Waluigi - Golf	09C60401	028A0E02
-Waluigi - Horse Racing	09C60501	028B0E02
-Donkey Kong - Soccer	09C70101	028C0E02
-Donkey Kong - Baseball	09C70201	028D0E02
-Donkey Kong - Tennis	09C70301	028E0E02
-Donkey Kong - Golf	09C70401	028F0E02
-Donkey Kong - Horse Racing	09C70501	02900E02
-Diddy Kong - Soccer	09C80101	02910E02
-Diddy Kong - Baseball	09C80201	02920E02
-Diddy Kong - Tennis	09C80301	02930E02
-Diddy Kong - Golf	09C80401	02940E02
-Diddy Kong - Horse Racing	09C80501	02950E02
-Bowser - Soccer	09C90101	02960E02
-Bowser - Baseball	09C90201	02970E02
-Bowser - Tennis	09C90301	02980E02
-Bowser - Golf	09C90401	02990E02
-Bowser - Horse Racing	09C90501	029A0E02
-Bowser Jr. - Soccer	09CA0101	029B0E02
-Bowser Jr. - Baseball	09CA0201	029C0E02
-Bowser Jr. - Tennis	09CA0301	029D0E02
-Bowser Jr. - Golf	09CA0401	029E0E02
-Bowser Jr. - Horse Racing	09CA0501	029F0E02
-Boo - Soccer	09CB0101	02A00E02
-Boo - Baseball	09CB0201	02A10E02
-Boo - Tennis	09CB0301	02A20E02
-Boo - Golf	09CB0401	02A30E02
-Boo - Horse Racing	09CB0501	02A40E02
-Baby Mario - Soccer	09CC0101	02A50E02
-Baby Mario - Baseball	09CC0201	02A60E02
-Baby Mario - Tennis	09CC0301	02A70E02
-Baby Mario - Golf	09CC0401	02A80E02
-Baby Mario - Horse Racing	09CC0501	02A90E02
-Baby Luigi - Soccer	09CD0101	02AA0E02
-Baby Luigi - Baseball	09CD0201	02AB0E02
-Baby Luigi - Tennis	09CD0301	02AC0E02
-Baby Luigi - Golf	09CD0401	02AD0E02
-Baby Luigi - Horse Racing	09CD0501	02AE0E02
-Birdo - Soccer	09CE0101	02AF0E02
-Birdo - Baseball	09CE0201	02B00E02
-Birdo - Tennis	09CE0301	02B10E02
-Birdo - Golf	09CE0401	02B20E02
-Birdo - Horse Racing	09CE0501	02B30E02
-Rosalina - Soccer	09CF0101	02B40E02
-Rosalina - Baseball	09CF0201	02B50E02
-Rosalina - Tennis	09CF0301	02B60E02
-Rosalina - Golf	09CF0401	02B70E02
-Rosalina - Horse Racing	09CF0501	02B80E02
-Metal Mario - Soccer	09D00101	02B90E02
-Metal Mario - Baseball	09D00201	02BA0E02
-Metal Mario - Tennis	09D00301	02BB0E02
-Metal Mario - Golf	09D00401	02BC0E02
-Metal Mario - Horse Racing	09D00501	02BD0E02
-Pink Gold Peach - Soccer	09D10101	02BE0E02
-Pink Gold Peach - Baseball	09D10201	02BF0E02
-Pink Gold Peach - Tennis	09D10301	02C00E02
-Pink Gold Peach - Golf	09D10401	02C10E02
-Pink Gold Peach - Horse Racing	09D10501	02C20E02
+Mario - Soccer, 09C00101, 02690E02
+Mario - Baseball, 09C00201, 026A0E02
+Mario - Tennis, 09C00301, 026B0E02
+Mario - Golf, 09C00401, 026C0E02
+Mario - Horse Racing, 09C00501, 026D0E02
+Luigi - Soccer, 09C10101, 026E0E02
+Luigi - Baseball, 09C10201, 026F0E02
+Luigi - Tennis, 09C10301, 02700E02
+Luigi - Golf, 09C10401, 02710E02
+Luigi - Horse Racing, 09C10501, 02720E02
+Peach - Soccer, 09C20101, 02730E02
+Peach - Baseball, 09C20201, 02740E02
+Peach - Tennis, 09C20301, 02750E02
+Peach - Golf, 09C20401, 02760E02
+Peach - Horse Racing, 09C20501, 02770E02
+Daisy - Soccer, 09C30101, 02780E02
+Daisy - Baseball, 09C30201, 02790E02
+Daisy - Tennis, 09C30301, 027A0E02
+Daisy - Golf, 09C30401, 027B0E02
+Daisy - Horse Racing, 09C30501, 027C0E02
+Yoshi - Soccer, 09C40101, 027D0E02
+Yoshi - Baseball, 09C40201, 027E0E02
+Yoshi - Tennis, 09C40301, 027F0E02
+Yoshi - Golf, 09C40401, 02800E02
+Yoshi - Horse Racing, 09C40501, 02810E02
+Wario - Soccer, 09C50101, 02820E02
+Wario - Baseball, 09C50201, 02830E02
+Wario - Tennis, 09C50301, 02840E02
+Wario - Golf, 09C50401, 02850E02
+Wario - Horse Racing, 09C50501, 02860E02
+Waluigi - Soccer, 09C60101, 02870E02
+Waluigi - Baseball, 09C60201, 02880E02
+Waluigi - Tennis, 09C60301, 02890E02
+Waluigi - Golf, 09C60401, 028A0E02
+Waluigi - Horse Racing, 09C60501, 028B0E02
+Donkey Kong - Soccer, 09C70101, 028C0E02
+Donkey Kong - Baseball, 09C70201, 028D0E02
+Donkey Kong - Tennis, 09C70301, 028E0E02
+Donkey Kong - Golf, 09C70401, 028F0E02
+Donkey Kong - Horse Racing, 09C70501, 02900E02
+Diddy Kong - Soccer, 09C80101, 02910E02
+Diddy Kong - Baseball, 09C80201, 02920E02
+Diddy Kong - Tennis, 09C80301, 02930E02
+Diddy Kong - Golf, 09C80401, 02940E02
+Diddy Kong - Horse Racing, 09C80501, 02950E02
+Bowser - Soccer, 09C90101, 02960E02
+Bowser - Baseball, 09C90201, 02970E02
+Bowser - Tennis, 09C90301, 02980E02
+Bowser - Golf, 09C90401, 02990E02
+Bowser - Horse Racing, 09C90501, 029A0E02
+Bowser Jr. - Soccer, 09CA0101, 029B0E02
+Bowser Jr. - Baseball, 09CA0201, 029C0E02
+Bowser Jr. - Tennis, 09CA0301, 029D0E02
+Bowser Jr. - Golf, 09CA0401, 029E0E02
+Bowser Jr. - Horse Racing, 09CA0501, 029F0E02
+Boo - Soccer, 09CB0101, 02A00E02
+Boo - Baseball, 09CB0201, 02A10E02
+Boo - Tennis, 09CB0301, 02A20E02
+Boo - Golf, 09CB0401, 02A30E02
+Boo - Horse Racing, 09CB0501, 02A40E02
+Baby Mario - Soccer, 09CC0101, 02A50E02
+Baby Mario - Baseball, 09CC0201, 02A60E02
+Baby Mario - Tennis, 09CC0301, 02A70E02
+Baby Mario - Golf, 09CC0401, 02A80E02
+Baby Mario - Horse Racing, 09CC0501, 02A90E02
+Baby Luigi - Soccer, 09CD0101, 02AA0E02
+Baby Luigi - Baseball, 09CD0201, 02AB0E02
+Baby Luigi - Tennis, 09CD0301, 02AC0E02
+Baby Luigi - Golf, 09CD0401, 02AD0E02
+Baby Luigi - Horse Racing, 09CD0501, 02AE0E02
+Birdo - Soccer, 09CE0101, 02AF0E02
+Birdo - Baseball, 09CE0201, 02B00E02
+Birdo - Tennis, 09CE0301, 02B10E02
+Birdo - Golf, 09CE0401, 02B20E02
+Birdo - Horse Racing, 09CE0501, 02B30E02
+Rosalina - Soccer, 09CF0101, 02B40E02
+Rosalina - Baseball, 09CF0201, 02B50E02
+Rosalina - Tennis, 09CF0301, 02B60E02
+Rosalina - Golf, 09CF0401, 02B70E02
+Rosalina - Horse Racing, 09CF0501, 02B80E02
+Metal Mario - Soccer, 09D00101, 02B90E02
+Metal Mario - Baseball, 09D00201, 02BA0E02
+Metal Mario - Tennis, 09D00301, 02BB0E02
+Metal Mario - Golf, 09D00401, 02BC0E02
+Metal Mario - Horse Racing, 09D00501, 02BD0E02
+Pink Gold Peach - Soccer, 09D10101, 02BE0E02
+Pink Gold Peach - Baseball, 09D10201, 02BF0E02
+Pink Gold Peach - Tennis, 09D10301, 02C00E02
+Pink Gold Peach - Golf, 09D10401, 02C10E02
+Pink Gold Peach - Horse Racing, 09D10501, 02C20E02

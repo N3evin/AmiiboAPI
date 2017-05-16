@@ -28,8 +28,8 @@ class amiiboManager():
             # For each value in data we make it into an amiibo object.
             for value in data:
                 if(len(value) > 0 and value[0] != "#"):
-                    value = value.split('\t')
-                    newAmiibo = Amiibo.amiibo(value[0], value[1], value[2])
+                    value = value.split(', ')
+                    newAmiibo = Amiibo.amiibo(value[0], value[1].rstrip(' '), value[2].rstrip(' '))
                     amiibo.append(newAmiibo)
         return amiibo
 
@@ -41,8 +41,8 @@ class amiiboManager():
 
         for item in data:
             if (len(item) > 0 and item[0] != "#"):
-                item = item.split('\t')
-                result.update({hex(int(item[1],16)):item[0]})
+                item = item.split(',')
+                result.update({hex(int(item[1].rstrip(' '),16)):item[0]})
 
         return result
 
@@ -54,10 +54,10 @@ class amiiboManager():
 
         for item in data:
             if (len(item) > 0 and item[0] != "#"):
-                item = item.split('\t')
+                item = item.split(',')
                 if (len(item) == 3):
-                    value1 = int(item[1], 16)
-                    value2 = int(item[2], 16)
+                    value1 = int(item[1].rstrip(' '), 16)
+                    value2 = int(item[2].rstrip(' '), 16)
                     while (value1 <= value2):
                         result.update({hex(value1): item[0]})
                         value1 += 1
@@ -92,9 +92,8 @@ class amiiboManager():
 
 if __name__ == "__main__":
     m = amiiboManager()
-
-    # 8-bit mario
-    amiibo = m.amiiboList[-1]
+    # Bokoblin
+    amiibo = m.amiiboList[1]
     # Get the type.
     print(m.getAmiiboType(amiibo))
     # Get the character

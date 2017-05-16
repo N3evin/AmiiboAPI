@@ -1,6 +1,5 @@
-# instead of space use tab
-# name tab value
+# name, value
 
-Figure	00
-Card	01
-Yarn	02
+Figure, 00
+Card, 01
+Yarn, 02

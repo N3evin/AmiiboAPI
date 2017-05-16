@@ -1,21 +1,21 @@
 # instead of space use tab
-# name tab head tab tail
+# name, head, tail
 
-# The Legend of Zelda			
-Midna & Wolf Link	01030000	024F0902
+# The Legend of Zelda
+Midna & Wolf Link, 01030000, 024F0902
 
 # The Legend of Zelda 30th Anniversary Series
-Link - Ocarina of Time	01000000	034B0902
-8-Bit Link	01000000	034F0902
-Toon Link - The Wind Waker	01000100	03500902
-Toon Zelda - The Wind Waker	01010000	03520902
-Unreleased Majora's Mask Amiibo	01000000	034C0902
-Unreleased Skyward Sword Amiibo	01000000	034E0902
-Unreleased Twilight Princess Amiibo	01000000	034D0902
+Link - Ocarina of Time, 01000000, 034B0902
+8-Bit Link, 01000000, 034F0902
+Toon Link - The Wind Waker, 01000100, 03500902
+Toon Zelda - The Wind Waker, 01010000, 03520902
+Unreleased Majora's Mask Amiibo, 01000000, 034C0902
+Unreleased Skyward Sword Amiibo, 01000000, 034E0902
+Unreleased Twilight Princess Amiibo, 01000000, 034D0902
 
-# The Legend of Zelda Breath of the Wild Series			
-Link (Archer)	01000000	03530902
-Link (Rider)	01000000	03540902
-Guardian	01400000	03550902
-Zelda	01010000	03560902
-Bokoblin	01410000	035C0902
+# The Legend of Zelda Breath of the Wild Series
+Link (Archer), 01000000, 03530902
+Link (Rider), 01000000, 03540902
+Guardian, 01400000, 03550902
+Zelda, 01010000, 03560902
+Bokoblin, 01410000, 035C0902
