@@ -194,7 +194,7 @@ def amiiboGameSeriesData(input):
     return respond
 
 # Get the amiibo base on series
-@app.route('/api/v1/amiibo/series/<string:input>', methods=['GET'])
+@app.route('/api/v1/amiibo/amiiboseries/<string:input>', methods=['GET'])
 def amiiboSeriesData(input):
     amiiboList = amiiboManager.amiiboList
     result = list()
@@ -232,8 +232,8 @@ def buildAmiibo(amiibo):
     result.update({"head": amiibo.getHead()})
     result.update({"tail": amiibo.getTail()})
     result.update({"type": amiiboManager.getAmiiboType(amiibo)})
-    result.update({"gameseries": amiiboManager.getAmiiboGameSeries(amiibo)})
-    result.update({"series": amiiboManager.getAmiiboSeries(amiibo)})
+    result.update({"gameSeries": amiiboManager.getAmiiboGameSeries(amiibo)})
+    result.update({"amiiboSeries": amiiboManager.getAmiiboSeries(amiibo)})
     result.update({"character": amiiboManager.getAmiiboCharacter(amiibo)})
     result.update({"image": "https://raw.githubusercontent.com/Falco20019/libamiibo/master/libamiibo.images/Images/icon_" + amiibo.getHead().lower() + amiibo.getTail().lower() + ".png"})
     return result;
