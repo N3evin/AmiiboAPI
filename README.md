@@ -14,9 +14,9 @@ A RESTful API that was created for retriving amiibo information.
 - could be used with any platform
 
 ### Usage
-Full amiibo: [https://amiiboapi.herokuapp.com/v1/api/amiibo](https://amiiboapi.herokuapp.com/v1/api/amiibo) 
+Full amiibo: [https://amiiboapi.herokuapp.com/api/v1/amiibo](https://amiiboapi.herokuapp.com/api/v1/amiibo) 
 
-Specific Amiibo (Mario): [https://amiiboapi.herokuapp.com/v1/api/amiibo/Mario](https://amiiboapi.herokuapp.com/v1/api/amiibo/Mario)
+Specific Amiibo (Mario): [https://amiiboapi.herokuapp.com/api/v1/amiibo/Mario](https://amiiboapi.herokuapp.com/api/v1/amiibo/Mario)
 
 When searching for amiibo, you can use the key or amiibo name. Key must be in hexdecimal example `0x1D0`
 
