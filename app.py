@@ -146,13 +146,14 @@ def amiiboValueData(input):
     result = list()
 
     for data in amiiboList:
-        if(data.getName().lower() == input.lower()):
+        if(data.getName().lower() == input.lower()):                                # Name only
             result.append(buildAmiibo(data))
-        elif(data.getTail().lower() == input.lower()):
+        elif(data.getTail().lower() == input.lower()):                              # Tail only
             result.append(buildAmiibo(data))
-        elif(data.getHead().lower() == input.lower()):
+        elif(data.getHead().lower() == input.lower()):                              # Head only
             result.append(buildAmiibo(data))
-
+        elif((data.getHead().lower() + data.getTail().lower()) == input.lower()):     # head + tail
+            result.append(buildAmiibo(data))
     respond = jsonify({'amiibo': result})
     return respond
 
@@ -229,8 +230,8 @@ def amiiboCharacterData(input):
 def buildAmiibo(amiibo):
     result = {}
     result.update({"name": amiibo.getName()})
-    result.update({"head": amiibo.getHead()})
-    result.update({"tail": amiibo.getTail()})
+    result.update({"head": amiibo.getHead().lower()})
+    result.update({"tail": amiibo.getTail().lower()})
     result.update({"type": amiiboManager.getAmiiboType(amiibo)})
     result.update({"gameSeries": amiiboManager.getAmiiboGameSeries(amiibo)})
     result.update({"amiiboSeries": amiiboManager.getAmiiboSeries(amiibo)})
