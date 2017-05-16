@@ -9,6 +9,11 @@ amiiboManager = AmiiboManager.amiiboManager()
 def index():
     return app.send_static_file('index.html')
 
+# Favicon
+@app.route('/favicon.ico')
+def favicon():
+    return send_from_directory(os.path.join(app.root_path, 'static'),'favicon.ico', mimetype='image/vnd.microsoft.icon')
+
 # Handle 404 as json or else Flash will use html as default.
 @app.errorhandler(404)
 def not_found(error):
