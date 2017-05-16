@@ -184,6 +184,7 @@ def buildAmiibo(amiibo):
     result.update({"gameseries": amiiboManager.getAmiiboGameSeries(amiibo)})
     result.update({"series": amiiboManager.getAmiiboSeries(amiibo)})
     result.update({"character": amiiboManager.getAmiiboCharacter(amiibo)})
+    result.update({"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/image/icon_" + amiibo.getHead().lower() + amiibo.getTail().lower() + ".png"})
     return result;
 
 
