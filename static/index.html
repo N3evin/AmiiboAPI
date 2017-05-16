@@ -1,0 +1,165 @@
+<link rel="shortcut icon" href="/favicon.ico">
+<title>Clipboard Generator</title>
+<style>
+	body {
+		position: relative;
+		margin: 0;
+		padding-bottom: 6rem;
+		min-height: 100%;
+	} 
+	footer { 
+		font-family: "Helvetica Neue", Arial, sans-serif;
+		position: absolute;
+		left: 0;
+		right: 0;
+		padding: 1rem;
+		bottom: 0;
+		background-color: #efefef;
+		text-align: center;
+	}
+</style>
+<body>
+   <h1>Welcome to Amiibo API by <a href="https://github.com/N3evin/amiiboapi">N3evin</a> & <a href="https://github.com/cheatfreak47">cheatfreak47</a></h1>
+   <div>
+      <fieldset>
+         <legend>List of amiibo</legend>
+         <p>
+         <h2>/api/v1/amiibo</h2>
+         </p>
+         <ul>
+            <li><b>return:</b> JSON format of all the amiibo in the database.</li>
+         </ul>
+      </fieldset>
+   </div>
+   <div>
+      <fieldset>
+         <legend>Get Amiibo detail</legend>
+         <p>
+         <h2>/api/v1/amiibo/{value}</h2>
+         </p>
+         <ul>
+            <li><b>value:</b> can be the name of the amiibo, head value or tail value. Head or Tail value must be 8 digit.</li>
+            <li><b>return:</b> JSON format of a list of amiibo belong to the value.</li>
+         </ul>
+      </fieldset>
+   </div>
+   <div>
+      <fieldset>
+         <legend>Get the list of amiibo with the type.</legend>
+         <p>
+         <h2>/api/v1/amiibo/type/{type}</h2>
+         </p>
+         <ul>
+            <li><b>type:</b> The type, figure, card or yarn. Can be their hexdecimal value. Hex example: <i>0x2</i></li>
+            <li><b>return:</b> JSON format of all the amiibo below to the type.</li>
+         </ul>
+      </fieldset>
+   </div>
+   <div>
+      <fieldset>
+         <legend>Get all the characters in the database</legend>
+         <p>
+         <h2>/api/v1/character</h2>
+         </p>
+         <ul>
+            <li><b>return:</b> JSON format of a list of characters available in the database.</li>
+         </ul>
+      </fieldset>
+   </div>
+   <div>
+      <fieldset>
+         <legend>Get the details of certain character</legend>
+         <p>
+         <h2>/api/v1/character/{value}</h2>
+         </p>
+         <ul>
+            <li><b>value:</b> Can be both name or key value.</li>
+            <li><b>return:</b> json format of all the character belongs to the value.</li>
+         </ul>
+      </fieldset>
+   </div>
+   <div>
+      <fieldset>
+         <legend>Get all the types of amiibo in the database</legend>
+         <p>
+         <h2>/api/v1/type</h2>
+         </p>
+         <ul>
+            <li><b>return:</b> json list of all the types in the database.</li>
+         </ul>
+      </fieldset>
+   </div>
+   <div>
+      <fieldset>
+         <legend>Get a type information</legend>
+         <p>
+         <h2>/api/v1/type/{value}</h2>
+         </p>
+         <ul>
+			<li><b>value:</b> Can be both name or key value that you wanted.</li>
+            <li><b>return:</b> json list of the types in the database.</li>
+         </ul>
+      </fieldset>
+   </div>
+   <div>
+      <fieldset>
+         <legend>Get all the amiibo series in database.</legend>
+         <p>
+         <h2>/api/v1/amiiboseries</h2>
+         </p>
+         <ul>
+            <li><b>return:</b> json list of all the amiibo series in the database.</li>
+         </ul>
+      </fieldset>
+   </div>
+   <div>
+      <fieldset>
+         <legend>Get an amiibo series in database.</legend>
+         <p>
+         <h2>/api/v1/amiiboseries/{value}</h2>
+         </p>
+         <ul>
+			<li><b>value:</b> Can be both name or key value that you wanted.</li>
+            <li><b>return:</b> json list of the amiibo series in the database.</li>
+         </ul>
+      </fieldset>
+   </div>
+   <div>
+      <fieldset>
+         <legend>Get all the game series name and code in database.</legend>
+         <p>
+         <h2>/api/v1/gameseries</h2>
+         </p>
+         <ul>
+            <li><b>return:</b> json list of the game series in the database.</li>
+         </ul>
+      </fieldset>
+   </div>
+   <div>
+      <fieldset>
+         <legend>Get the information for game series. [Type Name]</legend>
+         <p>
+         <h2>/api/v1/gameseries/{name}</h2>
+         </p>
+         <ul>
+			<li><b>name:</b> The name of the series.</li>
+            <li><b>return:</b> json list of the key belong to that series.</li>
+         </ul>
+      </fieldset>
+   </div>
+   <div>
+      <fieldset>
+         <legend>Get the information for game series. [Type Key]</legend>
+         <p>
+         <h2>/api/v1/gameseries/{key}</h2>
+         </p>
+         <ul>
+			<li><b>key:</b> The key of the series.</li>
+            <li><b>return:</b> JSON of the name belong to that key.</li>
+         </ul>
+      </fieldset>
+   </div>
+</body>
+<footer>
+	Copyright &copy; <script>new Date().getFullYear()>2010&&document.write(new Date().getFullYear());</script>, <a href="https://github.com/N3evin/amiiboapi">N3evin</a> & <a href="https://github.com/cheatfreak47">cheatfreak47</a>.
+</footer>

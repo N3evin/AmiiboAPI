@@ -1,0 +1,16 @@
+Super Smash Bros.	00
+Super Mario Bros.	01
+Chibi-Robo!	02
+Yoshi's Woolly World	03
+Splatoon	04
+Animal Crossing	05
+8-bit Mario	06
+Skylanders	07
+Legend Of Zelda	09
+Shovel Knight	0A
+Kirby	0C
+Pokken	0D
+Mario Sports Superstars	0E
+Monster Hunter	0F
+BoxBoy!	10
+Fire Emblem	12

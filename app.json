@@ -1,0 +1,11 @@
+{
+  "name": "Amiibo API",
+  "description": "A RESTful API for amiibo.",
+  "keywords": [
+    "flask",
+    "python",
+	"amiibo",
+	"nintendo"
+  ],
+  "repository": "https://github.com/N3evin/amiiboapi",
+}

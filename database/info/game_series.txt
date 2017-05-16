@@ -1,0 +1,30 @@
+Super Mario	000	001
+Yoshi's Woolly World	008
+The Legend of Zelda	010
+Breath of the Wild	014
+Animal Crossing	018	051
+Star Fox	058
+Metroid	05C
+F-Zero	060
+Pikmin	064
+Punch Out	06C
+Wii Fit	070
+Kid Icarus	074
+Classic Nintendo	078
+Mii	07C
+Splatoon	080
+Mario Sports Superstars	09C	09D
+Pokemon	190	1BD
+Pokken	1D0
+Kirby	1F0
+BoxBoy!	1F4
+Fire Emblem	210
+Xenoblade	224
+Earthbound	228
+Chibi Robo	22C
+Sonic	320
+Pac-man	334
+Megaman	348
+Street fighter	34C
+Monster Hunter	350
+Shovel Knight	35C
