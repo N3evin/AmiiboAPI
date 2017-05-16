@@ -1,3 +1,6 @@
+# instead of space use tab
+# name tab head tab tail
+
 # The Legend of Zelda			
 Midna & Wolf Link	01030000	024F0902
 

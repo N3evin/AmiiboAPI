@@ -1,3 +1,6 @@
+# instead of space use tab
+# name tab head tab tail
+
 # Wave 1
 Mario	00000000	00000002
 Peach	00020000	00010002

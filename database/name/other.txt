@@ -1,3 +1,6 @@
+# instead of space use tab
+# name tab head tab tail
+
 # Monster Hunter Stories
 One-Eyed Rathalos and Rider (Male)	35000100	02E10F02
 One-Eyed Rathalos and Rider (Female)	35000200	02E20F02

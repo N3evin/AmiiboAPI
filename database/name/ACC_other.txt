@@ -1,3 +1,6 @@
+# instead of space use tab
+# name tab head tab tail
+
 # Character Parfait			
 Isabelle	01810001	01D40502
 K. K. Slider	01820001	01D80502

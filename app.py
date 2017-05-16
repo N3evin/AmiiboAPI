@@ -239,6 +239,5 @@ def buildAmiibo(amiibo):
     result.update({"image": "https://raw.githubusercontent.com/Falco20019/libamiibo/master/libamiibo.images/Images/icon_" + amiibo.getHead().lower() + amiibo.getTail().lower() + ".png"})
     return result;
 
-
 if __name__ == "__main__":
     app.run(debug=True)

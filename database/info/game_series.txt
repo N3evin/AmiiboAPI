@@ -1,3 +1,6 @@
+# instead of space use tab
+# name tab min tab max(optional)
+
 Super Mario	000	001
 Yoshi's Woolly World	008
 The Legend of Zelda	010

@@ -1,4 +1,6 @@
-# Name tab value
+# instead of space use tab
+# name tab value
+
 Mario	0000
 Luigi	0001
 Peach	0002

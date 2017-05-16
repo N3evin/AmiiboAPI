@@ -1,3 +1,5 @@
+# instead of space use tab
+
 Super Smash Bros.	00
 Super Mario Bros.	01
 Chibi-Robo!	02

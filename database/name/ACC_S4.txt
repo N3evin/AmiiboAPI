@@ -1,3 +1,6 @@
+# instead of space use tab
+# name tab head tab tail
+
 Isabelle	01810301	01700502
 Brewster	01900001	01710502
 Katrina	01A50001	01720502
