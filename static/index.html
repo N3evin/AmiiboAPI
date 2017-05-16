@@ -19,7 +19,7 @@
 	}
 </style>
 <body>
-   <h1>Welcome to Amiibo API by <a href="https://github.com/N3evin/amiiboapi">N3evin</a> & <a href="https://github.com/cheatfreak47">cheatfreak47</a></h1>
+   <h1>Welcome to Amiibo RESTful API by <a href="https://github.com/N3evin/amiiboapi">N3evin</a> & <a href="https://github.com/cheatfreak47">cheatfreak47</a></h1>
    <div>
       <fieldset>
          <legend>List of amiibo</legend>
@@ -33,7 +33,7 @@
    </div>
    <div>
       <fieldset>
-         <legend>Get Amiibo detail</legend>
+         <legend>Get specific amiibo detail</legend>
          <p>
          <h2>/api/v1/amiibo/{value}</h2>
          </p>
@@ -45,13 +45,49 @@
    </div>
    <div>
       <fieldset>
-         <legend>Get the list of amiibo with the type.</legend>
+         <legend>Get the list of amiibo base on the type.</legend>
          <p>
          <h2>/api/v1/amiibo/type/{type}</h2>
          </p>
          <ul>
             <li><b>type:</b> The type, figure, card or yarn. Can be their hexdecimal value. Hex example: <i>0x2</i></li>
-            <li><b>return:</b> JSON format of all the amiibo below to the type.</li>
+            <li><b>return:</b> JSON format of all the amiibo belong to the type.</li>
+         </ul>
+      </fieldset>
+   </div>
+   <div>
+      <fieldset>
+         <legend>Get the list of amiibo base on game series.</legend>
+         <p>
+         <h2>/api/v1/amiibo/gameseries/{value}</h2>
+         </p>
+         <ul>
+            <li><b>value:</b> The game series. Example: <i>The Legend Of Zelda</i></li>
+            <li><b>return:</b> JSON format of all the amiibo belong to the game series.</li>
+         </ul>
+      </fieldset>
+   </div>
+   <div>
+      <fieldset>
+         <legend>Get the list of amiibo base on amiibo series.</legend>
+         <p>
+         <h2>/api/v1/amiibo/series/{value}</h2>
+         </p>
+         <ul>
+            <li><b>value:</b> The amiibo series. Example: <i>Legend Of Zelda</i></li>
+            <li><b>return:</b> JSON format of all the amiibo belong to the amiibo series.</li>
+         </ul>
+      </fieldset>
+   </div>
+   <div>
+      <fieldset>
+         <legend>Get the list of amiibo base on character.</legend>
+         <p>
+         <h2>/api/v1/amiibo/character/{character}</h2>
+         </p>
+         <ul>
+            <li><b>character:</b> The amiibo character. Example: <i>Zelda</i></li>
+            <li><b>return:</b> JSON format of all the amiibo belong to the amiibo series.</li>
          </ul>
       </fieldset>
    </div>

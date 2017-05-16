@@ -141,7 +141,7 @@ def amiibo():
 
 # Get the amiibo from value
 @app.route('/api/v1/amiibo/<string:input>', methods=['GET'])
-def amiiboValue(input):
+def amiiboValueData(input):
     amiiboList = amiiboManager.amiiboList
     result = list()
 
@@ -156,9 +156,9 @@ def amiiboValue(input):
     respond = jsonify({'amiibo': result})
     return respond
 
-# Get the amiibo
+# Get the amiibo base on type
 @app.route('/api/v1/amiibo/type/<string:input>', methods=['GET'])
-def amiiboDataType(input):
+def amiiboTypeData(input):
     amiiboList = amiiboManager.amiiboList
     typeList = amiiboManager.typeList
     result = list()
@@ -170,6 +170,57 @@ def amiiboDataType(input):
     for data in amiiboList:
         if(amiiboManager.getAmiiboType(data).lower() == input.lower()):
             result.append(buildAmiibo(data))
+
+    if len(result) == 0:
+        abort(404)
+
+    respond = jsonify({'amiibo': result})
+    return respond
+
+# Get the amiibo base on gameseries
+@app.route('/api/v1/amiibo/gameseries/<string:input>', methods=['GET'])
+def amiiboGameSeriesData(input):
+    amiiboList = amiiboManager.amiiboList
+    result = list()
+
+    for data in amiiboList:
+        if(amiiboManager.getAmiiboGameSeries(data).lower() == input.lower()):
+            result.append(buildAmiibo(data))
+
+    if len(result) == 0:
+        abort(404)
+
+    respond = jsonify({'amiibo': result})
+    return respond
+
+# Get the amiibo base on series
+@app.route('/api/v1/amiibo/series/<string:input>', methods=['GET'])
+def amiiboSeriesData(input):
+    amiiboList = amiiboManager.amiiboList
+    result = list()
+
+    for data in amiiboList:
+        if(amiiboManager.getAmiiboSeries(data).lower() == input.lower()):
+            result.append(buildAmiibo(data))
+
+    if len(result) == 0:
+        abort(404)
+
+    respond = jsonify({'amiibo': result})
+    return respond
+
+# Get the amiibo base on character
+@app.route('/api/v1/amiibo/character/<string:input>', methods=['GET'])
+def amiiboCharacterData(input):
+    amiiboList = amiiboManager.amiiboList
+    result = list()
+
+    for data in amiiboList:
+        if(amiiboManager.getAmiiboCharacter(data).lower() == input.lower()):
+            result.append(buildAmiibo(data))
+
+    if len(result) == 0:
+        abort(404)
 
     respond = jsonify({'amiibo': result})
     return respond
