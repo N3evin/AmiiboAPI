@@ -1,4 +1,4 @@
-from flask import Flask, send_from_directory, jsonify, abort, make_response, url_for
+from flask import Flask, send_from_directory, jsonify, abort, make_response, render_template
 import requests, os, json, AmiiboManager
 
 app = Flask(__name__)
@@ -7,12 +7,7 @@ amiiboManager = AmiiboManager.amiiboManager()
 # Index
 @app.route('/')
 def index():
-    return app.send_static_file('index.html')
-
-# Favicon
-@app.route('/favicon.ico')
-def favicon():
-    return send_from_directory(os.path.join(app.root_path, 'static'),'favicon.ico', mimetype='image/vnd.microsoft.icon')
+    return render_template('home.html')
 
 # Handle 404 as json or else Flash will use html as default.
 @app.errorhandler(404)
