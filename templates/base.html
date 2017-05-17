@@ -1,8 +1,44 @@
-<link rel="shortcut icon" href="/static/favicon.ico">
-<title>Amiibo API</title>
+<!-- Credited to Paul Hallett for the design codes - http://phalt.co -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>
+      AmiiboAPI - A RESTful API for Amiibo
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pokeapi The Pokemon RESTful API">
+    <meta name="author" content="Paul Hallett">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/css/custom.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+      </script>
+    <![endif]-->
+    <link rel="shortcut icon" href="/static/favicon.ico">
+      <script src="/static/js/jquery.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+    </script>
+  </head>
+  <body>
+    {% block mainbody %}
 
-<link href="/static/css/custom.css" rel="stylesheet">
-{% block content %}{% endblock %}
-<footer>
-	Copyright &copy; <script>new Date().getFullYear()>2010&&document.write(new Date().getFullYear());</script>, <a href="https://github.com/N3evin/amiiboapi">N3evin</a> & <a href="https://github.com/cheatfreak47">cheatfreak47</a>.
-</footer>
+    {% endblock mainbody %}
+  </body>
+  <hr class="">
+
+  <div class="footer">
+    <p>Copyright &copy <script type="text/javascript">
+  document.write(new Date().getFullYear());
+</script>; Designed by <a href="http://phalt.co">Paul Hallett</a>
+      <span class="pull-right">
+<iframe src="https://ghbtns.com/github-btn.html?user=N3evin&type=follow"
+  allowtransparency="false" frameborder="0" scrolling="0" width="132" height="20"></iframe>
+  <iframe src="https://ghbtns.com/github-btn.html?user=cheatfreak47&type=follow"
+  allowtransparency="false" frameborder="0" scrolling="0" width="152" height="20"></iframe></span></p>
+  </div>
+
+      </div>
+  </body>
+</html>

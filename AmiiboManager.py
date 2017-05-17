@@ -70,25 +70,25 @@ class amiiboManager():
     def getAmiiboGameSeries(self, amiibo):
         value = amiibo.getHead()[0:3]
         value = hex(int(value, 16))
-        return self.gameSeries.get(value)
+        return self.gameSeries.get(value), value
 
     # Get the type of the amiibo.
     def getAmiiboType(self, amiibo):
         head = amiibo.getHead()
         char = head[-2:len(head)]
-        return self.typeList.get(hex(int(char, 16)))
+        return self.typeList.get(hex(int(char, 16))), hex(int(char, 16))
 
     # Get the character of the amiibo.
     def getAmiiboCharacter(self, amiibo):
         head = amiibo.getHead()
         value = head[0:4]
-        return self.charList.get(hex(int(value, 16)))
+        return self.charList.get(hex(int(value, 16))), hex(int(value, 16))
 
     # Get the character of the amiibo.
     def getAmiiboSeries(self, amiibo):
         value = amiibo.getTail()[-4:-2]
         result = self.amiiboSeriesList.get(hex(int(value, 16)))
-        return result
+        return result, hex(int(value, 16))
 
 if __name__ == "__main__":
     m = amiiboManager()

@@ -1,0 +1,295 @@
+{% extends "base_docs.html" %}
+{% block docstitle %}
+
+    <h1>AmiiboAPI Documentation</h1>
+
+{% endblock %}
+
+{% block docsversionstate %}
+
+    <li class="active"><a href="#">V1</a></li>
+
+{% endblock %}
+
+{% block docsnav %}
+
+	<li><a href="#info">Information</a></li>
+	<li><a href="#termscondition">Terms & Conditions</a></li>
+	<hr>
+	<li><a href="#amiibo">Amiibo</a></li>
+	<li><a href="#amiiboType">Amiibo Type</a></li>
+	<li><a href="#amiiboGameSeries">Amiibo Game Series</a></li>
+
+{% endblock %}
+
+{% block docsbody %}
+
+    <h2 id="amiibo">Amiibo</h2>
+
+    <p>It returns information of all amiibos or specific amiibo.</p>
+
+    <h3>GET /amiibo/</h3>
+
+    <p>Return a list of amiibo available in the API.</p>
+	
+	<h3>GET /amiibo/{id or name}</h3>
+	
+	<p><strong>Note: </strong>id could be either head or tail or head and tail.</p>
+
+    <pre>
+{
+"amiibo": [
+	{
+		"amiiboSeries": "Super Smash Bros.",
+		"character": "Zelda",
+		"gameSeries": "The Legend of Zelda",
+		"head": "01010000",
+		"image": "https://raw.githubusercontent.com/Falco20019/libamiibo/master/libamiibo.images/Images/icon_01010000000e0002.png",
+		"name": "Zelda",
+		"tail": "000e0002",
+		"type": "Figure"
+	},
+	{
+		"amiiboSeries": "Legend Of Zelda",
+		"character": "Zelda",
+		"gameSeries": "The Legend of Zelda",
+		"head": "01010000",
+		"image": "https://raw.githubusercontent.com/Falco20019/libamiibo/master/libamiibo.images/Images/icon_0101000003520902.png",
+		"name": "Toon Zelda - The Wind Waker",
+		"tail": "03520902",
+		"type": "Figure"
+	},
+	{
+		"amiiboSeries": "Legend Of Zelda",
+		"character": "Zelda",
+		"gameSeries": "The Legend of Zelda",
+		"head": "01010000",
+		"image": "https://raw.githubusercontent.com/Falco20019/libamiibo/master/libamiibo.images/Images/icon_0101000003560902.png",
+		"name": "Zelda",
+		"tail": "03560902",
+		"type": "Figure"
+	}
+]
+}
+    </pre>
+
+    <h4>Amiibo</h4>
+
+    <table>
+        <thead>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Data Type</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>amiiboSeries</td>
+                <td>The series the amiibo belongs to.</td>
+                <td>string</td>
+            </tr>
+            <tr>
+                <td>character</td>
+                <td>The character of the amiibo, multiple character have different amiibo design.</td>
+                <td>string</td>
+            </tr>
+            <tr>
+                <td>gameSeries</td>
+                <td>The game series of the amiibo.</td>
+                <td>string</td>
+            </tr>
+            <tr>
+                <td>head</td>
+                <td>The 1st 8 value of the hexadecimal to recognize the amiibo.</br><b>Note:</b> 0-7 value in the hexadecimal</td>
+                <td>string</td>
+            </tr>
+			<tr>
+                <td>image</td>
+                <td>The image link of the amiibo.</td>
+                <td>string</td>
+            </tr>
+			<tr>
+                <td>name</td>
+                <td>The name of the amiibo.</td>
+                <td>string</td>
+            </tr>
+			<tr>
+                <td>tail</td>
+                <td>The next 8 value of the hexadecimal to recognize the amiibo.</br><b>Note:</b> 8-15 value in the hexadecimal</td>
+                <td>string</td>
+            </tr>
+			<tr>
+                <td>type</td>
+                <td>The type it belongs to. Example: card, figure and yarn</td>
+                <td>string</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <h2 id="amiiboType">Amiibo Type</h2>
+
+    <p>Get all the amiibo based on it's type.</p>
+
+    <h3>GET /amiibo/type/{type or type id}</h3>
+	
+	<p><strong>Note: </strong>type id could be anything in the type database. <b>Eg.</b> <i>0x2</i> (Yarn)</p>
+	
+    <pre>
+{
+	"amiibo": [
+	{
+		"amiiboSeries": "Yoshi's Woolly World",
+		"character": "Yoshi",
+		"gameSeries": "Super Mario",
+		"head": "00030102",
+		"image": "https://raw.githubusercontent.com/Falco20019/libamiibo/master/libamiibo.images/Images/icon_0003010200410302.png",
+		"name": "Green Yarn Yoshi",
+		"tail": "00410302",
+		"type": "Yarn"
+	},
+	...
+]
+}
+    </pre>
+
+    <h4>Amiibo Type</h4>
+
+    <table>
+        <thead>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Data Type</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>amiiboSeries</td>
+                <td>The series the amiibo belongs to.</td>
+                <td>string</td>
+            </tr>
+            <tr>
+                <td>character</td>
+                <td>The character of the amiibo, multiple character have different amiibo design.</td>
+                <td>string</td>
+            </tr>
+            <tr>
+                <td>gameSeries</td>
+                <td>The game series of the amiibo.</td>
+                <td>string</td>
+            </tr>
+            <tr>
+                <td>head</td>
+                <td>The 1st 8 value of the hexadecimal to recognize the amiibo.</br><b>Note:</b> 0-7 value in the hexadecimal</td>
+                <td>string</td>
+            </tr>
+			<tr>
+                <td>image</td>
+                <td>The image link of the amiibo.</td>
+                <td>string</td>
+            </tr>
+			<tr>
+                <td>name</td>
+                <td>The name of the amiibo.</td>
+                <td>string</td>
+            </tr>
+			<tr>
+                <td>tail</td>
+                <td>The next 8 value of the hexadecimal to recognize the amiibo.</br><b>Note:</b> 8-15 value in the hexadecimal</td>
+                <td>string</td>
+            </tr>
+			<tr>
+                <td>type</td>
+                <td>The type it belongs to. Example: card, figure and yarn</td>
+                <td>string</td>
+            </tr>
+        </tbody>
+    </table>
+
+	<h2 id="amiiboGameSeries">Amiibo Game Series</h2>
+
+    <p>Get all the amiibo based on it's game series.</p>
+
+    <h3>GET /api/v1/amiibo/gameseries/{gameseries or gameseries id}</h3>
+	
+	<p><strong>Note: </strong>gameseries id could be anything in the type database. <b>Eg.</b> <i>0x2</i> (Chibi Robo)</p>
+
+    <pre>
+{
+"amiibo": [
+	{
+		"amiiboSeries": "Super Smash Bros.",
+		"character": "Link",
+		"gameSeries": "The Legend of Zelda",
+		"head": "01000000",
+		"image": "https://raw.githubusercontent.com/Falco20019/libamiibo/master/libamiibo.images/Images/icon_0100000000040002.png",
+		"name": "Link",
+		"tail": "00040002",
+		"type": "Figure"
+	},
+	{
+		"amiiboSeries": "Super Smash Bros.",
+		"character": "Zelda",
+		"gameSeries": "The Legend of Zelda",
+		"head": "01010000",
+		"image": "https://raw.githubusercontent.com/Falco20019/libamiibo/master/libamiibo.images/Images/icon_01010000000e0002.png",
+		"name": "Zelda",
+		"tail": "000e0002",
+		"type": "Figure"
+	},
+	..
+]
+}
+    </pre>
+
+    <h4>Amiibo Game Series</h4>
+
+    <table>
+        <thead>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Data Type</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>amiiboSeries</td>
+                <td>The series the amiibo belongs to.</td>
+                <td>string</td>
+            </tr>
+            <tr>
+                <td>character</td>
+                <td>The character of the amiibo, multiple character have different amiibo design.</td>
+                <td>string</td>
+            </tr>
+            <tr>
+                <td>gameSeries</td>
+                <td>The game series of the amiibo.</td>
+                <td>string</td>
+            </tr>
+            <tr>
+                <td>head</td>
+                <td>The 1st 8 value of the hexadecimal to recognize the amiibo.</br><b>Note:</b> 0-7 value in the hexadecimal</td>
+                <td>string</td>
+            </tr>
+			<tr>
+                <td>image</td>
+                <td>The image link of the amiibo.</td>
+                <td>string</td>
+            </tr>
+			<tr>
+                <td>name</td>
+                <td>The name of the amiibo.</td>
+                <td>string</td>
+            </tr>
+			<tr>
+                <td>tail</td>
+                <td>The next 8 value of the hexadecimal to recognize the amiibo.</br><b>Note:</b> 8-15 value in the hexadecimal</td>
+                <td>string</td>
+            </tr>
+			<tr>
+                <td>type</td>
+                <td>The type it belongs to. Example: card, figure and yarn</td>
+                <td>string</td>
+            </tr>
+        </tbody>
+    </table>
+
+{% endblock %}
