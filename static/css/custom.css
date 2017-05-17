@@ -1,0 +1,17 @@
+body {
+		position: relative;
+		margin: 0;
+		padding-bottom: 6rem;
+		min-height: 100%;
+	}
+
+footer { 
+	font-family: "Helvetica Neue", Arial, sans-serif;
+	position: absolute;
+	left: 0;
+	right: 0;
+	padding: 1rem;
+	bottom: 0;
+	background-color: #efefef;
+	text-align: center;
+}
