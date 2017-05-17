@@ -7,26 +7,33 @@
 
 {% block docsversionstate %}
 
-    <li class="active"><a href="#">V1</a></li>
+    <li class="active"><a href="#">API</a></li>
 
 {% endblock %}
 
 {% block docsnav %}
-
-	<li><a href="#info">Information</a></li>
-	<li><a href="#termscondition">Terms & Conditions</a></li>
-	<hr>
-	<li><a href="#amiibo">Amiibo</a></li>
-	<li><a href="#amiiboType">Amiibo Type</a></li>
-	<li><a href="#amiiboGameSeries">Amiibo Game Series</a></li>
-
+	<ul>
+		<li><a href="#info">Information</a></li>
+		<li><a href="#termscondition">Terms & Conditions</a></li>
+		<hr></hr>
+		<li><a href="#amiibo">Amiibo</a></li>
+		<li><a href="#amiiboType">Amiibo Type</a></li>
+		<li><a href="#amiiboGameSeries">Amiibo Game Series</a></li>
+		<li><a href="#amiiboSeries">Amiibo Series</a></li>
+		<li><a href="#amiiboCharacter">Amiibo Character</a></li>
+		<hr></hr>
+		<li><a href="#type">Type</a></li>
+		<li><a href="#gameSeries">Game Series</a></li>
+		<li><a href="#series">Series</a></li>
+		<li><a href="#character">Character</a></li>
+	</ul>
 {% endblock %}
 
 {% block docsbody %}
 
     <h2 id="amiibo">Amiibo</h2>
 
-    <p>It returns information of all amiibos or specific amiibo.</p>
+    <p>It returns information of all amiibos or specific amiibo as a list.</p>
 
     <h3>GET /amiibo/</h3>
 
@@ -128,11 +135,11 @@
 
     <h2 id="amiiboType">Amiibo Type</h2>
 
-    <p>Get all the amiibo based on it's type.</p>
+    <p>Get all the amiibo based on it's type as a list.</p>
 
-    <h3>GET /amiibo/type/{type or type id}</h3>
+    <h3>GET /amiibo/type/{type or type key}</h3>
 	
-	<p><strong>Note: </strong>type id could be anything in the type database. <b>Eg.</b> <i>0x2</i> (Yarn)</p>
+	<p><strong>Note: </strong>type key could be anything in the type database. <b>Eg.</b> <i>0x2</i> (Yarn)</p>
 	
     <pre>
 {
@@ -206,11 +213,11 @@
 
 	<h2 id="amiiboGameSeries">Amiibo Game Series</h2>
 
-    <p>Get all the amiibo based on it's game series.</p>
+    <p>Get all the amiibo based on it's game series as a list.</p>
 
-    <h3>GET /api/v1/amiibo/gameseries/{gameseries or gameseries id}</h3>
+    <h3>GET /api/amiibo/gameseries/{gameseries or gameseries key}</h3>
 	
-	<p><strong>Note: </strong>gameseries id could be anything in the type database. <b>Eg.</b> <i>0x2</i> (Chibi Robo)</p>
+	<p><strong>Note: </strong>gameseries key could be anything in the type database. <b>Eg.</b> <i>0x2</i> (Chibi Robo)</p>
 
     <pre>
 {
@@ -291,5 +298,418 @@
             </tr>
         </tbody>
     </table>
+	
+	<h2 id="amiiboSeries">Amiibo Series</h2>
 
+    <p>Get all the amiibo based on it's series as a list.</p>
+
+    <h3>GET /api/amiibo/amiiboSeries/{amiiboseries or amiiboseries key}</h3>
+	
+	<p><strong>Note: </strong>amiiboseries key could be anything in the type database. <b>Eg.</b> <i>0x10</i> (BoxBoy!)</p>
+
+    <pre>
+{
+"amiibo": [
+	{
+		"amiiboSeries": "BoxBoy!",
+		"character": "Qbby",
+		"gameSeries": "BoxBoy!",
+		"head": "1f400000",
+		"image": "https://raw.githubusercontent.com/Falco20019/libamiibo/master/libamiibo.images/Images/icon_1f400000035e1002.png",
+		"name": "Qbby",
+		"tail": "035e1002",
+		"type": "Figure"
+	}
+]
+}
+    </pre>
+
+    <h4>Amiibo Series</h4>
+
+    <table>
+        <thead>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Data Type</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>amiiboSeries</td>
+                <td>The series the amiibo belongs to.</td>
+                <td>string</td>
+            </tr>
+            <tr>
+                <td>character</td>
+                <td>The character of the amiibo, multiple character have different amiibo design.</td>
+                <td>string</td>
+            </tr>
+            <tr>
+                <td>gameSeries</td>
+                <td>The game series of the amiibo.</td>
+                <td>string</td>
+            </tr>
+            <tr>
+                <td>head</td>
+                <td>The 1st 8 value of the hexadecimal to recognize the amiibo.</br><b>Note:</b> 0-7 value in the hexadecimal</td>
+                <td>string</td>
+            </tr>
+			<tr>
+                <td>image</td>
+                <td>The image link of the amiibo.</td>
+                <td>string</td>
+            </tr>
+			<tr>
+                <td>name</td>
+                <td>The name of the amiibo.</td>
+                <td>string</td>
+            </tr>
+			<tr>
+                <td>tail</td>
+                <td>The next 8 value of the hexadecimal to recognize the amiibo.</br><b>Note:</b> 8-15 value in the hexadecimal</td>
+                <td>string</td>
+            </tr>
+			<tr>
+                <td>type</td>
+                <td>The type it belongs to. Example: card, figure and yarn</td>
+                <td>string</td>
+            </tr>
+        </tbody>
+    </table>
+	
+	<h2 id="amiiboCharacter">Amiibo Character</h2>
+
+    <p>Get all the amiibo based on it's character as a list.</p>
+
+    <h3>GET /api/amiibo/character/{character or character key}</h3>
+	
+	<p><strong>Note: </strong>character key could be anything in the type database. <b>Eg.</b> <i>0x1996</i> (Mewtwo)</p>
+
+    <pre>
+{
+"amiibo": [
+	{
+		"amiiboSeries": "Super Smash Bros.",
+		"character": "Mewtwo",
+		"gameSeries": "Pokemon",
+		"head": "19960000",
+		"image": "https://raw.githubusercontent.com/Falco20019/libamiibo/master/libamiibo.images/Images/icon_19960000023d0002.png",
+		"name": "Mewtwo",
+		"tail": "023d0002",
+		"type": "Figure"
+	}
+]
+}
+    </pre>
+
+    <h4>Amiibo Character</h4>
+
+    <table>
+        <thead>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Data Type</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>amiiboSeries</td>
+                <td>The series the amiibo belongs to.</td>
+                <td>string</td>
+            </tr>
+            <tr>
+                <td>character</td>
+                <td>The character of the amiibo, multiple character have different amiibo design.</td>
+                <td>string</td>
+            </tr>
+            <tr>
+                <td>gameSeries</td>
+                <td>The game series of the amiibo.</td>
+                <td>string</td>
+            </tr>
+            <tr>
+                <td>head</td>
+                <td>The 1st 8 value of the hexadecimal to recognize the amiibo.</br><b>Note:</b> 0-7 value in the hexadecimal</td>
+                <td>string</td>
+            </tr>
+			<tr>
+                <td>image</td>
+                <td>The image link of the amiibo.</td>
+                <td>string</td>
+            </tr>
+			<tr>
+                <td>name</td>
+                <td>The name of the amiibo.</td>
+                <td>string</td>
+            </tr>
+			<tr>
+                <td>tail</td>
+                <td>The next 8 value of the hexadecimal to recognize the amiibo.</br><b>Note:</b> 8-15 value in the hexadecimal</td>
+                <td>string</td>
+            </tr>
+			<tr>
+                <td>type</td>
+                <td>The type it belongs to. Example: card, figure and yarn</td>
+                <td>string</td>
+            </tr>
+        </tbody>
+    </table>
+	
+	<h2 id="type">Type</h2>
+
+    <p>Get all the amiibo's type available in the database as a list.</p>
+	
+	
+    <h3>GET /api/type</h3>
+	
+    <pre>
+{
+"amiibo": [
+	{
+		"key": "0x1",
+		"name": "Card"
+	},
+	{
+		"key": "0x2",
+		"name": "Yarn"
+	},
+	{
+		"key": "0x0",
+		"name": "Figure"
+	}
+]
+}
+    </pre>
+	
+	<h3>GET /api/type/{type or type key}</h3>
+	
+	<p><strong>Note: </strong>type key could be anything in the type database. <b>Eg.</b> <i>0x1</i> (Card)</p>
+	
+    <pre>
+{
+"amiibo": [
+	{
+		"key": "0x1",
+		"name": "Card"
+	}
+]
+}
+    </pre>
+
+    <h4>Type</h4>
+
+    <table>
+        <thead>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Data Type</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>key</td>
+                <td>The key of the character.</td>
+                <td>string</td>
+            </tr>
+            <tr>
+                <td>name</td>
+                <td>Character name of the amiibo</td>
+                <td>string</td>
+            </tr>
+        </tbody>
+    </table>
+	
+	<h2 id="gameSeries">Game Series</h2>
+
+    <p>Retrieve game series information. <strong>Warning:</strong> Not all data return a list, do read about it.</p>
+	
+	
+    <h3>GET /api/gameseries</h3>
+	
+	<p>Get all the amiibo's game series available in the database as a list.</p>
+	
+    <pre>
+{
+"amiibo": [
+	{
+		"key": "0x320",
+		"name": "Sonic"
+		},
+		{
+		"key": "0x1a4",
+		"name": "Pokemon"
+	},
+	...
+]
+}
+    </pre>
+
+    <h4>Game Series</h4>
+
+    <table>
+        <thead>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Data Type</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>key</td>
+                <td>The key of the character.</td>
+                <td>string</td>
+            </tr>
+            <tr>
+                <td>name</td>
+                <td>Character name of the amiibo</td>
+                <td>string</td>
+            </tr>
+        </tbody>
+    </table>
+	
+	<h3>GET /api/gameseries/{series key}</h3>
+		
+	<p>It just return the game series that the key belongs to, since 1 key only belongs to 1 game series</br>
+	<strong>Note: </strong>series key could be anything in the game series database. <b>Eg.</b> <i>0x320</i> (Sonic)</p>
+	
+    <pre>
+{
+	"amiibo": {
+		"0x320": "Sonic"
+	}
+}
+    </pre>
+	
+	<h3>GET /api/gameseries/{series}</h3>
+		
+	<p>It return a list of keys available for the game series.</br>
+	<strong>Note: </strong>series could be anything in the game series database. <b>Eg.</b> <i>Pokemon</i></p>
+	
+    <pre>
+{
+	"amiibo": [
+		"0x19f",
+		"0x191",
+		"0x198",
+		...
+	]
+}
+    </pre>
+	
+	<h2 id="series">Series</h2>
+
+    <p>Get all the amiibo's series available in the database as a list.</p>
+	
+	
+    <h3>GET /api/amiiboseries</h3>
+	
+    <pre>
+{
+"amiibo": [
+	{
+		"key": "0xd",
+		"name": "Pokken"
+	},
+	{
+		"key": "0x3",
+		"name": "Yoshi's Woolly World"
+	},
+	...
+]
+}
+    </pre>
+	
+	<h3>GET /api/amiiboseries/{series or series key}</h3>
+	
+	<p><strong>Note: </strong>type key could be anything in the type database. <b>Eg.</b> <i>0x7</i> (Skylander)</p>
+	
+    <pre>
+{
+"amiibo": [
+	{
+		"key": "0x7",
+		"name": "Skylanders"
+	}
+]
+}
+    </pre>
+
+    <h4>Series</h4>
+
+    <table>
+        <thead>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Data Type</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>key</td>
+                <td>The key of the character.</td>
+                <td>string</td>
+            </tr>
+            <tr>
+                <td>name</td>
+                <td>Character name of the amiibo</td>
+                <td>string</td>
+            </tr>
+        </tbody>
+    </table>
+	
+	<h2 id="character">Character</h2>
+
+    <p>Get all the character available in the database as a list.</p>
+	
+	
+    <h3>GET /api/character</h3>
+	
+    <pre>
+{
+"amiibo": [
+	{
+		"key": "0x2c7",
+		"name": "Del"
+	},
+	{
+		"key": "0x488",
+		"name": "Pancetti"
+	},
+	...
+]
+}
+    </pre>
+	
+	<h3>GET /api/character/{character or character key}</h3>
+	
+	<p><strong>Note: </strong>character key could be anything in the type database. <b>Eg.</b> <i>0x1996</i> (Mewtwo)</p>
+	
+    <pre>
+{
+"amiibo": [
+	{
+		"key": "0x1996",
+		"name": "Mewtwo"
+	}
+]
+}
+    </pre>
+
+    <h4>Character</h4>
+
+    <table>
+        <thead>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Data Type</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>key</td>
+                <td>The key of the character.</td>
+                <td>string</td>
+            </tr>
+            <tr>
+                <td>name</td>
+                <td>Character name of the amiibo</td>
+                <td>string</td>
+            </tr>
+        </tbody>
+    </table>
+	
 {% endblock %}

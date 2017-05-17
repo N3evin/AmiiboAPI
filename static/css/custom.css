@@ -177,7 +177,7 @@ pre {
 
 #home .header h1:before {
 
-    content: "V1";
+    /*content: "V1";*/
     position: absolute;
     font-size: 14px;
     top: 0;
@@ -191,7 +191,7 @@ pre {
     font-size: 14px;
     color: #3399CC;
     top: 0;
-    right: -63px;
+    right: -43px;	/*Default -63px*/
 }
 
 #home .header h2 {

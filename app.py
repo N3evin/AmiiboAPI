@@ -1,5 +1,5 @@
-from flask import Flask, send_from_directory, jsonify, abort, make_response, render_template
-import requests, os, json, AmiiboManager
+from flask import Flask, jsonify, abort, make_response, render_template
+import AmiiboManager
 
 app = Flask(__name__)
 amiiboManager = AmiiboManager.amiiboManager()
@@ -19,7 +19,7 @@ def not_found(error):
     return make_response(jsonify({'error': 'Not found'}), 404)
 
 # Get the list of game series
-@app.route('/api/v1/gameseries/', methods=['GET'])
+@app.route('/api/gameseries/', methods=['GET'])
 def gameSeriesList():
     gameSeries = amiiboManager.gameSeries
     result = list()
@@ -32,7 +32,7 @@ def gameSeriesList():
     return respond
 
 # Get all the key belong to this game series.
-@app.route('/api/v1/gameseries/<string:input>/', methods=['GET'])
+@app.route('/api/gameseries/<string:input>/', methods=['GET'])
 def gameSeries(input):
     series = amiiboManager.gameSeries
     result = list()
@@ -48,7 +48,7 @@ def gameSeries(input):
     return respond
 
 # Get the list of amiibo series
-@app.route('/api/v1/amiiboseries/', methods=['GET'])
+@app.route('/api/amiiboseries/', methods=['GET'])
 def amiiboSeriesList():
     seriesList = amiiboManager.amiiboSeriesList
     result = list()
@@ -61,7 +61,7 @@ def amiiboSeriesList():
     return respond
 
 # Get all the key belong to this amiibo series.
-@app.route('/api/v1/amiiboseries/<string:input>/', methods=['GET'])
+@app.route('/api/amiiboseries/<string:input>/', methods=['GET'])
 def amiiboSeries(input):
     series = amiiboManager.amiiboSeriesList
     result = list()
@@ -77,7 +77,7 @@ def amiiboSeries(input):
     return respond
 
 # Get all the types of amiibo available type list.
-@app.route('/api/v1/type/', methods=['GET'])
+@app.route('/api/type/', methods=['GET'])
 def amiiboTypeList():
     typeList = amiiboManager.typeList
     result = list()
@@ -90,7 +90,7 @@ def amiiboTypeList():
     return respond
 
 # Get a list of value for that type.
-@app.route('/api/v1/type/<string:input>/', methods=['GET'])
+@app.route('/api/type/<string:input>/', methods=['GET'])
 def amiiboType(input):
     typeList = amiiboManager.typeList
     result = list()
@@ -106,7 +106,7 @@ def amiiboType(input):
     return respond
 
 # Get all the character of amiibo.
-@app.route('/api/v1/character/', methods=['GET'])
+@app.route('/api/character/', methods=['GET'])
 def amiiboCharacterList():
     charList = amiiboManager.charList
     result = list()
@@ -119,7 +119,7 @@ def amiiboCharacterList():
     return respond
 
 # Get the character value.
-@app.route('/api/v1/character/<string:input>/', methods=['GET'])
+@app.route('/api/character/<string:input>/', methods=['GET'])
 def amiiboCharacter(input):
     charList = amiiboManager.charList
     result = list()
@@ -135,7 +135,7 @@ def amiiboCharacter(input):
     return respond
 
 # Get the amiibo
-@app.route('/api/v1/amiibo/', methods=['GET'])
+@app.route('/api/amiibo/', methods=['GET'])
 def amiibo():
     amiiboList = amiiboManager.amiiboList
     result = list()
@@ -148,7 +148,7 @@ def amiibo():
     return respond
 
 # Get the amiibo from value
-@app.route('/api/v1/amiibo/<string:input>/', methods=['GET'])
+@app.route('/api/amiibo/<string:input>/', methods=['GET'])
 def amiiboValueData(input):
     amiiboList = amiiboManager.amiiboList
     result = list()
@@ -171,7 +171,7 @@ def amiiboValueData(input):
     return respond
 
 # Get the amiibo base on type
-@app.route('/api/v1/amiibo/type/<string:input>/', methods=['GET'])
+@app.route('/api/amiibo/type/<string:input>/', methods=['GET'])
 def amiiboTypeData(input):
     amiiboList = amiiboManager.amiiboList
     typeList = amiiboManager.typeList
@@ -195,7 +195,7 @@ def amiiboTypeData(input):
     return respond
 
 # Get the amiibo base on gameseries
-@app.route('/api/v1/amiibo/gameseries/<string:input>/', methods=['GET'])
+@app.route('/api/amiibo/gameseries/<string:input>/', methods=['GET'])
 def amiiboGameSeriesData(input):
     amiiboList = amiiboManager.amiiboList
     result = list()
@@ -215,7 +215,7 @@ def amiiboGameSeriesData(input):
     return respond
 
 # Get the amiibo base on series
-@app.route('/api/v1/amiibo/amiiboseries/<string:input>/', methods=['GET'])
+@app.route('/api/amiibo/amiiboseries/<string:input>/', methods=['GET'])
 def amiiboSeriesData(input):
     amiiboList = amiiboManager.amiiboList
     result = list()
@@ -234,7 +234,7 @@ def amiiboSeriesData(input):
     return respond
 
 # Get the amiibo base on character
-@app.route('/api/v1/amiibo/character/<string:input>/', methods=['GET'])
+@app.route('/api/amiibo/character/<string:input>/', methods=['GET'])
 def amiiboCharacterData(input):
     amiiboList = amiiboManager.amiiboList
     result = list()

@@ -13,7 +13,7 @@
         <div class="collapse navbar-collapse navbar-right">
           <ul class="nav navbar-nav">
             <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">Documentation (Coming Soon)</a></li>
+            <li><a href="/docs/">Documentation</a></li>
           </ul>
         </div>
       </div>
@@ -46,7 +46,7 @@
                         Give it a whirl!
                     </h1>
                     <div class="input-group pad_top">
-                        <span class="input-group-addon url">http://amiiboapi.herokuapp.com/api/v1/</span>
+                        <span class="input-group-addon url">http://amiiboapi.herokuapp.com/api/</span>
                         <input id="interactive" type="text" class="form-control" placeholder="amiibo/mario">
                         <span class="input-group-btn"><button onClick="interactive_call();return false;" class="btn btn-primary">submit</button></span>
                     </div>
@@ -118,7 +118,7 @@
                         </p>
                         <div class="well">
                             <p>
-                                We have awesome <a href="/docsv2/">documentation</a> on
+                                We have awesome <a href="/docs/">documentation</a> on
                                 how to use this API. It takes minutes to get started.
                             </p>
                             <p>
@@ -158,7 +158,7 @@
 
         var content = jQuery('#interactive').val() || 'amiibo/mario/';;
 
-        var call_url = '/api/v1/' + content;
+        var call_url = '/api/' + content;
 
         jQuery.ajax({
 
