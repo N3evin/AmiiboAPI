@@ -1,181 +1,186 @@
 {% extends "base.html" %}
-{% block content %}
-<body>
-   <h1>Welcome to Amiibo RESTful API by <a href="https://github.com/N3evin/amiiboapi">N3evin</a> & <a href="https://github.com/cheatfreak47">cheatfreak47</a></h1>
-   <div>
-      <fieldset>
-         <legend>List of amiibo</legend>
-         <p>
-         <h2>/api/v1/amiibo</h2>
-         </p>
-         <ul>
-            <li><b>return:</b> JSON format of all the amiibo in the database.</li>
-         </ul>
-      </fieldset>
-   </div>
-   <div>
-      <fieldset>
-         <legend>Get specific amiibo detail</legend>
-         <p>
-         <h2>/api/v1/amiibo/{value}</h2>
-         </p>
-         <ul>
-            <li><b>value:</b> can be the name of the amiibo, head value or tail value. Head or Tail value must be 8 digit.</li>
-            <li><b>return:</b> JSON format of a list of amiibo belong to the value.</li>
-         </ul>
-      </fieldset>
-   </div>
-   <div>
-      <fieldset>
-         <legend>Get the list of amiibo base on the type.</legend>
-         <p>
-         <h2>/api/v1/amiibo/type/{type}</h2>
-         </p>
-         <ul>
-            <li><b>type:</b> The type, figure, card or yarn. Can be their hexdecimal value. Hex example: <i>0x2</i></li>
-            <li><b>return:</b> JSON format of all the amiibo belong to the type.</li>
-         </ul>
-      </fieldset>
-   </div>
-   <div>
-      <fieldset>
-         <legend>Get the list of amiibo base on game series.</legend>
-         <p>
-         <h2>/api/v1/amiibo/gameseries/{value}</h2>
-         </p>
-         <ul>
-            <li><b>value:</b> The game series. Example: <i>The Legend Of Zelda</i></li>
-            <li><b>return:</b> JSON format of all the amiibo belong to the game series.</li>
-         </ul>
-      </fieldset>
-   </div>
-   <div>
-      <fieldset>
-         <legend>Get the list of amiibo base on amiibo series.</legend>
-         <p>
-         <h2>/api/v1/amiibo/amiiboseries/{value}</h2>
-         </p>
-         <ul>
-            <li><b>value:</b> The amiibo series. Example: <i>Legend Of Zelda</i></li>
-            <li><b>return:</b> JSON format of all the amiibo belong to the amiibo series.</li>
-         </ul>
-      </fieldset>
-   </div>
-   <div>
-      <fieldset>
-         <legend>Get the list of amiibo base on character.</legend>
-         <p>
-         <h2>/api/v1/amiibo/character/{character}</h2>
-         </p>
-         <ul>
-            <li><b>character:</b> The amiibo character. Example: <i>Zelda</i></li>
-            <li><b>return:</b> JSON format of all the amiibo belong to the amiibo series.</li>
-         </ul>
-      </fieldset>
-   </div>
-   <div>
-      <fieldset>
-         <legend>Get all the characters in the database</legend>
-         <p>
-         <h2>/api/v1/character</h2>
-         </p>
-         <ul>
-            <li><b>return:</b> JSON format of a list of characters available in the database.</li>
-         </ul>
-      </fieldset>
-   </div>
-   <div>
-      <fieldset>
-         <legend>Get the details of certain character</legend>
-         <p>
-         <h2>/api/v1/character/{value}</h2>
-         </p>
-         <ul>
-            <li><b>value:</b> Can be both name or key value.</li>
-            <li><b>return:</b> json format of all the character belongs to the value.</li>
-         </ul>
-      </fieldset>
-   </div>
-   <div>
-      <fieldset>
-         <legend>Get all the types of amiibo in the database</legend>
-         <p>
-         <h2>/api/v1/type</h2>
-         </p>
-         <ul>
-            <li><b>return:</b> json list of all the types in the database.</li>
-         </ul>
-      </fieldset>
-   </div>
-   <div>
-      <fieldset>
-         <legend>Get a type information</legend>
-         <p>
-         <h2>/api/v1/type/{value}</h2>
-         </p>
-         <ul>
-			<li><b>value:</b> Can be both name or key value that you wanted.</li>
-            <li><b>return:</b> json list of the types in the database.</li>
-         </ul>
-      </fieldset>
-   </div>
-   <div>
-      <fieldset>
-         <legend>Get all the amiibo series in database.</legend>
-         <p>
-         <h2>/api/v1/amiiboseries</h2>
-         </p>
-         <ul>
-            <li><b>return:</b> json list of all the amiibo series in the database.</li>
-         </ul>
-      </fieldset>
-   </div>
-   <div>
-      <fieldset>
-         <legend>Get an amiibo series in database.</legend>
-         <p>
-         <h2>/api/v1/amiiboseries/{value}</h2>
-         </p>
-         <ul>
-			<li><b>value:</b> Can be both name or key value that you wanted.</li>
-            <li><b>return:</b> json list of the amiibo series in the database.</li>
-         </ul>
-      </fieldset>
-   </div>
-   <div>
-      <fieldset>
-         <legend>Get all the game series name and code in database.</legend>
-         <p>
-         <h2>/api/v1/gameseries</h2>
-         </p>
-         <ul>
-            <li><b>return:</b> json list of the game series in the database.</li>
-         </ul>
-      </fieldset>
-   </div>
-   <div>
-      <fieldset>
-         <legend>Get the information for game series. [Type Name]</legend>
-         <p>
-         <h2>/api/v1/gameseries/{name}</h2>
-         </p>
-         <ul>
-			<li><b>name:</b> The name of the series.</li>
-            <li><b>return:</b> json list of the key belong to that series.</li>
-         </ul>
-      </fieldset>
-   </div>
-   <div>
-      <fieldset>
-         <legend>Get the information for game series. [Type Key]</legend>
-         <p>
-         <h2>/api/v1/gameseries/{key}</h2>
-         </p>
-         <ul>
-			<li><b>key:</b> The key of the series.</li>
-            <li><b>return:</b> JSON of the name belong to that key.</li>
-         </ul>
-      </fieldset>
-   </div>
-</body>
+{% block mainbody %}
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse navbar-right">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Documentation (Coming Soon)</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+<section id="home">
+
+    <div class="header">
+        <h1>AmiiboAPI</h1>
+        <h2>A RESTful API for Amiibo</h2>
+        <h4>For education purposes only!</h4>
+    </div>
+
+
+    <div class="cta">
+        <p>An Amiibo database that holds all amiibo informations in a single API.</p>
+		<p>Database Excel: <a href="https://docs.google.com/spreadsheets/d/19E7pMhKN6x583uB6bWVBeaTMyBPtEAC-Bk59Y6cfgxA">Google Excel</a></p>
+    </div>
+
+
+    <div class="container">
+
+
+        <div class="row">
+
+            <div class="col-md-10 center-block">
+
+                <div class="center">
+                    <h1>
+                        Give it a whirl!
+                    </h1>
+                    <div class="input-group pad_top">
+                        <span class="input-group-addon url">http://amiiboapi.herokuapp.com/api/v1/</span>
+                        <input id="interactive" type="text" class="form-control" placeholder="amiibo/mario">
+                        <span class="input-group-btn"><button onClick="interactive_call();return false;" class="btn btn-primary">submit</button></span>
+                    </div>
+                </div>
+
+                <small>Need a hint? try <a href="#" onClick="update('amiibo/mario');return false;"><i>amiibo/mario</i></a> or <a href="#" onClick="update('gameseries');return false;"><i>gameseries</i></a> or <a href="#" onClick="update('amiibo/character/zelda');return false;"><i>amiibo/character/zelda</i></a></small>
+                <p class="lead pad_top">Resource for <span id="interactive_name">Bulbasaur</span></p>
+
+                <pre id="interactive_output" class="pre-scrollable">
+{
+	"amiibo": [
+		{
+			"amiiboSeries": "Super Mario Bros.",
+			"character": "Mario",
+			"gameSeries": "Super Mario",
+			"head": "00000000",
+			"image": "https://raw.githubusercontent.com/Falco20019/libamiibo/master/libamiibo.images/Images/icon_0000000000340102.png",
+			"name": "Mario",
+			"tail": "00340102",
+			"type": "Figure"
+		},
+		{
+			"amiiboSeries": "Super Smash Bros.",
+			"character": "Mario",
+			"gameSeries": "Super Mario",
+			"head": "00000000",
+			"image": "https://raw.githubusercontent.com/Falco20019/libamiibo/master/libamiibo.images/Images/icon_0000000000000002.png",
+			"name": "Mario",
+			"tail": "00000002",
+			"type": "Figure"
+		}
+	]
+}
+                </pre>
+
+            </div>
+
+        </div><!--interactive row-->
+
+        <div class="row">
+            <div class="col-md-10 center-block center pad_top pad_bot">
+                <a href="https://www.heroku.com/" target="none"><img class="do_image" src="https://cdn.worldvectorlogo.com/logos/heroku-1.svg"></a>
+        </div>
+
+
+        <div class="row">
+
+            <div class="col-md-10 center-block">
+
+                <div class="row">
+
+                    <div class="col-md-4">
+                        <p class="lead center">
+                            What is this?
+                        </p>
+                        <div class="well">
+                            <p>
+                                This is RESTful API that contains the Amiibo Database that was createed on the excel spreadsheet.
+                            </p>
+                            <p>
+                                It will be regulary updated as new amiibo is release.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <p class="lead center">
+                            Where do I start?
+                        </p>
+                        <div class="well">
+                            <p>
+                                We have awesome <a href="/docsv2/">documentation</a> on
+                                how to use this API. It takes minutes to get started.
+                            </p>
+                            <p>
+                                This API will always be publicly available and will
+                                never require any extensive setup process to consume.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <p class="lead center">
+                            Keep PokéAPI Running
+                        </p>
+                        <div class="well">
+                            <p>PokéAPI costs around $50 a month to run. We want to keep this free and scalable for as long as possible!
+                            </p>
+                            <p><b>If you use PokéAPI for teaching or for building apps, consider donating today!</b></p>
+                            <form action="/stripe/donation" method="POST">
+                              <!--Payment box--></p></div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- end bottom -->
+    </div><!-- /.container -->
+
+</section>
+
+<script>
+
+    function update (call) {
+
+        jQuery('#interactive').val(call);
+        interactive_call();
+    }
+
+    function interactive_call() {
+
+        var content = jQuery('#interactive').val() || 'pokemon/1/';;
+
+        var call_url = '/api/v1/' + content;
+
+        jQuery.ajax({
+
+            dataType: 'json',
+            url: call_url,
+            context: document.body
+
+        }).complete( function(data) {
+
+            if(data['status'] == 200){
+
+                var d = jQuery.parseJSON(data['responseText']);
+                jQuery('#interactive_name').html(d['name']);
+                jQuery('#interactive_output').text(JSON.stringify(d, null, '\t'));
+
+            } else if (data['status'] == 404) {
+
+                jQuery('#interactive_output').text(data['status'] + ' ' + data['statusText']);
+            }
+        });
+    }
+
+</script>
+
 {% endblock %}
