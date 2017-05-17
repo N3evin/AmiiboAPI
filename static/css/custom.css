@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'Lato';
-  src: url('/static/pokemon/fonts/lato-regular/lato-regular.eot');
-  src: url('/static/pokemon/fonts/lato-regular/lato-regular.eot?#iefix') format('embedded-opentype'),
-       url('/static/pokemon/fonts/lato-regular/lato-regular.woff2') format('woff2'),
-       url('/static/pokemon/fonts/lato-regular/lato-regular.woff') format('woff'),
-       url('/static/pokemon/fonts/lato-regular/lato-regular.ttf')  format('truetype'),
-       url('/static/pokemon/fonts/lato-regular/lato-regular.svg#svgFontName') format('svg');
+  src: url('/static/fonts/lato-regular/lato-regular.eot');
+  src: url('/static/fonts/lato-regular/lato-regular.eot?#iefix') format('embedded-opentype'),
+       url('/static/fonts/lato-regular/lato-regular.woff2') format('woff2'),
+       url('/static/fonts/lato-regular/lato-regular.woff') format('woff'),
+       url('/static/fonts/lato-regular/lato-regular.ttf')  format('truetype'),
+       url('/static/fonts/lato-regular/lato-regular.svg#svgFontName') format('svg');
 }
 
 html { padding-top: 50px; }
@@ -368,7 +368,7 @@ pre {
 
 #docs .side-nav .version-select li {
 
-    width: 50%;
+    width: 100%;
     display: inline-block;
     float: left;
     background-color: #3399CC;

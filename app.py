@@ -162,6 +162,10 @@ def amiiboValueData(input):
             result.append(buildAmiibo(data))
         elif((data.getHead().lower() + data.getTail().lower()) == input.lower()):     # head + tail
             result.append(buildAmiibo(data))
+
+    if len(result) == 0:
+        abort(404)
+
     respond = jsonify({'amiibo': result})
     respond.headers.add('Access-Control-Allow-Origin', '*')
     return respond
@@ -178,7 +182,9 @@ def amiiboTypeData(input):
         value = typeList.get(input.lower())
 
     for data in amiiboList:
-        if(amiiboManager.getAmiiboType(data).lower() == input.lower()):
+        if(amiiboManager.getAmiiboType(data)[0].lower() == input.lower()):
+            result.append(buildAmiibo(data))
+        elif (amiiboManager.getAmiiboType(data)[1].lower() == input.lower()):
             result.append(buildAmiibo(data))
 
     if len(result) == 0:
@@ -195,7 +201,10 @@ def amiiboGameSeriesData(input):
     result = list()
 
     for data in amiiboList:
-        if(amiiboManager.getAmiiboGameSeries(data).lower() == input.lower()):
+        print(amiiboManager.getAmiiboGameSeries(data)[1])
+        if(amiiboManager.getAmiiboGameSeries(data)[0].lower() == input.lower()):
+            result.append(buildAmiibo(data))
+        elif (amiiboManager.getAmiiboGameSeries(data)[1].lower() == input.lower()):
             result.append(buildAmiibo(data))
 
     if len(result) == 0:
@@ -212,7 +221,9 @@ def amiiboSeriesData(input):
     result = list()
 
     for data in amiiboList:
-        if(amiiboManager.getAmiiboSeries(data).lower() == input.lower()):
+        if(amiiboManager.getAmiiboSeries(data)[0].lower() == input.lower()):
+            result.append(buildAmiibo(data))
+        elif (amiiboManager.getAmiiboSeries(data)[1].lower() == input.lower()):
             result.append(buildAmiibo(data))
 
     if len(result) == 0:
@@ -229,7 +240,9 @@ def amiiboCharacterData(input):
     result = list()
 
     for data in amiiboList:
-        if(amiiboManager.getAmiiboCharacter(data).lower() == input.lower()):
+        if(amiiboManager.getAmiiboCharacter(data)[0].lower() == input.lower()):
+            result.append(buildAmiibo(data))
+        elif (amiiboManager.getAmiiboCharacter(data)[1].lower() == input.lower()):
             result.append(buildAmiibo(data))
 
     if len(result) == 0:
@@ -245,10 +258,10 @@ def buildAmiibo(amiibo):
     result.update({"name": amiibo.getName()})
     result.update({"head": amiibo.getHead().lower()})
     result.update({"tail": amiibo.getTail().lower()})
-    result.update({"type": amiiboManager.getAmiiboType(amiibo)})
-    result.update({"gameSeries": amiiboManager.getAmiiboGameSeries(amiibo)})
-    result.update({"amiiboSeries": amiiboManager.getAmiiboSeries(amiibo)})
-    result.update({"character": amiiboManager.getAmiiboCharacter(amiibo)})
+    result.update({"type": amiiboManager.getAmiiboType(amiibo)[0]})
+    result.update({"gameSeries": amiiboManager.getAmiiboGameSeries(amiibo)[0]})
+    result.update({"amiiboSeries": amiiboManager.getAmiiboSeries(amiibo)[0]})
+    result.update({"character": amiiboManager.getAmiiboCharacter(amiibo)[0]})
     result.update({"image": "https://raw.githubusercontent.com/Falco20019/libamiibo/master/libamiibo.images/Images/icon_" + amiibo.getHead().lower() + amiibo.getTail().lower() + ".png"})
     return result;
 
