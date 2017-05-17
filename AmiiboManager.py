@@ -1,70 +1,39 @@
-import glob, Amiibo
+import Amiibo, sqlite3
 class amiiboManager():
 
     def __init__(self):
+        # Initialize sqlite
+        self.conn = sqlite3.connect('database/database.db')
+        self.c = self.conn.cursor()
+
         self.amiiboList = self.generateAmiiboData()
-        self.charList = self.generateDictData("database/character.txt")
-        self.amiiboSeriesList = self.generateDictData("database/info/amiibo_series.txt")
-        self.typeList = self.generateDictData("database/info/type.txt")
-        self.gameSeries = self.generateGameSeries()
+        self.charList = self.generateDictData("character")
+        self.amiiboSeriesList = self.generateDictData("amiiboSeries")
+        self.typeList = self.generateDictData("type")
+        self.gameSeries = self.generateDictData("gameSeries")
 
-    # generate amiiboData from database folder.
+        # Close all sqlite connection.
+        self.conn.close()
+
+    # generate amiiboData from database.
     def generateAmiiboData(self):
-
-        files = list();
-
-        # Read all the files in the database.
-        for file in glob.glob("database/name/*.txt"):
-            files.append(file)
-
         amiibo = list();
 
-        # Go through each files in the directory.
-        for name in files:
-            # Open each file and read the lines.
-            with open(name, "r", encoding="utf8") as file:
-                data =  file.read().splitlines()
-
-            # For each value in data we make it into an amiibo object.
-            for value in data:
-                if(len(value) > 0 and value[0] != "#"):
-                    value = value.split(', ')
-                    newAmiibo = Amiibo.amiibo(value[0], value[1].rstrip(' '), value[2].rstrip(' '))
-                    amiibo.append(newAmiibo)
+        # For each value in data we make it into an amiibo object.
+        for row in self.c.execute('SELECT * FROM amiibo ORDER BY name'):
+                newAmiibo = Amiibo.amiibo(row[0], row[1], row[2])
+                amiibo.append(newAmiibo)
         return amiibo
 
-    # generatea dict of item from database folder.
-    def generateDictData(self, fileName):
-        result = dict();
-        with open(fileName, "r", encoding="utf8") as f:
-            data = f.read().splitlines();
+    # generate dict of item from database base on table name. Usually use for table with key and name only.
+    def generateDictData(self, tableName):
+        result = dict()
 
-        for item in data:
-            if (len(item) > 0 and item[0] != "#"):
-                item = item.split(',')
-                result.update({hex(int(item[1].rstrip(' '),16)):item[0]})
+        for row in self.c.execute('SELECT * FROM '+ tableName +' ORDER BY name'):
+            result.update({hex(int(row[0],16)):row[1]})
 
         return result
 
-    # generate a dict of game series.
-    def generateGameSeries(self):
-        result = dict();
-        with open("database/info/game_series.txt", "r", encoding="utf8") as f:
-            data = f.read().splitlines();
-
-        for item in data:
-            if (len(item) > 0 and item[0] != "#"):
-                item = item.split(',')
-                if (len(item) == 3):
-                    value1 = int(item[1].rstrip(' '), 16)
-                    value2 = int(item[2].rstrip(' '), 16)
-                    while (value1 <= value2):
-                        result.update({hex(value1): item[0]})
-                        value1 += 1
-                else:
-                    result.update({hex(int(item[1],16)): item[0]})
-
-        return result
 
     # Get the game series of the amiibo.
     def getAmiiboGameSeries(self, amiibo):

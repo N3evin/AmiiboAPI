@@ -1,5 +1,0 @@
-# name, value
-
-Figure, 00
-Card, 01
-Yarn, 02
