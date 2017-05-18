@@ -13,6 +13,10 @@ def index():
 def documentation():
     return render_template('docs.html')
 
+@app.route('/faq/')
+def faqPage():
+    return render_template('faq.html')
+
 # Handle 404 as json or else Flash will use html as default.
 @app.errorhandler(404)
 def not_found(error):
