@@ -32,7 +32,6 @@ def gameSeriesList():
         result.append({"key": key, "name": value})
 
     respond = jsonify({'amiibo':result})
-    respond.headers.add('Access-Control-Allow-Origin', '*')
     return respond
 
 # Get all the key belong to this game series.
@@ -45,10 +44,11 @@ def gameSeries(input):
             result.append(key)
         elif (key.lower() == input.lower()):
             result= {key:data}
+
     if len(result) == 0:
         abort(404)
+
     respond = jsonify({'amiibo':result})
-    respond.headers.add('Access-Control-Allow-Origin', '*')
     return respond
 
 # Get the list of amiibo series
@@ -61,7 +61,6 @@ def amiiboSeriesList():
         result.append({"key": key, "name": value})
 
     respond = jsonify({'amiibo':result})
-    respond.headers.add('Access-Control-Allow-Origin', '*')
     return respond
 
 # Get all the key belong to this amiibo series.
@@ -74,10 +73,11 @@ def amiiboSeries(input):
             result.append({"key": key, "name": data})
         elif (data.lower() == input.lower()):
             result.append({"key": key, "name": data})
+
     if len(result) == 0:
         abort(404)
+
     respond = jsonify({'amiibo': result})
-    respond.headers.add('Access-Control-Allow-Origin', '*')
     return respond
 
 # Get all the types of amiibo available type list.
@@ -90,7 +90,6 @@ def amiiboTypeList():
         result.append({"key": key, "name": value})
 
     respond = jsonify({'amiibo': result})
-    respond.headers.add('Access-Control-Allow-Origin', '*')
     return respond
 
 # Get a list of value for that type.
@@ -103,10 +102,11 @@ def amiiboType(input):
             result.append({"key": key, "name": data})
         elif (data.lower() == input.lower()):
             result.append({"key": key, "name": data})
+
     if len(result) == 0:
         abort(404)
+
     respond = jsonify({'amiibo': result})
-    respond.headers.add('Access-Control-Allow-Origin', '*')
     return respond
 
 # Get all the character of amiibo.
@@ -119,7 +119,6 @@ def amiiboCharacterList():
         result.append({"key": key, "name": value})
 
     respond = jsonify({'amiibo': result})
-    respond.headers.add('Access-Control-Allow-Origin', '*')
     return respond
 
 # Get the character value.
@@ -132,10 +131,11 @@ def amiiboCharacter(input):
             result.append({"key":key, "name": data})
         elif (data.lower() == input.lower()):
             result.append({"key": key, "name": data})
+
     if len(result) == 0:
         abort(404)
+
     respond = jsonify({'amiibo': result})
-    respond.headers.add('Access-Control-Allow-Origin', '*')
     return respond
 
 # Get the amiibo
@@ -148,7 +148,6 @@ def amiibo():
         result.append(buildAmiibo(data))
 
     respond = jsonify({'amiibo': result})
-    respond.headers.add('Access-Control-Allow-Origin', '*')
     return respond
 
 # Get the amiibo from value
@@ -171,7 +170,6 @@ def amiiboValueData(input):
         abort(404)
 
     respond = jsonify({'amiibo': result})
-    respond.headers.add('Access-Control-Allow-Origin', '*')
     return respond
 
 # Get the amiibo base on type
@@ -195,7 +193,6 @@ def amiiboTypeData(input):
         abort(404)
 
     respond = jsonify({'amiibo': result})
-    respond.headers.add('Access-Control-Allow-Origin', '*')
     return respond
 
 # Get the amiibo base on gameseries
@@ -215,7 +212,6 @@ def amiiboGameSeriesData(input):
         abort(404)
 
     respond = jsonify({'amiibo': result})
-    respond.headers.add('Access-Control-Allow-Origin', '*')
     return respond
 
 # Get the amiibo base on series
@@ -234,7 +230,6 @@ def amiiboSeriesData(input):
         abort(404)
 
     respond = jsonify({'amiibo': result})
-    respond.headers.add('Access-Control-Allow-Origin', '*')
     return respond
 
 # Get the amiibo base on character
@@ -253,7 +248,6 @@ def amiiboCharacterData(input):
         abort(404)
 
     respond = jsonify({'amiibo': result})
-    respond.headers.add('Access-Control-Allow-Origin', '*')
     return respond
 
 # Build the amiibo list.
