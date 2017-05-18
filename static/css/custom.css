@@ -447,7 +447,8 @@ pre {
 }
 
 #faq .card{
-	width: 70%;
+	width: 80%;
+	max-width: 700px;
 	padding-bottom: 15px;
 	margin: auto;
 }
