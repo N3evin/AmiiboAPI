@@ -260,7 +260,7 @@ def buildAmiibo(amiibo):
     result.update({"gameSeries": amiiboManager.getAmiiboGameSeries(amiibo)[0]})
     result.update({"amiiboSeries": amiiboManager.getAmiiboSeries(amiibo)[0]})
     result.update({"character": amiiboManager.getAmiiboCharacter(amiibo)[0]})
-    result.update({"image": "https://raw.githubusercontent.com/Falco20019/libamiibo/master/libamiibo.images/Images/icon_" + amiibo.getHead().lower() + amiibo.getTail().lower() + ".png"})
+    result.update({"image": "http://amiibo.life/nfc/"+amiibo.getHead()+"-"+amiibo.getTail()+"/image"})
     return result;
 
 if __name__ == "__main__":
