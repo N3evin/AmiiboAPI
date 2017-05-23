@@ -1,5 +1,6 @@
 from flask import Flask, jsonify, abort, make_response, render_template
-import AmiiboManager
+
+from Amiibo import AmiiboManager
 
 app = Flask(__name__)
 amiiboManager = AmiiboManager.amiiboManager()

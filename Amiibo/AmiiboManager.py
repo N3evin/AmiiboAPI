@@ -1,4 +1,6 @@
-import Amiibo, sqlite3
+from Amiibo import Amiibo
+import sqlite3
+
 class amiiboManager():
 
     def __init__(self):

@@ -92,4 +92,4 @@ ENV/
 .idea
 
 # Database builder
-database_builder/
+tools/
