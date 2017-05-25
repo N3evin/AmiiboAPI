@@ -32,12 +32,12 @@ def faqPage():
 # Handle 404 as json or else Flash will use html as default.
 @app.errorhandler(404)
 @limiter.exempt
-def not_found(error):
-    return make_response(jsonify({'error': 'Not found'}), 404)
+def not_found(e):
+    return make_response(jsonify(error=e.description, code=404), 404)
 
 @app.errorhandler(429)
 def ratelimit_handler(e):
-    return make_response(jsonify(error="ratelimit exceeded %s" % e.description))
+    return make_response(jsonify(error="ratelimit exceeded %s" % e.description, code=429))
 
 # Get the list of game series
 @app.route('/api/gameseries/', methods=['GET'])
@@ -187,6 +187,8 @@ def amiiboValueData(input):
         abort(404)
 
     respond = jsonify({'amiibo': result})
+
+    print(get_remote_address());
     return respond
 
 # Get the amiibo base on type
