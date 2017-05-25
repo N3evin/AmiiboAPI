@@ -277,6 +277,10 @@ def buildAmiibo(amiibo):
     return result;
 
 @limiter.request_filter
+def header_whitelist():
+    return request.headers.get("X-Internal", "") == "true"
+
+@limiter.request_filter
 def ip_whitelist():
     return request.remote_addr == "127.0.0.1"
 
