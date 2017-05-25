@@ -1,25 +1,37 @@
-from flask import Flask, jsonify, abort, make_response, render_template
+from flask import Flask, jsonify, abort, make_response, render_template, request
+from flask_limiter import Limiter
+from flask_limiter.util import get_remote_address
 
 from Amiibo import AmiiboManager
 
 app = Flask(__name__)
 amiiboManager = AmiiboManager.amiiboManager()
 
+limiter = Limiter(
+    app,
+    key_func=get_remote_address,
+    default_limits=["1 per day"]
+)
+
 # Index
 @app.route('/')
+@limiter.exempt
 def index():
     return render_template('home.html')
 
 @app.route('/docs/')
+@limiter.exempt
 def documentation():
     return render_template('docs.html')
 
 @app.route('/faq/')
+@limiter.exempt
 def faqPage():
     return render_template('faq.html')
 
 # Handle 404 as json or else Flash will use html as default.
 @app.errorhandler(404)
+@limiter.exempt
 def not_found(error):
     return make_response(jsonify({'error': 'Not found'}), 404)
 
@@ -263,6 +275,10 @@ def buildAmiibo(amiibo):
     result.update({"character": amiiboManager.getAmiiboCharacter(amiibo)[0]})
     result.update({"image": "http://amiibo.life/nfc/"+amiibo.getHead()+"-"+amiibo.getTail()+"/image"})
     return result;
+
+@limiter.request_filter
+def ip_whitelist():
+    return request.remote_addr == "127.0.0.1"
 
 if __name__ == "__main__":
     app.run(debug=True)
