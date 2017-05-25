@@ -1,16 +1,17 @@
 from flask import Flask, jsonify, abort, make_response, render_template, request
 from flask_limiter import Limiter
-from flask_limiter.util import get_remote_address
+from flask_limiter.util import get_remote_address, get_ipaddr
 
 from Amiibo import AmiiboManager
 
 app = Flask(__name__)
 amiiboManager = AmiiboManager.amiiboManager()
 
+# Set default limit for limter.
 limiter = Limiter(
     app,
     key_func=get_remote_address,
-    default_limits=["1 per day"]
+    default_limits=["300 per day"]
 )
 
 # Index
@@ -187,8 +188,6 @@ def amiiboValueData(input):
         abort(404)
 
     respond = jsonify({'amiibo': result})
-
-    print(get_remote_address());
     return respond
 
 # Get the amiibo base on type
@@ -221,7 +220,6 @@ def amiiboGameSeriesData(input):
     result = list()
 
     for data in amiiboList:
-        print(amiiboManager.getAmiiboGameSeries(data)[1])
         if(amiiboManager.getAmiiboGameSeries(data)[0].lower() == input.lower()):
             result.append(buildAmiibo(data))
         elif (amiiboManager.getAmiiboGameSeries(data)[1].lower() == input.lower()):
