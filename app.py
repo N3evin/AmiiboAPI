@@ -35,6 +35,10 @@ def faqPage():
 def not_found(error):
     return make_response(jsonify({'error': 'Not found'}), 404)
 
+@app.errorhandler(429)
+def ratelimit_handler(e):
+    return make_response(jsonify(error="ratelimit exceeded %s" % e.description))
+
 # Get the list of game series
 @app.route('/api/gameseries/', methods=['GET'])
 def gameSeriesList():
@@ -276,10 +280,7 @@ def buildAmiibo(amiibo):
     result.update({"image": "http://amiibo.life/nfc/"+amiibo.getHead()+"-"+amiibo.getTail()+"/image"})
     return result;
 
-@limiter.request_filter
-def header_whitelist():
-    return request.headers.get("X-Internal", "") == "true"
-
+# remove limit for local ip.
 @limiter.request_filter
 def ip_whitelist():
     return request.remote_addr == "127.0.0.1"
