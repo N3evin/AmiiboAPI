@@ -277,7 +277,7 @@ def buildAmiibo(amiibo):
     result.update({"gameSeries": amiiboManager.getAmiiboGameSeries(amiibo)[0]})
     result.update({"amiiboSeries": amiiboManager.getAmiiboSeries(amiibo)[0]})
     result.update({"character": amiiboManager.getAmiiboCharacter(amiibo)[0]})
-    result.update({"image": "http://amiibo.life/nfc/"+amiibo.getHead()+"-"+amiibo.getTail()+"/image"})
+    result.update({"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/image/icon_"+amiibo.getHead()+"-"+amiibo.getTail()+".png"})
     return result;
 
 # remove limit for local ip.

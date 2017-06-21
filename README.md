@@ -14,13 +14,13 @@ A RESTful API that was created for retriving amiibo information.
 - could be used with any platform
 
 ### Usage
-Full amiibo: [https://amiiboapi.herokuapp.com/api/v1/amiibo](https://amiiboapi.herokuapp.com/api/v1/amiibo) 
+Full amiibo: [http://www.amiiboapi.com/api/v1/amiibo](http://www.amiiboapi.com/api/v1/amiibo) 
 
-Specific Amiibo (Mario): [https://amiiboapi.herokuapp.com/api/v1/amiibo/Mario](https://amiiboapi.herokuapp.com/api/v1/amiibo/Mario)
+Specific Amiibo (Mario): [http://www.amiiboapi.com/api/v1/amiibo/Mario](http://www.amiiboapi.com/api/v1/amiibo/Mario)
 
 When searching for amiibo, you can use the key or amiibo name. Key must be in hexdecimal example `0x1D0`
 
-More APIs can be found here: [https://amiiboapi.herokuapp.com](https://amiiboapi.herokuapp.com) 
+More APIs can be found here: [http://www.amiiboapi.com](http://www.amiiboapi.com) 
 
 ### Requirements (if you want to host)
 - Python 2.X or 3.X
