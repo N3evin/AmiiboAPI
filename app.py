@@ -269,15 +269,18 @@ def amiiboCharacterData(input):
 
 # Build the amiibo list.
 def buildAmiibo(amiibo):
+    headValue = amiibo.getHead()
+    tailValue = amiibo.getTail()
+
     result = {}
     result.update({"name": amiibo.getName()})
-    result.update({"head": amiibo.getHead().lower()})
-    result.update({"tail": amiibo.getTail().lower()})
+    result.update({"head": headValue.lower()})
+    result.update({"tail": tailValue.lower()})
     result.update({"type": amiiboManager.getAmiiboType(amiibo)[0]})
     result.update({"gameSeries": amiiboManager.getAmiiboGameSeries(amiibo)[0]})
     result.update({"amiiboSeries": amiiboManager.getAmiiboSeries(amiibo)[0]})
     result.update({"character": amiiboManager.getAmiiboCharacter(amiibo)[0]})
-    result.update({"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/image/icon_"+amiibo.getHead()+"-"+amiibo.getTail()+".png"})
+    result.update({"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/image/icon_" + headValue.lower() + "-" + tailValue.lower() + ".png"})
     return result;
 
 # remove limit for local ip.
