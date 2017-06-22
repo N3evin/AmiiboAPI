@@ -271,12 +271,13 @@ def amiiboCharacterData(input):
 def buildAmiibo(amiibo):
     headValue = amiibo.getHead()
     tailValue = amiibo.getTail()
+    typeValue = amiiboManager.getAmiiboType(amiibo)[0]
 
     result = {}
     result.update({"name": amiibo.getName()})
     result.update({"head": headValue.lower()})
     result.update({"tail": tailValue.lower()})
-    result.update({"type": amiiboManager.getAmiiboType(amiibo)[0]})
+    result.update({"type": typeValue.lower()})
     result.update({"gameSeries": amiiboManager.getAmiiboGameSeries(amiibo)[0]})
     result.update({"amiiboSeries": amiiboManager.getAmiiboSeries(amiibo)[0]})
     result.update({"character": amiiboManager.getAmiiboCharacter(amiibo)[0]})
