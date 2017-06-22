@@ -105,7 +105,7 @@ def amiiboTypeList():
     result = list()
 
     for key, value in typeList.items():
-        result.append({"key": key, "name": value})
+        result.append({"key": key, "name": value.lower()})
 
     respond = jsonify({'amiibo': result})
     return respond
@@ -117,9 +117,9 @@ def amiiboType(input):
     result = list()
     for key, data in typeList.items():
         if (key.lower() == input.lower()):
-            result.append({"key": key, "name": data})
+            result.append({"key": key, "name": data.lower()})
         elif (data.lower() == input.lower()):
-            result.append({"key": key, "name": data})
+            result.append({"key": key, "name": data.lower()})
 
     if len(result) == 0:
         abort(404)
