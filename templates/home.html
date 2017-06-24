@@ -51,12 +51,12 @@
                     </h1>
                     <div class="input-group pad_top">
                         <span class="input-group-addon url">http://www.amiiboapi.com/api/</span>
-                        <input id="interactive" type="text" class="form-control" placeholder="amiibo/mario">
+                        <input id="interactive" type="text" class="form-control" placeholder="amiibo/?name=mario">
                         <span class="input-group-btn"><button onClick="interactive_call();return false;" class="btn btn-primary">submit</button></span>
                     </div>
                 </div>
 
-                <small>Need a hint? try <a href="#" onClick="update('amiibo/mario');return false;"><i>amiibo/mario</i></a> or <a href="#" onClick="update('gameseries');return false;"><i>gameseries</i></a> or <a href="#" onClick="update('amiibo/character/zelda');return false;"><i>amiibo/character/zelda</i></a></small>
+                <small>Need a hint? try <a href="#" onClick="update('amiibo/?name=mario');return false;"><i>amiibo/?name=mario</i></a> or <a href="#" onClick="update('gameseries');return false;"><i>gameseries</i></a> or <a href="#" onClick="update('amiibo?character=zelda');return false;"><i>amiibo?character=zelda</i></a></small>
                 <p class="lead pad_top">Output Values</p>
 
                 <pre id="interactive_output" class="pre-scrollable">

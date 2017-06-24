@@ -20,11 +20,13 @@ limiter = Limiter(
 def index():
     return render_template('home.html')
 
+# Documentation
 @app.route('/docs/')
 @limiter.exempt
 def documentation():
     return render_template('docs.html')
 
+# FAQs
 @app.route('/faq/')
 @limiter.exempt
 def faqPage():
@@ -36,31 +38,75 @@ def faqPage():
 def not_found(e):
     return make_response(jsonify(error=e.description, code=404), 404)
 
+# Handle 429 error.
 @app.errorhandler(429)
 def ratelimit_handler(e):
     return make_response(jsonify(error="ratelimit exceeded %s" % e.description, code=429))
 
-# Get the list of game series
+# remove limit for local ip.
+@limiter.request_filter
+def ip_whitelist():
+    return request.remote_addr == "127.0.0.1"
+
+# Build the amiibo list.
+def buildAmiibo(amiibo):
+    headValue = amiibo.getHead()
+    tailValue = amiibo.getTail()
+    typeValue = amiiboManager.getAmiiboType(amiibo)[0]
+
+    result = {}
+    result.update({"name": amiibo.getName()})
+    result.update({"head": headValue.lower()})
+    result.update({"tail": tailValue.lower()})
+    result.update({"type": typeValue.lower()})
+    result.update({"gameSeries": amiiboManager.getAmiiboGameSeries(amiibo)[0]})
+    result.update({"amiiboSeries": amiiboManager.getAmiiboSeries(amiibo)[0]})
+    result.update({"character": amiiboManager.getAmiiboCharacter(amiibo)[0]})
+    result.update({"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/image/icon_" + headValue.lower() + "-" + tailValue.lower() + ".png"})
+    return result;
+
+############################### Game Series API ###############################
+
+# gameseries API
 @app.route('/api/gameseries/', methods=['GET'])
+def gameSeries():
+    # Parameter information
+    keyParameter = request.args.get("key")
+    nameParameter = request.args.get("name")
+
+    if len(request.args)==0:
+        return gameSeriesList()
+
+    elif len(request.args) == 1:
+        if keyParameter != None:
+            return gameSeriesKey(keyParameter)
+
+        elif nameParameter != None:
+            return gameSeriesName(nameParameter)
+
+        else:
+            return abort(404)
+
+    else:
+        return abort(404)
+
+# Get the list of game series
 def gameSeriesList():
-    gameSeries = amiiboManager.gameSeries
+    series = amiiboManager.gameSeries
     result = list()
 
-    for key, value in gameSeries.items():
+    for key, value in series.items():
         result.append({"key": key, "name": value})
 
     respond = jsonify({'amiibo':result})
     return respond
 
-# Get all the key belong to this game series.
-@app.route('/api/gameseries/<string:input>/', methods=['GET'])
-def gameSeries(input):
+# Get the game series name based on the key.
+def gameSeriesKey(input):
     series = amiiboManager.gameSeries
     result = list()
     for key, data in series.items():
-        if(data.lower() == input.lower()):
-            result.append(key)
-        elif (key.lower() == input.lower()):
+        if (key.lower() == input.lower()):
             result= {key:data}
 
     if len(result) == 0:
@@ -69,8 +115,46 @@ def gameSeries(input):
     respond = jsonify({'amiibo':result})
     return respond
 
-# Get the list of amiibo series
+# Get all the key belong to this game series.
+def gameSeriesName(input):
+    series = amiiboManager.gameSeries
+    result = list()
+    for key, data in series.items():
+        if(data.lower() == input.lower()):
+            result.append(key)
+
+    if len(result) == 0:
+        abort(404)
+
+    respond = jsonify({'amiibo':result})
+    return respond
+
+############################### Amiibo Series API ###############################
+
+# amiiboseries API
 @app.route('/api/amiiboseries/', methods=['GET'])
+def amiiboSeries():
+    # Parameter information
+    keyParameter = request.args.get("key")
+    nameParameter = request.args.get("name")
+
+    if len(request.args)==0:
+        return amiiboSeriesList()
+
+    elif len(request.args) == 1:
+        if keyParameter != None:
+            return amiiboSeriesKey(keyParameter)
+
+        elif nameParameter != None:
+            return amiiboSeriesName(nameParameter)
+
+        else:
+            return abort(404)
+
+    else:
+        return abort(404)
+
+# Get the entire amiibo series.
 def amiiboSeriesList():
     seriesList = amiiboManager.amiiboSeriesList
     result = list()
@@ -81,15 +165,12 @@ def amiiboSeriesList():
     respond = jsonify({'amiibo':result})
     return respond
 
-# Get all the key belong to this amiibo series.
-@app.route('/api/amiiboseries/<string:input>/', methods=['GET'])
-def amiiboSeries(input):
+# Get the amiibo series based on the key
+def amiiboSeriesKey(input):
     series = amiiboManager.amiiboSeriesList
     result = list()
     for key, data in series.items():
         if (key.lower() == input.lower()):
-            result.append({"key": key, "name": data})
-        elif (data.lower() == input.lower()):
             result.append({"key": key, "name": data})
 
     if len(result) == 0:
@@ -98,8 +179,46 @@ def amiiboSeries(input):
     respond = jsonify({'amiibo': result})
     return respond
 
-# Get all the types of amiibo available type list.
+# Get the key of the amiibo series.
+def amiiboSeriesName(input):
+    series = amiiboManager.amiiboSeriesList
+    result = list()
+    for key, data in series.items():
+        if (data.lower() == input.lower()):
+            result.append({"key": key, "name": data})
+
+    if len(result) == 0:
+        abort(404)
+
+    respond = jsonify({'amiibo': result})
+    return respond
+
+############################### Type API ###############################
+
+# type API
 @app.route('/api/type/', methods=['GET'])
+def amiiboType():
+    # Parameter information
+    keyParameter = request.args.get("key")
+    nameParameter = request.args.get("name")
+
+    if len(request.args)==0:
+        return amiiboTypeList()
+
+    elif len(request.args) == 1:
+        if keyParameter != None:
+            return amiiboTypeKey(keyParameter)
+
+        elif nameParameter != None:
+            return amiiboTypeName(nameParameter)
+
+        else:
+            return abort(404)
+
+    else:
+        return abort(404)
+
+# Get all the types of amiibo available type list.
 def amiiboTypeList():
     typeList = amiiboManager.typeList
     result = list()
@@ -110,15 +229,12 @@ def amiiboTypeList():
     respond = jsonify({'amiibo': result})
     return respond
 
-# Get a list of value for that type.
-@app.route('/api/type/<string:input>/', methods=['GET'])
-def amiiboType(input):
+# Get type based on key
+def amiiboTypeKey(input):
     typeList = amiiboManager.typeList
     result = list()
     for key, data in typeList.items():
         if (key.lower() == input.lower()):
-            result.append({"key": key, "name": data.lower()})
-        elif (data.lower() == input.lower()):
             result.append({"key": key, "name": data.lower()})
 
     if len(result) == 0:
@@ -127,8 +243,46 @@ def amiiboType(input):
     respond = jsonify({'amiibo': result})
     return respond
 
-# Get all the character of amiibo.
+# Get type based on name
+def amiiboTypeName(input):
+    typeList = amiiboManager.typeList
+    result = list()
+    for key, data in typeList.items():
+        if (data.lower() == input.lower()):
+            result.append({"key": key, "name": data.lower()})
+
+    if len(result) == 0:
+        abort(404)
+
+    respond = jsonify({'amiibo': result})
+    return respond
+
+############################### Character API ###############################
+
+# character API
 @app.route('/api/character/', methods=['GET'])
+def amiiboCharacter():
+    # Parameter information
+    keyParameter = request.args.get("key")
+    nameParameter = request.args.get("name")
+
+    if len(request.args) == 0:
+        return amiiboCharacterList()
+
+    elif len(request.args) == 1:
+        if keyParameter != None:
+            return amiiboCharacterKey(keyParameter)
+
+        elif nameParameter != None:
+            return amiiboCharacterName(nameParameter)
+
+        else:
+            return abort(404)
+
+    else:
+        return abort(404)
+
+# Get all the character of amiibo.
 def amiiboCharacterList():
     charList = amiiboManager.charList
     result = list()
@@ -139,15 +293,12 @@ def amiiboCharacterList():
     respond = jsonify({'amiibo': result})
     return respond
 
-# Get the character value.
-@app.route('/api/character/<string:input>/', methods=['GET'])
-def amiiboCharacter(input):
+# Get the character by key.
+def amiiboCharacterKey(input):
     charList = amiiboManager.charList
     result = list()
     for key, data in charList.items():
         if (key.lower() == input.lower()):
-            result.append({"key":key, "name": data})
-        elif (data.lower() == input.lower()):
             result.append({"key": key, "name": data})
 
     if len(result) == 0:
@@ -156,9 +307,63 @@ def amiiboCharacter(input):
     respond = jsonify({'amiibo': result})
     return respond
 
+# Get the character by name.
+def amiiboCharacterName(input):
+    charList = amiiboManager.charList
+    result = list()
+    for key, data in charList.items():
+        if (data.lower() == input.lower()):
+            result.append({"key":key, "name": data})
+
+    if len(result) == 0:
+        abort(404)
+
+    respond = jsonify({'amiibo': result})
+    return respond
+
+############################### Amiibo API ###############################
+
 # Get the amiibo
 @app.route('/api/amiibo/', methods=['GET'])
 def amiibo():
+    # Parameter information
+    typeParameter = request.args.get("type")
+    gameSeriesParameter = request.args.get("gameseries")
+    seriesParameter = request.args.get("series")
+    characterParameter = request.args.get("character")
+    nameParameter = request.args.get("name")
+    IdParameter = request.args.get("id")
+
+    if len(request.args) == 0:
+        return amiiboList()
+
+    elif len(request.args) == 1:
+        if typeParameter != None:
+            return amiiboTypeData(typeParameter)
+
+        elif nameParameter != None:
+            return amiiboName(nameParameter)
+
+        elif IdParameter != None:
+            return amiiboId(IdParameter)
+
+        elif gameSeriesParameter != None:
+            return amiiboGameSeriesData(gameSeriesParameter)
+
+        elif seriesParameter != None:
+            return amiiboSeriesData(seriesParameter)
+
+        elif characterParameter != None:
+            return amiiboCharacterData(characterParameter)
+
+        else:
+            return abort(404)
+
+    else:
+        return abort(404)
+
+# Get all amiibo available
+def amiiboList():
     amiiboList = amiiboManager.amiiboList
     result = list()
 
@@ -168,16 +373,28 @@ def amiibo():
     respond = jsonify({'amiibo': result})
     return respond
 
-# Get the amiibo from value
-@app.route('/api/amiibo/<string:input>/', methods=['GET'])
-def amiiboValueData(input):
+# Get the amiibo from name
+def amiiboName(input):
     amiiboList = amiiboManager.amiiboList
     result = list()
 
     for data in amiiboList:
-        if(data.getName().lower() == input.lower()):                                # Name only
+        if(data.getName().lower() == input.lower()):
             result.append(buildAmiibo(data))
-        elif(data.getTail().lower() == input.lower()):                              # Tail only
+
+    if len(result) == 0:
+        abort(404)
+
+    respond = jsonify({'amiibo': result})
+    return respond
+
+# Get the amiibo from id
+def amiiboId(input):
+    amiiboList = amiiboManager.amiiboList
+    result = list()
+
+    for data in amiiboList:
+        if(data.getTail().lower() == input.lower()):                              # Tail only
             result.append(buildAmiibo(data))
         elif(data.getHead().lower() == input.lower()):                              # Head only
             result.append(buildAmiibo(data))
@@ -191,7 +408,6 @@ def amiiboValueData(input):
     return respond
 
 # Get the amiibo base on type
-@app.route('/api/amiibo/type/<string:input>/', methods=['GET'])
 def amiiboTypeData(input):
     amiiboList = amiiboManager.amiiboList
     typeList = amiiboManager.typeList
@@ -214,7 +430,6 @@ def amiiboTypeData(input):
     return respond
 
 # Get the amiibo base on gameseries
-@app.route('/api/amiibo/gameseries/<string:input>/', methods=['GET'])
 def amiiboGameSeriesData(input):
     amiiboList = amiiboManager.amiiboList
     result = list()
@@ -232,7 +447,6 @@ def amiiboGameSeriesData(input):
     return respond
 
 # Get the amiibo base on series
-@app.route('/api/amiibo/amiiboseries/<string:input>/', methods=['GET'])
 def amiiboSeriesData(input):
     amiiboList = amiiboManager.amiiboList
     result = list()
@@ -250,7 +464,6 @@ def amiiboSeriesData(input):
     return respond
 
 # Get the amiibo base on character
-@app.route('/api/amiibo/character/<string:input>/', methods=['GET'])
 def amiiboCharacterData(input):
     amiiboList = amiiboManager.amiiboList
     result = list()
@@ -266,28 +479,6 @@ def amiiboCharacterData(input):
 
     respond = jsonify({'amiibo': result})
     return respond
-
-# Build the amiibo list.
-def buildAmiibo(amiibo):
-    headValue = amiibo.getHead()
-    tailValue = amiibo.getTail()
-    typeValue = amiiboManager.getAmiiboType(amiibo)[0]
-
-    result = {}
-    result.update({"name": amiibo.getName()})
-    result.update({"head": headValue.lower()})
-    result.update({"tail": tailValue.lower()})
-    result.update({"type": typeValue.lower()})
-    result.update({"gameSeries": amiiboManager.getAmiiboGameSeries(amiibo)[0]})
-    result.update({"amiiboSeries": amiiboManager.getAmiiboSeries(amiibo)[0]})
-    result.update({"character": amiiboManager.getAmiiboCharacter(amiibo)[0]})
-    result.update({"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/image/icon_" + headValue.lower() + "-" + tailValue.lower() + ".png"})
-    return result;
-
-# remove limit for local ip.
-@limiter.request_filter
-def ip_whitelist():
-    return request.remote_addr == "127.0.0.1"
 
 if __name__ == "__main__":
     app.run(debug=True)

@@ -16,7 +16,7 @@ A RESTful API that was created for retriving amiibo information.
 ### Usage
 Full amiibo: [http://www.amiiboapi.com/api/amiibo](http://www.amiiboapi.com/api/amiibo) 
 
-Specific Amiibo (Mario): [http://www.amiiboapi.com/api/amiibo/Mario](http://www.amiiboapi.com/api/amiibo/Mario)
+Specific Amiibo (Mario): [http://www.amiiboapi.com/api/amiibo?name=mario](http://www.amiiboapi.com/api/amiibo?name=mario)
 
 When searching for amiibo, you can use the key or amiibo name. Key must be in hexdecimal example `0x1D0`
 
