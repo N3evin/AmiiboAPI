@@ -1,4 +1,11 @@
-from Amiibo import Amiibo
+#!/usr/bin/env python
+"""
+@author: N3evin
+@copyright: Copyright 2017, AmiiboAPI
+@license: MIT License
+"""
+
+from Amiibo import Amiibo, AmiiboDate
 import sqlite3
 
 class amiiboManager():
@@ -13,9 +20,12 @@ class amiiboManager():
         self.amiiboSeriesList = self.generateDictData("amiiboSeries")
         self.typeList = self.generateDictData("type")
         self.gameSeries = self.generateDictData("gameSeries")
+        self.releaseDates = self.generateReleaseDate()
 
         # Close all sqlite connection.
         self.conn.close()
+
+    ############################### Initialize generator ###############################
 
     # generate amiiboData from database.
     def generateAmiiboData(self):
@@ -36,6 +46,31 @@ class amiiboManager():
 
         return result
 
+    # generate release date information
+    def generateReleaseDate(self):
+        result = dict()
+
+        for row in self.c.execute('SELECT * FROM releaseDate ORDER BY id'):
+            na = row[1]
+            jp = row[2]
+            eu = row[3]
+            au = row[4]
+
+            if na is None:
+                na = "None"
+            if jp is None:
+                jp = "None"
+            if eu is None:
+                eu = "None"
+            if au is None:
+                au = "None"
+
+            newReleaseDate = AmiiboDate.amiiboDate(row[0], na, jp, eu, au)
+            result.update({row[0]:newReleaseDate})
+
+        return result
+
+    ############################### Getter ###############################
 
     # Get the game series of the amiibo.
     def getAmiiboGameSeries(self, amiibo):
@@ -55,11 +90,20 @@ class amiiboManager():
         value = head[0:4]
         return self.charList.get(hex(int(value, 16))), hex(int(value, 16))
 
-    # Get the character of the amiibo.
+    # Get the series of the amiibo.
     def getAmiiboSeries(self, amiibo):
         value = amiibo.getTail()[-4:-2]
         result = self.amiiboSeriesList.get(hex(int(value, 16)))
         return result, hex(int(value, 16))
+
+    # Get the release date of the amiibo.
+    def getReleaseDate(self, id):
+        releaseDate = self.releaseDates.get(id)
+        na = releaseDate.getNorthAmerica()
+        jp = releaseDate.getJapan()
+        eu = releaseDate.getEurope()
+        au = releaseDate.getAustralia()
+        return na, jp, eu, au
 
 if __name__ == "__main__":
     m = amiiboManager()

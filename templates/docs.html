@@ -55,38 +55,41 @@
 	
     <pre>
 {
-"amiibo": [
-	{
-		"amiiboSeries": "Super Smash Bros.",
-		"character": "Zelda",
-		"gameSeries": "The Legend of Zelda",
-		"head": "01010000",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/image/icon_01010000-000e0002.png",
-		"name": "Zelda",
-		"tail": "000e0002",
-		"type": "figure"
-	},
-	{
-		"amiiboSeries": "Legend Of Zelda",
-		"character": "Zelda",
-		"gameSeries": "The Legend of Zelda",
-		"head": "01010000",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/image/icon_01010000-03520902.png",
-		"name": "Toon Zelda - The Wind Waker",
-		"tail": "03520902",
-		"type": "figure"
-	},
-	{
-		"amiiboSeries": "Legend Of Zelda",
-		"character": "Zelda",
-		"gameSeries": "The Legend of Zelda",
-		"head": "01010000",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/image/icon_01010000-03560902.png",
-		"name": "Zelda",
-		"tail": "03560902",
-		"type": "figure"
-	}
-]
+	"amiibo": [
+		{
+			"amiiboSeries": "Super Smash Bros.",
+			"character": "Zelda",
+			"gameSeries": "The Legend of Zelda",
+			"head": "01010100",
+			"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/image/icon_01010100-00170002.png",
+			"name": "Sheik",
+			"release": {
+				"au": "2015-01-29",
+				"eu": "2015-01-23",
+				"jp": "2015-01-22",
+				"na": "2015-02-01"
+			},
+			"tail": "00170002",
+			"type": "figure"
+		},
+		{
+			"amiiboSeries": "Legend Of Zelda",
+			"character": "Zelda",
+			"gameSeries": "The Legend of Zelda",
+			"head": "01010000",
+			"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/image/icon_01010000-03520902.png",
+			"name": "Toon Zelda - The Wind Waker",
+			"release": {
+				"au": "2016-12-03",
+				"eu": "2016-12-02",
+				"jp": "2016-12-01",
+				"na": "2016-12-02"
+			},
+			"tail": "03520902",
+			"type": "figure"
+		},
+		...
+	]
 }
     </pre>
 
@@ -130,6 +133,15 @@
                 <td>string</td>
             </tr>
 			<tr>
+                <td>release</td>
+                <td>		
+				The release date for North America, Japan, Europe and Australia </br>		
+				<b>Date Format: </b>yyyy-mm-dd</br>
+				<b>Warning:</b> If date is not available, it will return as <code>None</code>
+				</td> </br><b>Note:</b> If date is not available, it will return as <code>None</code></td>
+                <td>json</td>
+            </tr>
+			<tr>
                 <td>tail</td>
                 <td>The next 8 value of the hexadecimal to recognize the amiibo.</br><b>Note:</b> 8-15 value in the hexadecimal</td>
                 <td>string</td>
@@ -154,16 +166,22 @@
     <pre>
 {
 	"amiibo": [
-	{
-		"amiiboSeries": "Yoshi's Woolly World",
-		"character": "Yoshi",
-		"gameSeries": "Super Mario",
-		"head": "00030102",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/image/icon_00030102-00410302.png",
-		"name": "Green Yarn Yoshi",
-		"tail": "00410302",
-		"type": "yarn"
-	},
+		{
+			"amiiboSeries": "Yoshi's Woolly World",
+			"character": "Yoshi",
+			"gameSeries": "Super Mario",
+			"head": "00030102",
+			"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/image/icon_00030102-00410302.png",
+			"name": "Green Yarn Yoshi",
+			"release": {
+				"au": "2015-06-25",
+				"eu": "2015-06-26",
+				"jp": "2015-07-16",
+				"na": "2015-10-16"
+			},
+			"tail": "00410302",
+			"type": "yarn"
+		},
 	...
 ]
 }
@@ -209,6 +227,15 @@
                 <td>string</td>
             </tr>
 			<tr>
+                <td>release</td>
+                <td>		
+				The release date for North America, Japan, Europe and Australia </br>		
+				<b>Date Format: </b>yyyy-mm-dd</br>
+				<b>Warning:</b> If date is not available, it will return as <code>None</code>
+				</td> </br><b>Note:</b> If date is not available, it will return as <code>None</code></td>
+                <td>json</td>
+            </tr>
+			<tr>
                 <td>tail</td>
                 <td>The next 8 value of the hexadecimal to recognize the amiibo.</br><b>Note:</b> 8-15 value in the hexadecimal</td>
                 <td>string</td>
@@ -227,33 +254,29 @@
 
     <h3>GET /api/amiibo?gameseries=value</h3>
 	
-	<p><strong>Note: </strong>value could be anything in the gameseries database. <b>E.g.</b> <code>/api/amiibo?gameseries=0x2</code> or <code>/api/amiibo?gameseries=Chibi Robo</code></p>
+	<p><strong>Note: </strong>value could be anything in the gameseries database. <b>E.g.</b> <code>/api/amiibo?gameseries=0x22c</code> or <code>/api/amiibo?gameseries=Chibi Robo</code></p>
 
     <pre>
 {
-"amiibo": [
-	{
-		"amiiboSeries": "Super Smash Bros.",
-		"character": "Link",
-		"gameSeries": "The Legend of Zelda",
-		"head": "01000000",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/image/icon_01000000-00040002.png",
-		"name": "Link",
-		"tail": "00040002",
-		"type": "figure"
-	},
-	{
-		"amiiboSeries": "Super Smash Bros.",
-		"character": "Zelda",
-		"gameSeries": "The Legend of Zelda",
-		"head": "01010000",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/image/icon_01010000-000e0002.png",
-		"name": "Zelda",
-		"tail": "000e0002",
-		"type": "figure"
-	},
-	..
-]
+	"amiibo": [
+		{
+			"amiiboSeries": "Chibi-Robo!",
+			"character": "Chibi-Robo",
+			"gameSeries": "Chibi Robo",
+			"head": "22c00000",
+			"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/image/icon_22c00000-003a0202.png",
+			"name": "Chibi Robo",
+			"release": {
+				"au": "2015-11-07",
+				"eu": "2015-11-06",
+				"jp": "2015-10-08",
+				"na": "2015-10-09"
+			},
+			"tail": "003a0202",
+			"type": "figure"
+		},
+		...
+	]
 }
     </pre>
 
@@ -297,6 +320,15 @@
                 <td>string</td>
             </tr>
 			<tr>
+                <td>release</td>
+                <td>		
+				The release date for North America, Japan, Europe and Australia </br>		
+				<b>Date Format: </b>yyyy-mm-dd</br>
+				<b>Warning:</b> If date is not available, it will return as <code>None</code>
+				</td> </br><b>Note:</b> If date is not available, it will return as <code>None</code></td>
+                <td>json</td>
+            </tr>
+			<tr>
                 <td>tail</td>
                 <td>The next 8 value of the hexadecimal to recognize the amiibo.</br><b>Note:</b> 8-15 value in the hexadecimal</td>
                 <td>string</td>
@@ -319,18 +351,25 @@
 
     <pre>
 {
-"amiibo": [
-	{
-		"amiiboSeries": "BoxBoy!",
-		"character": "Qbby",
-		"gameSeries": "BoxBoy!",
-		"head": "1f400000",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/image/icon_1f400000-035e1002.png",
-		"name": "Qbby",
-		"tail": "035e1002",
-		"type": "figure"
-	}
-]
+	"amiibo": [
+		{
+			"amiiboSeries": "BoxBoy!",
+			"character": "Qbby",
+			"gameSeries": "BoxBoy!",
+			"head": "1f400000",
+			"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/image/icon_1f400000-035e1002.png",
+			"name": "Qbby",
+			"release": {
+				"au": "None",
+				"eu": "None",
+				"jp": "2017-02-02",
+				"na": "None"
+			},
+			"tail": "035e1002",
+			"type": "figure"
+		},
+		...
+	]
 }
     </pre>
 
@@ -374,6 +413,15 @@
                 <td>string</td>
             </tr>
 			<tr>
+                <td>release</td>
+                <td>		
+				The release date for North America, Japan, Europe and Australia </br>		
+				<b>Date Format: </b>yyyy-mm-dd</br>
+				<b>Warning:</b> If date is not available, it will return as <code>None</code>
+				</td> </br><b>Warning:</b> If date is not available, it will return as <code>None</code></td>
+                <td>json</td>
+            </tr>
+			<tr>
                 <td>tail</td>
                 <td>The next 8 value of the hexadecimal to recognize the amiibo.</br><b>Note:</b> 8-15 value in the hexadecimal</td>
                 <td>string</td>
@@ -396,18 +444,25 @@
 
     <pre>
 {
-"amiibo": [
-	{
-		"amiiboSeries": "Super Smash Bros.",
-		"character": "Mewtwo",
-		"gameSeries": "Pokemon",
-		"head": "19960000",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/image/icon_19960000-023d0002.png",
-		"name": "Mewtwo",
-		"tail": "023d0002",
-		"type": "figure"
-	}
-]
+	"amiibo": [
+		{
+			"amiiboSeries": "Super Smash Bros.",
+			"character": "Mewtwo",
+			"gameSeries": "Pokemon",
+			"head": "19960000",
+			"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/image/icon_19960000-023d0002.png",
+			"name": "Mewtwo",
+			"release": {
+				"au": "2015-10-24",
+				"eu": "2015-10-23",
+				"jp": "2015-10-29",
+				"na": "2015-11-13"
+			},
+			"tail": "023d0002",
+			"type": "figure"
+		},
+		...
+	]
 }
     </pre>
 
@@ -449,6 +504,15 @@
                 <td>name</td>
                 <td>The name of the amiibo.</td>
                 <td>string</td>
+            </tr>
+			<tr>
+                <td>release</td>
+                <td>		
+				The release date for North America, Japan, Europe and Australia </br>		
+				<b>Date Format: </b>yyyy-mm-dd</br>
+				<b>Warning:</b> If date is not available, it will return as <code>None</code>
+				</td> </br><b>Warning:</b> If date is not available, it will return as <code>None</code></td>
+                <td>json</td>
             </tr>
 			<tr>
                 <td>tail</td>

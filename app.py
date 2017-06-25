@@ -1,3 +1,10 @@
+#!/usr/bin/env python
+"""
+@author: N3evin
+@copyright: Copyright 2017, AmiiboAPI
+@license: MIT License
+"""
+
 from flask import Flask, jsonify, abort, make_response, render_template, request
 from flask_limiter import Limiter
 from flask_limiter.util import get_remote_address, get_ipaddr
@@ -53,6 +60,11 @@ def buildAmiibo(amiibo):
     headValue = amiibo.getHead()
     tailValue = amiibo.getTail()
     typeValue = amiiboManager.getAmiiboType(amiibo)[0]
+    id = headValue + tailValue
+
+    # Release Dates
+    na, jp, eu, au = amiiboManager.getReleaseDate(id)
+
 
     result = {}
     result.update({"name": amiibo.getName()})
@@ -63,6 +75,7 @@ def buildAmiibo(amiibo):
     result.update({"amiiboSeries": amiiboManager.getAmiiboSeries(amiibo)[0]})
     result.update({"character": amiiboManager.getAmiiboCharacter(amiibo)[0]})
     result.update({"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/image/icon_" + headValue.lower() + "-" + tailValue.lower() + ".png"})
+    result.update({"release": {"na": na, "jp": jp, "eu": eu, "au":au}})
     return result;
 
 ############################### Game Series API ###############################
