@@ -74,7 +74,7 @@ def buildAmiibo(amiibo):
     result.update({"gameSeries": amiiboManager.getAmiiboGameSeries(amiibo)[0]})
     result.update({"amiiboSeries": amiiboManager.getAmiiboSeries(amiibo)[0]})
     result.update({"character": amiiboManager.getAmiiboCharacter(amiibo)[0]})
-    result.update({"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/image/icon_" + headValue.lower() + "-" + tailValue.lower() + ".png"})
+    result.update({"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_" + headValue.lower() + "-" + tailValue.lower() + ".png"})
     result.update({"release": {"na": na, "jp": jp, "eu": eu, "au":au}})
     return result;
 
