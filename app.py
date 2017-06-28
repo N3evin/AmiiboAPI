@@ -7,7 +7,7 @@
 
 from flask import Flask, jsonify, abort, make_response, render_template, request
 from flask_limiter import Limiter
-from flask_limiter.util import get_remote_address, get_ipaddr
+from flask_limiter.util import get_remote_address
 
 from Amiibo import AmiiboManager
 
