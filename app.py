@@ -4,15 +4,73 @@
 @copyright: Copyright 2017, AmiiboAPI
 @license: MIT License
 """
+import datetime
 
 from flask import Flask, jsonify, abort, make_response, render_template, request
+from flask.json import JSONEncoder
 from flask_limiter import Limiter
 from flask_limiter.util import get_remote_address
 
-from Amiibo import AmiiboManager
+from amiibo.amiibo import (
+    Hex,
+    AmiiboHex,
+    GameSeriesHex,
+    CharacterHex,
+    VariantHex,
+    AmiiboTypeHex,
+    AmiiboModelHex,
+    AmiiboSeriesHex,
+    Amiibo,
+    AmiiboReleaseDates,
+    GameSeries,
+    Character,
+    AmiiboType,
+    AmiiboSeries,
+)
+from amiibo.manager import AmiiboManager
+from amiibo.filterable import FilterableCollection
+
+
+class AmiiboJSONEncoder(JSONEncoder):
+    def default(self, obj):
+        if isinstance(obj, Hex):
+            return str(obj)
+        elif isinstance(obj, FilterableCollection):
+            return list(obj)
+        elif isinstance(obj, Amiibo):
+            return {
+                'name': obj.name,
+                'head': str(obj.head)[2:],
+                'tail': str(obj.tail)[2:],
+                'type': obj.amiibo_type.name if obj.amiibo_type else None,
+                'gameSeries': obj.game_series.name if obj.game_series else None,
+                'amiiboSeries': obj.amiibo_series.name if obj.amiibo_series else None,
+                'character': obj.character.name if obj.character else None,
+                'image': "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_{}-{}.png".format(str(obj.head)[2:], str(obj.tail)[2:]),
+                'release': obj.release,
+            }
+        elif isinstance(obj, (GameSeries, Character, AmiiboType, AmiiboSeries)):
+            return {
+                'key': obj.id,
+                'name': obj.name,
+            }
+        elif isinstance(obj, AmiiboReleaseDates):
+            return {
+                'na': obj.na,
+                'jp': obj.jp,
+                'eu': obj.eu,
+                'au': obj.au,
+            }
+        elif isinstance(obj, (datetime.date, datetime.datetime, datetime.time)):
+            return obj.isoformat()
+
+        return super().default(obj)
+
 
 app = Flask(__name__)
-amiiboManager = AmiiboManager.amiiboManager()
+app.json_encoder = AmiiboJSONEncoder
+
+amiibo_manager = AmiiboManager.from_json()
 
 # Set default limit for limter.
 limiter = Limiter(
@@ -21,11 +79,13 @@ limiter = Limiter(
     default_limits=["300 per day"]
 )
 
+
 # Index
 @app.route('/')
 @limiter.exempt
 def index():
     return render_template('home.html')
+
 
 # Documentation
 @app.route('/docs/')
@@ -33,461 +93,302 @@ def index():
 def documentation():
     return render_template('docs.html')
 
+
 # FAQs
 @app.route('/faq/')
 @limiter.exempt
 def faqPage():
     return render_template('faq.html')
 
-# Handle 404 as json or else Flash will use html as default.
+
+# Handle 400 as json or else Flask will use html as default.
+@app.errorhandler(400)
+@limiter.exempt
+def bad_request(e):
+    return make_response(jsonify(error=e.description, code=400), 400)
+
+
+# Handle 404 as json or else Flask will use html as default.
 @app.errorhandler(404)
 @limiter.exempt
 def not_found(e):
     return make_response(jsonify(error=e.description, code=404), 404)
 
+
 # Handle 429 error.
 @app.errorhandler(429)
 def ratelimit_handler(e):
-    return make_response(jsonify(error="ratelimit exceeded %s" % e.description, code=429))
+    return make_response(jsonify(error="rate limit exceeded %s" % e.description, code=429))
+
 
 # remove limit for local ip.
 @limiter.request_filter
 def ip_whitelist():
     return request.remote_addr == "127.0.0.1"
 
-# Build the amiibo list.
-def buildAmiibo(amiibo):
-    headValue = amiibo.getHead()
-    tailValue = amiibo.getTail()
-    typeValue = amiiboManager.getAmiiboType(amiibo)[0]
-    id = headValue + tailValue
-
-    # Release Dates
-    na, jp, eu, au = amiiboManager.getReleaseDate(id)
-
-
-    result = {}
-    result.update({"name": amiibo.getName()})
-    result.update({"head": headValue.lower()})
-    result.update({"tail": tailValue.lower()})
-    result.update({"type": typeValue.lower()})
-    result.update({"gameSeries": amiiboManager.getAmiiboGameSeries(amiibo)[0]})
-    result.update({"amiiboSeries": amiiboManager.getAmiiboSeries(amiibo)[0]})
-    result.update({"character": amiiboManager.getAmiiboCharacter(amiibo)[0]})
-    result.update({"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_" + headValue.lower() + "-" + tailValue.lower() + ".png"})
-    result.update({"release": {"na": na, "jp": jp, "eu": eu, "au":au}})
-    return result;
 
 ############################### Game Series API ###############################
 
 # gameseries API
 @app.route('/api/gameseries/', methods=['GET'])
-def gameSeries():
-    # Parameter information
-    keyParameter = request.args.get("key")
-    nameParameter = request.args.get("name")
+def route_api_game_series():
+    args = request.args
 
-    if len(request.args)==0:
-        return gameSeriesList()
-
-    elif len(request.args) == 1:
-        if keyParameter != None:
-            return gameSeriesKey(keyParameter)
-
-        elif nameParameter != None:
-            return gameSeriesName(nameParameter)
-
-        else:
-            return abort(404)
-
+    if 'key' in args:
+        try:
+            key = GameSeriesHex(args['key'].strip())
+        except ValueError:
+            abort(400)
+        result = amiibo_manager.game_series.get(key)
     else:
-        return abort(404)
+        filters = {}
+        if 'name' in args:
+            filters['name'] = args['name'].strip()
 
-# Get the list of game series
-def gameSeriesList():
-    series = amiiboManager.gameSeries
-    result = list()
+        result = amiibo_manager.game_series.filter(**filters)
+        if 'sort' in args:
+            values = {
+                'key': 'id',
+                'name': 'name',
+            }
+            result = result.sort(*[
+                values[value]
+                for value in args['sort'].split(',')
+                if value in values
+            ])
 
-    for key, value in series.items():
-        result.append({"key": key, "name": value})
-
-    respond = jsonify({'amiibo':result})
-    return respond
-
-# Get the game series name based on the key.
-def gameSeriesKey(input):
-    series = amiiboManager.gameSeries
-    result = list()
-    for key, data in series.items():
-        if (key.lower() == input.lower()):
-            result= {key:data}
-
-    if len(result) == 0:
+    if not result:
         abort(404)
 
-    respond = jsonify({'amiibo':result})
+    respond = jsonify({'amiibo': result})
     return respond
 
-# Get all the key belong to this game series.
-def gameSeriesName(input):
-    series = amiiboManager.gameSeries
-    result = list()
-    for key, data in series.items():
-        if(data.lower() == input.lower()):
-            result.append(key)
-
-    if len(result) == 0:
-        abort(404)
-
-    respond = jsonify({'amiibo':result})
-    return respond
 
 ############################### Amiibo Series API ###############################
 
 # amiiboseries API
 @app.route('/api/amiiboseries/', methods=['GET'])
-def amiiboSeries():
-    # Parameter information
-    keyParameter = request.args.get("key")
-    nameParameter = request.args.get("name")
+def route_api_amiibo_series():
+    args = request.args
 
-    if len(request.args)==0:
-        return amiiboSeriesList()
-
-    elif len(request.args) == 1:
-        if keyParameter != None:
-            return amiiboSeriesKey(keyParameter)
-
-        elif nameParameter != None:
-            return amiiboSeriesName(nameParameter)
-
-        else:
-            return abort(404)
-
+    if 'key' in args:
+        try:
+            key = AmiiboSeriesHex(args['key'].strip())
+        except ValueError:
+            abort(400)
+        result = amiibo_manager.amiibo_series.get(key)
     else:
-        return abort(404)
+        filters = {}
+        if 'name' in args:
+            filters['name'] = args['name'].strip()
 
-# Get the entire amiibo series.
-def amiiboSeriesList():
-    seriesList = amiiboManager.amiiboSeriesList
-    result = list()
+        result = amiibo_manager.amiibo_series.filter(**filters)
+        if 'sort' in args:
+            values = {
+                'key': 'id',
+                'name': 'name',
+            }
+            result = result.sort(*[
+                values[value]
+                for value in args['sort'].split(',')
+                if value in values
+            ])
 
-    for key, value in seriesList.items():
-        result.append({"key": key, "name": value})
-
-    respond = jsonify({'amiibo':result})
-    return respond
-
-# Get the amiibo series based on the key
-def amiiboSeriesKey(input):
-    series = amiiboManager.amiiboSeriesList
-    result = list()
-    for key, data in series.items():
-        if (key.lower() == input.lower()):
-            result.append({"key": key, "name": data})
-
-    if len(result) == 0:
+    if not result:
         abort(404)
 
     respond = jsonify({'amiibo': result})
     return respond
 
-# Get the key of the amiibo series.
-def amiiboSeriesName(input):
-    series = amiiboManager.amiiboSeriesList
-    result = list()
-    for key, data in series.items():
-        if (data.lower() == input.lower()):
-            result.append({"key": key, "name": data})
-
-    if len(result) == 0:
-        abort(404)
-
-    respond = jsonify({'amiibo': result})
-    return respond
 
 ############################### Type API ###############################
 
 # type API
 @app.route('/api/type/', methods=['GET'])
-def amiiboType():
-    # Parameter information
-    keyParameter = request.args.get("key")
-    nameParameter = request.args.get("name")
+def route_api_type():
+    args = request.args
 
-    if len(request.args)==0:
-        return amiiboTypeList()
-
-    elif len(request.args) == 1:
-        if keyParameter != None:
-            return amiiboTypeKey(keyParameter)
-
-        elif nameParameter != None:
-            return amiiboTypeName(nameParameter)
-
-        else:
-            return abort(404)
-
+    if 'key' in args:
+        try:
+            key = AmiiboTypeHex(args['key'].strip())
+        except ValueError:
+            abort(400)
+        result = amiibo_manager.types.get(key)
     else:
-        return abort(404)
+        filters = {}
+        if 'name' in args:
+            filters['name'] = args['name'].strip()
 
-# Get all the types of amiibo available type list.
-def amiiboTypeList():
-    typeList = amiiboManager.typeList
-    result = list()
+        result = amiibo_manager.types.filter(**filters)
+        if 'sort' in args:
+            values = {
+                'key': 'id',
+                'name': 'name',
+            }
+            result = result.sort(*[
+                values[value]
+                for value in args['sort'].split(',')
+                if value in values
+            ])
 
-    for key, value in typeList.items():
-        result.append({"key": key, "name": value.lower()})
-
-    respond = jsonify({'amiibo': result})
-    return respond
-
-# Get type based on key
-def amiiboTypeKey(input):
-    typeList = amiiboManager.typeList
-    result = list()
-    for key, data in typeList.items():
-        if (key.lower() == input.lower()):
-            result.append({"key": key, "name": data.lower()})
-
-    if len(result) == 0:
+    if not result:
         abort(404)
 
     respond = jsonify({'amiibo': result})
     return respond
 
-# Get type based on name
-def amiiboTypeName(input):
-    typeList = amiiboManager.typeList
-    result = list()
-    for key, data in typeList.items():
-        if (data.lower() == input.lower()):
-            result.append({"key": key, "name": data.lower()})
-
-    if len(result) == 0:
-        abort(404)
-
-    respond = jsonify({'amiibo': result})
-    return respond
 
 ############################### Character API ###############################
 
 # character API
 @app.route('/api/character/', methods=['GET'])
-def amiiboCharacter():
-    # Parameter information
-    keyParameter = request.args.get("key")
-    nameParameter = request.args.get("name")
+def route_api_character():
+    args = request.args
 
-    if len(request.args) == 0:
-        return amiiboCharacterList()
-
-    elif len(request.args) == 1:
-        if keyParameter != None:
-            return amiiboCharacterKey(keyParameter)
-
-        elif nameParameter != None:
-            return amiiboCharacterName(nameParameter)
-
-        else:
-            return abort(404)
-
+    if 'key' in args:
+        try:
+            key = CharacterHex(args['key'].strip())
+        except ValueError:
+            abort(400)
+        result = amiibo_manager.characters.get(key)
     else:
-        return abort(404)
+        filters = {}
+        if 'name' in args:
+            filters['name'] = args['name'].strip()
 
-# Get all the character of amiibo.
-def amiiboCharacterList():
-    charList = amiiboManager.charList
-    result = list()
+        result = amiibo_manager.characters.filter(**filters)
+        if 'sort' in args:
+            values = {
+                'key': 'id',
+                'name': 'name',
+            }
+            result = result.sort(*[
+                values[value]
+                for value in args['sort'].split(',')
+                if value in values
+            ])
 
-    for key, value in charList.items():
-        result.append({"key": key, "name": value})
-
-    respond = jsonify({'amiibo': result})
-    return respond
-
-# Get the character by key.
-def amiiboCharacterKey(input):
-    charList = amiiboManager.charList
-    result = list()
-    for key, data in charList.items():
-        if (key.lower() == input.lower()):
-            result.append({"key": key, "name": data})
-
-    if len(result) == 0:
+    if not result:
         abort(404)
 
     respond = jsonify({'amiibo': result})
     return respond
 
-# Get the character by name.
-def amiiboCharacterName(input):
-    charList = amiiboManager.charList
-    result = list()
-    for key, data in charList.items():
-        if (data.lower() == input.lower()):
-            result.append({"key":key, "name": data})
-
-    if len(result) == 0:
-        abort(404)
-
-    respond = jsonify({'amiibo': result})
-    return respond
 
 ############################### Amiibo API ###############################
 
 # Get the amiibo
 @app.route('/api/amiibo/', methods=['GET'])
-def amiibo():
-    # Parameter information
-    typeParameter = request.args.get("type")
-    gameSeriesParameter = request.args.get("gameseries")
-    seriesParameter = request.args.get("series")
-    characterParameter = request.args.get("character")
-    nameParameter = request.args.get("name")
-    IdParameter = request.args.get("id")
+def route_api_amiibo():
+    args = request.args
 
-    if len(request.args) == 0:
-        return amiiboList()
-
-    elif len(request.args) == 1:
-        if typeParameter != None:
-            return amiiboTypeData(typeParameter)
-
-        elif nameParameter != None:
-            return amiiboName(nameParameter)
-
-        elif IdParameter != None:
-            return amiiboId(IdParameter)
-
-        elif gameSeriesParameter != None:
-            return amiiboGameSeriesData(gameSeriesParameter)
-
-        elif seriesParameter != None:
-            return amiiboSeriesData(seriesParameter)
-
-        elif characterParameter != None:
-            return amiiboCharacterData(characterParameter)
-
-        else:
-            return abort(404)
-
+    if 'id' in args:
+        try:
+            id_ = AmiiboHex(args['id'].strip())
+        except ValueError:
+            abort(400)
+        result = amiibo_manager.amiibos.get(id_)
     else:
-        return abort(404)
+        filters = {}
+        if 'head' in args:
+            try:
+                filters['head'] = Hex(args['head'].strip())
+            except ValueError:
+                abort(400)
 
-# Get all amiibo available
-def amiiboList():
-    amiiboList = amiiboManager.amiiboList
-    result = list()
+        if 'tail' in args:
+            try:
+                filters['tail'] = Hex(args['tail'].strip())
+            except ValueError:
+                abort(400)
 
-    for data in amiiboList:
-        result.append(buildAmiibo(data))
+        if 'name' in args:
+            filters['name'] = args['name'].strip()
 
-    respond = jsonify({'amiibo': result})
-    return respond
+        if 'gameseries' in args:
+            game_series = args['gameseries'].strip()
+            if game_series.startswith('0x'):
+                try:
+                    filters['game_series_id'] = GameSeriesHex(game_series)
+                except ValueError:
+                    abort(400)
+            else:
+                filters['game_series_name'] = game_series
 
-# Get the amiibo from name
-def amiiboName(input):
-    amiiboList = amiiboManager.amiiboList
-    result = list()
+        if 'character' in args:
+            character = args['character'].strip()
+            if character.startswith('0x'):
+                try:
+                    filters['character_id'] = CharacterHex(character)
+                except ValueError:
+                    abort(400)
+            else:
+                filters['character_name'] = character
 
-    for data in amiiboList:
-        if(data.getName().lower() == input.lower()):
-            result.append(buildAmiibo(data))
+        if 'variant' in args:
+            try:
+                filters['variant_id'] = VariantHex(args['variant'].strip())
+            except ValueError:
+                abort(400)
 
-    if len(result) == 0:
-        abort(404)
+        if 'type' in args:
+            amiibo_type = args['type'].strip()
+            if amiibo_type.startswith('0x'):
+                try:
+                    filters['amiibo_type_id'] = AmiiboTypeHex(amiibo_type)
+                except ValueError:
+                    abort(400)
+            else:
+                filters['amiibo_type_name'] = amiibo_type
 
-    respond = jsonify({'amiibo': result})
-    return respond
+        if 'amiibo_model' in args:
+            filters['amiibo_model_id'] = AmiiboModelHex(args['amiibo_model'].strip())
 
-# Get the amiibo from id
-def amiiboId(input):
-    amiiboList = amiiboManager.amiiboList
-    result = list()
+        if 'amiiboseries' in args:
+            amiibo_series = args['amiiboseries'].strip()
+            if amiibo_series.startswith('0x'):
+                try:
+                    filters['amiibo_series_id'] = AmiiboSeriesHex(amiibo_series)
+                except ValueError:
+                    abort(400)
+            else:
+                filters['amiibo_series_name'] = amiibo_series
 
-    for data in amiiboList:
-        if(data.getTail().lower() == input.lower()):                              # Tail only
-            result.append(buildAmiibo(data))
-        elif(data.getHead().lower() == input.lower()):                              # Head only
-            result.append(buildAmiibo(data))
-        elif((data.getHead().lower() + data.getTail().lower()) == input.lower()):     # head + tail
-            result.append(buildAmiibo(data))
+        result = amiibo_manager.amiibos.filter(**filters)
+        if 'sort' in args:
+            values = {
+                'id': 'id',
+                'head': 'head',
+                'tail': 'tail',
+                'name': 'name',
+                'gameseries': 'gameseries',
+                'gameseries_id': 'game_series_id',
+                'gameseries_name': 'game_series_name',
+                'character': 'character_name',
+                'character_id': 'character_id',
+                'character_name': 'character_name',
+                'variant': 'variant_id',
+                'variant_id': 'variant_id',
+                'type': 'amiibo_type_id',
+                'type_id': 'amiibo_type_id',
+                'type_name': 'amiibo_type_name',
+                'amiibo_model': 'amiibo_model_id',
+                'amiibo_model_id': 'amiibo_model_id',
+                'series': 'amiibo_series_name',
+                'series_id': 'amiibo_series_id',
+                'series_name': 'amiibo_series_name',
+                'release_na': 'release_na',
+                'release_jp': 'release_jp',
+                'release_eu': 'release_eu',
+                'release_au': 'release_au',
+            }
+            result = result.sort(*[
+                values[value]
+                for value in args['sort'].split(',')
+                if value in values
+            ])
 
-    if len(result) == 0:
-        abort(404)
-
-    respond = jsonify({'amiibo': result})
-    return respond
-
-# Get the amiibo base on type
-def amiiboTypeData(input):
-    amiiboList = amiiboManager.amiiboList
-    typeList = amiiboManager.typeList
-    result = list()
-
-    #Check if is hex:
-    if("0x" in input.lower()):
-        value = typeList.get(input.lower())
-
-    for data in amiiboList:
-        if(amiiboManager.getAmiiboType(data)[0].lower() == input.lower()):
-            result.append(buildAmiibo(data))
-        elif (amiiboManager.getAmiiboType(data)[1].lower() == input.lower()):
-            result.append(buildAmiibo(data))
-
-    if len(result) == 0:
-        abort(404)
-
-    respond = jsonify({'amiibo': result})
-    return respond
-
-# Get the amiibo base on gameseries
-def amiiboGameSeriesData(input):
-    amiiboList = amiiboManager.amiiboList
-    result = list()
-
-    for data in amiiboList:
-        if(amiiboManager.getAmiiboGameSeries(data)[0].lower() == input.lower()):
-            result.append(buildAmiibo(data))
-        elif (amiiboManager.getAmiiboGameSeries(data)[1].lower() == input.lower()):
-            result.append(buildAmiibo(data))
-
-    if len(result) == 0:
-        abort(404)
-
-    respond = jsonify({'amiibo': result})
-    return respond
-
-# Get the amiibo base on series
-def amiiboSeriesData(input):
-    amiiboList = amiiboManager.amiiboList
-    result = list()
-
-    for data in amiiboList:
-        if(amiiboManager.getAmiiboSeries(data)[0].lower() == input.lower()):
-            result.append(buildAmiibo(data))
-        elif (amiiboManager.getAmiiboSeries(data)[1].lower() == input.lower()):
-            result.append(buildAmiibo(data))
-
-    if len(result) == 0:
-        abort(404)
-
-    respond = jsonify({'amiibo': result})
-    return respond
-
-# Get the amiibo base on character
-def amiiboCharacterData(input):
-    amiiboList = amiiboManager.amiiboList
-    result = list()
-
-    for data in amiiboList:
-        if(amiiboManager.getAmiiboCharacter(data)[0].lower() == input.lower()):
-            result.append(buildAmiibo(data))
-        elif (amiiboManager.getAmiiboCharacter(data)[1].lower() == input.lower()):
-            result.append(buildAmiibo(data))
-
-    if len(result) == 0:
+    if not result:
         abort(404)
 
     respond = jsonify({'amiibo': result})
