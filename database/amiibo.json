@@ -6165,6 +6165,15 @@
                 "na": "2015-02-01"
             }
         },
+        "0x3480000002580002": {
+            "name": "Mega Man (Gold Edition)",
+            "release": {
+                "au": null,
+                "eu": null,
+                "jp": null,
+                "na": "2016-02-23"
+            }
+        },
         "0x34c0000002530002": {
             "name": "Ryu",
             "release": {
