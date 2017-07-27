@@ -76,7 +76,7 @@
 				"na": "2015-03-20"
 			},
 			"tail": "00340102",
-			"type": "figure"
+			"type": "Figure"
 		},
 		{
 			"amiiboSeries": "Super Smash Bros.",
@@ -92,7 +92,7 @@
 				"na": "2014-11-21"
 			},
 			"tail": "00000002",
-			"type": "figure"
+			"type": "Figure"
 		}
 	]
 }
@@ -196,7 +196,7 @@
                 var d = jQuery.parseJSON(data['responseText']);
                 jQuery('#interactive_output').text(JSON.stringify(d, null, '\t'));
 
-            } else if (data['status'] == 404) {
+            } else if (data['status'] == 400 || data['status'] == 404) {
 
                 jQuery('#interactive_output').text(data['status'] + ' ' + data['statusText']);
             }

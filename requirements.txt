@@ -2,3 +2,4 @@ flask
 flask_limiter
 gunicorn
 requests
+cached_property
