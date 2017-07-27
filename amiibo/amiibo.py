@@ -1,5 +1,3 @@
-#!/usr/bin/env python
-
 from cached_property import cached_property
 
 GAME_SERIES_MASK   = 0xFFC00000

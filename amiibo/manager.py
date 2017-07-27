@@ -1,5 +1,3 @@
-#!/usr/bin/env python
-
 import sqlite3
 import datetime
 import json
@@ -22,6 +20,7 @@ from .filterable import (
     AmiiboCollection,
     FilterableCollection,
 )
+
 
 class AmiiboManager():
     def __init__(self):
