@@ -41,3 +41,4 @@ Click on the `Deploy to Heroku` button and you are good to go!
 
 ### Credits
 - Collaborator: [cheatfreak74](https://github.com/cheatfreak47)
+- Contributers: [North101](https://github.com/North101)
