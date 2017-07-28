@@ -11,13 +11,12 @@
         "0x09": "Legend Of Zelda",
         "0x10": "BoxBoy!",
         "0x11": "Pikmin",
+        "0x12": "Fire Emblem",
         "0x0a": "Shovel Knight",
         "0x0c": "Kirby",
         "0x0d": "Pokken",
         "0x0e": "Mario Sports Superstars",
         "0x0f": "Monster Hunter",
-        "0x10": "BoxBoy!",
-        "0x12": "Fire Emblem"
     },
     "amiibos": {
         "0x0000000000000002": {
