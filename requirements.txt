@@ -3,3 +3,4 @@ flask_limiter
 gunicorn
 requests
 cached_property
+flask-compress
