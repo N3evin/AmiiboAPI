@@ -10,6 +10,7 @@ from flask import Flask, jsonify, abort, make_response, render_template, request
 from flask.json import JSONEncoder
 from flask_limiter import Limiter
 from flask_limiter.util import get_remote_address
+from flask_compress import Compress
 
 from amiibo.amiibo import (
     Hex,
@@ -69,6 +70,7 @@ class AmiiboJSONEncoder(JSONEncoder):
 
 app = Flask(__name__)
 app.json_encoder = AmiiboJSONEncoder
+Compress(app)
 
 amiibo_manager = AmiiboManager.from_json()
 
