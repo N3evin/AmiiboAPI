@@ -127,6 +127,12 @@ def ip_whitelist():
     return request.remote_addr == "127.0.0.1"
 
 
+@app.route('/api/lastupdated/', methods=['GET'])
+def route_api_last_updated():
+    respond = jsonify({'amiibo': amiibo_manager.last_updated})
+    return respond
+
+
 ############################### Game Series API ###############################
 
 # gameseries API
@@ -395,4 +401,4 @@ def route_api_amiibo():
     return respond
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True, extra_files=['database/amiibo.json'])
