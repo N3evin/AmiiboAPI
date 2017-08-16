@@ -2,6 +2,7 @@ import sqlite3
 import datetime
 import json
 import os
+import hashlib
 
 from .amiibo import (
     GAME_SERIES_MASK,
@@ -22,6 +23,49 @@ from .filterable import (
 )
 
 
+class LastUpdated():
+    def __init__(self, file='last-updated.json'):
+        self.file = 'last-updated.json'
+
+    def read(self):
+        with open(self.file, 'r') as f:
+            data = json.load(f)
+
+        return {
+            'sha1': data['sha1'],
+            'timestamp': datetime.datetime.strptime(data['timestamp'], "%Y-%m-%dT%H:%M:%S.%f"),
+        }
+
+    def write(self, sha1, timestamp):
+        with open(self.file, 'w') as f:
+            json.dump({
+                'sha1': sha1,
+                'timestamp': timestamp.isoformat(),
+            }, f)
+
+    def hash(self, data):
+        value = json.dumps(data, sort_keys=True)
+        return hashlib.sha1(value.encode('utf-8')).hexdigest()
+
+    def __call__(self, data):
+        sha1 = self.hash(data)
+        try:
+            last_update = self.read()
+        except Exception as e:
+            print(e)
+            last_update = None
+
+        if last_update is None or last_update['sha1'] != sha1:
+            timestamp = datetime.datetime.utcnow()
+            self.write(sha1, timestamp)
+            print('Updated {}'.format(self.file))
+            print('sha1: {}, timestamp: {}'.format(sha1, timestamp.isoformat()))
+        else:
+            timestamp = last_update['timestamp']
+
+        return timestamp
+
+
 class AmiiboManager():
     def __init__(self):
         self.amiibos = AmiiboCollection()
@@ -29,6 +73,7 @@ class AmiiboManager():
         self.characters = FilterableCollection()
         self.types = FilterableCollection()
         self.amiibo_series = FilterableCollection()
+        self.last_updated = None
 
     def to_json(self, file='database/amiibo.json'):
         data = {
@@ -96,6 +141,7 @@ class AmiiboManager():
             AmiiboSeries(manager, id_, name)
             for id_, name in data['amiibo_series'].items()
         )
+        manager.last_updated = LastUpdated()(data)
 
         return manager
 
