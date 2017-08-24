@@ -11,6 +11,7 @@ from flask.json import JSONEncoder
 from flask_limiter import Limiter
 from flask_limiter.util import get_remote_address
 from flask_compress import Compress
+from flask_cors import CORS, cross_origin
 
 from amiibo.amiibo import (
     Hex,
@@ -69,6 +70,7 @@ class AmiiboJSONEncoder(JSONEncoder):
 
 
 app = Flask(__name__)
+CORS(app)
 app.json_encoder = AmiiboJSONEncoder
 Compress(app)
 
