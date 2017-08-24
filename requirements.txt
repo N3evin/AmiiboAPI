@@ -1,7 +1,7 @@
 flask
 flask_limiter
-flask_cors
 gunicorn
 requests
 cached_property
 flask-compress
+flask-cors
