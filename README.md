@@ -26,6 +26,7 @@ More APIs can be found here: [http://www.amiiboapi.com](http://www.amiiboapi.com
 ### Requirements (if you want to host)
 - Python 2.X or 3.X
 - [Flask](http://flask.pocoo.org/)
+- [Flask-Cors](https://flask-cors.readthedocs.io/en/latest/)
 
 ### Manually Setup (if you want to host)
 1. Run `app.py` to start the webservice.
