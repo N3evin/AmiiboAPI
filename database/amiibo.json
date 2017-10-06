@@ -6292,6 +6292,24 @@
                 "jp": "2017-07-13",
                 "na": "2017-07-28"
             }
+        },
+        "0x0015000003670102": {
+            "name": "Goomba",
+            "release": {
+                "au": "2017-10-07",
+                "eu": "2017-10-06",
+                "jp": "2017-10-05",
+                "na": "2017-10-06"
+            }
+        },
+        "0x0023000003680102": {
+            "name": "Koopa Troopa",
+            "release": {
+                "au": "2017-10-07",
+                "eu": "2017-10-06",
+                "jp": "2017-10-05",
+                "na": "2017-10-06"
+            }
         }
     },
     "characters": {
@@ -6308,7 +6326,9 @@
         "0x000a": "Toad",
         "0x0013": "Daisy",
         "0x0014": "Waluigi",
+		"0x0015": "Goomba",
         "0x0017": "Boo",
+		"0x0023": "Koopa Troopa",
         "0x0080": "Poochy",
         "0x0100": "Link",
         "0x0101": "Zelda",
@@ -6836,6 +6856,8 @@
     },
     "game_series": {
         "0x000": "Super Mario",
+		"0x001": "Super Mario",
+		"0x002": "Super Mario",
         "0x008": "Yoshi's Woolly World",
         "0x010": "The Legend of Zelda",
         "0x014": "Breath of the Wild",
@@ -6854,6 +6876,7 @@
         "0x048": "Animal Crossing",
         "0x04c": "Animal Crossing",
         "0x050": "Animal Crossing",
+		"0x051": "Animal Crossing",
         "0x058": "Star Fox",
         "0x05c": "Metroid",
         "0x060": "F-Zero",
@@ -6865,6 +6888,7 @@
         "0x07c": "Mii",
         "0x080": "Splatoon",
         "0x09c": "Mario Sports Superstars",
+		"0x09d": "Mario Sports Superstars",
         "0x190": "Pokemon",
         "0x194": "Pokemon",
         "0x198": "Pokemon",
@@ -6877,6 +6901,7 @@
         "0x1b4": "Pokemon",
         "0x1b8": "Pokemon",
         "0x1bc": "Pokemon",
+		"0x1bd": "Pokemon",
         "0x1d0": "Pokken",
         "0x1f0": "Kirby",
         "0x1f4": "BoxBoy!",
