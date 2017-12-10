@@ -2,217 +2,218 @@
 {% block mainbody %}
 
     <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-			<div class="navbar-brand">
-				<iframe src="https://ghbtns.com/github-btn.html?user=n3evin&repo=amiiboapi&type=star&count=true" frameborder="0" scrolling="0" width="170px" height="20px"></iframe>
-			</div>
-        </div>
-        <div class="collapse navbar-collapse navbar-right">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-			<li><a href="/faq/">FAQs</a></li>
-            <li><a href="/docs/">Documentation</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-<section id="home">
-
-    <div class="header">
-        <h1>AmiiboAPI</h1>
-        <h2>A RESTful API for Amiibo</h2>
-        <h4>For education purposes only!</h4>
-    </div>
-
-
-    <div class="cta">
-        <p>An Amiibo database that holds all amiibo information in a single API.</p>
-		<p>Google spreadsheet: <a href="https://docs.google.com/spreadsheets/d/19E7pMhKN6x583uB6bWVBeaTMyBPtEAC-Bk59Y6cfgxA">view here</a></p>
-    </div>
-
-
-    <div class="container">
-
-
-        <div class="row">
-
-            <div class="col-md-10 center-block">
-
-                <div class="center">
-                    <h1>
-                        Give it a whirl!
-                    </h1>
-                    <div class="input-group pad_top">
-                        <span class="input-group-addon url">http://www.amiiboapi.com/api/</span>
-                        <input id="interactive" type="text" class="form-control" placeholder="amiibo/?name=mario">
-                        <span class="input-group-btn"><button onClick="interactive_call();return false;" class="btn btn-primary">submit</button></span>
-                    </div>
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="navbar-brand">
+                    <iframe src="https://ghbtns.com/github-btn.html?user=n3evin&repo=amiiboapi&type=star&count=true" frameborder="0" scrolling="0" width="170px" height="20px"></iframe>
                 </div>
+            </div>
+            <div class="collapse navbar-collapse navbar-right">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="/faq/">FAQs</a></li>
+                    <li><a href="/docs/">Documentation</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
-                <small>Need a hint? try <a href="#" onClick="update('amiibo/?name=mario');return false;"><i>amiibo/?name=mario</i></a> or <a href="#" onClick="update('gameseries');return false;"><i>gameseries</i></a> or <a href="#" onClick="update('amiibo?character=zelda');return false;"><i>amiibo?character=zelda</i></a></small>
-                <p class="lead pad_top">Output Values</p>
+    <section id="home">
 
-                <pre id="interactive_output" class="pre-scrollable">
+        <div class="header">
+            <h1>AmiiboAPI</h1>
+            <h2>A RESTful API for Amiibo</h2>
+            <h4>For education purposes only!</h4>
+        </div>
+
+
+        <div class="cta">
+            <p>An Amiibo database that holds all amiibo information in a single API.</p>
+            <p>Google spreadsheet: <a href="https://docs.google.com/spreadsheets/d/19E7pMhKN6x583uB6bWVBeaTMyBPtEAC-Bk59Y6cfgxA">view here</a></p>
+        </div>
+
+
+        <div class="container">
+
+
+            <div class="row">
+
+                <div class="col-md-10 center-block">
+
+                    <div class="center">
+                        <h1>
+                            Give it a whirl!
+                        </h1>
+                        <div class="input-group pad_top">
+                            <span class="input-group-addon url">http://www.amiiboapi.com/api/</span>
+                            <input id="interactive" type="text" class="form-control" placeholder="amiibo/?name=mario">
+                            <span class="input-group-btn"><button onClick="interactive_call();return false;" class="btn btn-primary">submit</button></span>
+                        </div>
+                    </div>
+
+                    <small>Need a hint? try <a href="#" onClick="update('amiibo/?name=mario');return false;"><i>amiibo/?name=mario</i></a> or <a href="#" onClick="update('gameseries');return false;"><i>gameseries</i></a> or <a href="#" onClick="update('amiibo?character=zelda');return false;"><i>amiibo?character=zelda</i></a></small>
+                    <p class="lead pad_top">Output Values</p>
+
+                    <pre id="interactive_output" class="pre-scrollable">
 {
-	"amiibo": [
-		{
-			"amiiboSeries": "Super Mario Bros.",
-			"character": "Mario",
-			"gameSeries": "Super Mario",
-			"head": "00000000",
-			"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00000000-00340102.png",
-			"name": "Mario",
-			"release": {
-				"au": "2015-03-21",
-				"eu": "2015-03-20",
-				"jp": "2015-03-12",
-				"na": "2015-03-20"
-			},
-			"tail": "00340102",
-			"type": "Figure"
-		},
-		{
-			"amiiboSeries": "Super Smash Bros.",
-			"character": "Mario",
-			"gameSeries": "Super Mario",
-			"head": "00000000",
-			"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00000000-00000002.png",
-			"name": "Mario",
-			"release": {
-				"au": "2014-11-29",
-				"eu": "2014-11-28",
-				"jp": "2014-12-06",
-				"na": "2014-11-21"
-			},
-			"tail": "00000002",
-			"type": "Figure"
-		}
-	]
+    "amiibo": [
+        {
+            "amiiboSeries": "Super Mario Bros.",
+            "character": "Mario",
+            "gameSeries": "Super Mario",
+            "head": "00000000",
+            "image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00000000-00340102.png",
+            "name": "Mario",
+            "release": {
+                "au": "2015-03-21",
+                "eu": "2015-03-20",
+                "jp": "2015-03-12",
+                "na": "2015-03-20"
+            },
+            "tail": "00340102",
+            "type": "Figure"
+        },
+        {
+            "amiiboSeries": "Super Smash Bros.",
+            "character": "Mario",
+            "gameSeries": "Super Mario",
+            "head": "00000000",
+            "image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00000000-00000002.png",
+            "name": "Mario",
+            "release": {
+                "au": "2014-11-29",
+                "eu": "2014-11-28",
+                "jp": "2014-12-06",
+                "na": "2014-11-21"
+            },
+            "tail": "00000002",
+            "type": "Figure"
+        }
+    ]
 }
                 </pre>
 
-            </div>
+                </div>
 
-        </div><!--interactive row-->
+            </div><!--interactive row-->
 
-        <div class="row">
-            <div class="col-md-10 center-block center pad_top pad_bot">
-                <a href="https://www.heroku.com/" target="none"><img class="do_image" src="/static/images/heroku_logo.png"></a>
-        </div>
+            <div class="row">
+                <div class="col-md-10 center-block center pad_top pad_bot">
+                    <a href="https://www.heroku.com/" target="none"><img class="do_image" src="/static/images/heroku_logo.png"></a>
+                </div>
 
-
-        <div class="row">
-
-            <div class="col-md-10 center-block">
 
                 <div class="row">
 
-                    <div class="col-md-4">
-                        <p class="lead center">
-                            What is this?
-                        </p>
-                        <div class="well" style="height:250px;">
-                            <p>
-                                This is RESTful API that contains the Amiibo Database that was createed on the excel spreadsheet.
-                            </p>
-                            <p>
-                                It will be regulary updated as new amiibo is release.
-                            </p>
-                        </div>
-                    </div>
+                    <div class="col-md-10 center-block">
 
-                    <div class="col-md-4" style="height="100px;">
-                        <p class="lead center">
-                            Where do I start?
-                        </p>
-                        <div class="well" style="height:250px;">
-                            <p>
-                                We have awesome <a href="/docs/">documentation</a> on
-                                how to use this API. It takes minutes to get started.
-                            </p>
-                            <p>
-                                This API will always be publicly available and will
-                                never require any extensive setup process to consume.
-                            </p>
-                        </div>
-                    </div>
+                        <div class="row">
 
-                    <div class="col-md-4">
-                        <p class="lead center">
-                            Keep AmiiboAPI Running
-                        </p>
-                        <div class="well" style="height:250px;">
-                            <p>AmiiboAPI costs around $50 a month to run. We want to keep this free and scalable for as long as possible!
-                            </p>
-                            <p><b>If you use AmiiboAPI for teaching or for building apps, consider donating today!</b></p>
-								<center>
-									<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-									<input type="hidden" name="cmd" value="_s-xclick">
-									<input type="hidden" name="hosted_button_id" value="H3C2MVXGJV6UL">
-									<input type="image" src="https://www.paypalobjects.com/en_AU/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
-									<img alt="" border="0" src="https://www.paypalobjects.com/en_AU/i/scr/pixel.gif" width="1" height="1">
-									</form>	
-								</center>
-							</div>
+                            <div class="col-md-4">
+                                <p class="lead center">
+                                    What is this?
+                                </p>
+                                <div class="well" style="height:250px;">
+                                    <p>
+                                        This is RESTful API that contains the Amiibo Database that was createed on the excel spreadsheet.
+                                    </p>
+                                    <p>
+                                        It will be regulary updated as new amiibo is release.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4" style="height:100px;">
+                                <p class="lead center">
+                                    Where do I start?
+                                </p>
+                                <div class="well" style="height:250px;">
+                                    <p>
+                                        We have awesome <a href="/docs/">documentation</a> on
+                                        how to use this API. It takes minutes to get started.
+                                    </p>
+                                    <p>
+                                        This API will always be publicly available and will
+                                        never require any extensive setup process to consume.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <p class="lead center">
+                                    Keep AmiiboAPI Running
+                                </p>
+                                <div class="well" style="height:250px;">
+                                    <p>AmiiboAPI costs around $50 a month to run. We want to keep this free and scalable for as long as possible!
+                                    </p>
+                                    <p><b>If you use AmiiboAPI for teaching or for building apps, consider donating today!</b></p>
+                                    <div style="text-align: center">
+                                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                                            <input type="hidden" name="cmd" value="_s-xclick">
+                                            <input type="hidden" name="hosted_button_id" value="H3C2MVXGJV6UL">
+                                            <input type="image" src="https://www.paypalobjects.com/en_AU/i/btn/btn_donateCC_LG.gif" name="submit" alt="PayPal – The safer, easier way to pay online!">
+                                            <img alt="" border="0" src="https://www.paypalobjects.com/en_AU/i/scr/pixel.gif" width="1" height="1">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div><!-- end bottom -->
-    </div><!-- /.container -->
+            </div><!-- end bottom -->
+        </div><!-- /.container -->
 
-</section>
+    </section>
 
-<script>
+    <script>
 
-    function update (call) {
+        function update(call) {
 
-        jQuery('#interactive').val(call);
-        interactive_call();
-    }
+            jQuery('#interactive').val(call);
+            interactive_call();
+        }
 
-    function interactive_call() {
+        function interactive_call() {
 
-        var content = jQuery('#interactive').val() || 'amiibo/mario/';;
+            var content = jQuery('#interactive').val() || 'amiibo/mario/';
 
-        var call_url = '/api/' + content;
+            var call_url = '/api/' + content;
 
-        jQuery.ajax({
+            jQuery.ajax({
 
-            dataType: 'json',
-            url: call_url,
-            context: document.body
+                dataType: 'json',
+                url: call_url,
+                context: document.body
 
-        }).complete( function(data) {
+            }).complete(function (data) {
 
-            if(data['status'] == 200){
+                if (data['status'] === 200) {
 
-                var d = jQuery.parseJSON(data['responseText']);
-                jQuery('#interactive_output').text(JSON.stringify(d, null, '\t'));
+                    var d = jQuery.parseJSON(data['responseText']);
+                    jQuery('#interactive_output').text(JSON.stringify(d, null, '\t'));
 
-            } else if (data['status'] == 400 || data['status'] == 404) {
+                } else if (data['status'] === 400 || data['status'] === 404) {
 
-                jQuery('#interactive_output').text(data['status'] + ' ' + data['statusText']);
-            }
+                    jQuery('#interactive_output').text(data['status'] + ' ' + data['statusText']);
+                }
+            });
+        }
+
+
+        $(document).ready(function () {
+            $('#interactive').keypress(function (e) {
+                if (e.which === 13) {
+                    interactive_call();
+                    return false;    //<---- Add this line
+                }
+            });
         });
-    }
-	
 
-	$(document).ready(function() {
-		$('#interactive').keypress(function (e) {
-		  if (e.which == 13) {
-			interactive_call();return false;
-			return false;    //<---- Add this line
-		  }
-		});
-	});
-
-</script>
+    </script>
 
 {% endblock %}
