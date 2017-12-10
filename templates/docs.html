@@ -3,25 +3,29 @@
 
     <h1>AmiiboAPI Documentation</h1>
 
-{% endblock %}
+{% endblock docstitle %}
 
 {% block docsversionstate %}
 
     <li class="active"><a href="#">API</a></li>
 
-{% endblock %}
+{% endblock docsversionstate %}
 
 {% block docsnav %}
     <ul>
         <li><a href="#info">Information</a></li>
         <li><a href="#termscondition">Terms & Conditions</a></li>
-        <hr></hr>
+        <li>
+            <hr>
+        </li>
         <li><a href="#amiibo">Amiibo</a></li>
         <li><a href="#amiiboType">Amiibo Type</a></li>
         <li><a href="#amiiboGameSeries">Amiibo Game Series</a></li>
         <li><a href="#amiiboSeries">Amiibo Series</a></li>
         <li><a href="#amiiboCharacter">Amiibo Character</a></li>
-        <hr></hr>
+        <li>
+            <hr>
+        </li>
         <li><a href="#type">Type</a></li>
         <li><a href="#gameSeries">Game Series</a></li>
         <li><a href="#series">Series</a></li>
@@ -38,21 +42,18 @@
     <h3>GET /api/amiibo/</h3>
 
     <p>Return a list of amiibo available in the API.</p>
-    
+
     <h3>GET /api/amiibo?name=value</h3>
-    
+
     <p>Return the amiibo information base on it's name.</p>
-    
+
     <h3>GET /api/amiibo?id=value</h3>
-    
+
     <p>Return the amiibo information base on it's id.</p>
-    
-    <p><div><b>E.g.</b></div>
+    <div><b>E.g.</b></div>
     <div>Head only: <code>/api/amiibo?head=01010000</code></div>
     <div>Tail only: <code>/api/amiibo?tail=000e0002</code></div>
     <div>Head + Tail: <code>/api/amiibo?id=01010000000e0002</code></div>
-    </p>
-    
     <pre>
 {
     "amiibo": [
@@ -112,60 +113,64 @@
 
     <table>
         <thead>
+        <tr>
             <th>Name</th>
             <th>Description</th>
             <th>Data Type</th>
+        </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>amiiboSeries</td>
-                <td>The series the amiibo belongs to.</td>
-                <td>string</td>
-            </tr>
-            <tr>
-                <td>character</td>
-                <td>The character of the amiibo, multiple character have different amiibo design.</td>
-                <td>string</td>
-            </tr>
-            <tr>
-                <td>gameSeries</td>
-                <td>The game series of the amiibo.</td>
-                <td>string</td>
-            </tr>
-            <tr>
-                <td>head</td>
-                <td>The 1st 8 value of the hexadecimal to recognize the amiibo.</br><b>Note:</b> 0-7 value in the hexadecimal</td>
-                <td>string</td>
-            </tr>
-            <tr>
-                <td>image</td>
-                <td>The image link of the amiibo.</td>
-                <td>string</td>
-            </tr>
-            <tr>
-                <td>name</td>
-                <td>The name of the amiibo.</td>
-                <td>string</td>
-            </tr>
-            <tr>
-                <td>release</td>
-                <td>        
-                The release date for North America, Japan, Europe and Australia </br>       
-                <b>Date Format: </b>yyyy-mm-dd</br>
+        <tr>
+            <td>amiiboSeries</td>
+            <td>The series the amiibo belongs to.</td>
+            <td>string</td>
+        </tr>
+        <tr>
+            <td>character</td>
+            <td>The character of the amiibo, multiple character have different amiibo design.</td>
+            <td>string</td>
+        </tr>
+        <tr>
+            <td>gameSeries</td>
+            <td>The game series of the amiibo.</td>
+            <td>string</td>
+        </tr>
+        <tr>
+            <td>head</td>
+            <td>The 1st 8 value of the hexadecimal to recognize the amiibo.<br><b>Note:</b> 0-7 value in the hexadecimal</td>
+            <td>string</td>
+        </tr>
+        <tr>
+            <td>image</td>
+            <td>The image link of the amiibo.</td>
+            <td>string</td>
+        </tr>
+        <tr>
+            <td>name</td>
+            <td>The name of the amiibo.</td>
+            <td>string</td>
+        </tr>
+        <tr>
+            <td>release</td>
+            <td>
+                The release date for North America, Japan, Europe and Australia <br>
+                <b>Date Format: </b>yyyy-mm-dd<br>
                 <b>Warning:</b> If date is not available, it will return as <code>null</code>
-                </td> </br><b>Note:</b> If date is not available, it will return as <code>null</code></td>
-                <td>json</td>
-            </tr>
-            <tr>
-                <td>tail</td>
-                <td>The next 8 value of the hexadecimal to recognize the amiibo.</br><b>Note:</b> 8-15 value in the hexadecimal</td>
-                <td>string</td>
-            </tr>
-            <tr>
-                <td>type</td>
-                <td>The type it belongs to. Example: card, figure and yarn</td>
-                <td>string</td>
-            </tr>
+            </td>
+            <br>
+            <td><b>Note:</b> If date is not available, it will return as <code>null</code></td>
+            <td>json</td>
+        </tr>
+        <tr>
+            <td>tail</td>
+            <td>The next 8 value of the hexadecimal to recognize the amiibo.<br><b>Note:</b> 8-15 value in the hexadecimal</td>
+            <td>string</td>
+        </tr>
+        <tr>
+            <td>type</td>
+            <td>The type it belongs to. Example: card, figure and yarn</td>
+            <td>string</td>
+        </tr>
         </tbody>
     </table>
 
@@ -175,9 +180,9 @@
     <p>Get all the amiibo based on it's type as a list.</p>
 
     <h3>GET /api/amiibo?type=value</h3>
-    
+
     <p><strong>Note: </strong>value could be anything in the type database. <b>E.g.</b> <code>/api/amiibo?type=0x02</code> or <code>/api/amiibo?type=yarn</code></p>
-    
+
     <pre>
 {
     "amiibo": [
@@ -206,60 +211,64 @@
 
     <table>
         <thead>
+        <tr>
             <th>Name</th>
             <th>Description</th>
             <th>Data Type</th>
+        </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>amiiboSeries</td>
-                <td>The series the amiibo belongs to.</td>
-                <td>string</td>
-            </tr>
-            <tr>
-                <td>character</td>
-                <td>The character of the amiibo, multiple character have different amiibo design.</td>
-                <td>string</td>
-            </tr>
-            <tr>
-                <td>gameSeries</td>
-                <td>The game series of the amiibo.</td>
-                <td>string</td>
-            </tr>
-            <tr>
-                <td>head</td>
-                <td>The 1st 8 value of the hexadecimal to recognize the amiibo.</br><b>Note:</b> 0-7 value in the hexadecimal</td>
-                <td>string</td>
-            </tr>
-            <tr>
-                <td>image</td>
-                <td>The image link of the amiibo.</td>
-                <td>string</td>
-            </tr>
-            <tr>
-                <td>name</td>
-                <td>The name of the amiibo.</td>
-                <td>string</td>
-            </tr>
-            <tr>
-                <td>release</td>
-                <td>        
-                The release date for North America, Japan, Europe and Australia </br>       
-                <b>Date Format: </b>yyyy-mm-dd</br>
+        <tr>
+            <td>amiiboSeries</td>
+            <td>The series the amiibo belongs to.</td>
+            <td>string</td>
+        </tr>
+        <tr>
+            <td>character</td>
+            <td>The character of the amiibo, multiple character have different amiibo design.</td>
+            <td>string</td>
+        </tr>
+        <tr>
+            <td>gameSeries</td>
+            <td>The game series of the amiibo.</td>
+            <td>string</td>
+        </tr>
+        <tr>
+            <td>head</td>
+            <td>The 1st 8 value of the hexadecimal to recognize the amiibo.<br><b>Note:</b> 0-7 value in the hexadecimal</td>
+            <td>string</td>
+        </tr>
+        <tr>
+            <td>image</td>
+            <td>The image link of the amiibo.</td>
+            <td>string</td>
+        </tr>
+        <tr>
+            <td>name</td>
+            <td>The name of the amiibo.</td>
+            <td>string</td>
+        </tr>
+        <tr>
+            <td>release</td>
+            <td>
+                The release date for North America, Japan, Europe and Australia <br>
+                <b>Date Format: </b>yyyy-mm-dd<br>
                 <b>Warning:</b> If date is not available, it will return as <code>null</code>
-                </td> </br><b>Note:</b> If date is not available, it will return as <code>null</code></td>
-                <td>json</td>
-            </tr>
-            <tr>
-                <td>tail</td>
-                <td>The next 8 value of the hexadecimal to recognize the amiibo.</br><b>Note:</b> 8-15 value in the hexadecimal</td>
-                <td>string</td>
-            </tr>
-            <tr>
-                <td>type</td>
-                <td>The type it belongs to. Example: card, figure and yarn</td>
-                <td>string</td>
-            </tr>
+            </td>
+            <br>
+            <td><b>Note:</b> If date is not available, it will return as <code>null</code></td>
+            <td>json</td>
+        </tr>
+        <tr>
+            <td>tail</td>
+            <td>The next 8 value of the hexadecimal to recognize the amiibo.<br><b>Note:</b> 8-15 value in the hexadecimal</td>
+            <td>string</td>
+        </tr>
+        <tr>
+            <td>type</td>
+            <td>The type it belongs to. Example: card, figure and yarn</td>
+            <td>string</td>
+        </tr>
         </tbody>
     </table>
 
@@ -268,7 +277,7 @@
     <p>Get all the amiibo based on it's game series as a list.</p>
 
     <h3>GET /api/amiibo?gameseries=value</h3>
-    
+
     <p><strong>Note: </strong>value could be anything in the gameseries database. <b>E.g.</b> <code>/api/amiibo?gameseries=0x22c</code> or <code>/api/amiibo?gameseries=Chibi Robo</code></p>
 
     <pre>
@@ -298,69 +307,73 @@
 
     <table>
         <thead>
+        <tr>
             <th>Name</th>
             <th>Description</th>
             <th>Data Type</th>
+        </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>amiiboSeries</td>
-                <td>The series the amiibo belongs to.</td>
-                <td>string</td>
-            </tr>
-            <tr>
-                <td>character</td>
-                <td>The character of the amiibo, multiple character have different amiibo design.</td>
-                <td>string</td>
-            </tr>
-            <tr>
-                <td>gameSeries</td>
-                <td>The game series of the amiibo.</td>
-                <td>string</td>
-            </tr>
-            <tr>
-                <td>head</td>
-                <td>The 1st 8 value of the hexadecimal to recognize the amiibo.</br><b>Note:</b> 0-7 value in the hexadecimal</td>
-                <td>string</td>
-            </tr>
-            <tr>
-                <td>image</td>
-                <td>The image link of the amiibo.</td>
-                <td>string</td>
-            </tr>
-            <tr>
-                <td>name</td>
-                <td>The name of the amiibo.</td>
-                <td>string</td>
-            </tr>
-            <tr>
-                <td>release</td>
-                <td>        
-                The release date for North America, Japan, Europe and Australia </br>       
-                <b>Date Format: </b>yyyy-mm-dd</br>
+        <tr>
+            <td>amiiboSeries</td>
+            <td>The series the amiibo belongs to.</td>
+            <td>string</td>
+        </tr>
+        <tr>
+            <td>character</td>
+            <td>The character of the amiibo, multiple character have different amiibo design.</td>
+            <td>string</td>
+        </tr>
+        <tr>
+            <td>gameSeries</td>
+            <td>The game series of the amiibo.</td>
+            <td>string</td>
+        </tr>
+        <tr>
+            <td>head</td>
+            <td>The 1st 8 value of the hexadecimal to recognize the amiibo.<br><b>Note:</b> 0-7 value in the hexadecimal</td>
+            <td>string</td>
+        </tr>
+        <tr>
+            <td>image</td>
+            <td>The image link of the amiibo.</td>
+            <td>string</td>
+        </tr>
+        <tr>
+            <td>name</td>
+            <td>The name of the amiibo.</td>
+            <td>string</td>
+        </tr>
+        <tr>
+            <td>release</td>
+            <td>
+                The release date for North America, Japan, Europe and Australia <br>
+                <b>Date Format: </b>yyyy-mm-dd<br>
                 <b>Warning:</b> If date is not available, it will return as <code>null</code>
-                </td> </br><b>Note:</b> If date is not available, it will return as <code>null</code></td>
-                <td>json</td>
-            </tr>
-            <tr>
-                <td>tail</td>
-                <td>The next 8 value of the hexadecimal to recognize the amiibo.</br><b>Note:</b> 8-15 value in the hexadecimal</td>
-                <td>string</td>
-            </tr>
-            <tr>
-                <td>type</td>
-                <td>The type it belongs to. Example: card, figure and yarn</td>
-                <td>string</td>
-            </tr>
+            </td>
+            <br>
+            <td><b>Note:</b> If date is not available, it will return as <code>null</code></td>
+            <td>json</td>
+        </tr>
+        <tr>
+            <td>tail</td>
+            <td>The next 8 value of the hexadecimal to recognize the amiibo.<br><b>Note:</b> 8-15 value in the hexadecimal</td>
+            <td>string</td>
+        </tr>
+        <tr>
+            <td>type</td>
+            <td>The type it belongs to. Example: card, figure and yarn</td>
+            <td>string</td>
+        </tr>
         </tbody>
     </table>
-    
+
     <h2 id="amiiboSeries">Amiibo Series</h2>
 
     <p>Get all the amiibo based on it's series as a list.</p>
 
     <h3>GET /api/amiibo?series=value</h3>
-    
+
     <p><strong>Note: </strong>value could be anything in the series database. <b>E.g.</b> <code>/api/amiibo?series=0x10</code> or <code>/api/amiibo?series=BoxBoy!</code></p>
 
     <pre>
@@ -390,69 +403,74 @@
 
     <table>
         <thead>
+        <tr>
+
             <th>Name</th>
             <th>Description</th>
             <th>Data Type</th>
+        </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>amiiboSeries</td>
-                <td>The series the amiibo belongs to.</td>
-                <td>string</td>
-            </tr>
-            <tr>
-                <td>character</td>
-                <td>The character of the amiibo, multiple character have different amiibo design.</td>
-                <td>string</td>
-            </tr>
-            <tr>
-                <td>gameSeries</td>
-                <td>The game series of the amiibo.</td>
-                <td>string</td>
-            </tr>
-            <tr>
-                <td>head</td>
-                <td>The 1st 8 value of the hexadecimal to recognize the amiibo.</br><b>Note:</b> 0-7 value in the hexadecimal</td>
-                <td>string</td>
-            </tr>
-            <tr>
-                <td>image</td>
-                <td>The image link of the amiibo.</td>
-                <td>string</td>
-            </tr>
-            <tr>
-                <td>name</td>
-                <td>The name of the amiibo.</td>
-                <td>string</td>
-            </tr>
-            <tr>
-                <td>release</td>
-                <td>        
-                The release date for North America, Japan, Europe and Australia </br>       
-                <b>Date Format: </b>yyyy-mm-dd</br>
+        <tr>
+            <td>amiiboSeries</td>
+            <td>The series the amiibo belongs to.</td>
+            <td>string</td>
+        </tr>
+        <tr>
+            <td>character</td>
+            <td>The character of the amiibo, multiple character have different amiibo design.</td>
+            <td>string</td>
+        </tr>
+        <tr>
+            <td>gameSeries</td>
+            <td>The game series of the amiibo.</td>
+            <td>string</td>
+        </tr>
+        <tr>
+            <td>head</td>
+            <td>The 1st 8 value of the hexadecimal to recognize the amiibo.<br><b>Note:</b> 0-7 value in the hexadecimal</td>
+            <td>string</td>
+        </tr>
+        <tr>
+            <td>image</td>
+            <td>The image link of the amiibo.</td>
+            <td>string</td>
+        </tr>
+        <tr>
+            <td>name</td>
+            <td>The name of the amiibo.</td>
+            <td>string</td>
+        </tr>
+        <tr>
+            <td>release</td>
+            <td>
+                The release date for North America, Japan, Europe and Australia <br>
+                <b>Date Format: </b>yyyy-mm-dd<br>
                 <b>Warning:</b> If date is not available, it will return as <code>null</code>
-                </td> </br><b>Warning:</b> If date is not available, it will return as <code>null</code></td>
-                <td>json</td>
-            </tr>
-            <tr>
-                <td>tail</td>
-                <td>The next 8 value of the hexadecimal to recognize the amiibo.</br><b>Note:</b> 8-15 value in the hexadecimal</td>
-                <td>string</td>
-            </tr>
-            <tr>
-                <td>type</td>
-                <td>The type it belongs to. Example: card, figure and yarn</td>
-                <td>string</td>
-            </tr>
+            </td>
+            <br>
+            <td><b>Warning:</b> If date is not available, it will return as <code>null</code></td>
+            <td>json</td>
+        </tr>
+        <tr>
+            <td>tail</td>
+            <td>The next 8 value of the hexadecimal to recognize the amiibo.<br><b>Note:</b> 8-15 value in the hexadecimal</td>
+            <td>string</td>
+        </tr>
+        <tr>
+            <td>type</td>
+            <td>The type it belongs to. Example: card, figure and yarn</td>
+            <td>string</td>
+        </tr>
         </tbody>
     </table>
-    
+
     <h2 id="amiiboCharacter">Amiibo Character</h2>
 
     <p>Get all the amiibo based on it's character as a list.</p>
 
     <h3>GET /api/amiibo?character=value</h3>
-    
+
     <p><strong>Note: </strong>value could be anything in the character database. <b>E.g.</b> <code>/api/amiibo?character=0x1996</code> or <code>/api/amiibo?character=Mewtwo</code></p>
 
     <pre>
@@ -482,70 +500,75 @@
 
     <table>
         <thead>
+        <tr>
+
             <th>Name</th>
             <th>Description</th>
             <th>Data Type</th>
+        </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>amiiboSeries</td>
-                <td>The series the amiibo belongs to.</td>
-                <td>string</td>
-            </tr>
-            <tr>
-                <td>character</td>
-                <td>The character of the amiibo, multiple character have different amiibo design.</td>
-                <td>string</td>
-            </tr>
-            <tr>
-                <td>gameSeries</td>
-                <td>The game series of the amiibo.</td>
-                <td>string</td>
-            </tr>
-            <tr>
-                <td>head</td>
-                <td>The 1st 8 value of the hexadecimal to recognize the amiibo.</br><b>Note:</b> 0-7 value in the hexadecimal</td>
-                <td>string</td>
-            </tr>
-            <tr>
-                <td>image</td>
-                <td>The image link of the amiibo.</td>
-                <td>string</td>
-            </tr>
-            <tr>
-                <td>name</td>
-                <td>The name of the amiibo.</td>
-                <td>string</td>
-            </tr>
-            <tr>
-                <td>release</td>
-                <td>        
-                The release date for North America, Japan, Europe and Australia </br>       
-                <b>Date Format: </b>yyyy-mm-dd</br>
-                <b>Warning:</b> If date is not available, it will return as <code>null</code>
-                </td> </br><b>Warning:</b> If date is not available, it will return as <code>null</code></td>
-                <td>json</td>
-            </tr>
-            <tr>
-                <td>tail</td>
-                <td>The next 8 value of the hexadecimal to recognize the amiibo.</br><b>Note:</b> 8-15 value in the hexadecimal</td>
-                <td>string</td>
-            </tr>
-            <tr>
-                <td>type</td>
-                <td>The type it belongs to. Example: card, figure and yarn</td>
-                <td>string</td>
-            </tr>
+        <tr>
+            <td>amiiboSeries</td>
+            <td>The series the amiibo belongs to.</td>
+            <td>string</td>
+        </tr>
+        <tr>
+            <td>character</td>
+            <td>The character of the amiibo, multiple character have different amiibo design.</td>
+            <td>string</td>
+        </tr>
+        <tr>
+            <td>gameSeries</td>
+            <td>The game series of the amiibo.</td>
+            <td>string</td>
+        </tr>
+        <tr>
+            <td>head</td>
+            <td>The 1st 8 value of the hexadecimal to recognize the amiibo.<br><b>Note:</b> 0-7 value in the hexadecimal</td>
+            <td>string</td>
+        </tr>
+        <tr>
+            <td>image</td>
+            <td>The image link of the amiibo.</td>
+            <td>string</td>
+        </tr>
+        <tr>
+            <td>name</td>
+            <td>The name of the amiibo.</td>
+            <td>string</td>
+        </tr>
+        <tr>
+            <td>release</td>
+            <td>
+                The release date for North America, Japan, Europe and Australia <br>
+                <b>Date Format: </b>yyyy-mm-dd<br>
+                <b>Warning:</b> If date is not available, it will return as <code>null</code><br>
+            </td>
+            <td>
+                <b>Warning:</b> If date is not available, it will return as <code>null</code></td>
+            <td>json</td>
+        </tr>
+        <tr>
+            <td>tail</td>
+            <td>The next 8 value of the hexadecimal to recognize the amiibo.<br><b>Note:</b> 8-15 value in the hexadecimal</td>
+            <td>string</td>
+        </tr>
+        <tr>
+            <td>type</td>
+            <td>The type it belongs to. Example: card, figure and yarn</td>
+            <td>string</td>
+        </tr>
         </tbody>
     </table>
-    
+
     <h2 id="type">Type</h2>
 
     <p>Get all the amiibo's type available in the database as a list.</p>
-    
-    
+
+
     <h3>GET /api/type</h3>
-    
+
     <pre>
 {
     "amiibo": [
@@ -564,13 +587,13 @@
     ]
 }
     </pre>
-    
+
     <h3>GET /api/type?key=value</h3>
-    
+
     <p>Get type by it's id</p>
-    
+
     <p><b>E.g.</b> <code>/api/type?key=0x01</code></p>
-    
+
     <pre style="min-height: initial;">
 {
     "amiibo": {
@@ -579,13 +602,13 @@
     }
 }
     </pre>
-    
+
     <h3>GET /api/type?name=value</h3>
-    
+
     <p>Get type by it's name</p>
-    
+
     <p><b>E.g.</b> <code>/api/type?name=card</code></p>
-    
+
     <pre style="min-height: initial;">
 {
     "amiibo": [
@@ -601,33 +624,36 @@
 
     <table>
         <thead>
+        <tr>
+
             <th>Name</th>
             <th>Description</th>
             <th>Data Type</th>
+        </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>key</td>
-                <td>The key of the character.</td>
-                <td>string</td>
-            </tr>
-            <tr>
-                <td>name</td>
-                <td>Character name of the amiibo</td>
-                <td>string</td>
-            </tr>
+        <tr>
+            <td>key</td>
+            <td>The key of the character.</td>
+            <td>string</td>
+        </tr>
+        <tr>
+            <td>name</td>
+            <td>Character name of the amiibo</td>
+            <td>string</td>
+        </tr>
         </tbody>
     </table>
-    
+
     <h2 id="gameSeries">Game Series</h2>
 
     <p>Retrieve game series information. <strong>Warning:</strong> Not all data return a list, do read about it.</p>
-    
-    
+
+
     <h3>GET /api/gameseries</h3>
-    
+
     <p>Get all the amiibo's game series available in the database as a list.</p>
-    
+
     <pre>
 {
     "amiibo": [
@@ -648,29 +674,31 @@
 
     <table>
         <thead>
+        <tr>
             <th>Name</th>
             <th>Description</th>
             <th>Data Type</th>
+        </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>key</td>
-                <td>The key of the character.</td>
-                <td>string</td>
-            </tr>
-            <tr>
-                <td>name</td>
-                <td>Character name of the amiibo</td>
-                <td>string</td>
-            </tr>
+        <tr>
+            <td>key</td>
+            <td>The key of the character.</td>
+            <td>string</td>
+        </tr>
+        <tr>
+            <td>name</td>
+            <td>Character name of the amiibo</td>
+            <td>string</td>
+        </tr>
         </tbody>
     </table>
-    
+
     <h3>GET /api/gameseries?key=value</h3>
-        
-    <p>It just return the game series that the key belongs to, since 1 key only belongs to 1 game series</br>
+
+    <p>It just return the game series that the key belongs to, since 1 key only belongs to 1 game series</p>
     <p><b>E.g.</b> <code>/api/gameseries?key=0x320</code></p>
-    
+
     <pre style="min-height: initial;">
 {
     "amiibo": {
@@ -679,12 +707,12 @@
     }
 }
     </pre>
-    
+
     <h3>GET /api/gameseries?name=value</h3>
-        
-    <p>It return a list of keys available for the game series.</br>
+
+    <p>It return a list of keys available for the game series.</p>
     <p><b>E.g.</b> <code>/api/gameseries?name=pokemon</code></p>
-    
+
     <pre>
 {
     "amiibo": [
@@ -700,13 +728,13 @@
     ]
 }
     </pre>
-    
+
     <h2 id="series">Series</h2>
 
     <p>Get all the amiibo's series available in the database as a list.</p>
-    
+
     <h3>GET /api/amiiboseries</h3>
-    
+
     <pre>
 {
     "amiibo": [
@@ -722,13 +750,13 @@
     ]
 }
     </pre>
-    
+
     <h3>GET /api/amiiboseries?key=value</h3>
-    
+
     <p>Get the amiibo series by it's key</p>
-    
+
     <p><b>E.g.</b><code>/api/amiiboseries?key=0x07</code></p>
-    
+
     <pre style="min-height: initial;">
 {
     "amiibo": {
@@ -737,13 +765,13 @@
     }
 }
     </pre>
-    
+
     <h3>GET /api/amiiboseries?name=value</h3>
-    
-    <p>Get the amiibo series by it's name</p>   
-    
+
+    <p>Get the amiibo series by it's name</p>
+
     <p><b>E.g.</b><code>/api/amiiboseries?name=Skylanders</code></p>
-        
+
     <pre style="min-height: initial;">
 {
     "amiibo": [
@@ -759,31 +787,33 @@
 
     <table>
         <thead>
+        <tr>
             <th>Name</th>
             <th>Description</th>
             <th>Data Type</th>
+        </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>key</td>
-                <td>The key of the character.</td>
-                <td>string</td>
-            </tr>
-            <tr>
-                <td>name</td>
-                <td>Character name of the amiibo</td>
-                <td>string</td>
-            </tr>
+        <tr>
+            <td>key</td>
+            <td>The key of the character.</td>
+            <td>string</td>
+        </tr>
+        <tr>
+            <td>name</td>
+            <td>Character name of the amiibo</td>
+            <td>string</td>
+        </tr>
         </tbody>
     </table>
-    
+
     <h2 id="character">Character</h2>
 
     <p>Get all the character available in the database as a list.</p>
-    
-    
+
+
     <h3>GET /api/character</h3>
-    
+
     <pre>
 {
     "amiibo": [
@@ -799,11 +829,11 @@
     ]
 }
     </pre>
-    
+
     <h3>GET /api/character?key=value</h3>
-    
+
     <p>Get the character by it's key</p>
-    
+
     <p><b>E.g.</b> <code>/api/character?key=0x1996</code></p>
 
     <pre style="min-height: initial;">
@@ -814,13 +844,13 @@
     }
 }
     </pre>
-    
+
     <h3>GET /api/character?name=value</h3>
-    
+
     <p>Get the character by it's name</p>
-    
+
     <p><b>E.g.</b> <code>/api/character?name=mewtwo</code></p>
-    
+
     <pre style="min-height: initial;">
 {
     "amiibo": [
@@ -836,22 +866,26 @@
 
     <table>
         <thead>
+        <tr>
+
             <th>Name</th>
             <th>Description</th>
             <th>Data Type</th>
+        </tr>
+
         </thead>
         <tbody>
-            <tr>
-                <td>key</td>
-                <td>The key of the character.</td>
-                <td>string</td>
-            </tr>
-            <tr>
-                <td>name</td>
-                <td>Character name of the amiibo</td>
-                <td>string</td>
-            </tr>
+        <tr>
+            <td>key</td>
+            <td>The key of the character.</td>
+            <td>string</td>
+        </tr>
+        <tr>
+            <td>name</td>
+            <td>Character name of the amiibo</td>
+            <td>string</td>
+        </tr>
         </tbody>
     </table>
-    
+
 {% endblock %}
