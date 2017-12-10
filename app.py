@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# coding=utf-8
 """
 @author: N3evin
 @copyright: Copyright 2017, AmiiboAPI
@@ -6,31 +7,29 @@
 """
 import datetime
 
-from flask import Flask, jsonify, abort, make_response, render_template, request
+from flask import Flask, abort, jsonify, make_response, render_template, request
 from flask.json import JSONEncoder
+from flask_compress import Compress
+from flask_cors import CORS
 from flask_limiter import Limiter
 from flask_limiter.util import get_remote_address
-from flask_compress import Compress
-from flask_cors import CORS, cross_origin
 
-from amiibo.amiibo import (
-    Hex,
-    AmiiboHex,
-    GameSeriesHex,
-    CharacterHex,
-    VariantHex,
-    AmiiboTypeHex,
-    AmiiboModelHex,
-    AmiiboSeriesHex,
-    Amiibo,
-    AmiiboReleaseDates,
-    GameSeries,
-    Character,
-    AmiiboType,
-    AmiiboSeries,
-)
-from amiibo.manager import AmiiboManager
+from amiibo.amiibo import (Amiibo,
+                           AmiiboHex,
+                           AmiiboModelHex,
+                           AmiiboReleaseDates,
+                           AmiiboSeries,
+                           AmiiboSeriesHex,
+                           AmiiboType,
+                           AmiiboTypeHex,
+                           Character,
+                           CharacterHex,
+                           GameSeries,
+                           GameSeriesHex,
+                           Hex,
+                           VariantHex)
 from amiibo.filterable import FilterableCollection
+from amiibo.manager import AmiiboManager
 
 
 class AmiiboJSONEncoder(JSONEncoder):
@@ -76,11 +75,11 @@ Compress(app)
 
 amiibo_manager = AmiiboManager.from_json()
 
-# Set default limit for limter.
+# Set default limit for limiter.
 limiter = Limiter(
-    app,
-    key_func=get_remote_address,
-    default_limits=["300 per day"]
+        app,
+        key_func=get_remote_address,
+        default_limits=["300 per day"]
 )
 
 
@@ -137,7 +136,7 @@ def route_api_last_updated():
     return respond
 
 
-############################### Game Series API ###############################
+# ############################## Game Series API ############################## #
 
 # gameseries API
 @app.route('/api/gameseries/', methods=['GET'])
@@ -174,7 +173,7 @@ def route_api_game_series():
     return respond
 
 
-############################### Amiibo Series API ###############################
+# ############################## Amiibo Series API ############################## #
 
 # amiiboseries API
 @app.route('/api/amiiboseries/', methods=['GET'])
@@ -211,7 +210,7 @@ def route_api_amiibo_series():
     return respond
 
 
-############################### Type API ###############################
+# ############################## Type API ############################## #
 
 # type API
 @app.route('/api/type/', methods=['GET'])
@@ -248,7 +247,7 @@ def route_api_type():
     return respond
 
 
-############################### Character API ###############################
+# ############################## Character API ############################## #
 
 # character API
 @app.route('/api/character/', methods=['GET'])
@@ -285,7 +284,7 @@ def route_api_character():
     return respond
 
 
-############################### Amiibo API ###############################
+# ############################## Amiibo API ############################## #
 
 # Get the amiibo
 @app.route('/api/amiibo/', methods=['GET'])
@@ -403,6 +402,7 @@ def route_api_amiibo():
 
     respond = jsonify({'amiibo': result})
     return respond
+
 
 if __name__ == "__main__":
     app.run(debug=True, extra_files=['database/amiibo.json'])
