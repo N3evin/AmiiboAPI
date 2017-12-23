@@ -1,9 +1,10 @@
+# coding=utf-8
 import collections
-import itertools
 import datetime
+import itertools
 
 
-class Filterable():
+class Filterable:
     def __init__(self, func, key):
         self.func = func
         self.key = key
@@ -19,7 +20,7 @@ def filterable(key):
     return wrapped
 
 
-class Sortable():
+class Sortable:
     def __init__(self, func, key):
         self.func = func
         self.key = key
@@ -36,7 +37,7 @@ def sortable(key):
 
 
 class FilterableCollectionMeta(type):
-    def __new__(cls, name, bases, attrs):
+    def __new__(mcs, name, bases, attrs):
         # Fetch all inherited properties from base -> current, replacing properties with the newest version
         all_attrs = dict(itertools.chain(*[base.__dict__.items() for base in bases] + [attrs.items()]))
 
@@ -51,7 +52,7 @@ class FilterableCollectionMeta(type):
             if isinstance(value, Sortable)
         }
 
-        return type.__new__(cls, name, bases, attrs)
+        return type.__new__(mcs, name, bases, attrs)
 
 
 class FilterableCollection(metaclass=FilterableCollectionMeta):
@@ -78,7 +79,7 @@ class FilterableCollection(metaclass=FilterableCollectionMeta):
     def get(self, key, default=None):
         try:
             return self[key]
-        except KeyError as e:
+        except KeyError:
             return default
 
     def add(self, value):
@@ -100,9 +101,9 @@ class FilterableCollection(metaclass=FilterableCollectionMeta):
             return self
 
         return self.__class__(
-            value
-            for value in self
-            if all(f(value) for f in filters)
+                value
+                for value in self
+                if all(f(value) for f in filters)
         )
 
     def sort(self, *args):
