@@ -1,3 +1,4 @@
+# coding=utf-8
 from cached_property import cached_property
 
 GAME_SERIES_MASK   = 0xFFC00000
@@ -19,7 +20,7 @@ AMIIBO_SERIES_BITSHIFT = 4 * 2
 UNKNOWN_BITSHIFT       = 4 * 0
 
 
-class Hex():
+class Hex:
     length = 8
     bitshift = 0
     mask = 0xFFFFFFFF
@@ -128,7 +129,7 @@ class UnknownMask(Hex):
     mask = UNKNOWN_MASK
 
 
-class Amiibo():
+class Amiibo:
     def __init__(self, manager, head, tail, name, release):
         self.manager = manager
         self.head = Hex(head)
@@ -185,7 +186,7 @@ class Amiibo():
         return UnknownMask(self.tail)
 
 
-class AmiiboReleaseDates():
+class AmiiboReleaseDates:
     def __init__(self, na=None, jp=None, eu=None, au=None):
         self.na = na
         self.jp = jp
@@ -193,7 +194,7 @@ class AmiiboReleaseDates():
         self.au = au
 
 
-class GameSeries():
+class GameSeries:
     def __init__(self, manager, id_, name):
         self.manager = manager
         self.id = GameSeriesHex(id_)
@@ -208,7 +209,7 @@ class GameSeries():
         )
 
 
-class Character():
+class Character:
     def __init__(self, manager, id_, name):
         self.manager = manager
         self.id = CharacterHex(id_)
@@ -223,7 +224,7 @@ class Character():
         )
 
 
-class AmiiboType():
+class AmiiboType:
     def __init__(self, manager, id_, name):
         self.manager = manager
         self.id = AmiiboTypeHex(id_)
@@ -238,7 +239,7 @@ class AmiiboType():
         )
 
 
-class AmiiboSeries():
+class AmiiboSeries:
     def __init__(self, manager, id_, name):
         self.manager = manager
         self.id = AmiiboSeriesHex(id_)
