@@ -13,6 +13,7 @@
         "0x11": "Pikmin",
         "0x12": "Fire Emblem",
         "0x13": "Metroid",
+		"0x14": "Kellogs",
         "0x0a": "Shovel Knight",
         "0x0c": "Kirby",
         "0x0d": "Pokken",
@@ -7013,7 +7014,8 @@
         "0x34c": "Street fighter",
         "0x350": "Monster Hunter",
         "0x35c": "Shovel Knight",
-        "0x360": "Final Fantasy"
+        "0x360": "Final Fantasy",
+		"0x374": "Kellogs"
     },
     "types": {
         "0x00": "Figure",
