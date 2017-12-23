@@ -43,17 +43,21 @@
 
     <p>Return a list of amiibo available in the API.</p>
 
-    <h3>GET /api/amiibo?name=value</h3>
+    <h3>GET /api/amiiibo/?name=value</h3>
 
     <p>Return the amiibo information base on it's name.</p>
 
-    <h3>GET /api/amiibo?id=value</h3>
+    <h3>GET /api/amiiibo/?id=value</h3>
 
     <p>Return the amiibo information base on it's id.</p>
+
+    <h3>GET /api/amiiibo/?name=value&type=value</h3>
+
+    <p>Multiple filter is also possible.</p>
     <div><b>E.g.</b></div>
-    <div>Head only: <code>/api/amiibo?head=01010000</code></div>
-    <div>Tail only: <code>/api/amiibo?tail=000e0002</code></div>
-    <div>Head + Tail: <code>/api/amiibo?id=01010000000e0002</code></div>
+    <div>Head only: <code>/api/amiiibo/?head=01010000</code></div>
+    <div>Tail only: <code>/api/amiiibo/?tail=000e0002</code></div>
+    <div>Head + Tail: <code>/api/amiiibo/?id=01010000000e0002</code></div>
     <pre>
 {
     "amiibo": [
@@ -179,9 +183,9 @@
 
     <p>Get all the amiibo based on it's type as a list.</p>
 
-    <h3>GET /api/amiibo?type=value</h3>
+    <h3>GET /api/amiiibo/?type=value</h3>
 
-    <p><strong>Note: </strong>value could be anything in the type database. <b>E.g.</b> <code>/api/amiibo?type=0x02</code> or <code>/api/amiibo?type=yarn</code></p>
+    <p><strong>Note: </strong>value could be anything in the type database. <b>E.g.</b> <code>/api/amiiibo/?type=0x02</code> or <code>/api/amiiibo/?type=yarn</code></p>
 
     <pre>
 {
@@ -276,9 +280,9 @@
 
     <p>Get all the amiibo based on it's game series as a list.</p>
 
-    <h3>GET /api/amiibo?gameseries=value</h3>
+    <h3>GET /api/amiiibo/?gameseries=value</h3>
 
-    <p><strong>Note: </strong>value could be anything in the gameseries database. <b>E.g.</b> <code>/api/amiibo?gameseries=0x22c</code> or <code>/api/amiibo?gameseries=Chibi Robo</code></p>
+    <p><strong>Note: </strong>value could be anything in the gameseries database. <b>E.g.</b> <code>/api/amiiibo/?gameseries=0x22c</code> or <code>/api/amiiibo/?gameseries=Chibi Robo</code></p>
 
     <pre>
 {
@@ -372,9 +376,9 @@
 
     <p>Get all the amiibo based on it's series as a list.</p>
 
-    <h3>GET /api/amiibo?series=value</h3>
+    <h3>GET /api/amiiibo/?series=value</h3>
 
-    <p><strong>Note: </strong>value could be anything in the series database. <b>E.g.</b> <code>/api/amiibo?series=0x10</code> or <code>/api/amiibo?series=BoxBoy!</code></p>
+    <p><strong>Note: </strong>value could be anything in the series database. <b>E.g.</b> <code>/api/amiiibo/?series=0x10</code> or <code>/api/amiiibo/?series=BoxBoy!</code></p>
 
     <pre>
 {
@@ -469,9 +473,9 @@
 
     <p>Get all the amiibo based on it's character as a list.</p>
 
-    <h3>GET /api/amiibo?character=value</h3>
+    <h3>GET /api/amiiibo/?character=value</h3>
 
-    <p><strong>Note: </strong>value could be anything in the character database. <b>E.g.</b> <code>/api/amiibo?character=0x1996</code> or <code>/api/amiibo?character=Mewtwo</code></p>
+    <p><strong>Note: </strong>value could be anything in the character database. <b>E.g.</b> <code>/api/amiiibo/?character=0x1996</code> or <code>/api/amiiibo/?character=Mewtwo</code></p>
 
     <pre>
 {
