@@ -12,7 +12,7 @@
         "0x10": "BoxBoy!",
         "0x11": "Pikmin",
         "0x12": "Fire Emblem",
-		"0x13": "Metroid",
+        "0x13": "Metroid",
         "0x0a": "Shovel Knight",
         "0x0c": "Kirby",
         "0x0d": "Pokken",
@@ -74,7 +74,7 @@
                 "na": "2015-09-11"
             }
         },
-		"0x0000000003710102": {
+        "0x0000000003710102": {
             "name": "Mario - Wedding",
             "release": {
                 "au": "2017-10-27",
@@ -128,7 +128,7 @@
                 "na": "2015-03-20"
             }
         },
-		"0x0002000003720102": {
+        "0x0002000003720102": {
             "name": "Peach - Wedding",
             "release": {
                 "au": "2017-10-27",
@@ -227,7 +227,7 @@
                 "na": "2015-03-20"
             }
         },
-		"0x0005000003730102": {
+        "0x0005000003730102": {
             "name": "Bowser - Wedding",
             "release": {
                 "au": "2017-10-27",
@@ -4889,7 +4889,7 @@
                 "na": "2014-11-21"
             }
         },
-		"0x05c0000003651302": {
+        "0x05c0000003651302": {
             "name": "Samus Aran",
             "release": {
                 "au": "2017-09-16",
@@ -4907,7 +4907,7 @@
                 "na": "2015-09-11"
             }
         },
-		"0x05c1000003661302": {
+        "0x05c1000003661302": {
             "name": "Metroid",
             "release": {
                 "au": "2017-09-16",
@@ -6167,7 +6167,7 @@
                 "na": "2017-05-19"
             }
         },
-		"0x21080000036f1202": {
+        "0x21080000036f1202": {
             "name": "Chrom",
             "release": {
                 "au": "2017-10-20",
@@ -6176,7 +6176,7 @@
                 "na": "2017-10-20"
             }
         },
-		"0x2109000003701202": {
+        "0x2109000003701202": {
             "name": "Tiki",
             "release": {
                 "au": "2017-10-20",
@@ -6390,7 +6390,16 @@
                 "eu": "2017-10-06",
                 "jp": "2017-10-05",
                 "na": "2017-10-06"
+            },
+        "0x3740000103741402": {
+            "name": "Super Mario Cereal",
+            "release": {
+                "au": null,
+                "eu": null,
+                "jp": null,
+                "na": "2017-12-11"
             }
+        }
         }
     },
     "characters": {
@@ -6407,9 +6416,9 @@
         "0x000a": "Toad",
         "0x0013": "Daisy",
         "0x0014": "Waluigi",
-		"0x0015": "Goomba",
+        "0x0015": "Goomba",
         "0x0017": "Boo",
-		"0x0023": "Koopa Troopa",
+        "0x0023": "Koopa Troopa",
         "0x0080": "Poochy",
         "0x0100": "Link",
         "0x0101": "Zelda",
@@ -6868,7 +6877,7 @@
         "0x0580": "Fox",
         "0x0581": "Falco",
         "0x05c0": "Samus",
-		"0x05c1": "Metroid",
+        "0x05c1": "Metroid",
         "0x0600": "Captain Falcon",
         "0x0640": "Olimar",
         "0x0642": "Pikmin",
@@ -6922,8 +6931,8 @@
         "0x2105": "Corrin",
         "0x2106": "Alm",
         "0x2107": "Celica",
-		"0x2108": "Chrom",
-		"0x2109": "Tiki",
+        "0x2108": "Chrom",
+        "0x2109": "Tiki",
         "0x2240": "Shulk",
         "0x2280": "Ness",
         "0x2281": "Lucas",
@@ -6943,8 +6952,8 @@
     },
     "game_series": {
         "0x000": "Super Mario",
-		"0x001": "Super Mario",
-		"0x002": "Super Mario",
+        "0x001": "Super Mario",
+        "0x002": "Super Mario",
         "0x008": "Yoshi's Woolly World",
         "0x010": "The Legend of Zelda",
         "0x014": "Breath of the Wild",
@@ -6963,7 +6972,7 @@
         "0x048": "Animal Crossing",
         "0x04c": "Animal Crossing",
         "0x050": "Animal Crossing",
-		"0x051": "Animal Crossing",
+        "0x051": "Animal Crossing",
         "0x058": "Star Fox",
         "0x05c": "Metroid",
         "0x060": "F-Zero",
@@ -6975,7 +6984,7 @@
         "0x07c": "Mii",
         "0x080": "Splatoon",
         "0x09c": "Mario Sports Superstars",
-		"0x09d": "Mario Sports Superstars",
+        "0x09d": "Mario Sports Superstars",
         "0x190": "Pokemon",
         "0x194": "Pokemon",
         "0x198": "Pokemon",
@@ -6988,7 +6997,7 @@
         "0x1b4": "Pokemon",
         "0x1b8": "Pokemon",
         "0x1bc": "Pokemon",
-		"0x1bd": "Pokemon",
+        "0x1bd": "Pokemon",
         "0x1d0": "Pokken",
         "0x1f0": "Kirby",
         "0x1f4": "BoxBoy!",
