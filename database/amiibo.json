@@ -16,7 +16,7 @@
 		"0x14": "Kellogs",
         "0x0a": "Shovel Knight",
         "0x0c": "Kirby",
-        "0x0d": "Pokken",
+        "0x0d": "Pokemon",
         "0x0e": "Mario Sports Superstars",
         "0x0f": "Monster Hunter"
     },
@@ -6006,6 +6006,15 @@
                 "na": "2015-05-29"
             }
         },
+        "0x1d01000003750d02": {
+            "name": "Detective Pikachu",
+            "release": {
+                "au": "2018-03-24",
+                "eu": "2018-03-23",
+                "jp": "2018-03-23",
+                "na": "2018-03-23"
+            }
+        },
         "0x1d000001025c0d02": {
             "name": "Shadow Mewtwo",
             "release": {
@@ -6919,6 +6928,7 @@
         "0x1ac0": "Lucario",
         "0x1b92": "Greninja",
         "0x1d00": "Shadow Mewtwo",
+        "0x1d01": "Detective Pikachu",
         "0x1f00": "Kirby",
         "0x1f01": "Meta Knight",
         "0x1f02": "King Dedede",
