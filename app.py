@@ -353,8 +353,8 @@ def route_api_amiibo():
         if 'amiibo_model' in args:
             filters['amiibo_model_id'] = AmiiboModelHex(args['amiibo_model'].strip())
 
-        if 'amiiboseries' in args:
-            amiibo_series = args['amiiboseries'].strip()
+        if 'amiiboSeries' in args:
+            amiibo_series = args['amiiboSeries'].strip()
             if amiibo_series.startswith('0x'):
                 try:
                     filters['amiibo_series_id'] = AmiiboSeriesHex(amiibo_series)
