@@ -94,3 +94,6 @@ ENV/
 # Database builder
 tools/
 images/coming soon
+
+Pipfile
+Pipfile.*
