@@ -5179,7 +5179,7 @@
             }
         },
         "0x0805030003900402": {
-            "name": "Octopus",
+            "name": "Octling Octopus",
             "release": {
                 "au": "2018-11-11",
                 "eu": "2018-11-09",
@@ -6951,6 +6951,7 @@
         "0x0802": "Marie",
         "0x0803": "Pearl",
         "0x0804": "Marina",
+        "0x0805": "Octoling",
         "0x09c0": "Mario",
         "0x09c1": "Luigi",
         "0x09c2": "Peach",
