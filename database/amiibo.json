@@ -13,7 +13,8 @@
         "0x11": "Pikmin",
         "0x12": "Fire Emblem",
         "0x13": "Metroid",
-		"0x14": "Kellogs",
+		"0x14": "Others",
+        "0x15": "Mega Man",
         "0x0a": "Shovel Knight",
         "0x0c": "Kirby",
         "0x0d": "Pokemon",
@@ -6313,6 +6314,15 @@
                 "na": "2015-05-29"
             }
         },
+        "0x3380000003781402": {
+            "name": "Solaire of Astora",
+            "release": {
+                "au": "2018-10-19",
+                "eu": "2018-10-19",
+                "jp": "2018-10-18",
+                "na": "2018-10-19"
+            }
+        },
         "0x3480000000310002": {
             "name": "Mega Man",
             "release": {
@@ -6329,6 +6339,15 @@
                 "eu": null,
                 "jp": null,
                 "na": "2016-02-23"
+            }
+        },
+        "0x3480000003791502": {
+            "name": "Mega Man",
+            "release": {
+                "au": null,
+                "eu": null,
+                "jp": "2018-10-04",
+                "na": "2018-10-02"
             }
         },
         "0x34c0000002530002": {
@@ -7000,6 +7019,7 @@
         "0x3200": "Sonic",
         "0x3240": "Bayonetta",
         "0x3340": "PAC-MAN",
+        "0x3380": "Solaire of Astora",
         "0x3480": "Mega Man",
         "0x34c0": "Ryu",
         "0x3500": "One-Eyed Rathalos",
@@ -7069,6 +7089,7 @@
         "0x320": "Sonic",
         "0x324": "Bayonetta",
         "0x334": "Pac-man",
+        "0x338": "Dark Souls",
         "0x348": "Megaman",
         "0x34c": "Street fighter",
         "0x350": "Monster Hunter",
