@@ -15,6 +15,7 @@
         "0x13": "Metroid",
 		"0x14": "Others",
         "0x15": "Mega Man",
+        "0x16": "Diablo",
         "0x0a": "Shovel Knight",
         "0x0c": "Kirby",
         "0x0d": "Pokemon",
@@ -6502,6 +6503,15 @@
                 "jp": null,
                 "na": "2017-12-11"
             }
+        },
+        "0x38c0000003911602": {
+            "name": "Loot Goblin",
+            "release": {
+                "au": null,
+                "eu": null,
+                "jp": null,
+                "na": "2018-12-21"
+            }
         }
     },
     "characters": {
@@ -7058,7 +7068,8 @@
         "0x3504": "Qurupeco",
         "0x35c0": "Shovel Knight",
         "0x3600": "Cloud Strife",
-        "0x3740": "Mario Cereal"
+        "0x3740": "Mario Cereal",
+        "0x38c0": "Loot Goblin"
     },
     "game_series": {
         "0x000": "Super Mario",
@@ -7124,7 +7135,8 @@
         "0x350": "Monster Hunter",
         "0x35c": "Shovel Knight",
         "0x360": "Final Fantasy",
-		"0x374": "Kellogs"
+		"0x374": "Kellogs",
+        "0x38c": "Diablo"
     },
     "types": {
         "0x00": "Figure",
