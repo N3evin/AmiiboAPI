@@ -6512,6 +6512,24 @@
                 "jp": null,
                 "na": "2018-12-21"
             }
+        },
+        "0x00c00000037b0002": {
+            "name": "King K. Rool",
+            "release": {
+                "au": "2019-02-15",
+                "eu": "2019-02-15",
+                "jp": "2019-02-15",
+                "na": "2019-02-15"
+            }
+        },
+        "0x078f000003810002": {
+            "name": "Ice Climbers",
+            "release": {
+                "au": "2019-02-15",
+                "eu": "2019-02-15",
+                "jp": "2019-02-15",
+                "na": "2019-02-15"
+            }
         }
     },
     "characters": {
@@ -6532,6 +6550,7 @@
         "0x0017": "Boo",
         "0x0023": "Koopa Troopa",
         "0x0080": "Poochy",
+        "0x00c0": "King K. Rool",
         "0x0100": "Link",
         "0x0101": "Zelda",
         "0x0102": "Ganon",
@@ -7003,6 +7022,7 @@
         "0x0780": "Mr. G&W",
         "0x0781": "R.O.B.",
         "0x0782": "Duck Hunt",
+        "0x078f": "Ice Climbers",
         "0x07c0": "Mii",
         "0x0800": "Inkling",
         "0x0801": "Callie",
@@ -7076,6 +7096,7 @@
         "0x001": "Super Mario",
         "0x002": "Super Mario",
         "0x008": "Yoshi's Woolly World",
+        "0x00c": "Donkey Kong",
         "0x010": "The Legend of Zelda",
         "0x014": "Breath of the Wild",
         "0x018": "Animal Crossing",
