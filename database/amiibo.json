@@ -13,7 +13,7 @@
         "0x11": "Pikmin",
         "0x12": "Fire Emblem",
         "0x13": "Metroid",
-	"0x14": "Others",
+        "0x14": "Others",
         "0x15": "Mega Man",
         "0x16": "Diablo",
         "0x0a": "Shovel Knight",
@@ -6558,7 +6558,7 @@
         "0x0015": "Goomba",
         "0x0017": "Boo",
         "0x0023": "Koopa Troopa",
-	"0x0024": "Piranha Plant",
+        "0x0024": "Piranha Plant",
         "0x0080": "Poochy",
         "0x00c0": "King K. Rool",
         "0x0100": "Link",
@@ -7166,7 +7166,7 @@
         "0x350": "Monster Hunter",
         "0x35c": "Shovel Knight",
         "0x360": "Final Fantasy",
-	"0x374": "Kellogs",
+        "0x374": "Kellogs",
         "0x38c": "Diablo"
     },
     "types": {
