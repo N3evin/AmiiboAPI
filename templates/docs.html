@@ -30,6 +30,10 @@
         <li><a href="#gameSeries">Game Series</a></li>
         <li><a href="#series">Series</a></li>
         <li><a href="#character">Character</a></li>
+        <li>
+            <hr>
+        </li>
+        <li><a href="#lastUpdated">Last Updated</a></li>
     </ul>
 {% endblock %}
 
@@ -888,6 +892,38 @@
             <td>name</td>
             <td>Character name of the amiibo</td>
             <td>string</td>
+        </tr>
+        </tbody>
+    </table>
+
+<h2 id="lastUpdated">Last Updated</h2>
+
+    <p>Get the timestamp where the amiibo data was last updated.</p>
+
+    <h3>GET /api/lastupdated</h3>
+
+    <pre>
+{
+    "amiibo": "2019-03-18T16:34:10.688417"
+}
+    </pre>
+
+    <h4>Last Updated</h4>
+
+    <table>
+        <thead>
+        <tr>
+
+            <th>Name</th>
+            <th>Description</th>
+            <th>Data Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>lastUpdated</td>
+            <td>The timestamp of where the amiibo database was last updated.</td>
+            <td>timestamp (iso format)</td>
         </tr>
         </tbody>
     </table>

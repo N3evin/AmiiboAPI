@@ -133,7 +133,7 @@ def ip_whitelist():
 
 @app.route('/api/lastupdated/', methods=['GET'])
 def route_api_last_updated():
-    respond = jsonify({'amiibo': amiibo_manager.last_updated})
+    respond = jsonify({'lastUpdated': amiibo_manager.last_updated})
     return respond
 
 
