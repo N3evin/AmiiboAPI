@@ -15,13 +15,13 @@ A RESTful API that was created for retriving amiibo information.
 - could be used with any platform
 
 ### Usage
-Full amiibo: [http://www.amiiboapi.com/api/amiibo](http://www.amiiboapi.com/api/amiibo) 
+Full amiibo: [https://www.amiiboapi.com/api/amiibo](https://www.amiiboapi.com/api/amiibo) 
 
-Specific Amiibo (Mario): [http://www.amiiboapi.com/api/amiibo?name=mario](http://www.amiiboapi.com/api/amiibo?name=mario)
+Specific Amiibo (Mario): [https://www.amiiboapi.com/api/amiibo?name=mario](https://www.amiiboapi.com/api/amiibo?name=mario)
 
 When searching for amiibo, you can use the key or amiibo name. Key must be in hexdecimal example `0x1D0`
 
-More APIs can be found here: [http://www.amiiboapi.com](http://www.amiiboapi.com) 
+More APIs can be found here: [https://www.amiiboapi.com](https://www.amiiboapi.com) 
 
 ### Requirements (if you want to host)
 - Python 2.X or 3.X
