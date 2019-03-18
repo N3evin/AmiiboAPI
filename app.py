@@ -69,6 +69,7 @@ class AmiiboJSONEncoder(JSONEncoder):
 
 
 app = Flask(__name__)
+application = app
 CORS(app)
 app.json_encoder = AmiiboJSONEncoder
 Compress(app)
