@@ -111,8 +111,6 @@
             //check sticky
             if (doc.scrollTop() >= (offset.top - 65)) {
 
-                console.log(window.innerHeight - offset.top);
-
                 sticky.addClass('stick');
                 sticky.css({
                     width: sideNav.width() + 'px',
@@ -136,10 +134,12 @@
 
                 target = $(parent.find('a').attr('href'));
 
-                if (scrollTop >= target.offset().top) {
-                    activeParent = parent;
-                } else {
-                    break;
+                if(target.offset()){
+                    if (scrollTop >= target.offset().top) {
+                        activeParent = parent;
+                    } else {
+                        break;
+                    }
                 }
             }
 
