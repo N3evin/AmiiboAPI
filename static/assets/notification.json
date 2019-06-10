@@ -1,0 +1,25 @@
+{
+	"notifications" : [
+		{
+			"title": "Notice",
+			"message": "Error message!",
+			"type": "error"
+		},
+		{
+			"title": "Notice",
+			"message": "Info message!",
+			"type": "info"
+		}
+		,
+		{
+			"title": "Notice",
+			"message": "Success message!",
+			"type": "success"
+		},
+		{
+			"title": "Notice",
+			"message": "Warning message!",
+			"type": "warning"
+		}
+	]
+}
