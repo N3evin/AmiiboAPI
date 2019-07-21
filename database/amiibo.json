@@ -740,6 +740,17 @@
                 "na": "2015-09-25"
             }
         },
+        "0x01810000037d0002":
+        {
+            "name": "Isabelle",
+            "release":
+            {
+                "au": "2019-07-19",
+                "eu": "2019-07-19",
+                "jp": "2019-07-19",
+                "na": "2019-07-26"
+            }
+        },
         "0x0181000101d40502":
         {
             "name": "Isabelle",
@@ -7484,6 +7495,17 @@
                 "na": "2018-03-23"
             }
         },
+        "0x1d40000003870002":
+        {
+            "name": "Pokémon Trainer",
+            "release":
+            {
+                "au": "2019-07-19",
+                "eu": "2019-07-19",
+                "jp": "2019-07-19",
+                "na": "2019-07-26"
+            }
+        },
         "0x1f000000000a0002":
         {
             "name": "Kirby",
@@ -8562,6 +8584,7 @@
         "0x1b92": "Greninja",
         "0x1d00": "Shadow Mewtwo",
         "0x1d01": "Detective Pikachu",
+        "0x1d40": "Pokémon Trainer",
         "0x1f00": "Kirby",
         "0x1f01": "Meta Knight",
         "0x1f02": "King Dedede",
@@ -8649,6 +8672,7 @@
         "0x1bc": "Pokemon",
         "0x1bd": "Pokemon",
         "0x1d0": "Pokemon",
+        "0x1d4": "Pokemon",
         "0x1f0": "Kirby",
         "0x1f4": "BoxBoy!",
         "0x210": "Fire Emblem",
