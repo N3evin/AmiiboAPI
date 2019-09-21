@@ -553,6 +553,17 @@
                 "na": "2019-04-12"
             }
         },
+        "0x0100000003990902":
+        {
+            "name": "Link (Link's Awakening)",
+            "release":
+            {
+                "au": "2019-09-20",
+                "eu": "2019-09-20",
+                "jp": "2019-09-20",
+                "na": "2019-09-20"
+            }
+        },
         "0x0100010000160002":
         {
             "name": "Toon Link",
@@ -7396,6 +7407,17 @@
                 "na": "2017-03-24"
             }
         },
+        "0x1902000003830002":
+        {
+            "name": "Ivysaur",
+            "release":
+            {
+                "au": "2019-09-20",
+                "eu": "2019-09-20",
+                "jp": "2019-09-20",
+                "na": "2019-09-20"
+            }
+        },
         "0x1906000000240002":
         {
             "name": "Charizard",
@@ -8012,6 +8034,17 @@
                 "na": "2017-12-11"
             }
         },
+        "0x37800000038a0002":
+        {
+            "name": "Snake",
+            "release":
+            {
+                "au": "2019-09-20",
+                "eu": "2019-09-20",
+                "jp": "2019-09-20",
+                "na": "2019-09-20"
+            }
+        },
         "0x38c0000003911602":
         {
             "name": "Loot Goblin",
@@ -8575,6 +8608,7 @@
         "0x09cf": "Rosalina",
         "0x09d0": "Metal Mario",
         "0x09d1": "Pink Gold Peach",
+        "0x1902": "Ivysaur",
         "0x1906": "Charizard",
         "0x1919": "Pikachu",
         "0x1927": "Jigglypuff",
@@ -8619,6 +8653,7 @@
         "0x35c0": "Shovel Knight",
         "0x3600": "Cloud Strife",
         "0x3740": "Mario Cereal",
+        "0x3780": "Snake",
         "0x38c0": "Loot Goblin"
     },
     "game_series":
@@ -8689,6 +8724,7 @@
         "0x35c": "Shovel Knight",
         "0x360": "Final Fantasy",
         "0x374": "Kellogs",
+        "0x378": "Metal Gear Solid",
         "0x38c": "Diablo"
     },
     "types":
