@@ -17,6 +17,7 @@
         "0x14": "Others",
         "0x15": "Mega Man",
         "0x16": "Diablo",
+        "0x17": "Power Pros",
         "0x0a": "Shovel Knight",
         "0x0c": "Kirby",
         "0x0d": "Pokemon",
@@ -8056,6 +8057,72 @@
                 "na": "2019-09-20"
             }
         },
+        "0x3800000103931702":
+        {
+            "name": "Pawapuro",
+            "release":
+            {
+                "au": null,
+                "eu": null,
+                "jp": "2019-06-27",
+                "na": null
+            }
+        },
+        "0x3801000103941702":
+        {
+            "name": "Ikari",
+            "release":
+            {
+                "au": null,
+                "eu": null,
+                "jp": "2019-06-27",
+                "na": null
+            }
+        },
+        "0x3802000103951702":
+        {
+            "name": "Daijobu",
+            "release":
+            {
+                "au": null,
+                "eu": null,
+                "jp": "2019-06-27",
+                "na": null
+            }
+        },
+        "0x3803000103961702":
+        {
+            "name": "Hayakawa",
+            "release":
+            {
+                "au": null,
+                "eu": null,
+                "jp": "2019-06-27",
+                "na": null
+            }
+        },
+        "0x3804000103971702":
+        {
+            "name": "Yabe",
+            "release":
+            {
+                "au": null,
+                "eu": null,
+                "jp": "2019-06-27",
+                "na": null
+            }
+        },
+        "0x3805000103981702":
+        {
+            "name": "Ganda",
+            "release":
+            {
+                "au": null,
+                "eu": null,
+                "jp": "2019-06-27",
+                "na": null
+            }
+        },
         "0x38c0000003911602":
         {
             "name": "Loot Goblin",
@@ -8666,6 +8733,12 @@
         "0x3600": "Cloud Strife",
         "0x3740": "Mario Cereal",
         "0x3780": "Snake",
+        "0x3800": "Pawapuro",
+        "0x3801": "Ikari",
+        "0x3802": "Daijobu",
+        "0x3803": "Hayakawa",
+        "0x3804": "Yabe",
+        "0x3805": "Ganda",
         "0x38c0": "Loot Goblin"
     },
     "game_series":
@@ -8737,6 +8810,7 @@
         "0x360": "Final Fantasy",
         "0x374": "Kellogs",
         "0x378": "Metal Gear Solid",
+        "0x380": "Power Pros",
         "0x38c": "Diablo"
     },
     "types":
