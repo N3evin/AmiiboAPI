@@ -7531,7 +7531,7 @@
         },
         "0x1d40000003870002":
         {
-            "name": "Pokémon Trainer",
+            "name": "Pokemon Trainer",
             "release":
             {
                 "au": "2019-07-19",
@@ -8697,7 +8697,7 @@
         "0x1b92": "Greninja",
         "0x1d00": "Shadow Mewtwo",
         "0x1d01": "Detective Pikachu",
-        "0x1d40": "Pokémon Trainer",
+        "0x1d40": "Pokemon Trainer",
         "0x1f00": "Kirby",
         "0x1f01": "Meta Knight",
         "0x1f02": "King Dedede",
