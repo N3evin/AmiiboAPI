@@ -9,7 +9,7 @@ import datetime, time, colors
 
 from rfc3339 import rfc3339
 
-from flask import Flask, abort, jsonify, make_response, render_template, request, g
+from flask import Flask, jsonify, make_response, render_template, request, g
 from flask_compress import Compress
 from flask_cors import CORS
 from flask_limiter import Limiter
