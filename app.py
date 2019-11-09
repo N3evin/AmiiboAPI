@@ -18,8 +18,6 @@ from flask_limiter.util import get_remote_address
 from commons.amiibo_json_encounter import AmiiboJSONEncoder
 from amiibo.manager import AmiiboManager
 
-from logger import loggerApp
-
 from routes.game_series import gameseriesApp
 from routes.amiibo_series import amiiboseriesApp
 from routes.type import typeApp
@@ -32,7 +30,6 @@ app = Flask(__name__)
 application = app
 
 # Register app blueprints
-app.register_blueprint(loggerApp)
 app.register_blueprint(gameseriesApp)
 app.register_blueprint(amiiboseriesApp)
 app.register_blueprint(typeApp)
