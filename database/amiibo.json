@@ -8002,6 +8002,50 @@
                 "na": "2016-01-08"
             }
         },
+        "0x35c0000003920a02":
+        {
+            "name": "Shovel Knight (Gold Edition)",
+            "release":
+            {
+                "au": null,
+                "eu": "2019-12-10",
+                "jp": null,
+                "na": "2019-12-10"
+            }
+        },
+        "0x35c10000036c0a02":
+        {
+            "name": "Plague Knight",
+            "release":
+            {
+                "au": null,
+                "eu": "2019-12-10",
+                "jp": null,
+                "na": "2019-12-10"
+            }
+        },
+        "0x35c20000036d0a02":
+        {
+            "name": "Specter Knight",
+            "release":
+            {
+                "au": null,
+                "eu": "2019-12-10",
+                "jp": null,
+                "na": "2019-12-10"
+            }
+        },
+        "0x35c30000036e0a02":
+        {
+            "name": "King Knight",
+            "release":
+            {
+                "au": null,
+                "eu": "2019-12-10",
+                "jp": null,
+                "na": "2019-12-10"
+            }
+        },
         "0x3600000002590002":
         {
             "name": "Cloud",
@@ -8764,6 +8808,9 @@
         "0x3503": "Barioth",
         "0x3504": "Qurupeco",
         "0x35c0": "Shovel Knight",
+        "0x35c1": "Plague Knight",
+        "0x35c2": "Specter Knight",
+        "0x35c3": "King Knight",
         "0x3600": "Cloud Strife",
         "0x3740": "Mario Cereal",
         "0x3780": "Snake",
