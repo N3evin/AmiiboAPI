@@ -39,7 +39,3 @@ Click on the `Deploy to Heroku` button and you are good to go!
 - [JSON script source](https://script.google.com/d/143u0RLuppsmYJ0B3wzo6i0jZYSfIFV2NLJMHPM-Sqczpr9bLwdffc-Wx/edit?usp=sharing)
 - [Amiibo Database](https://docs.google.com/spreadsheets/d/19E7pMhKN6x583uB6bWVBeaTMyBPtEAC-Bk59Y6cfgxA)
 - [Amiibo images](http://amiibo.life)
-
-### Credits
-- Collaborator: [cheatfreak74](https://github.com/cheatfreak47)
-- Contributers: [North101](https://github.com/North101), [Xerxes3rd](https://github.com/Xerxes3rd)
