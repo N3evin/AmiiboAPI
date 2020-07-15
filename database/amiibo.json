@@ -765,7 +765,7 @@
         },
         "0x0181000101d40502":
         {
-            "name": "Isabelle",
+            "name": "Isabelle (Character Parfait)",
             "release":
             {
                 "au": null,
@@ -774,7 +774,7 @@
                 "na": null
             }
         },
-        "0x01810100023f0502":
+        "0x01810100023f0502 (Winter)":
         {
             "name": "Isabelle",
             "release":
@@ -787,7 +787,7 @@
         },
         "0x0181010100b40502":
         {
-            "name": "Isabelle (Aut)",
+            "name": "Isabelle (Winter)",
             "release":
             {
                 "au": "2015-11-21",
@@ -798,7 +798,7 @@
         },
         "0x01810201011a0502":
         {
-            "name": "Isabelle",
+            "name": "Isabelle (Kimono)",
             "release":
             {
                 "au": "2016-03-19",
@@ -809,7 +809,7 @@
         },
         "0x0181030101700502":
         {
-            "name": "Isabelle",
+            "name": "Isabelle (Dress)",
             "release":
             {
                 "au": "2016-06-18",
@@ -842,7 +842,7 @@
         },
         "0x0182000101d80502":
         {
-            "name": "K. K. Slider",
+            "name": "K. K. Slider (Pikopuri)",
             "release":
             {
                 "au": null,
@@ -886,7 +886,7 @@
         },
         "0x01830101010e0502":
         {
-            "name": "Tom Nook",
+            "name": "Tom Nook (Jacket)",
             "release":
             {
                 "au": "2016-03-19",
@@ -919,7 +919,7 @@
         },
         "0x0185020101170502":
         {
-            "name": "Timmy",
+            "name": "Timmy (Full Apron)",
             "release":
             {
                 "au": "2016-03-19",
@@ -928,7 +928,7 @@
                 "na": "2016-03-18"
             }
         },
-        "0x0185040101790502":
+        "0x0185040101790502 (Suit)":
         {
             "name": "Timmy",
             "release":
@@ -941,7 +941,7 @@
         },
         "0x0186010100af0502":
         {
-            "name": "Tommy",
+            "name": "Tommy (Uniform)",
             "release":
             {
                 "au": "2015-11-21",
@@ -952,7 +952,7 @@
         },
         "0x0186030101750502":
         {
-            "name": "Tommy",
+            "name": "Tommy (Suit)",
             "release":
             {
                 "au": "2016-06-18",
@@ -1073,7 +1073,7 @@
         },
         "0x018c010101180502":
         {
-            "name": "Digby",
+            "name": "Digby (Raincoat)",
             "release":
             {
                 "au": "2016-03-19",
@@ -1128,7 +1128,7 @@
         },
         "0x018e010101780502":
         {
-            "name": "Resetti",
+            "name": "Resetti (Without Hat)",
             "release":
             {
                 "au": "2016-06-18",
@@ -1150,7 +1150,7 @@
         },
         "0x018f010101190502":
         {
-            "name": "Don Resetti",
+            "name": "Don Resetti (Without Hat)",
             "release":
             {
                 "au": "2016-03-19",
@@ -1480,7 +1480,7 @@
         },
         "0x01a80101017e0502":
         {
-            "name": "Redd",
+            "name": "Redd (Shirt)",
             "release":
             {
                 "au": "2016-06-18",
@@ -1579,7 +1579,7 @@
         },
         "0x01b1000100b20502":
         {
-            "name": "Dr. Shrunk",
+            "name": "Shrunk",
             "release":
             {
                 "au": "2015-11-21",
@@ -1590,7 +1590,7 @@
         },
         "0x01b10101017b0502":
         {
-            "name": "Shrunk",
+            "name": "Shrunk (Loud Jacket)",
             "release":
             {
                 "au": "2016-06-18",
@@ -1667,7 +1667,7 @@
         },
         "0x01c10101017a0502":
         {
-            "name": "Lottie",
+            "name": "Lottie (Black Skirt And Bow)",
             "release":
             {
                 "au": "2016-06-18",
@@ -2151,7 +2151,7 @@
         },
         "0x025f000101d70502":
         {
-            "name": "Rosie",
+            "name": "Rosie (Amiibo Festival)",
             "release":
             {
                 "au": "2015-11-21",
@@ -2437,7 +2437,7 @@
         },
         "0x0282000101d60502":
         {
-            "name": "Stitches",
+            "name": "Stitches (Amiibo Festival)",
             "release":
             {
                 "au": "2015-11-21",
@@ -2910,7 +2910,7 @@
         },
         "0x02ea000101d50502":
         {
-            "name": "Goldie",
+            "name": "Goldie (Amiibo Festival)",
             "release":
             {
                 "au": "2015-11-21",
@@ -8312,7 +8312,7 @@
         "0x018b": "Cyrus",
         "0x018c": "Digby",
         "0x018d": "Rover",
-        "0x018e": "Mr. Resetti",
+        "0x018e": "Resetti",
         "0x018f": "Don Resetti",
         "0x0190": "Brewster",
         "0x0191": "Harriet",
@@ -8347,7 +8347,7 @@
         "0x01ae": "Franklin",
         "0x01af": "Jingle",
         "0x01b0": "Tortimer",
-        "0x01b1": "Dr. Shrunk",
+        "0x01b1": "Shrunk",
         "0x01b3": "Blanca",
         "0x01b4": "Leif",
         "0x01b5": "Luna",
