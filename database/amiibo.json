@@ -8079,6 +8079,17 @@
                 "na": "2017-07-21"
             }
         },
+        "0x3640000003a20002":
+        {
+            "name": "Hero",
+            "release":
+            {
+                "au": "2020-09-25",
+                "eu": "2020-09-25",
+                "jp": "2020-09-25",
+                "na": "2020-10-05"
+            }
+        },
         "0x06420000035f1102":
         {
             "name": "Pikmin",
@@ -8231,6 +8242,17 @@
                 "eu": null,
                 "jp": null,
                 "na": "2018-12-21"
+            }
+        },
+        "0x3a00000003a10002":
+        {
+            "name": "Joker",
+            "release":
+            {
+                "au": "2020-09-25",
+                "eu": "2020-09-25",
+                "jp": "2020-09-25",
+                "na": "2020-10-02"
             }
         },
         "0x00c00000037b0002":
@@ -8835,6 +8857,7 @@
         "0x35c2": "Specter Knight",
         "0x35c3": "King Knight",
         "0x3600": "Cloud Strife",
+        "0x3640": "Hero",
         "0x3740": "Mario Cereal",
         "0x3780": "Snake",
         "0x37c0": "Simon",
@@ -8845,7 +8868,8 @@
         "0x3803": "Hayakawa",
         "0x3804": "Yabe",
         "0x3805": "Ganda",
-        "0x38c0": "Loot Goblin"
+        "0x38c0": "Loot Goblin",
+        "0x3a00": "Joker"
     },
     "game_series":
     {
@@ -8948,11 +8972,13 @@
         "0x350": "Monster Hunter",
         "0x35c": "Shovel Knight",
         "0x360": "Final Fantasy",
+        "0x364": "Dragon Quest",
         "0x374": "Kellogs",
         "0x378": "Metal Gear Solid",
         "0x37c": "Castlevania",
         "0x380": "Power Pros",
-        "0x38c": "Diablo"
+        "0x38c": "Diablo",
+        "0x3a0": "Persona"
     },
     "types":
     {
