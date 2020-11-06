@@ -9,7 +9,7 @@ import datetime, time, colors
 
 from rfc3339 import rfc3339
 
-from flask import Flask, jsonify, make_response, render_template, request, g, Response
+from flask import Flask, jsonify, make_response, render_template, request, g
 from flask_compress import Compress
 from flask_cors import CORS
 from flask_limiter import Limiter
@@ -68,15 +68,6 @@ def documentation():
 @limiter.exempt
 def faqPage():
     return render_template('faq.html')
-
-@app.route('/.well-known/acme-challenge/<challenge>')
-def letsencrypt_check(challenge):
-    challenge_response = {
-        "<challenge_token>":"<challenge_response>",
-        "<challenge_token>":"<challenge_response>"
-    }
-    return Response(challenge_response[challenge], mimetype='text/plain')
-
 
 # Handle 400 as json or else Flask will use html as default.
 @app.errorhandler(400)
