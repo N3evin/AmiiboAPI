@@ -28,7 +28,7 @@ More APIs can be found here: [https://www.amiiboapi.com/docs/](https://www.amiib
 - Python 2.X or 3.X
 - [Flask](http://flask.pocoo.org/)
 - [Flask-Cors](https://flask-cors.readthedocs.io/en/latest/)
-- More in the [requirements.txt](https://github.com/N3evin/AmiiboAPI/blob/master/requirements.txt)
+- More in [requirements.txt](https://github.com/N3evin/AmiiboAPI/blob/master/requirements.txt)
 
 ### Manually Setup (if you want to host)
 1. Install python
