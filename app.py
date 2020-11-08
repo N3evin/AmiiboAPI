@@ -5,11 +5,11 @@
 @copyright: Copyright 2017, AmiiboAPI
 @license: MIT License
 """
-import datetime, time, colors
+import colors
 
 from rfc3339 import rfc3339
 
-from flask import Flask, jsonify, make_response, render_template, request, g
+from flask import Flask, jsonify, make_response, render_template, request
 from flask_compress import Compress
 from flask_cors import CORS
 from flask_limiter import Limiter
@@ -100,11 +100,6 @@ def route_api_last_updated():
     respond = jsonify({'lastUpdated': amiibo_manager.last_updated})
     return respond
 
-# store the start time before request.
-@app.before_request
-def start_timer():
-    g.start = time.time()
-
 # log after request
 @app.after_request
 def log_request(response):
@@ -112,11 +107,6 @@ def log_request(response):
         return response
     elif request.path.startswith('/api') == False:
         return response
-
-    now = time.time()
-    duration = round(now - g.start, 2)
-    dt = datetime.datetime.fromtimestamp(now)
-    timestamp = rfc3339(dt)
 
     ip = request.headers.get('X-Forwarded-For', request.remote_addr)
     host = request.host.split(':', 1)[0]
@@ -126,8 +116,6 @@ def log_request(response):
         ('method', request.method, 'blue'),
         ('path', request.path, 'blue'),
         ('status', response.status_code, 'yellow'),
-        ('duration', duration, 'green'),
-        ('time', timestamp, 'magenta'),
         ('ip', ip, 'red'),
         ('host', host, 'red'),
         ('params', args, 'blue')
