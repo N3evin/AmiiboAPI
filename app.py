@@ -15,6 +15,8 @@ from flask_cors import CORS
 from flask_limiter import Limiter
 from flask_limiter.util import get_remote_address
 
+from werkzeug.middleware.proxy_fix import ProxyFix
+
 from commons.amiibo_json_encounter import AmiiboJSONEncoder
 from amiibo.manager import AmiiboManager
 
@@ -41,6 +43,8 @@ app.json_encoder = AmiiboJSONEncoder
 Compress(app)
 
 amiibo_manager = AmiiboManager.from_json()
+
+app.wsgi_app = ProxyFix(app.wsgi_app, num_proxies=1)
 
 # Set default limit for limiter.
 limiter = Limiter(
