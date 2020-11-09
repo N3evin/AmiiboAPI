@@ -13,8 +13,6 @@ from flask import Flask, jsonify, make_response, render_template, request
 from flask_compress import Compress
 from flask_cors import CORS
 
-from werkzeug.middleware.proxy_fix import ProxyFix
-
 from commons.amiibo_json_encounter import AmiiboJSONEncoder
 from amiibo.manager import AmiiboManager
 
@@ -41,8 +39,6 @@ app.json_encoder = AmiiboJSONEncoder
 Compress(app)
 
 amiibo_manager = AmiiboManager.from_json()
-
-app.wsgi_app = ProxyFix(app.wsgi_app, num_proxies=1)
 
 # Index
 @app.route('/')
