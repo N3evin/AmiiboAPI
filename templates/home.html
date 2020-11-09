@@ -197,6 +197,9 @@
                 } else if (data['status'] === 400 || data['status'] === 404) {
 
                     jQuery('#interactive_output').text(data['status'] + ' ' + data['statusText']);
+
+                } else if (data['status'] === 503) {
+                	jQuery('#interactive_output').text("503 Service Temporarily Unavailable");
                 }
             });
         }
