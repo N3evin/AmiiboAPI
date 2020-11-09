@@ -92,7 +92,7 @@ def ratelimit_handler(e):
 # remove limit for local ip.
 @limiter.request_filter
 def ip_whitelist():
-    return request.remote_addr == "127.0.0.1"
+    return request.remote_addr == "0.0.0.0"
 
 # Last updated info
 @app.route('/api/lastupdated/', methods=['GET'])
