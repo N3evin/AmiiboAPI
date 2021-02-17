@@ -1,7 +1,7 @@
 # coding=utf-8
 from cached_property import cached_property
 
-GAME_SERIES_MASK   = 0xFFC00000
+GAME_SERIES_MASK   = 0xFFF00000
 CHARACTER_MASK     = 0xFFFF0000
 VARIANT_MASK       = 0xFFFFFF00
 AMIIBO_TYPE_MASK   = 0x000000FF

@@ -5,15 +5,13 @@
 @copyright: Copyright 2017, AmiiboAPI
 @license: MIT License
 """
-import datetime, time, colors
+import colors
 
 from rfc3339 import rfc3339
 
-from flask import Flask, jsonify, make_response, render_template, request, g
+from flask import Flask, jsonify, make_response, render_template, request
 from flask_compress import Compress
 from flask_cors import CORS
-from flask_limiter import Limiter
-from flask_limiter.util import get_remote_address
 
 from commons.amiibo_json_encounter import AmiiboJSONEncoder
 from amiibo.manager import AmiiboManager
@@ -42,44 +40,31 @@ Compress(app)
 
 amiibo_manager = AmiiboManager.from_json()
 
-# Set default limit for limiter.
-limiter = Limiter(
-        app,
-        key_func=get_remote_address,
-        default_limits=["300 per day"]
-)
-
 # Index
 @app.route('/')
-@limiter.exempt
 def index():
     return render_template('home.html')
 
 
 # Documentation
 @app.route('/docs/')
-@limiter.exempt
 def documentation():
     return render_template('docs.html')
 
 
 # FAQs
 @app.route('/faq/')
-@limiter.exempt
 def faqPage():
     return render_template('faq.html')
 
-
 # Handle 400 as json or else Flask will use html as default.
 @app.errorhandler(400)
-@limiter.exempt
 def bad_request(e):
     return make_response(jsonify(error=e.description, code=400), 400)
 
 
 # Handle 404 as json or else Flask will use html as default.
 @app.errorhandler(404)
-@limiter.exempt
 def not_found(e):
     return make_response(jsonify(error=e.description, code=404), 404)
 
@@ -90,21 +75,11 @@ def ratelimit_handler(e):
     return make_response(jsonify(error="rate limit exceeded %s" % e.description, code=429))
 
 
-# remove limit for local ip.
-@limiter.request_filter
-def ip_whitelist():
-    return request.remote_addr == "127.0.0.1"
-
 # Last updated info
 @app.route('/api/lastupdated/', methods=['GET'])
 def route_api_last_updated():
     respond = jsonify({'lastUpdated': amiibo_manager.last_updated})
     return respond
-
-# store the start time before request.
-@app.before_request
-def start_timer():
-    g.start = time.time()
 
 # log after request
 @app.after_request
@@ -114,11 +89,6 @@ def log_request(response):
     elif request.path.startswith('/api') == False:
         return response
 
-    now = time.time()
-    duration = round(now - g.start, 2)
-    dt = datetime.datetime.fromtimestamp(now)
-    timestamp = rfc3339(dt)
-
     ip = request.headers.get('X-Forwarded-For', request.remote_addr)
     host = request.host.split(':', 1)[0]
     args = dict(request.args)
@@ -127,8 +97,6 @@ def log_request(response):
         ('method', request.method, 'blue'),
         ('path', request.path, 'blue'),
         ('status', response.status_code, 'yellow'),
-        ('duration', duration, 'green'),
-        ('time', timestamp, 'magenta'),
         ('ip', ip, 'red'),
         ('host', host, 'red'),
         ('params', args, 'blue')
@@ -150,4 +118,4 @@ def log_request(response):
 
 
 if __name__ == "__main__":
-    app.run(debug=True, extra_files=['database/amiibo.json'])
+    app.run(host='0.0.0.0', debug=True, extra_files=['database/amiibo.json'])

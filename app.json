@@ -4,8 +4,8 @@
   "keywords": [
     "flask",
     "python",
-	"amiibo",
-	"nintendo"
+	  "amiibo",
+	  "nintendo"
   ],
-  "repository": "https://github.com/N3evin/amiiboapi",
+  "repository": "https://github.com/N3evin/amiiboapi"
 }

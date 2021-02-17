@@ -56,7 +56,7 @@
                         </div>
                     </div>
 
-                    <small>Need a hint? try <a href="#" onClick="update('amiibo/?name=mario');return false;"><i>amiibo/?name=mario</i></a> or <a href="#" onClick="update('gameseries');return false;"><i>gameseries</i></a> or <a href="#" onClick="update('amiibo/?character=zelda');return false;"><i>amiibo/?character=zelda</i></a></small>
+                    <small>Need a hint? try <a href="#" onClick="update('amiibo/?name=mario');return false;"><i>amiibo/?name=mario</i></a> or <a href="#" onClick="update('gameseries/');return false;"><i>gameseries</i></a> or <a href="#" onClick="update('amiibo/?character=zelda');return false;"><i>amiibo/?character=zelda</i></a></small>
                     <p class="lead pad_top">Output Values</p>
 
                     <pre id="interactive_output" class="pre-scrollable">
@@ -104,7 +104,7 @@
 
             <div class="row">
                 <div class="col-md-10 center-block center pad_top pad_bot">
-                    <a href="https://www.namecheap.com/" target="none"><img class="do_image" src="/static/images/namecheap_logo.png"></a>
+                    <a href="https://aws.amazon.com/" target="none"><img class="do_image" src="/static/images/aws_logo.png"></a>
                 </div>
 
 
@@ -197,6 +197,9 @@
                 } else if (data['status'] === 400 || data['status'] === 404) {
 
                     jQuery('#interactive_output').text(data['status'] + ' ' + data['statusText']);
+
+                } else if (data['status'] === 503) {
+                	jQuery('#interactive_output').text("503 Service Temporarily Unavailable");
                 }
             });
         }
