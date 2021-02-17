@@ -27,6 +27,9 @@ class AmiiboManager:
                         'eu': amiibo.release.eu.isoformat() if amiibo.release.eu else None,
                         'au': amiibo.release.au.isoformat() if amiibo.release.au else None,
                     },
+                    'games3DS': amiibo.games3DS,
+                    'gamesWiiU': amiibo.gamesWiiU,
+                    'gamesSwitch': amiibo.gamesSwitch
                 }
                 for amiibo in self.amiibos
             },
@@ -63,7 +66,7 @@ class AmiiboManager:
                         jp=cls._parse_date(amiibo['release']['jp']),
                         eu=cls._parse_date(amiibo['release']['eu']),
                         au=cls._parse_date(amiibo['release']['au']),
-                ))
+                ), amiibo['games3DS'] if amiibo.get('games3DS') else [], amiibo['gamesWiiU'] if amiibo.get('gamesWiiU') else [], amiibo['gamesSwitch'] if amiibo.get('gamesSwitch') else [])
                 for id_, amiibo in data['amiibos'].items()
         )
         manager.game_series.update(
