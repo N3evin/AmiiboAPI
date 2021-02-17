@@ -28,9 +28,6 @@ class AmiiboJSONEncoder(JSONEncoder):
                 'character': obj.character.name if obj.character else None,
                 'image': "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_{}-{}.png".format(str(obj.head)[2:], str(obj.tail)[2:]),
                 'release': obj.release,
-                'games3DS': obj.games3DS,
-                'gamesWiiU': obj.gamesWiiU,
-                'gamesSwitch': obj.gamesSwitch,
             }
         elif isinstance(obj, (GameSeries, Character, AmiiboType, AmiiboSeries)):
             return {
