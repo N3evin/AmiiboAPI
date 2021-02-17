@@ -130,12 +130,15 @@ class UnknownMask(Hex):
 
 
 class Amiibo:
-    def __init__(self, manager, head, tail, name, release):
+    def __init__(self, manager, head, tail, name, release, games3DS, gamesWiiU, gamesSwitch):
         self.manager = manager
         self.head = Hex(head)
         self.tail = Hex(tail)
         self.name = name
         self.release = release
+        self.games3DS = games3DS
+        self.gamesWiiU = gamesWiiU
+        self.gamesSwitch = gamesSwitch
 
     @cached_property
     def id(self):
