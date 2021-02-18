@@ -45,6 +45,15 @@ def route_api_amiibo():
             else:
                 filters['game_series_name'] = game_series
 
+        if 'switch_titleid' in args:
+            filters['switch_titleid'] = args['switch_titleid']
+
+        if 'wiiu_titleid' in args:
+            filters['wiiu_titleid'] = args['wiiu_titleid']
+
+        if '3ds_titleid' in args:
+            filters['3ds_titleid'] = args['3ds_titleid']
+
         if 'character' in args:
             character = args['character'].strip()
             if character.startswith('0x'):
@@ -94,6 +103,9 @@ def route_api_amiibo():
                 'gameseries': 'gameseries',
                 'gameseries_id': 'game_series_id',
                 'gameseries_name': 'game_series_name',
+                'switch_titleid' : 'gamesSwitch',
+                '3ds_titleid' : 'games3DS',
+                'wiiu_titleid' : 'gamesWiiU',
                 'character': 'character_name',
                 'character_id': 'character_id',
                 'character_name': 'character_name',
