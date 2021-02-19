@@ -56,7 +56,7 @@ class AmiiboManager:
 
     @classmethod
     def from_json(cls, file='database/amiibo.json'):
-        with open(file, 'r') as f:
+        with open(file, 'r', encoding="utf8") as f:
             data = json.load(f)
 
         manager = cls()
