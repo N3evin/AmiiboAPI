@@ -21,7 +21,7 @@ from routes.amiibo_series import amiiboseriesApp
 from routes.type import typeApp
 from routes.character import characterApp
 from routes.amiibo import amiiboApp
-
+from routes.amiibofull import amiibofullApp
 
 app = Flask(__name__)
 
@@ -33,6 +33,7 @@ app.register_blueprint(amiiboseriesApp)
 app.register_blueprint(typeApp)
 app.register_blueprint(characterApp)
 app.register_blueprint(amiiboApp)
+app.register_blueprint(amiibofullApp)
 
 CORS(app)
 app.json_encoder = AmiiboJSONEncoder

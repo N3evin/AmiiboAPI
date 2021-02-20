@@ -1,5 +1,6 @@
 # coding=utf-8
 import collections
+import copy
 import datetime
 import itertools
 
@@ -81,6 +82,8 @@ class FilterableCollection(metaclass=FilterableCollectionMeta):
             return self[key]
         except KeyError:
             return default
+    def deepcopy(self):
+        return copy.deepcopy(self)
 
     def add(self, value):
         self._data[value.id] = value

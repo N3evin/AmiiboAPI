@@ -3,13 +3,13 @@ from flask import Blueprint, request, jsonify, abort
 from amiibo.amiibo import AmiiboHex, GameSeriesHex, CharacterHex, VariantHex, AmiiboTypeHex, AmiiboModelHex, AmiiboSeriesHex, Hex
 from amiibo.manager import AmiiboManager
 
-amiiboApp = Blueprint("amiibo", __name__)
+amiibofullApp = Blueprint("amiibofull", __name__)
 
 amiibo_manager = AmiiboManager.from_json()
 
 # Get the amiibo
-@amiiboApp.route('/api/amiibo/', methods=['GET'])
-def route_api_amiibo():
+@amiibofullApp.route('/api/amiibofull/', methods=['GET'])
+def route_api_amiibofull():
     args = request.args
 
     if 'id' in args:
@@ -93,16 +93,7 @@ def route_api_amiibo():
             else:
                 filters['amiibo_series_name'] = amiibo_series
 
-        result = amiibo_manager.amiibos.filter(**filters).deepcopy()
-        
-        for amiibo in result:
-            try:
-                del amiibo.gamesSwitch
-                del amiibo.games3DS
-                del amiibo.gamesWiiU
-            except AttributeError:
-                pass
-
+        result = amiibo_manager.amiibos.filter(**filters)
         if 'sort' in args:
             values = {
                 'id': 'id',
