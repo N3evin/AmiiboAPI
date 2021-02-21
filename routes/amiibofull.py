@@ -93,7 +93,7 @@ def route_api_amiibofull():
             else:
                 filters['amiibo_series_name'] = amiibo_series
 
-        result = amiibo_manager.amiibos.filter(**filters)
+        result = amiibo_manager.amiibosfull.filter(**filters)
         if 'sort' in args:
             values = {
                 'id': 'id',

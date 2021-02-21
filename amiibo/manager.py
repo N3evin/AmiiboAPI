@@ -10,6 +10,7 @@ from .filterable import AmiiboCollection, FilterableCollection
 class AmiiboManager:
     def __init__(self):
         self.amiibos = AmiiboCollection()
+        self.amiibosfull = AmiiboCollection()
         self.game_series = FilterableCollection()
         self.characters = FilterableCollection()
         self.types = FilterableCollection()
@@ -55,20 +56,40 @@ class AmiiboManager:
             json.dump(data, f, indent=4, sort_keys=True)
 
     @classmethod
-    def from_json(cls, file='database/amiibo.json'):
+    def from_json(cls, file='database/amiibo.json', file1='database/games_info.json'):
         with open(file, 'r', encoding="utf8") as f:
             data = json.load(f)
+        with open(file1, 'r', encoding="utf-8-sig") as g:
+            data1 = json.load(g)
 
         manager = cls()
+        manager.amiibosfull.update(
+                Amiibo(manager, id_[2:10], id_[10:18], amiibo['name'], AmiiboReleaseDates(
+                        na=cls._parse_date(amiibo['release']['na']),
+                        jp=cls._parse_date(amiibo['release']['jp']),
+                        eu=cls._parse_date(amiibo['release']['eu']),
+                        au=cls._parse_date(amiibo['release']['au']),
+                ), data1['amiibos'][id_]['games3DS'], data1['amiibos'][id_]['gamesWiiU'], data1['amiibos'][id_]['gamesSwitch'])
+                for id_, amiibo in data['amiibos'].items()
+        )
+
         manager.amiibos.update(
                 Amiibo(manager, id_[2:10], id_[10:18], amiibo['name'], AmiiboReleaseDates(
                         na=cls._parse_date(amiibo['release']['na']),
                         jp=cls._parse_date(amiibo['release']['jp']),
                         eu=cls._parse_date(amiibo['release']['eu']),
                         au=cls._parse_date(amiibo['release']['au']),
-                ), amiibo['games3DS'], amiibo['gamesWiiU'], amiibo['gamesSwitch'])
+                ), None, None, None) # TODO: add custom Amiibo class that doesn't need the games
                 for id_, amiibo in data['amiibos'].items()
         )
+        for amiibo in manager.amiibos:
+            try:
+                del amiibo.gamesSwitch
+                del amiibo.games3DS
+                del amiibo.gamesWiiU
+            except AttributeError:
+                pass
+
         manager.game_series.update(
                 GameSeries(manager, id_, name)
                 for id_, name in data['game_series'].items()
