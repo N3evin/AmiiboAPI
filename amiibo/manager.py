@@ -1,6 +1,7 @@
 # coding=utf-8
 import datetime
 import json
+import copy
 
 from last_updated import LastUpdated
 from .amiibo import Amiibo, AmiiboReleaseDates, AmiiboSeries, AmiiboType, Character, GameSeries
@@ -11,6 +12,7 @@ class AmiiboManager:
     def __init__(self):
         self.amiibos = AmiiboCollection()
         self.amiibosfull = AmiiboCollection()
+        self.amiibosfullwithoutusage = AmiiboCollection()
         self.game_series = FilterableCollection()
         self.characters = FilterableCollection()
         self.types = FilterableCollection()
@@ -32,7 +34,7 @@ class AmiiboManager:
                     'gamesWiiU': amiibo.gamesWiiU,
                     'gamesSwitch': amiibo.gamesSwitch
                 }
-                for amiibo in self.amiibos
+                for amiibo in self.amiibosfull
             },
             'game_series': {
                 str(game_series.id): game_series.name
@@ -61,7 +63,7 @@ class AmiiboManager:
             data = json.load(f)
         with open(file1, 'r', encoding="utf-8-sig") as g:
             data1 = json.load(g)
-
+            
         manager = cls()
         manager.amiibosfull.update(
                 Amiibo(manager, id_[2:10], id_[10:18], amiibo['name'], AmiiboReleaseDates(
@@ -72,6 +74,36 @@ class AmiiboManager:
                 ), data1['amiibos'][id_]['games3DS'], data1['amiibos'][id_]['gamesWiiU'], data1['amiibos'][id_]['gamesSwitch'])
                 for id_, amiibo in data['amiibos'].items()
         )
+
+        manager.amiibosfullwithoutusage.update(
+                Amiibo(manager, id_[2:10], id_[10:18], amiibo['name'], AmiiboReleaseDates(
+                        na=cls._parse_date(amiibo['release']['na']),
+                        jp=cls._parse_date(amiibo['release']['jp']),
+                        eu=cls._parse_date(amiibo['release']['eu']),
+                        au=cls._parse_date(amiibo['release']['au']),
+                ), data1['amiibos'][id_]['games3DS'], data1['amiibos'][id_]['gamesWiiU'], data1['amiibos'][id_]['gamesSwitch'])
+                for id_, amiibo in data['amiibos'].items()
+        )
+        for amiibo in manager.amiibosfullwithoutusage:
+            amiibo.gamesSwitch = copy.deepcopy(amiibo.gamesSwitch)
+            for game in amiibo.gamesSwitch:
+                try:
+                    del game['amiiboUsage']
+                except:
+                    pass
+            amiibo.gamesWiiU = copy.deepcopy(amiibo.gamesWiiU)
+            for game in amiibo.gamesWiiU:
+                try:
+                    del game['amiiboUsage']
+                except:
+                    pass
+            amiibo.games3DS = copy.deepcopy(amiibo.games3DS)
+            for game in amiibo.games3DS:
+                try:
+                    del game['amiiboUsage']
+                except:
+                    pass
+
 
         manager.amiibos.update(
                 Amiibo(manager, id_[2:10], id_[10:18], amiibo['name'], AmiiboReleaseDates(

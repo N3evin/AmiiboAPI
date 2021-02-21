@@ -95,8 +95,23 @@ def route_api_amiibo():
                 filters['amiibo_series_name'] = amiibo_series
 
         result = AmiiboCollection()
-        for amiibo in amiibo_manager.amiibosfull.filter(**filters):
-            result.add(amiibo_manager.amiibos[amiibo.id])
+        print(args)
+        if 'showusage' in args:
+            if filters != {}:
+                result = amiibo_manager.amiibosfull.filter(**filters)
+            else:
+                result = amiibo_manager.amiibosfull
+        elif 'showgames' in args:
+            if filters != {}:
+                result = amiibo_manager.amiibosfullwithoutusage.filter(**filters)
+            else:
+                result = amiibo_manager.amiibosfullwithoutusage
+        else:
+            if filters != {}:
+                for amiibo in amiibo_manager.amiibosfull.filter(**filters):
+                    result.add(amiibo_manager.amiibos[amiibo.id])
+            else:
+                result = amiibo_manager.amiibos
 
         if 'sort' in args:
             values = {
