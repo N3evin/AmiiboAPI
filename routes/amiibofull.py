@@ -2,15 +2,14 @@ from flask import Blueprint, request, jsonify, abort
 
 from amiibo.amiibo import AmiiboHex, GameSeriesHex, CharacterHex, VariantHex, AmiiboTypeHex, AmiiboModelHex, AmiiboSeriesHex, Hex
 from amiibo.manager import AmiiboManager
-from amiibo.filterable import AmiiboCollection
 
-amiiboApp = Blueprint("amiibo", __name__)
+amiibofullApp = Blueprint("amiibofull", __name__)
 
 amiibo_manager = AmiiboManager.getInstance()
 
 # Get the amiibo
-@amiiboApp.route('/api/amiibo/', methods=['GET'])
-def route_api_amiibo():
+@amiibofullApp.route('/api/amiibofull/', methods=['GET'])
+def route_api_amiibofull():
     args = request.args
 
     if 'id' in args:
@@ -94,25 +93,7 @@ def route_api_amiibo():
             else:
                 filters['amiibo_series_name'] = amiibo_series
 
-        result = AmiiboCollection()
-        print(args)
-        if 'showusage' in args:
-            if filters != {}:
-                result = amiibo_manager.amiibosfull.filter(**filters)
-            else:
-                result = amiibo_manager.amiibosfull
-        elif 'showgames' in args:
-            if filters != {}:
-                result = amiibo_manager.amiibosfullwithoutusage.filter(**filters)
-            else:
-                result = amiibo_manager.amiibosfullwithoutusage
-        else:
-            if filters != {}:
-                for amiibo in amiibo_manager.amiibosfull.filter(**filters):
-                    result.add(amiibo_manager.amiibos[amiibo.id])
-            else:
-                result = amiibo_manager.amiibos
-
+        result = amiibo_manager.amiibosfull.filter(**filters)
         if 'sort' in args:
             values = {
                 'id': 'id',
@@ -122,6 +103,9 @@ def route_api_amiibo():
                 'gameseries': 'gameseries',
                 'gameseries_id': 'game_series_id',
                 'gameseries_name': 'game_series_name',
+                'switch_titleid' : 'gamesSwitch',
+                '3ds_titleid' : 'games3DS',
+                'wiiu_titleid' : 'gamesWiiU',
                 'character': 'character_name',
                 'character_id': 'character_id',
                 'character_name': 'character_name',

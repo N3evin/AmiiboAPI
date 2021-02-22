@@ -5,7 +5,7 @@ from amiibo.manager import AmiiboManager
 
 typeApp = Blueprint("type", __name__)
 
-amiibo_manager = AmiiboManager.from_json()
+amiibo_manager = AmiiboManager.getInstance()
 
 # type API
 @typeApp.route('/api/type/', methods=['GET'])

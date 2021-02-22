@@ -1,5 +1,6 @@
 # coding=utf-8
 import collections
+import copy
 import datetime
 import itertools
 
@@ -81,6 +82,8 @@ class FilterableCollection(metaclass=FilterableCollectionMeta):
             return self[key]
         except KeyError:
             return default
+    def deepcopy(self):
+        return copy.deepcopy(self)
 
     def add(self, value):
         self._data[value.id] = value
@@ -151,11 +154,23 @@ class AmiiboCollection(FilterableCollection):
     @filterable('game_series_id')
     def filter_game_series_id(self, value):
         return lambda x: x.game_series.id == value
-
+        
     @filterable('game_series_name')
     def filter_game_series_name(self, value):
         value = value.lower() if value else value
         return lambda x: x.game_series.name.lower() == value
+
+    @filterable('switch_titleid')
+    def filter_switch_titleid(self, value):
+        return lambda x: any(value in game.get("gameID") for game in x.gamesSwitch)
+
+    @filterable('wiiu_titleid')
+    def filter_wiiu_titleid(self, value):
+        return lambda x: any(value in game.get("gameID") for game in x.gamesWiiU)
+
+    @filterable('3ds_titleid')
+    def filter_3ds_titleid(self, value):
+        return lambda x: any(value in game.get("gameID") for game in x.games3DS)
 
     @filterable('character_id')
     def filter_character_id(self, value):

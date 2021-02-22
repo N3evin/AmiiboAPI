@@ -18,7 +18,7 @@ class AmiiboJSONEncoder(JSONEncoder):
         elif isinstance(obj, FilterableCollection):
             return list(obj)
         elif isinstance(obj, Amiibo):
-            return {
+            returner = {
                 'name': obj.name,
                 'head': str(obj.head)[2:],
                 'tail': str(obj.tail)[2:],
@@ -27,8 +27,13 @@ class AmiiboJSONEncoder(JSONEncoder):
                 'amiiboSeries': obj.amiibo_series.name if obj.amiibo_series else None,
                 'character': obj.character.name if obj.character else None,
                 'image': "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_{}-{}.png".format(str(obj.head)[2:], str(obj.tail)[2:]),
-                'release': obj.release,
+                'release': obj.release
             }
+            try:
+                returner.update({'games3DS': obj.games3DS, 'gamesWiiU': obj.gamesWiiU, 'gamesSwitch': obj.gamesSwitch})
+            except AttributeError:
+                pass
+            return returner
         elif isinstance(obj, (GameSeries, Character, AmiiboType, AmiiboSeries)):
             return {
                 'key': obj.id,
