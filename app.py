@@ -39,7 +39,7 @@ CORS(app)
 app.json_encoder = AmiiboJSONEncoder
 Compress(app)
 
-amiibo_manager = AmiiboManager.from_json()
+amiibo_manager = AmiiboManager.getInstance()
 
 # Index
 @app.route('/')

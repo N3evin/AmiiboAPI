@@ -5,7 +5,7 @@ from amiibo.manager import AmiiboManager
 
 gameseriesApp = Blueprint("gameseries", __name__)
 
-amiibo_manager = AmiiboManager.from_json()
+amiibo_manager = AmiiboManager.getInstance()
 
 # gameseries API
 @gameseriesApp.route('/api/gameseries/', methods=['GET'])

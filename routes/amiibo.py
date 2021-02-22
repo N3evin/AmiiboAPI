@@ -6,7 +6,7 @@ from amiibo.filterable import AmiiboCollection
 
 amiiboApp = Blueprint("amiibo", __name__)
 
-amiibo_manager = AmiiboManager.from_json()
+amiibo_manager = AmiiboManager.getInstance()
 
 # Get the amiibo
 @amiiboApp.route('/api/amiibo/', methods=['GET'])

@@ -9,15 +9,28 @@ from .filterable import AmiiboCollection, FilterableCollection
 
 
 class AmiiboManager:
+    amiibos = AmiiboCollection()
+    amiibosfull = AmiiboCollection()
+    amiibosfullwithoutusage = AmiiboCollection()
+    game_series = FilterableCollection()
+    characters = FilterableCollection()
+    types = FilterableCollection()
+    amiibo_series = FilterableCollection()
+    last_updated = None
+
     def __init__(self):
-        self.amiibos = AmiiboCollection()
-        self.amiibosfull = AmiiboCollection()
-        self.amiibosfullwithoutusage = AmiiboCollection()
-        self.game_series = FilterableCollection()
-        self.characters = FilterableCollection()
-        self.types = FilterableCollection()
-        self.amiibo_series = FilterableCollection()
-        self.last_updated = None
+        if AmiiboManager.__instance != None:
+            raise Exception("This class is a singleton!")
+        else:
+            self.from_json()
+            AmiiboManager.__instance = self
+
+    __instance = None
+    @staticmethod 
+    def getInstance():
+        if AmiiboManager.__instance == None:
+            AmiiboManager()
+        return AmiiboManager.__instance
 
     def to_json(self, file='database/amiibo.json'):
         data = {
@@ -58,33 +71,32 @@ class AmiiboManager:
             json.dump(data, f, indent=4, sort_keys=True)
 
     @classmethod
-    def from_json(cls, file='database/amiibo.json', file1='database/games_info.json'):
+    def from_json(self, file='database/amiibo.json', file1='database/games_info.json'):
         with open(file, 'r', encoding="utf8") as f:
             data = json.load(f)
         with open(file1, 'r', encoding="utf-8-sig") as g:
             data1 = json.load(g)
-            
-        manager = cls()
-        manager.amiibosfull.update(
-                Amiibo(manager, id_[2:10], id_[10:18], amiibo['name'], AmiiboReleaseDates(
-                        na=cls._parse_date(amiibo['release']['na']),
-                        jp=cls._parse_date(amiibo['release']['jp']),
-                        eu=cls._parse_date(amiibo['release']['eu']),
-                        au=cls._parse_date(amiibo['release']['au']),
+
+        self.amiibosfull.update(
+                Amiibo(self, id_[2:10], id_[10:18], amiibo['name'], AmiiboReleaseDates(
+                        na=AmiiboManager._parse_date(amiibo['release']['na']),
+                        jp=AmiiboManager._parse_date(amiibo['release']['jp']),
+                        eu=AmiiboManager._parse_date(amiibo['release']['eu']),
+                        au=AmiiboManager._parse_date(amiibo['release']['au']),
                 ), data1['amiibos'][id_]['games3DS'], data1['amiibos'][id_]['gamesWiiU'], data1['amiibos'][id_]['gamesSwitch'])
                 for id_, amiibo in data['amiibos'].items()
         )
 
-        manager.amiibosfullwithoutusage.update(
-                Amiibo(manager, id_[2:10], id_[10:18], amiibo['name'], AmiiboReleaseDates(
-                        na=cls._parse_date(amiibo['release']['na']),
-                        jp=cls._parse_date(amiibo['release']['jp']),
-                        eu=cls._parse_date(amiibo['release']['eu']),
-                        au=cls._parse_date(amiibo['release']['au']),
+        self.amiibosfullwithoutusage.update(
+                Amiibo(self, id_[2:10], id_[10:18], amiibo['name'], AmiiboReleaseDates(
+                        na=AmiiboManager._parse_date(amiibo['release']['na']),
+                        jp=AmiiboManager._parse_date(amiibo['release']['jp']),
+                        eu=AmiiboManager._parse_date(amiibo['release']['eu']),
+                        au=AmiiboManager._parse_date(amiibo['release']['au']),
                 ), data1['amiibos'][id_]['games3DS'], data1['amiibos'][id_]['gamesWiiU'], data1['amiibos'][id_]['gamesSwitch'])
                 for id_, amiibo in data['amiibos'].items()
         )
-        for amiibo in manager.amiibosfullwithoutusage:
+        for amiibo in self.amiibosfullwithoutusage:
             amiibo.gamesSwitch = copy.deepcopy(amiibo.gamesSwitch)
             for game in amiibo.gamesSwitch:
                 try:
@@ -105,16 +117,16 @@ class AmiiboManager:
                     pass
 
 
-        manager.amiibos.update(
-                Amiibo(manager, id_[2:10], id_[10:18], amiibo['name'], AmiiboReleaseDates(
-                        na=cls._parse_date(amiibo['release']['na']),
-                        jp=cls._parse_date(amiibo['release']['jp']),
-                        eu=cls._parse_date(amiibo['release']['eu']),
-                        au=cls._parse_date(amiibo['release']['au']),
+        self.amiibos.update(
+                Amiibo(self, id_[2:10], id_[10:18], amiibo['name'], AmiiboReleaseDates(
+                        na=self._parse_date(amiibo['release']['na']),
+                        jp=self._parse_date(amiibo['release']['jp']),
+                        eu=self._parse_date(amiibo['release']['eu']),
+                        au=self._parse_date(amiibo['release']['au']),
                 ), None, None, None) # TODO: add custom Amiibo class that doesn't need the games
                 for id_, amiibo in data['amiibos'].items()
         )
-        for amiibo in manager.amiibos:
+        for amiibo in self.amiibos:
             try:
                 del amiibo.gamesSwitch
                 del amiibo.games3DS
@@ -122,28 +134,26 @@ class AmiiboManager:
             except AttributeError:
                 pass
 
-        manager.game_series.update(
-                GameSeries(manager, id_, name)
+        self.game_series.update(
+                GameSeries(self, id_, name)
                 for id_, name in data['game_series'].items()
         )
-        manager.characters.update(
-                Character(manager, id_, name)
+        self.characters.update(
+                Character(self, id_, name)
                 for id_, name in data['characters'].items()
         )
-        manager.types.update(
-                AmiiboType(manager, id_, name)
+        self.types.update(
+                AmiiboType(self, id_, name)
                 for id_, name in data['types'].items()
         )
-        manager.amiibo_series.update(
-                AmiiboSeries(manager, id_, name)
+        self.amiibo_series.update(
+                AmiiboSeries(self, id_, name)
                 for id_, name in data['amiibo_series'].items()
         )
-        manager.last_updated = LastUpdated().read_timestamp()
+        self.last_updated = LastUpdated().read_timestamp()
 
-        return manager
-
-    @classmethod
-    def _parse_date(cls, value):
+    @staticmethod
+    def _parse_date(value):
         return datetime.datetime.strptime(value, '%Y-%m-%d').date() if value else None
 
 
