@@ -1,8 +1,8 @@
 {
 	"notifications" : [
 		{
-			"title": "07/11/2020",
-			"message": "Successfully migrated to AWS",
+			"title": "22/02/2021",
+			"message": "Game info and game usage support - Credit to MrKev312",
 			"type": "success"
 		}
 	]
