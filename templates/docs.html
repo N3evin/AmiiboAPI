@@ -26,6 +26,11 @@
     <li>
         <hr>
     </li>
+    <li><a href="#showGames">Show Games</a></li>
+    <li><a href="#showUsage">Show Usage</a></li>
+    <li>
+        <hr>
+    </li>
     <li><a href="#type">Type</a></li>
     <li><a href="#gameSeries">Game Series</a></li>
     <li><a href="#series">Series</a></li>
@@ -38,6 +43,8 @@
 {% endblock %}
 
 {% block docsbody %}
+<hr>
+<br>
 
 <h2 id="amiibo">Amiibo</h2>
 
@@ -571,6 +578,360 @@
     </tbody>
 </table>
 
+<hr>
+<br>
+
+<h2 id="showGames">Show Games</h2>
+
+<p>Also returns the games the amiibo can be used in.</p>
+
+<h3>GET /api/amiibo/?showgames</h3>
+
+<p><strong>Note: </strong>can be added in combination with other filters. <b>E.g.</b> <code>/api/amiibo/?character=0x1996&amp;showgames</code> or <code>/api/amiibo/?character=Mewtwo&amp;showgames</code></p>
+
+<pre>
+{
+  "amiibo": [
+    {
+      "amiiboSeries": "Super Smash Bros.", 
+      "character": "Mewtwo", 
+      "gameSeries": "Pokemon", 
+      "games3DS": [
+        {
+          "gameID": [
+            "0004000000189600", 
+            "0004000000183600", 
+            "0004000000189800"
+          ], 
+          "gameName": "Kirby: Planet Robobot"
+        }, 
+        {
+          "gameID": [
+            "00040000000EE000", 
+            "00040000000EDF00"
+          ], 
+          "gameName": "Super Smash Bros. for Nintendo 3DS"
+        }
+      ], 
+      "gamesSwitch": [
+        {
+          "gameID": [
+            "01006A800016E000"
+          ], 
+          "gameName": "Super Smash Bros. Ultimate"
+        }
+      ], 
+      "gamesWiiU": [
+        {
+          "gameID": [
+            "000500001018DD00", 
+            "000500001018DC00", 
+            "000500001018DB00"
+          ], 
+          "gameName": "Super Mario Maker"
+        }, 
+        {
+          "gameID": [
+            "0005000010145000", 
+            "0005000010144F00", 
+            "0005000010110E00"
+          ], 
+          "gameName": "Super Smash Bros. for Wii U"
+        }
+      ], 
+      "head": "19960000", 
+      "image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_19960000-023d0002.png", 
+      "name": "Mewtwo", 
+      "release": {
+        "au": "2015-10-24", 
+        "eu": "2015-10-23", 
+        "jp": "2015-10-29", 
+        "na": "2015-11-13"
+      }, 
+      "tail": "023d0002", 
+      "type": "Figure"
+    }
+  ]
+}
+    </pre>
+
+<h4>Show Games</h4>
+
+<table>
+    <thead>
+        <tr>
+
+            <th>Name</th>
+            <th>Description</th>
+            <th>Data Type</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>amiiboSeries</td>
+            <td>The series the amiibo belongs to.</td>
+            <td>string</td>
+        </tr>
+        <tr>
+            <td>character</td>
+            <td>The character of the amiibo, multiple character have different amiibo design.</td>
+            <td>string</td>
+        </tr>
+        <tr>
+            <td>gameSeries</td>
+            <td>The game series of the amiibo.</td>
+            <td>string</td>
+        </tr>
+        <tr>
+            <td>games3DS</td>
+            <td>List of 3DS games it can be used in.</td>
+            <td>Array of gameID's and name as string</td>
+            <td>json</td>
+        </tr>
+        <tr>
+            <td>gamesSwitch</td>
+            <td>List of Switch games it can be used in.</td>
+            <td>Array of gameID's and name as string</td>
+            <td>json</td>
+        </tr>
+        <tr>
+            <td>gamesWiiU</td>
+            <td>List of Wii U games it can be used in.</td>
+            <td>Array of gameID's and name as string</td>
+            <td>json</td>
+        </tr>
+        <tr>
+            <td>head</td>
+            <td>The 1st 8 value of the hexadecimal to recognize the amiibo.<br><b>Note:</b> 0-7 value in the hexadecimal</td>
+            <td>string</td>
+        </tr>
+        <tr>
+            <td>image</td>
+            <td>The image link of the amiibo.</td>
+            <td>string</td>
+        </tr>
+        <tr>
+            <td>name</td>
+            <td>The name of the amiibo.</td>
+            <td>string</td>
+        </tr>
+        <tr>
+            <td>release</td>
+            <td>
+                The release date for North America, Japan, Europe and Australia <br>
+                <b>Date Format: </b>yyyy-mm-dd<br>
+                <b>Warning:</b> If date is not available, it will return as <code>null</code><br>
+            </td>
+            <td>
+                <b>Warning:</b> If date is not available, it will return as <code>null</code>
+            </td>
+            <td>json</td>
+        </tr>
+        <tr>
+            <td>tail</td>
+            <td>The next 8 value of the hexadecimal to recognize the amiibo.<br><b>Note:</b> 8-15 value in the hexadecimal</td>
+            <td>string</td>
+        </tr>
+        <tr>
+            <td>type</td>
+            <td>The type it belongs to. Example: card, figure and yarn</td>
+            <td>string</td>
+        </tr>
+    </tbody>
+</table>
+
+<h2 id="showUsage">Show Usage</h2>
+
+<p>Also returns the games the amiibo can be used in and how it's used in the game.</p>
+
+<h3>GET /api/amiibo/?showusage</h3>
+
+<p><strong>Note: </strong>can be added in combination with other filters. <b>E.g.</b> <code>/api/amiibo/?character=0x1996&amp;showusage</code> or <code>/api/amiibo/?character=Mewtwo&amp;showusage</code></p>
+
+<pre>
+{
+  "amiibo": [
+    {
+      "amiiboSeries": "Super Smash Bros.", 
+      "character": "Mewtwo", 
+      "gameSeries": "Pokemon", 
+      "games3DS": [
+        {
+          "amiiboUsage": [
+            {
+              "Usage": "Give Kirby a Copy ability based on the character's abilities and a health item", 
+              "write": false
+            }
+          ], 
+          "gameID": [
+            "0004000000189600", 
+            "0004000000183600", 
+            "0004000000189800"
+          ], 
+          "gameName": "Kirby: Planet Robobot"
+        }, 
+        {
+          "amiiboUsage": [
+            {
+              "Usage": "Battle and train up a computer-controlled Figure Player of the character", 
+              "write": true
+            }
+          ], 
+          "gameID": [
+            "00040000000EE000", 
+            "00040000000EDF00"
+          ], 
+          "gameName": "Super Smash Bros. for Nintendo 3DS"
+        }
+      ], 
+      "gamesSwitch": [
+        {
+          "amiiboUsage": [
+            {
+              "Usage": "Battle and train up a computer-controlled Figure Player of the character", 
+              "write": true
+            }
+          ], 
+          "gameID": [
+            "01006A800016E000"
+          ], 
+          "gameName": "Super Smash Bros. Ultimate"
+        }
+      ], 
+      "gamesWiiU": [
+        {
+          "amiiboUsage": [
+            {
+              "Usage": "Unlock a character-based Mystery Mushroom costume", 
+              "write": false
+            }
+          ], 
+          "gameID": [
+            "000500001018DD00", 
+            "000500001018DC00", 
+            "000500001018DB00"
+          ], 
+          "gameName": "Super Mario Maker"
+        }, 
+        {
+          "amiiboUsage": [
+            {
+              "Usage": "Battle and train up a computer-controlled Figure Player of the character", 
+              "write": true
+            }
+          ], 
+          "gameID": [
+            "0005000010145000", 
+            "0005000010144F00", 
+            "0005000010110E00"
+          ], 
+          "gameName": "Super Smash Bros. for Wii U"
+        }
+      ], 
+      "head": "19960000", 
+      "image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_19960000-023d0002.png", 
+      "name": "Mewtwo", 
+      "release": {
+        "au": "2015-10-24", 
+        "eu": "2015-10-23", 
+        "jp": "2015-10-29", 
+        "na": "2015-11-13"
+      }, 
+      "tail": "023d0002", 
+      "type": "Figure"
+    }
+  ]
+}
+    </pre>
+
+<h4>Show Usage</h4>
+
+<table>
+    <thead>
+        <tr>
+
+            <th>Name</th>
+            <th>Description</th>
+            <th>Data Type</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>amiiboSeries</td>
+            <td>The series the amiibo belongs to.</td>
+            <td>string</td>
+        </tr>
+        <tr>
+            <td>character</td>
+            <td>The character of the amiibo, multiple character have different amiibo design.</td>
+            <td>string</td>
+        </tr>
+        <tr>
+            <td>gameSeries</td>
+            <td>The game series of the amiibo.</td>
+            <td>string</td>
+        </tr>
+        <tr>
+            <td>games3DS</td>
+            <td>List of 3DS games it can be used in.</td>
+            <td>Array of gameID's, array of uses and name as string</td>
+            <td>json</td>
+        </tr>
+        <tr>
+            <td>gamesSwitch</td>
+            <td>List of Switch games it can be used in.</td>
+            <td>Array of gameID's, array of uses and name as string</td>
+            <td>json</td>
+        </tr>
+        <tr>
+            <td>gamesWiiU</td>
+            <td>List of Wii U games it can be used in.</td>
+            <td>Array of gameID's, array of uses and name as string</td>
+            <td>json</td>
+        </tr>
+        <tr>
+            <td>head</td>
+            <td>The 1st 8 value of the hexadecimal to recognize the amiibo.<br><b>Note:</b> 0-7 value in the hexadecimal</td>
+            <td>string</td>
+        </tr>
+        <tr>
+            <td>image</td>
+            <td>The image link of the amiibo.</td>
+            <td>string</td>
+        </tr>
+        <tr>
+            <td>name</td>
+            <td>The name of the amiibo.</td>
+            <td>string</td>
+        </tr>
+        <tr>
+            <td>release</td>
+            <td>
+                The release date for North America, Japan, Europe and Australia <br>
+                <b>Date Format: </b>yyyy-mm-dd<br>
+                <b>Warning:</b> If date is not available, it will return as <code>null</code><br>
+            </td>
+            <td>
+                <b>Warning:</b> If date is not available, it will return as <code>null</code>
+            </td>
+            <td>json</td>
+        </tr>
+        <tr>
+            <td>tail</td>
+            <td>The next 8 value of the hexadecimal to recognize the amiibo.<br><b>Note:</b> 8-15 value in the hexadecimal</td>
+            <td>string</td>
+        </tr>
+        <tr>
+            <td>type</td>
+            <td>The type it belongs to. Example: card, figure and yarn</td>
+            <td>string</td>
+        </tr>
+    </tbody>
+</table>
+
+<hr>
+<br>
+
 <h2 id="type">Type</h2>
 
 <p>Get all the amiibo's type available in the database as a list.</p>
@@ -896,6 +1257,9 @@
         </tr>
     </tbody>
 </table>
+
+<hr>
+<br>
 
 <h2 id="lastUpdated">Last Updated</h2>
 
