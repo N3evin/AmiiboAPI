@@ -18,6 +18,7 @@
 		"0x15": "Mega Man",
 		"0x16": "Diablo",
 		"0x17": "Power Pros",
+		"0x18": "Monster Hunter Rise",
 		"0x0a": "Shovel Knight",
 		"0x0c": "Kirby",
 		"0x0d": "Pokemon",
@@ -8035,6 +8036,39 @@
 				"na": null
 			}
 		},
+		"0x35080000040f1802":
+		{
+			"name": "Magnamalo",
+			"release":
+			{
+				"au": "2021-03-26",
+				"eu": "2021-03-26",
+				"jp": "2021-03-26",
+				"na": "2021-03-26"
+			}
+		},
+		"0x350a000004111802":
+		{
+			"name": "Palamute",
+			"release":
+			{
+				"au": "2021-03-26",
+				"eu": "2021-03-26",
+				"jp": "2021-03-26",
+				"na": "2021-03-26"
+			}
+		},
+		"0x3509000004101802":
+		{
+			"name": "Palico",
+			"release":
+			{
+				"au": "2021-03-26",
+				"eu": "2021-03-26",
+				"jp": "2021-03-26",
+				"na": "2021-03-26"
+			}
+		},
 		"0x35c0000002500a02":
 		{
 			"name": "Shovel Knight",
@@ -8908,6 +8942,9 @@
 		"0x3502": "Rathian",
 		"0x3503": "Barioth",
 		"0x3504": "Qurupeco",
+		"0x3508": "Magnamalo",
+		"0x3509": "Palico",
+		"0x350a": "Palamute",
 		"0x35c0": "Shovel Knight",
 		"0x35c1": "Plague Knight",
 		"0x35c2": "Specter Knight",
