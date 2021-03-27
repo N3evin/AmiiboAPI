@@ -73359,19 +73359,55 @@
 		{
 			"games3DS": [],
 			"gamesWiiU": [],
-			"gamesSwitch": []
+			"gamesSwitch": [
+			{
+				"gameName": "Monster Hunter Rise",
+				"gameID": [
+					"0100B04011742000",
+					"0100559011740000"
+				],
+				"amiiboUsage": [
+				{
+					"Usage": "Earn an entry to the amiibo lottery.",
+					"write": false
+				}]
+			}]
 		},
 		"0x350a000004111802":
 		{
 			"games3DS": [],
 			"gamesWiiU": [],
-			"gamesSwitch": []
+			"gamesSwitch": [
+			{
+				"gameName": "Monster Hunter Rise",
+				"gameID": [
+					"0100B04011742000",
+					"0100559011740000"
+				],
+				"amiiboUsage": [
+				{
+					"Usage": "Earn an entry to the amiibo lottery.",
+					"write": false
+				}]
+			}]
 		},
 		"0x3509000004101802":
 		{
 			"games3DS": [],
 			"gamesWiiU": [],
-			"gamesSwitch": []
+			"gamesSwitch": [
+			{
+				"gameName": "Monster Hunter Rise",
+				"gameID": [
+					"0100B04011742000",
+					"0100559011740000"
+				],
+				"amiiboUsage": [
+				{
+					"Usage": "Earn an entry to the amiibo lottery.",
+					"write": false
+				}]
+			}]
 		},
 		"0x35c0000002500a02":
 		{
