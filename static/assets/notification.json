@@ -1,8 +1,13 @@
 {
 	"notifications" : [
 		{
-			"title": "07/11/2020",
-			"message": "Successfully migrated to AWS",
+			"title": "27/03/2021",
+			"message": "Added Magnamalo, Palamute, and Palico - Credit to DanTheMan827 & NotExtrange",
+			"type": "success"
+		},
+		{
+			"title": "27/03/2021",
+			"message": "Added Banjo, Terry and Byleth - Credit to DanTheMan827",
 			"type": "success"
 		}
 	]
