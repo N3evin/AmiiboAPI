@@ -1,0 +1,25 @@
+name: Update json
+on:
+  push:
+    branches: [master]
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Update last-updated.json
+        run: |
+          python3 last_updated.py
+
+      - name: Update sha1sum.json
+        run: |
+          python3 sha1sum.py
+
+      - name: Commit json files
+        run: |
+          git config --global user.name 'N3evin (Automated)'
+          git config --global user.email 'N3evin@users.noreply.github.com'
+          git add -A sha1sum.json last-updated.json
+          git commit -m "[Automated] Update: $(git diff --name-only --staged)"
+          git push
