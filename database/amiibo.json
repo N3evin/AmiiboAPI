@@ -23,7 +23,8 @@
 		"0x0c": "Kirby",
 		"0x0d": "Pokemon",
 		"0x0e": "Mario Sports Superstars",
-		"0x0f": "Monster Hunter"
+		"0x0f": "Monster Hunter",
+		"0xff": "Super Nintendo World"
 	},
 	"amiibos":
 	{
@@ -113,6 +114,17 @@
 				"eu": "2017-10-27",
 				"jp": "2017-10-27",
 				"na": "2017-10-27"
+			}
+		},
+		"0x00000003039bff02":
+		{
+			"name": "Mario - Power Up Band",
+			"release":
+			{
+				"au": null,
+				"eu": null,
+				"jp": "2021-02-04",
+				"na": null
 			}
 		},
 		"0x0000010000190002":
@@ -9081,6 +9093,7 @@
 	{
 		"0x00": "Figure",
 		"0x01": "Card",
-		"0x02": "Yarn"
+		"0x02": "Yarn",
+		"0x03": "Band"
 	}
 }
