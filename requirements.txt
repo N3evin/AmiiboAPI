@@ -16,5 +16,5 @@ MarkupSafe==1.1.0
 requests==2.20.1
 rfc3339==6.2
 six==1.11.0
-urllib3==1.25.8
+urllib3==1.25.2
 Werkzeug==0.15.6
