@@ -1,6 +1,6 @@
 {
 	"database/amiibo.json": "ed65c7e27618ca67051793d72b5295014455d049",
-	"database/games_info.json": "a0a3a7f4916646e0f396725baf403baf1f49cbe1",
+	"database/games_info.json": "3b7fa7588bfc97a2105970c345f68eb5aeffa7b4",
 	"images/icon_00000000-00000002.png": "8ec70ea3ed8b6dc34a6346ebc6c81093930856f9",
 	"images/icon_00000000-00340102.png": "1df37fbd36b966ae660a5dfc978aa921506b105a",
 	"images/icon_00000000-003c0102.png": "11f9d270b97d4946a8e17b9e803868b6828f357e",
@@ -766,5 +766,5 @@
 	"images/icon_3a000000-03a10002.png": "ed6b904d00150ecd07de3ae8f09a8ddff8c9995f",
 	"images/icon_3b400000-03a30002.png": "10c80a73a774eaef9da8383f94ff04aff86fc512",
 	"images/icon_3c800000-03a40002.png": "f7d6e8136353b93e18e36517eafa15d2d4c8901f",
-	"last-updated.json": "272f1dd491536c1ccf14f7728231c1567733f78e"
+	"last-updated.json": "0d6b60361d25e33177ab6cf533b2d9c8ecafca0a"
 }
