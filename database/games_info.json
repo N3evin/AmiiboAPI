@@ -90813,23 +90813,62 @@
 				}]
 			}]
 		},
-		"0x35050000040c0f02":
-		{
+		"0x35050000040c0f02": {
 			"games3DS": [],
 			"gamesWiiU": [],
-			"gamesSwitch": []
+			"gamesSwitch": [
+				{
+					"gameName": "Monster Hunter Stories 2: Wings of Ruin",
+					"gameID": [
+						"0100E21011446000",
+						"0100CB700D438000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock a character-specific special layered armor set",
+							"write": false
+						}
+					]
+				}
+			]
 		},
-		"0x35060000040d0f02":
-		{
+		"0x35060000040d0f02": {
 			"games3DS": [],
 			"gamesWiiU": [],
-			"gamesSwitch": []
+			"gamesSwitch": [
+				{
+					"gameName": "Monster Hunter Stories 2: Wings of Ruin",
+					"gameID": [
+						"0100E21011446000",
+						"0100CB700D438000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock a character-specific special layered armor set",
+							"write": false
+						}
+					]
+				}
+			]
 		},
-		"0x35070000040e0f02":
-		{
+		"0x35070000040e0f02": {
 			"games3DS": [],
 			"gamesWiiU": [],
-			"gamesSwitch": []
+			"gamesSwitch": [
+				{
+					"gameName": "Monster Hunter Stories 2: Wings of Ruin",
+					"gameID": [
+						"0100E21011446000",
+						"0100CB700D438000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock a character-specific special layered armor set",
+							"write": false
+						}
+					]
+				}
+			]
 		},
 		"0x35080000040f1802":
 		{
