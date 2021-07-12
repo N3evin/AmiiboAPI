@@ -4,13 +4,14 @@
 name: Check Database
 
 on:
-  push:
-    branches: "*"
-  pull_request:
-    branches: "*"
+  workflow_run:
+    workflows: ["Generate game info"]
+    types:
+      - completed
 
 jobs:
   build:
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
 
     steps:
