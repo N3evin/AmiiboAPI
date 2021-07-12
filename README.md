@@ -1,3 +1,4 @@
+
 # Amiibo RESTful API
 
 [![Offical Site](https://img.shields.io/static/v1?label=Offical&message=Site&color=3399CC)](https://amiiboapi.com)
@@ -9,7 +10,7 @@
 A RESTful API that was created for retriving amiibo information.
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
-[![Deploy](https://deploy.zeet.co/amiiboapi.svg)](https://deploy.zeet.co/?url=https://github.com/n3evin/amiiboapi)
+[![Deploy](https://imgur.com/WTCkMSx.png)](https://deploy.zeet.co/?url=https://github.com/n3evin/amiiboapi)
 
 ### Features
 - always updated
