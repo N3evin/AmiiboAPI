@@ -1,6 +1,8 @@
 FROM busybox
 COPY . /amiiboapi
 RUN [ "rm", "-rf", "/amiiboapi/.git" ]
+RUN [ "rm", "-rf", "/amiiboapi/images" ]
+RUN [ "rm", "-rf", "/amiiboapi/gameinfo_generator" ]
 
 FROM python:3
 EXPOSE 5000/tcp
