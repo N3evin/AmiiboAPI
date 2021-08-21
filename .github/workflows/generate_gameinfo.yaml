@@ -2,9 +2,7 @@ name: Generate game info
 
 on:
   push:
-    branches: "*"
-  pull_request:
-    branches: "*"
+    branches: [master]
 
 jobs:
   report:
