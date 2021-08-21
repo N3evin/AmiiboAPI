@@ -1,13 +1,8 @@
 {
 	"notifications" : [
 		{
-			"title": "15/07/2021",
-			"message": "Added Zelda & Loftwing.",
-			"type": "success"
-		},
-		{
-			"title": "10/07/2021",
-			"message": "Added Ena, Razewing Ratha and Tsukino.",
+			"title": "21/08/2021",
+			"message": "Added new Yu-Gi-Oh! Amiibo.",
 			"type": "success"
 		}
 	]

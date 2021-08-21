@@ -19,6 +19,7 @@
 		"0x16": "Diablo",
 		"0x17": "Power Pros",
 		"0x18": "Monster Hunter Rise",
+		"0x19": "Yu-Gi-Oh!",
 		"0x0a": "Shovel Knight",
 		"0x0c": "Kirby",
 		"0x0d": "Pokemon",
@@ -8411,6 +8412,83 @@
 				"na": null
 			}
 		},
+		"0x3840000104241902":
+		{
+			"name": "Yuga Ohdo",
+			"release":
+			{
+				"au": null,
+				"eu": null,
+				"jp": null,
+				"na": "2021-08-12"
+			}
+		},
+		"0x3841000104251902":
+		{
+			"name": "Tatsuhisa “Luke” Kamijō",
+			"release":
+			{
+				"au": null,
+				"eu": null,
+				"jp": null,
+				"na": "2021-08-12"
+			}
+		},
+		"0x3842000104261902":
+		{
+			"name": "Gakuto Sōgetsu",
+			"release":
+			{
+				"au": null,
+				"eu": null,
+				"jp": null,
+				"na": "2021-08-12"
+			}
+		},
+		"0x3843000104271902":
+		{
+			"name": "Romin Kirishima",
+			"release":
+			{
+				"au": null,
+				"eu": null,
+				"jp": null,
+				"na": "2021-08-12"
+			}
+		},
+		"0x3844000104281902":
+		{
+			"name": "Roa Kirishima",
+			"release":
+			{
+				"au": null,
+				"eu": null,
+				"jp": null,
+				"na": "2021-08-12"
+			}
+		},
+		"0x3845000104291902":
+		{
+			"name": "Nail Saionji",
+			"release":
+			{
+				"au": null,
+				"eu": null,
+				"jp": null,
+				"na": "2021-08-12"
+			}
+		},
+		"0x38460001042a1902":
+		{
+			"name": "Asana Mutsuba",
+			"release":
+			{
+				"au": null,
+				"eu": null,
+				"jp": null,
+				"na": "2021-08-12"
+			}
+		},
 		"0x38c0000003911602":
 		{
 			"name": "Loot Goblin",
@@ -9075,6 +9153,13 @@
 		"0x3803": "Hayakawa",
 		"0x3804": "Yabe",
 		"0x3805": "Ganda",
+		"0x3840": "Yuga Ohdo",
+		"0x3841": "Tatsuhisa “Luke” Kamijō",
+		"0x3842": "Gakuto Sōgetsu",
+		"0x3843": "Romin Kirishima",
+		"0x3844": "Roa Kirishima",
+		"0x3845": "Nail Saionji",
+		"0x3846": "Asana Mutsuba",
 		"0x38c0": "Loot Goblin",
 		"0x3a00": "Joker",
 		"0x3b40": "Banjo",
@@ -9186,6 +9271,7 @@
 		"0x378": "Metal Gear Solid",
 		"0x37c": "Castlevania",
 		"0x380": "Power Pros",
+		"0x384": "Yu-Gi-Oh!",
 		"0x38c": "Diablo",
 		"0x3a0": "Persona",
 		"0x3b4": "Banjo Kazooie",
