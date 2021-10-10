@@ -5,7 +5,7 @@ name: Check Database
 
 on:
   workflow_run:
-    workflows: ["Update json"]
+    workflows: ["Generate game info"]
     types:
       - completed
 

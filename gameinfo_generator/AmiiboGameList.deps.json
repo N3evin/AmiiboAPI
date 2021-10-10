@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v5.0": {
-      "AmiiboGameList/1.3.0": {
+      "AmiiboGameList/1.4.0": {
         "dependencies": {
           "Costura.Fody": "4.1.0",
           "HtmlAgilityPack": "1.11.23",
@@ -520,7 +520,7 @@
     }
   },
   "libraries": {
-    "AmiiboGameList/1.3.0": {
+    "AmiiboGameList/1.4.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
