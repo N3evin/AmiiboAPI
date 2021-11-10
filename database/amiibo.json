@@ -1571,7 +1571,7 @@
 		},
 		"0x0198000100b10502":
 		{
-			"name": "Lelia",
+			"name": "Leila",
 			"release":
 			{
 				"au": "2015-11-21",
@@ -1736,7 +1736,7 @@
 		},
 		"0x01a6000100500502":
 		{
-			"name": "Sahara",
+			"name": "Saharah",
 			"release":
 			{
 				"au": "2015-10-03",
@@ -9185,7 +9185,7 @@
 		"0x01a3": "Joan",
 		"0x01a4": "Pascal",
 		"0x01a5": "Katrina",
-		"0x01a6": "Sahara",
+		"0x01a6": "Saharah",
 		"0x01a7": "Wendell",
 		"0x01a8": "Redd",
 		"0x01a9": "Gracie",
@@ -9384,7 +9384,7 @@
 		"0x036a": "Peewee",
 		"0x036b": "Boone",
 		"0x036d": "Louie",
-		"0x036e": "Maddie",
+		"0x036e": "Boyd",
 		"0x0370": "Violet",
 		"0x0371": "Al",
 		"0x0372": "Rocket",
@@ -9434,7 +9434,7 @@
 		"0x03d6": "Astrid",
 		"0x03d7": "Sylvia",
 		"0x03d9": "Walt",
-		"0x03da": "Rodney",
+		"0x03da": "Rooney",
 		"0x03db": "Marcie",
 		"0x03e6": "Bud",
 		"0x03e7": "Elvis",
