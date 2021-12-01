@@ -1,36 +1,26 @@
-name: Generate game info
-
+name: Update json
 on:
   push:
     branches: [master]
 
 jobs:
   report:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Copy amiibo.json to gameinfo_generator
+      - name: Update last-updated.json
         run: |
-          copy-item database/amiibo.json gameinfo_generator
-        shell: powershell
+          python3 last_updated.py
 
-      - name: Run game_info generator
-        working-directory: ./gameinfo_generator
+      - name: Update sha1sum.json
         run: |
-          AmiiboGameList.exe
-        shell: cmd
-
-      - name: Copy games_info.json to database folder
-        run: |
-          copy-item gameinfo_generator/games_info.json database
-        shell: powershell
+          python3 sha1sum.py
 
       - name: Commit json files
         run: |
           git config --global user.name 'N3evin (Automated)'
           git config --global user.email 'N3evin@users.noreply.github.com'
-          git pull
-          git add -A database/games_info.json
-          if(git commit -m "[Automated] Update: $(git diff --name-only --staged)") {
+          git add -A sha1sum.json last-updated.json
+          if git commit -m "[Automated] Update: $(git diff --name-only --staged)"; then
             git push
-          }
+          fi
