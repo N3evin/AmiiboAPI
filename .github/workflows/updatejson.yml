@@ -20,7 +20,8 @@ jobs:
         run: |
           git config --global user.name 'N3evin (Automated)'
           git config --global user.email 'N3evin@users.noreply.github.com'
-          git pull
           git add -A sha1sum.json last-updated.json
-          git commit -m "[Automated] Update: $(git diff --name-only --staged)"
-          git push
+          if git commit -m "[Automated] Update: $(git diff --name-only --staged)"; then
+            git push
+          fi
+          
