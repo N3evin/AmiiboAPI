@@ -16574,6 +16574,10 @@
 						{
 							"Usage": "Play as or receive bonus from this character, depending on the mode",
 							"write": false
+						},
+						{
+							"Usage": "Unlock a Boo-themed background in Boo's Block Party",
+							"write": false
 						}
 					]
 				},
@@ -89975,6 +89979,18 @@
 					],
 					"amiiboUsage": [
 						{
+							"Usage": "Receive a Spirit of the character",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Super Smash Bros. Ultimate",
+					"gameID": [
+						"01006A800016E000"
+					],
+					"amiiboUsage": [
+						{
 							"Usage": "Battle and train up a computer-controlled Figure Player of the character",
 							"write": true
 						}
@@ -90452,7 +90468,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Replenish a random amount of missiles once per day",
+							"Usage": "Permanently increase missile capacity by 10",
 							"write": false
 						}
 					]
@@ -90464,7 +90480,19 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Permanently increase missile capacity by 10",
+							"Usage": "Replenish a random amount of missiles once per day",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Super Smash Bros. Ultimate",
+					"gameID": [
+						"01006A800016E000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Receive a Spirit of the character",
 							"write": false
 						}
 					]
@@ -104172,22 +104200,6 @@
 							"write": false
 						}
 					]
-				},
-				{
-					"gameName": "Shovel Knight Showdown",
-					"gameID": [
-						"000500001016E100",
-						"0005000010178F00",
-						"0005000E1016E100",
-						"0005000E10178F00",
-						"0005000E101D9300"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Unlock a special costume for the character",
-							"write": false
-						}
-					]
 				}
 			],
 			"gamesSwitch": [
@@ -104244,6 +104256,18 @@
 						},
 						{
 							"Usage": "Unlock a special costume for the character",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Shovel Knight Pocket Dungeon",
+					"gameID": [
+						"01006B00126EC000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Summon a fairy friend",
 							"write": false
 						}
 					]
@@ -104335,22 +104359,6 @@
 							"write": false
 						}
 					]
-				},
-				{
-					"gameName": "Shovel Knight Showdown",
-					"gameID": [
-						"000500001016E100",
-						"0005000010178F00",
-						"0005000E1016E100",
-						"0005000E10178F00",
-						"0005000E101D9300"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Unlock a special costume for the character",
-							"write": false
-						}
-					]
 				}
 			],
 			"gamesSwitch": [
@@ -104407,6 +104415,18 @@
 						},
 						{
 							"Usage": "Unlock a special costume for the character",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Shovel Knight Pocket Dungeon",
+					"gameID": [
+						"01006B00126EC000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Summon a fairy friend",
 							"write": false
 						}
 					]
@@ -104474,22 +104494,6 @@
 							"write": false
 						}
 					]
-				},
-				{
-					"gameName": "Shovel Knight Showdown",
-					"gameID": [
-						"000500001016E100",
-						"0005000010178F00",
-						"0005000E1016E100",
-						"0005000E10178F00",
-						"0005000E101D9300"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Unlock a special costume for the character",
-							"write": false
-						}
-					]
 				}
 			],
 			"gamesSwitch": [
@@ -104534,6 +104538,18 @@
 						},
 						{
 							"Usage": "Unlock a special costume for the character",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Shovel Knight Pocket Dungeon",
+					"gameID": [
+						"01006B00126EC000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Summon a fairy friend",
 							"write": false
 						}
 					]
@@ -104613,22 +104629,6 @@
 							"write": false
 						}
 					]
-				},
-				{
-					"gameName": "Shovel Knight Showdown",
-					"gameID": [
-						"000500001016E100",
-						"0005000010178F00",
-						"0005000E1016E100",
-						"0005000E10178F00",
-						"0005000E101D9300"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Unlock a special costume for the character",
-							"write": false
-						}
-					]
 				}
 			],
 			"gamesSwitch": [
@@ -104673,6 +104673,18 @@
 						},
 						{
 							"Usage": "Unlock a special costume for the character",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Shovel Knight Pocket Dungeon",
+					"gameID": [
+						"01006B00126EC000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Summon a fairy friend",
 							"write": false
 						}
 					]
@@ -104752,22 +104764,6 @@
 							"write": false
 						}
 					]
-				},
-				{
-					"gameName": "Shovel Knight Showdown",
-					"gameID": [
-						"000500001016E100",
-						"0005000010178F00",
-						"0005000E1016E100",
-						"0005000E10178F00",
-						"0005000E101D9300"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Unlock a special costume for the character",
-							"write": false
-						}
-					]
 				}
 			],
 			"gamesSwitch": [
@@ -104812,6 +104808,18 @@
 						},
 						{
 							"Usage": "Unlock a special costume for the character",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Shovel Knight Pocket Dungeon",
+					"gameID": [
+						"01006B00126EC000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Summon a fairy friend",
 							"write": false
 						}
 					]
