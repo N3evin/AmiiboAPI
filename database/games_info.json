@@ -23280,7 +23280,7 @@
 				{
 					"gameName": "The Legend of Zelda: Skyward Sword HD",
 					"gameID": [
-						"01002DA013484000"
+						"0100872017a0c000"
 					],
 					"amiiboUsage": [
 						{
@@ -98791,6 +98791,18 @@
 			],
 			"gamesSwitch": [
 				{
+					"gameName": "Kirby and the Forgotten Land",
+					"gameID": [
+						"01004D300C5AE000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Receive star coins and a boost item",
+							"write": false
+						}
+					]
+				},
+				{
 					"gameName": "Kirby Star Allies",
 					"gameID": [
 						"01007E3006DDA000",
@@ -99109,6 +99121,18 @@
 			],
 			"gamesSwitch": [
 				{
+					"gameName": "Kirby and the Forgotten Land",
+					"gameID": [
+						"01004D300C5AE000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Receive star coins and a boost item",
+							"write": false
+						}
+					]
+				},
+				{
 					"gameName": "Kirby Star Allies",
 					"gameID": [
 						"01007E3006DDA000",
@@ -99375,6 +99399,18 @@
 			],
 			"gamesSwitch": [
 				{
+					"gameName": "Kirby and the Forgotten Land",
+					"gameID": [
+						"01004D300C5AE000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Receive star coins and a boost item",
+							"write": false
+						}
+					]
+				},
+				{
 					"gameName": "Kirby Star Allies",
 					"gameID": [
 						"01007E3006DDA000",
@@ -99614,6 +99650,18 @@
 				}
 			],
 			"gamesSwitch": [
+				{
+					"gameName": "Kirby and the Forgotten Land",
+					"gameID": [
+						"01004D300C5AE000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Receive star coins and a boost item",
+							"write": false
+						}
+					]
+				},
 				{
 					"gameName": "Kirby Star Allies",
 					"gameID": [
@@ -99855,6 +99903,18 @@
 			],
 			"gamesSwitch": [
 				{
+					"gameName": "Kirby and the Forgotten Land",
+					"gameID": [
+						"01004D300C5AE000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Receive star coins and a boost item",
+							"write": false
+						}
+					]
+				},
+				{
 					"gameName": "Kirby Star Allies",
 					"gameID": [
 						"01007E3006DDA000",
@@ -100095,6 +100155,18 @@
 			],
 			"gamesSwitch": [
 				{
+					"gameName": "Kirby and the Forgotten Land",
+					"gameID": [
+						"01004D300C5AE000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Receive star coins and a boost item",
+							"write": false
+						}
+					]
+				},
+				{
 					"gameName": "Kirby Star Allies",
 					"gameID": [
 						"01007E3006DDA000",
@@ -100243,6 +100315,18 @@
 			"gamesWiiU": [],
 			"gamesSwitch": [
 				{
+					"gameName": "Kirby and the Forgotten Land",
+					"gameID": [
+						"01004D300C5AE000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Receive star coins and a boost item",
+							"write": false
+						}
+					]
+				},
+				{
 					"gameName": "Kirby Star Allies",
 					"gameID": [
 						"01007E3006DDA000",
@@ -100325,6 +100409,18 @@
 			],
 			"gamesWiiU": [],
 			"gamesSwitch": [
+				{
+					"gameName": "Kirby and the Forgotten Land",
+					"gameID": [
+						"01004D300C5AE000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Receive star coins and a boost item",
+							"write": false
+						}
+					]
+				},
 				{
 					"gameName": "Kirby Star Allies",
 					"gameID": [
@@ -104263,7 +104359,7 @@
 				{
 					"gameName": "Shovel Knight Pocket Dungeon",
 					"gameID": [
-						"01006B00126EC000"
+						"0100872017a0c000"
 					],
 					"amiiboUsage": [
 						{
@@ -104422,7 +104518,7 @@
 				{
 					"gameName": "Shovel Knight Pocket Dungeon",
 					"gameID": [
-						"01006B00126EC000"
+						"0100872017a0c000"
 					],
 					"amiiboUsage": [
 						{
@@ -104545,7 +104641,7 @@
 				{
 					"gameName": "Shovel Knight Pocket Dungeon",
 					"gameID": [
-						"01006B00126EC000"
+						"0100872017a0c000"
 					],
 					"amiiboUsage": [
 						{
@@ -104680,7 +104776,7 @@
 				{
 					"gameName": "Shovel Knight Pocket Dungeon",
 					"gameID": [
-						"01006B00126EC000"
+						"0100872017a0c000"
 					],
 					"amiiboUsage": [
 						{
@@ -104815,7 +104911,7 @@
 				{
 					"gameName": "Shovel Knight Pocket Dungeon",
 					"gameID": [
-						"01006B00126EC000"
+						"0100872017a0c000"
 					],
 					"amiiboUsage": [
 						{
