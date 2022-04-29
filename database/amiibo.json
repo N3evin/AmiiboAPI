@@ -8136,6 +8136,17 @@
 				"na": "2021-11-05"
 			}
 		},
+		"0x0a400000041d0002":
+		{
+			"name": "Min Min",
+			"release":
+			{
+				"au": "2022-04-29",
+				"eu": "2022-04-29",
+				"jp": "2022-04-29",
+				"na": "2022-04-29"
+			}
+		},
 		"0x1902000003830002":
 		{
 			"name": "Ivysaur",
@@ -9669,6 +9680,7 @@
 		"0x0a1e": "Azalea",
 		"0x0a1f": "Roswell",
 		"0x0a20": "Faith",
+		"0x0a40": "Min Min",
 		"0x1902": "Ivysaur",
 		"0x1906": "Charizard",
 		"0x1907": "Squirtle",
@@ -9827,6 +9839,7 @@
 		"0x080": "Splatoon",
 		"0x09c": "Mario Sports Superstars",
 		"0x09d": "Mario Sports Superstars",
+		"0x0a4": "Arms",
 		"0x190": "Pokemon",
 		"0x191": "Pokemon",
 		"0x192": "Pokemon",
