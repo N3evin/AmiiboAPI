@@ -104221,7 +104221,103 @@
 				}
 			]
 		},
+		"0x35090100042b1802": {
+			"games3DS": [],
+			"gamesWiiU": [],
+			"gamesSwitch": [
+				{
+					"gameName": "Monster Hunter Rise",
+					"gameID": [
+						"0100B04011742000",
+						"0100559011740000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock special layered armor / Enter daily lottery for a variety of useful items",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Monster Hunter Stories 2: Wings of Ruin",
+					"gameID": [
+						"0100E21011446000",
+						"0100CB700D438000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock the Hunter Sticker Set / Have Tsukino read your fortune and receive a random item",
+							"write": false
+						}
+					]
+				}
+			]
+		},
 		"0x350a000004111802": {
+			"games3DS": [],
+			"gamesWiiU": [],
+			"gamesSwitch": [
+				{
+					"gameName": "Monster Hunter Rise",
+					"gameID": [
+						"0100B04011742000",
+						"0100559011740000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock special layered armor / Enter daily lottery for a variety of useful items",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Monster Hunter Stories 2: Wings of Ruin",
+					"gameID": [
+						"0100E21011446000",
+						"0100CB700D438000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock the Hunter Sticker Set / Have Tsukino read your fortune and receive a random item",
+							"write": false
+						}
+					]
+				}
+			]
+		},
+		"0x350a0100042c1802": {
+			"games3DS": [],
+			"gamesWiiU": [],
+			"gamesSwitch": [
+				{
+					"gameName": "Monster Hunter Rise",
+					"gameID": [
+						"0100B04011742000",
+						"0100559011740000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock special layered armor / Enter daily lottery for a variety of useful items",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Monster Hunter Stories 2: Wings of Ruin",
+					"gameID": [
+						"0100E21011446000",
+						"0100CB700D438000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock the Hunter Sticker Set / Have Tsukino read your fortune and receive a random item",
+							"write": false
+						}
+					]
+				}
+			]
+		},
+		"0x350b0000042d1802": {
 			"games3DS": [],
 			"gamesWiiU": [],
 			"gamesSwitch": [
