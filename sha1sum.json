@@ -1,6 +1,6 @@
 {
-	"database/amiibo.json": "f5f2de94618aac2d227da23a0f1d0bb01c146ab8",
-	"database/games_info.json": "4833fa29432dee2b02013fbfc1c4896d84e014dc",
+	"database/amiibo.json": "cab054e05c52919bc96792401fb149d887bb8fc9",
+	"database/games_info.json": "44c22f84cb9ba12724cc139afce54f4514a433f0",
 	"images/icon_00000000-00000002.png": "8ec70ea3ed8b6dc34a6346ebc6c81093930856f9",
 	"images/icon_00000000-00340102.png": "1df37fbd36b966ae660a5dfc978aa921506b105a",
 	"images/icon_00000000-003c0102.png": "11f9d270b97d4946a8e17b9e803868b6828f357e",
@@ -738,7 +738,7 @@
 	"images/icon_0a1e0001-03d50502.png": "f2111610d6ac4c211799e761b1fc967f18e5fc84",
 	"images/icon_0a1f0001-03d60502.png": "9f9a6ea32bc65260de1029ba4c5915ec617e6e7a",
 	"images/icon_0a200001-03d70502.png": "085709a88a6dad5b9e7606fdd0483768bc519a25",
-	"images/icon_0a400000-041d0002.png": "ea7cde97ad6e5066b5b6c380ddb5ac96cee0ba65",
+	"images/icon_0a400000-041d0002.png": "c6c05b9d30a893646fb63f75be14a43564e6fd1a",
 	"images/icon_19020000-03830002.png": "636441e467bae96122cf363c9ef3e6e5dab9c330",
 	"images/icon_19060000-00240002.png": "9b113725ce4a2489c54902fc526db60bf646b6dd",
 	"images/icon_19070000-03840002.png": "f58f6e513363df8c8926714fa164266d97cd7db9",
@@ -798,7 +798,10 @@
 	"images/icon_35070000-040e0f02.png": "68dadbe6a6400b54fa447f187c15388d8ef9b685",
 	"images/icon_35080000-040f1802.png": "a050d2cd96556b68d89576af7326bdd3de0adbd3",
 	"images/icon_35090000-04101802.png": "0aa3203a29b712d561bba89b8b8647872dba8386",
+	"images/icon_35090100-042b1802.png": "b3a865a6bfbd58f065e3ff5fe5e92321af413f4e",
 	"images/icon_350a0000-04111802.png": "ba1c37f8fea9b622270bddab678ef9596e1bc034",
+	"images/icon_350a0100-042c1802.png": "ead8791e8be772ab854f0f34efdc3025ff030a9f",
+	"images/icon_350b0000-042d1802.png": "1342fe3dc0d48787819ea446ce94e6b88bbbdbe5",
 	"images/icon_35c00000-02500a02.png": "b83e6e2e7952e9e4f5ea12b916fafb5197c68c82",
 	"images/icon_35c00000-03920a02.png": "f0d75eafc3e716b23cccb67f2546b5446a8b7424",
 	"images/icon_35c10000-036c0a02.png": "08a73fce846bd580659f36c0bbfdde3fb88cc7f9",
@@ -828,5 +831,5 @@
 	"images/icon_3a000000-03a10002.png": "ed6b904d00150ecd07de3ae8f09a8ddff8c9995f",
 	"images/icon_3b400000-03a30002.png": "10c80a73a774eaef9da8383f94ff04aff86fc512",
 	"images/icon_3c800000-03a40002.png": "f7d6e8136353b93e18e36517eafa15d2d4c8901f",
-	"last-updated.json": "fb433d2260a46eb60bf6988fb1c6a0c78ac4a6e0"
+	"last-updated.json": "31665f99ad38ffba8a5f13b659a4832804a1d652"
 }
