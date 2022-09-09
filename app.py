@@ -119,4 +119,4 @@ def log_request(response):
 
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', debug=True, extra_files=['database/amiibo.json', 'database/games_info.json'])
+    app.run(host='127.0.0.1', debug=True, extra_files=['database/amiibo.json', 'database/games_info.json'])
