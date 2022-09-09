@@ -8829,19 +8829,6 @@
 		"0x0003010200410302": {
 			"games3DS": [
 				{
-					"gameName": "Chibi-Robo! Zip Lash",
-					"gameID": [
-						"0004000000163000",
-						"0004000000162F00"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Unlock figure in the pose of the character (requires Chibi-Robo amiibo)",
-							"write": false
-						}
-					]
-				},
-				{
 					"gameName": "Kirby: Planet Robobot",
 					"gameID": [
 						"0004000000189600",
@@ -21093,7 +21080,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Receive a weapon rated 3 stars or higher",
+							"Usage": "Unlock the Spinner weapon",
 							"write": false
 						}
 					]
@@ -21107,7 +21094,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Unlock the Spinner weapon",
+							"Usage": "Receive a weapon rated 3 stars or higher",
 							"write": false
 						}
 					]
@@ -36314,6 +36301,19 @@
 		},
 		"0x01a5000101720502": {
 			"games3DS": [
+				{
+					"gameName": "Animal Crossing: Happy Home Designer",
+					"gameID": [
+						"000400000014F100",
+						"000400000014F200"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Call on amiibo phone to design the character's home on demand / Store house design and furniture for sharing",
+							"write": true
+						}
+					]
+				},
 				{
 					"gameName": "Animal Crossing: New Leaf",
 					"gameID": [
@@ -56697,6 +56697,19 @@
 		},
 		"0x0313000101210502": {
 			"games3DS": [
+				{
+					"gameName": "Animal Crossing: Happy Home Designer",
+					"gameID": [
+						"000400000014F100",
+						"000400000014F200"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Call on amiibo phone to design the character's home on demand / Store house design and furniture for sharing",
+							"write": true
+						}
+					]
+				},
 				{
 					"gameName": "Animal Crossing: New Leaf",
 					"gameID": [
