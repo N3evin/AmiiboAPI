@@ -105479,6 +105479,42 @@
 					]
 				}
 			]
+		},
+		"0x3DC0000004220002": {
+			"games3DS": [],
+			"gamesWiiU": [],
+			"gamesSwitch": [
+				{
+					"gameName": "Super Smash Bros. Ultimate",
+					"gameID": [
+						"01006A800016E000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Battle and train up a computer-controlled Figure Player of the character",
+							"write": true
+						}
+					]
+				}
+			]
+		},
+		"0x3DC1000004230002": {
+			"games3DS": [],
+			"gamesWiiU": [],
+			"gamesSwitch": [
+				{
+					"gameName": "Super Smash Bros. Ultimate",
+					"gameID": [
+						"01006A800016E000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Battle and train up a computer-controlled Figure Player of the character",
+							"write": true
+						}
+					]
+				}
+			]
 		}
 	}
 }

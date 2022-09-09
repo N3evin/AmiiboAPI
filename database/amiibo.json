@@ -9158,6 +9158,28 @@
 				"jp": "2021-03-26",
 				"na": "2021-03-26"
 			}
+		},
+		"0x3DC0000004220002":
+		{
+			"name": "Steve",
+			"release":
+			{
+				"au": "2022-09-09",
+				"eu": "2022-09-09",
+				"jp": "2022-09-09",
+				"na": "2022-09-09"
+			}
+		},
+		"0x3DC1000004230002":
+		{
+			"name": "Alex",
+			"release":
+			{
+				"au": "2022-09-09",
+				"eu": "2022-09-09",
+				"jp": "2022-09-09",
+				"na": "2022-09-09"
+			}
 		}
 	},
 	"characters":
@@ -9792,7 +9814,9 @@
 		"0x38c0": "Loot Goblin",
 		"0x3a00": "Joker",
 		"0x3b40": "Banjo",
-		"0x3c80": "Terry"
+		"0x3c80": "Terry",
+		"0x3dc0": "Steve",
+		"0x3dc1": "Alex"
 	},
 	"game_series":
 	{
@@ -9908,7 +9932,8 @@
 		"0x38c": "Diablo",
 		"0x3a0": "Persona",
 		"0x3b4": "Banjo Kazooie",
-		"0x3c8": "Fatal Fury"
+		"0x3c8": "Fatal Fury",
+		"0x3dc": "Minecraft"
 	},
 	"types":
 	{
