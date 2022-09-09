@@ -17,7 +17,7 @@ jobs:
       - name: Run game_info generator
         working-directory: ./gameinfo_generator
         run: |
-          AmiiboGameList.exe
+          AmiiboGameList.exe -log 0
         shell: cmd
 
       - name: Copy games_info.json to database folder
