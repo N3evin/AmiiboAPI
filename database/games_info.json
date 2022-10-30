@@ -91994,6 +91994,25 @@
 				}
 			]
 		},
+		"0x08000100ffff0402": {
+			"games3DS": [],
+			"gamesWiiU": [],
+			"gamesSwitch": [
+				{
+					"gameName": "Splatoon 3",
+					"gameID": [
+						"0100C2500FC20000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock exclusive gear / Save favorite weapons, gear, and control settings / Take photos with the character or saved gear",
+							"write": true
+						}
+					]
+				}
+			]
+		},
+
 		"0x08000200003f0402": {
 			"games3DS": [
 				{
@@ -94098,6 +94117,24 @@
 				}
 			]
 		},
+		"0x08050200ffff0402": {
+			"games3DS": [],
+			"gamesWiiU": [],
+			"gamesSwitch": [
+				{
+					"gameName": "Splatoon 3",
+					"gameID": [
+						"0100C2500FC20000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock exclusive gear / Save favorite weapons, gear, and control settings / Take photos with the character or saved gear",
+							"write": true
+						}
+					]
+				}
+			]
+		},
 		"0x0805030003900402": {
 			"games3DS": [
 				{
@@ -94172,6 +94209,24 @@
 						{
 							"Usage": "Receive a Spirit of the character",
 							"write": false
+						}
+					]
+				}
+			]
+		},
+		"0x08060100ffff0402": {
+			"games3DS": [],
+			"gamesWiiU": [],
+			"gamesSwitch": [
+				{
+					"gameName": "Splatoon 3",
+					"gameID": [
+						"0100C2500FC20000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock exclusive gear / Save favorite weapons, gear, and control settings / Take photos with the character or saved gear",
+							"write": true
 						}
 					]
 				}
