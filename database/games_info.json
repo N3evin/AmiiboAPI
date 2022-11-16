@@ -533,6 +533,21 @@
 					]
 				},
 				{
+					"gameName": "Hey! Pikmin",
+					"gameID": [
+						"00040000001A9200",
+						"00040000001AF800",
+						"00040000001AFA00",
+						"00040000001C5900"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Figure appears in-game and can be collected to gain energy points",
+							"write": false
+						}
+					]
+				},
+				{
 					"gameName": "Kirby: Planet Robobot",
 					"gameID": [
 						"0004000000189600",
@@ -21078,7 +21093,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Unlock the Spinner weapon",
+							"Usage": "Receive a weapon rated 3 stars or higher",
 							"write": false
 						}
 					]
@@ -21092,7 +21107,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Receive a weapon rated 3 stars or higher",
+							"Usage": "Unlock the Spinner weapon",
 							"write": false
 						}
 					]
@@ -84144,6 +84159,19 @@
 		},
 		"0x04e5000101ad0502": {
 			"games3DS": [
+				{
+					"gameName": "Animal Crossing: Happy Home Designer",
+					"gameID": [
+						"000400000014F100",
+						"000400000014F200"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Call on amiibo phone to design the character's home on demand / Store house design and furniture for sharing",
+							"write": true
+						}
+					]
+				},
 				{
 					"gameName": "Animal Crossing: New Leaf",
 					"gameID": [
