@@ -1,7 +1,7 @@
 ansicolors==1.1.8
 Brotli==1.0.9
 cached-property==1.5.2
-certifi==2021.10.8
+certifi==2022.12.7
 chardet==4.0.0
 charset-normalizer==2.0.6
 click==8.0.2
