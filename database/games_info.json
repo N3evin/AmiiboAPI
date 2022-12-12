@@ -3769,18 +3769,6 @@
 					]
 				},
 				{
-					"gameName": "Miitopia",
-					"gameID": [
-						"01003DA010E8A000"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Unlock a character-based costume",
-							"write": false
-						}
-					]
-				},
-				{
 					"gameName": "Super Mario 3D World + Bowser's Fury",
 					"gameID": [
 						"010028600EBDA000"
@@ -21093,7 +21081,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Receive a weapon rated 3 stars or higher",
+							"Usage": "Unlock the Spinner weapon",
 							"write": false
 						}
 					]
@@ -21107,7 +21095,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Unlock the Spinner weapon",
+							"Usage": "Receive a weapon rated 3 stars or higher",
 							"write": false
 						}
 					]
@@ -68820,18 +68808,6 @@
 			"gamesWiiU": [],
 			"gamesSwitch": [
 				{
-					"gameName": "Animal Crossing: New Horizons",
-					"gameID": [
-						"01006F8002326000"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Invite the character to your campsite and, eventually, to move to your island / Invite the character for photo shoots at Photopia / Unlock a special poster of the character / Invite the character to the Roost for a cup of coffee / Invite the character to Happy Home Paradise to design their vacation home",
-							"write": false
-						}
-					]
-				},
-				{
 					"gameName": "Conga Master Party!",
 					"gameID": [
 						"01007EF00399C000"
@@ -83103,18 +83079,6 @@
 						},
 						{
 							"Usage": "Unlock special furniture items and a poster based on the card's Sanrio character",
-							"write": false
-						}
-					]
-				},
-				{
-					"gameName": "Conga Master Party!",
-					"gameID": [
-						"01007EF00399C000"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Unlock a special costume",
 							"write": false
 						}
 					]
