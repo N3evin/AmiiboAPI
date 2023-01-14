@@ -3769,6 +3769,18 @@
 					]
 				},
 				{
+					"gameName": "Miitopia",
+					"gameID": [
+						"01003DA010E8A000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock a character-based costume",
+							"write": false
+						}
+					]
+				},
+				{
 					"gameName": "Super Mario 3D World + Bowser's Fury",
 					"gameID": [
 						"010028600EBDA000"
@@ -16753,7 +16765,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Invite Wolf Link to visit your RV campsite, give you an item, and/or move to your town",
+							"Usage": "Invite an amiibo-exclusive Legend of Zelda-themed villager to visit your RV campsite, give you an item, and/or move to your town",
 							"write": false
 						}
 					]
@@ -17130,7 +17142,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Invite Epona to visit your RV campsite, give you an item, and/or move to your town",
+							"Usage": "Invite an amiibo-exclusive Legend of Zelda-themed villager to visit your RV campsite, give you an item, and/or move to your town",
 							"write": false
 						}
 					]
@@ -17511,7 +17523,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Invite Epona to visit your RV campsite, give you an item, and/or move to your town",
+							"Usage": "Invite an amiibo-exclusive Legend of Zelda-themed villager to visit your RV campsite, give you an item, and/or move to your town",
 							"write": false
 						}
 					]
@@ -17892,7 +17904,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Invite Wolf Link to visit your RV campsite, give you an item, and/or move to your town",
+							"Usage": "Invite an amiibo-exclusive Legend of Zelda-themed villager to visit your RV campsite, give you an item, and/or move to your town",
 							"write": false
 						}
 					]
@@ -18281,7 +18293,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Invite Wolf Link to visit your RV campsite, give you an item, and/or move to your town",
+							"Usage": "Invite an amiibo-exclusive Legend of Zelda-themed villager to visit your RV campsite, give you an item, and/or move to your town",
 							"write": false
 						}
 					]
@@ -18662,7 +18674,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Invite Ganon to visit your RV campsite, give you an item, and/or move to your town",
+							"Usage": "Invite an amiibo-exclusive Legend of Zelda-themed villager to visit your RV campsite, give you an item, and/or move to your town",
 							"write": false
 						}
 					]
@@ -19043,7 +19055,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Invite Wolf Link to visit your RV campsite, give you an item, and/or move to your town",
+							"Usage": "Invite an amiibo-exclusive Legend of Zelda-themed villager to visit your RV campsite, give you an item, and/or move to your town",
 							"write": false
 						}
 					]
@@ -19424,7 +19436,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Invite Epona to visit your RV campsite, give you an item, and/or move to your town",
+							"Usage": "Invite an amiibo-exclusive Legend of Zelda-themed villager to visit your RV campsite, give you an item, and/or move to your town",
 							"write": false
 						}
 					]
@@ -19805,7 +19817,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Invite Wolf Link to visit your RV campsite, give you an item, and/or move to your town",
+							"Usage": "Invite an amiibo-exclusive Legend of Zelda-themed villager to visit your RV campsite, give you an item, and/or move to your town",
 							"write": false
 						}
 					]
@@ -20174,7 +20186,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Invite Wolf Link to visit your RV campsite, give you an item, and/or move to your town",
+							"Usage": "Invite an amiibo-exclusive Legend of Zelda-themed villager to visit your RV campsite, give you an item, and/or move to your town",
 							"write": false
 						}
 					]
@@ -20567,7 +20579,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Invite Medli to visit your RV campsite, give you an item, and/or move to your town",
+							"Usage": "Invite an amiibo-exclusive Legend of Zelda-themed villager to visit your RV campsite, give you an item, and/or move to your town",
 							"write": false
 						}
 					]
@@ -20702,7 +20714,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Unlock the Spinner weapon",
+							"Usage": "Receive a weapon rated 3 stars or higher",
 							"write": false
 						}
 					]
@@ -20716,7 +20728,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Receive a weapon rated 3 stars or higher",
+							"Usage": "Unlock the Spinner weapon",
 							"write": false
 						}
 					]
@@ -20946,7 +20958,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Invite Medli to visit your RV campsite, give you an item, and/or move to your town",
+							"Usage": "Invite an amiibo-exclusive Legend of Zelda-themed villager to visit your RV campsite, give you an item, and/or move to your town",
 							"write": false
 						}
 					]
@@ -21081,7 +21093,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Unlock the Spinner weapon",
+							"Usage": "Receive a weapon rated 3 stars or higher",
 							"write": false
 						}
 					]
@@ -21095,7 +21107,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Receive a weapon rated 3 stars or higher",
+							"Usage": "Unlock the Spinner weapon",
 							"write": false
 						}
 					]
@@ -21337,7 +21349,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Invite Wolf Link to visit your RV campsite, give you an item, and/or move to your town",
+							"Usage": "Invite an amiibo-exclusive Legend of Zelda-themed villager to visit your RV campsite, give you an item, and/or move to your town",
 							"write": false
 						}
 					]
@@ -21665,7 +21677,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Invite Medli to visit your RV campsite, give you an item, and/or move to your town",
+							"Usage": "Invite an amiibo-exclusive Legend of Zelda-themed villager to visit your RV campsite, give you an item, and/or move to your town",
 							"write": false
 						}
 					]
@@ -22005,7 +22017,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Invite Medli to visit your RV campsite, give you an item, and/or move to your town",
+							"Usage": "Invite an amiibo-exclusive Legend of Zelda-themed villager to visit your RV campsite, give you an item, and/or move to your town",
 							"write": false
 						}
 					]
@@ -22345,7 +22357,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Invite Epona to visit your RV campsite, give you an item, and/or move to your town",
+							"Usage": "Invite an amiibo-exclusive Legend of Zelda-themed villager to visit your RV campsite, give you an item, and/or move to your town",
 							"write": false
 						}
 					]
@@ -22659,6 +22671,21 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Unlock character-themed aircraft early",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Animal Crossing: New Leaf",
+					"gameID": [
+						"0004000000086400",
+						"0004000000086300",
+						"0004000000198F00",
+						"0004000000198E00"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Invite an amiibo-exclusive Legend of Zelda-themed villager to visit your RV campsite, give you an item, and/or move to your town",
 							"write": false
 						}
 					]
@@ -22995,7 +23022,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Invite Ganon to visit your RV campsite, give you an item, and/or move to your town",
+							"Usage": "Invite an amiibo-exclusive Legend of Zelda-themed villager to visit your RV campsite, give you an item, and/or move to your town",
 							"write": false
 						}
 					]
@@ -23153,20 +23180,6 @@
 					]
 				},
 				{
-					"gameName": "The Legend of Zelda: Breath of the Wild",
-					"gameID": [
-						"00050000101C9500",
-						"00050000101C9400",
-						"00050000101C9300"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Receive materials and a rare or exclusive item",
-							"write": false
-						}
-					]
-				},
-				{
 					"gameName": "The Legend of Zelda: Twilight Princess HD",
 					"gameID": [
 						"000500001019E600",
@@ -23296,7 +23309,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Invite Wolf Link to visit your RV campsite, give you an item, and/or move to your town",
+							"Usage": "Invite an amiibo-exclusive Legend of Zelda-themed villager to visit your RV campsite, give you an item, and/or move to your town",
 							"write": false
 						}
 					]
@@ -24005,7 +24018,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Invite Ganon to visit your RV campsite, give you an item, and/or move to your town",
+							"Usage": "Invite an amiibo-exclusive Legend of Zelda-themed villager to visit your RV campsite, give you an item, and/or move to your town",
 							"write": false
 						}
 					]
@@ -24142,7 +24155,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Invite Ganon to visit your RV campsite, give you an item, and/or move to your town",
+							"Usage": "Invite an amiibo-exclusive Legend of Zelda-themed villager to visit your RV campsite, give you an item, and/or move to your town",
 							"write": false
 						}
 					]
@@ -68808,6 +68821,18 @@
 			"gamesWiiU": [],
 			"gamesSwitch": [
 				{
+					"gameName": "Animal Crossing: New Horizons",
+					"gameID": [
+						"01006F8002326000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Invite the character to your campsite and, eventually, to move to your island / Invite the character for photo shoots at Photopia / Unlock a special poster of the character / Invite the character to the Roost for a cup of coffee / Invite the character to Happy Home Paradise to design their vacation home",
+							"write": false
+						}
+					]
+				},
+				{
 					"gameName": "Conga Master Party!",
 					"gameID": [
 						"01007EF00399C000"
@@ -83084,6 +83109,18 @@
 					]
 				},
 				{
+					"gameName": "Conga Master Party!",
+					"gameID": [
+						"01007EF00399C000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock a special costume",
+							"write": false
+						}
+					]
+				},
+				{
 					"gameName": "Mario Kart 8 Deluxe",
 					"gameID": [
 						"0100152000022000"
@@ -91077,7 +91114,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Invite Inkwell to visit your RV campsite, give you an item, and/or move to your town",
+							"Usage": "Invite amiibo-exclusive villager Inkwell to visit your RV campsite, give you an item, and/or move to your town",
 							"write": false
 						}
 					]
@@ -91320,7 +91357,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Invite Inkwell to visit your RV campsite, give you an item, and/or move to your town",
+							"Usage": "Invite amiibo-exclusive villager Inkwell to visit your RV campsite, give you an item, and/or move to your town",
 							"write": false
 						}
 					]
@@ -91563,7 +91600,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Invite Inkwell to visit your RV campsite, give you an item, and/or move to your town",
+							"Usage": "Invite amiibo-exclusive villager Inkwell to visit your RV campsite, give you an item, and/or move to your town",
 							"write": false
 						}
 					]
@@ -91791,7 +91828,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Invite Inkwell to visit your RV campsite, give you an item, and/or move to your town",
+							"Usage": "Invite amiibo-exclusive villager Inkwell to visit your RV campsite, give you an item, and/or move to your town",
 							"write": false
 						}
 					]
@@ -91983,7 +92020,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Invite Inkwell to visit your RV campsite, give you an item, and/or move to your town",
+							"Usage": "Invite amiibo-exclusive villager Inkwell to visit your RV campsite, give you an item, and/or move to your town",
 							"write": false
 						}
 					]
@@ -92211,7 +92248,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Invite Inkwell to visit your RV campsite, give you an item, and/or move to your town",
+							"Usage": "Invite amiibo-exclusive villager Inkwell to visit your RV campsite, give you an item, and/or move to your town",
 							"write": false
 						}
 					]
@@ -92442,7 +92479,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Invite Inkwell to visit your RV campsite, give you an item, and/or move to your town",
+							"Usage": "Invite amiibo-exclusive villager Inkwell to visit your RV campsite, give you an item, and/or move to your town",
 							"write": false
 						}
 					]
@@ -92673,7 +92710,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Invite Inkwell to visit your RV campsite, give you an item, and/or move to your town",
+							"Usage": "Invite amiibo-exclusive villager Inkwell to visit your RV campsite, give you an item, and/or move to your town",
 							"write": false
 						}
 					]
@@ -92889,7 +92926,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Invite Inkwell to visit your RV campsite, give you an item, and/or move to your town",
+							"Usage": "Invite amiibo-exclusive villager Inkwell to visit your RV campsite, give you an item, and/or move to your town",
 							"write": false
 						}
 					]
@@ -93120,7 +93157,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Invite Inkwell to visit your RV campsite, give you an item, and/or move to your town",
+							"Usage": "Invite amiibo-exclusive villager Inkwell to visit your RV campsite, give you an item, and/or move to your town",
 							"write": false
 						}
 					]
@@ -93351,7 +93388,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Invite Inkwell to visit your RV campsite, give you an item, and/or move to your town",
+							"Usage": "Invite amiibo-exclusive villager Inkwell to visit your RV campsite, give you an item, and/or move to your town",
 							"write": false
 						}
 					]
@@ -93567,7 +93604,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Invite Cece to visit your RV campsite, give you an item, and/or move to your town",
+							"Usage": "Invite amiibo-exclusive villager Cece to visit your RV campsite, give you an item, and/or move to your town",
 							"write": false
 						}
 					]
@@ -93771,7 +93808,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Invite Viché to visit your RV campsite, give you an item, and/or move to your town",
+							"Usage": "Invite amiibo-exclusive villager Viché to visit your RV campsite, give you an item, and/or move to your town",
 							"write": false
 						}
 					]
@@ -99774,6 +99811,18 @@
 			],
 			"gamesSwitch": [
 				{
+					"gameName": "Fire Emblem Engage",
+					"gameID": [
+						"0100A6301214E000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Receive the character's attire, music from the game(s) in which they appeared, and a helpful item",
+							"write": false
+						}
+					]
+				},
+				{
 					"gameName": "Fire Emblem Warriors",
 					"gameID": [
 						"0100F15003E64000"
@@ -99979,6 +100028,18 @@
 				}
 			],
 			"gamesSwitch": [
+				{
+					"gameName": "Fire Emblem Engage",
+					"gameID": [
+						"0100A6301214E000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Receive the character's attire, music from the game(s) in which they appeared, and a helpful item",
+							"write": false
+						}
+					]
+				},
 				{
 					"gameName": "Fire Emblem Warriors",
 					"gameID": [
@@ -100198,6 +100259,18 @@
 			],
 			"gamesSwitch": [
 				{
+					"gameName": "Fire Emblem Engage",
+					"gameID": [
+						"0100A6301214E000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Receive the character's attire, music from the game(s) in which they appeared, and a helpful item",
+							"write": false
+						}
+					]
+				},
+				{
 					"gameName": "Fire Emblem Warriors",
 					"gameID": [
 						"0100F15003E64000"
@@ -100404,6 +100477,18 @@
 			],
 			"gamesSwitch": [
 				{
+					"gameName": "Fire Emblem Engage",
+					"gameID": [
+						"0100A6301214E000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Receive the character's attire, music from the game(s) in which they appeared, and a helpful item",
+							"write": false
+						}
+					]
+				},
+				{
 					"gameName": "Fire Emblem Warriors",
 					"gameID": [
 						"0100F15003E64000"
@@ -100542,6 +100627,18 @@
 			],
 			"gamesSwitch": [
 				{
+					"gameName": "Fire Emblem Engage",
+					"gameID": [
+						"0100A6301214E000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Receive the character's attire, music from the game(s) in which they appeared, and a helpful item",
+							"write": false
+						}
+					]
+				},
+				{
 					"gameName": "Fire Emblem Warriors",
 					"gameID": [
 						"0100F15003E64000"
@@ -100665,6 +100762,18 @@
 				}
 			],
 			"gamesSwitch": [
+				{
+					"gameName": "Fire Emblem Engage",
+					"gameID": [
+						"0100A6301214E000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Receive the character's attire, music from the game(s) in which they appeared, and a helpful item",
+							"write": false
+						}
+					]
+				},
 				{
 					"gameName": "Fire Emblem Warriors",
 					"gameID": [
@@ -100790,6 +100899,18 @@
 			],
 			"gamesSwitch": [
 				{
+					"gameName": "Fire Emblem Engage",
+					"gameID": [
+						"0100A6301214E000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Receive the character's attire, music from the game(s) in which they appeared, and a helpful item",
+							"write": false
+						}
+					]
+				},
+				{
 					"gameName": "Fire Emblem Warriors",
 					"gameID": [
 						"0100F15003E64000"
@@ -100874,6 +100995,18 @@
 			],
 			"gamesWiiU": [],
 			"gamesSwitch": [
+				{
+					"gameName": "Fire Emblem Engage",
+					"gameID": [
+						"0100A6301214E000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Receive the character's attire, music from the game(s) in which they appeared, and a helpful item",
+							"write": false
+						}
+					]
+				},
 				{
 					"gameName": "Fire Emblem Warriors",
 					"gameID": [
@@ -100960,6 +101093,18 @@
 			"gamesWiiU": [],
 			"gamesSwitch": [
 				{
+					"gameName": "Fire Emblem Engage",
+					"gameID": [
+						"0100A6301214E000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Receive the character's attire, music from the game(s) in which they appeared, and a helpful item",
+							"write": false
+						}
+					]
+				},
+				{
 					"gameName": "Fire Emblem Warriors",
 					"gameID": [
 						"0100F15003E64000"
@@ -101031,6 +101176,18 @@
 			],
 			"gamesWiiU": [],
 			"gamesSwitch": [
+				{
+					"gameName": "Fire Emblem Engage",
+					"gameID": [
+						"0100A6301214E000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Receive the character's attire, music from the game(s) in which they appeared, and a helpful item",
+							"write": false
+						}
+					]
+				},
 				{
 					"gameName": "Fire Emblem Warriors",
 					"gameID": [
@@ -101108,6 +101265,18 @@
 			"gamesWiiU": [],
 			"gamesSwitch": [
 				{
+					"gameName": "Fire Emblem Engage",
+					"gameID": [
+						"0100A6301214E000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Receive the character's attire, music from the game(s) in which they appeared, and a helpful item",
+							"write": false
+						}
+					]
+				},
+				{
 					"gameName": "Fire Emblem Warriors",
 					"gameID": [
 						"0100F15003E64000"
@@ -101184,6 +101353,18 @@
 			"gamesWiiU": [],
 			"gamesSwitch": [
 				{
+					"gameName": "Fire Emblem Engage",
+					"gameID": [
+						"0100A6301214E000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Receive the character's attire, music from the game(s) in which they appeared, and a helpful item",
+							"write": false
+						}
+					]
+				},
+				{
 					"gameName": "Fire Emblem Warriors",
 					"gameID": [
 						"0100F15003E64000"
@@ -101241,6 +101422,18 @@
 			"games3DS": [],
 			"gamesWiiU": [],
 			"gamesSwitch": [
+				{
+					"gameName": "Fire Emblem Engage",
+					"gameID": [
+						"0100A6301214E000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Receive the character's attire, music from the game(s) in which they appeared, and a helpful item",
+							"write": false
+						}
+					]
+				},
 				{
 					"gameName": "Fire Emblem Warriors: Three Hopes",
 					"gameID": [
@@ -102136,7 +102329,20 @@
 		"0x33c0000004200002": {
 			"games3DS": [],
 			"gamesWiiU": [],
-			"gamesSwitch": []
+			"gamesSwitch": [
+				{
+					"gameName": "Super Smash Bros. Ultimate",
+					"gameID": [
+						"01006A800016E000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Battle and train up a computer-controlled Figure Player of the character",
+							"write": true
+						}
+					]
+				}
+			]
 		},
 		"0x3480000000310002": {
 			"games3DS": [
@@ -102812,7 +103018,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Invite Felyne to visit your RV campsite, give you an item, and/or move to your town",
+							"Usage": "Invite amiibo-exclusive villager Felyne to visit your RV campsite, give you an item, and/or move to your town",
 							"write": false
 						}
 					]
@@ -102896,7 +103102,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Invite Felyne to visit your RV campsite, give you an item, and/or move to your town",
+							"Usage": "Invite amiibo-exclusive villager Felyne to visit your RV campsite, give you an item, and/or move to your town",
 							"write": false
 						}
 					]
@@ -102980,7 +103186,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Invite Felyne to visit your RV campsite, give you an item, and/or move to your town",
+							"Usage": "Invite amiibo-exclusive villager Felyne to visit your RV campsite, give you an item, and/or move to your town",
 							"write": false
 						}
 					]
@@ -103064,7 +103270,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Invite Felyne to visit your RV campsite, give you an item, and/or move to your town",
+							"Usage": "Invite amiibo-exclusive villager Felyne to visit your RV campsite, give you an item, and/or move to your town",
 							"write": false
 						}
 					]
@@ -103148,7 +103354,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Invite Felyne to visit your RV campsite, give you an item, and/or move to your town",
+							"Usage": "Invite amiibo-exclusive villager Felyne to visit your RV campsite, give you an item, and/or move to your town",
 							"write": false
 						}
 					]
@@ -103232,7 +103438,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Invite Felyne to visit your RV campsite, give you an item, and/or move to your town",
+							"Usage": "Invite amiibo-exclusive villager Felyne to visit your RV campsite, give you an item, and/or move to your town",
 							"write": false
 						}
 					]
@@ -104365,7 +104571,20 @@
 		"0x3601000004210002": {
 			"games3DS": [],
 			"gamesWiiU": [],
-			"gamesSwitch": []
+			"gamesSwitch": [
+				{
+					"gameName": "Super Smash Bros. Ultimate",
+					"gameID": [
+						"01006A800016E000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Battle and train up a computer-controlled Figure Player of the character",
+							"write": true
+						}
+					]
+				}
+			]
 		},
 		"0x3640000003a20002": {
 			"games3DS": [],
