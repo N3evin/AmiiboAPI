@@ -2,6 +2,7 @@ name: Update json
 on:
   push:
     branches: [master]
+  workflow_dispatch:
 
 jobs:
   report:
@@ -24,4 +25,3 @@ jobs:
           if git commit -m "[Automated] Update: $(git diff --name-only --staged)"; then
             git push
           fi
-          
