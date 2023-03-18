@@ -20714,7 +20714,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Unlock the Spinner weapon",
+							"Usage": "Receive a weapon rated 3 stars or higher",
 							"write": false
 						}
 					]
@@ -20728,7 +20728,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Receive a weapon rated 3 stars or higher",
+							"Usage": "Unlock the Spinner weapon",
 							"write": false
 						}
 					]
@@ -25520,18 +25520,6 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
-							"write": false
-						}
-					]
-				},
-				{
-					"gameName": "Style Savvy: Fashion Forward",
-					"gameID": [
-						"0004000000196500"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Unlock a character-themed accessory",
 							"write": false
 						}
 					]
@@ -73475,6 +73463,18 @@
 							"write": false
 						}
 					]
+				},
+				{
+					"gameName": "Style Savvy: Styling Star",
+					"gameID": [
+						"00040000001C2500"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock an Animal Crossing pattern",
+							"write": false
+						}
+					]
 				}
 			],
 			"gamesWiiU": [
@@ -75806,21 +75806,6 @@
 		},
 		"0x0468000102f20502": {
 			"games3DS": [
-				{
-					"gameName": "Animal Crossing: New Leaf",
-					"gameID": [
-						"0004000000086400",
-						"0004000000086300",
-						"0004000000198F00",
-						"0004000000198E00"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Invite the character to visit your RV campsite, give you an item, and/or move to your town",
-							"write": false
-						}
-					]
-				},
 				{
 					"gameName": "Kirby: Planet Robobot",
 					"gameID": [
