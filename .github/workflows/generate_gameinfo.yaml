@@ -2,7 +2,7 @@ name: Generate game info
 
 on:
   push:
-    branches: [master]
+    branches: [dev]
   workflow_dispatch:
 
 jobs:

@@ -5,7 +5,7 @@ name: Check Database
 
 on:
   push:
-    branches: "*"
+    branches: [dev]
   pull_request:
     branches: "*"
   workflow_dispatch:

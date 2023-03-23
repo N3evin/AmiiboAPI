@@ -1,7 +1,7 @@
 name: Update json
 on:
   push:
-    branches: [master]
+    branches: [dev]
   workflow_dispatch:
 
 jobs:
