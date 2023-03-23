@@ -1,11 +1,13 @@
 # This workflow will install Python dependencies, run tests and lint with a single version of Python
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-python-with-github-actions
 
-name: Check Database
+name: Check Full Database
 
 on:
-  pull_request:
-    branches: "*"
+  workflow_run:
+    workflows: ["Generate game info"]
+    types:
+      - completed
   workflow_dispatch:
 
 jobs:
@@ -18,5 +20,5 @@ jobs:
         uses: actions/setup-python@v2
         with:
           python-version: 3.9
-      - name: Run checkdatabase.py
-        run: python3 checkdatabase.py
+      - name: Run checkfulldatabase.py
+        run: python3 checkfulldatabase.py
