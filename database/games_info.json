@@ -23286,20 +23286,6 @@
 					]
 				},
 				{
-					"gameName": "The Legend of Zelda: Breath of the Wild",
-					"gameID": [
-						"00050000101C9500",
-						"00050000101C9400",
-						"00050000101C9300"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Receive materials and a rare or exclusive item",
-							"write": false
-						}
-					]
-				},
-				{
 					"gameName": "The Legend of Zelda: Twilight Princess HD",
 					"gameID": [
 						"000500001019E600",
@@ -66069,20 +66055,6 @@
 					]
 				},
 				{
-					"gameName": "Kirby: Planet Robobot",
-					"gameID": [
-						"0004000000189600",
-						"0004000000183600",
-						"0004000000189800"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
-							"write": false
-						}
-					]
-				},
-				{
 					"gameName": "Style Savvy: Styling Star",
 					"gameID": [
 						"00040000001C2500"
@@ -87192,6 +87164,20 @@
 					]
 				},
 				{
+					"gameName": "Kirby: Planet Robobot",
+					"gameID": [
+						"0004000000189600",
+						"0004000000183600",
+						"0004000000189800"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
+							"write": false
+						}
+					]
+				},
+				{
 					"gameName": "Style Savvy: Styling Star",
 					"gameID": [
 						"00040000001C2500"
@@ -88261,6 +88247,20 @@
 						},
 						{
 							"Usage": "Unlock an armor paint job with additional auxiliary ammo for use in campaign missions",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Metroid: Samus Returns",
+					"gameID": [
+						"00040000001BFB00",
+						"00040000001BFC00",
+						"00040000001BB200"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Get Aeon Reserve Tank (refills gauge when empty) / After beating game: Unlock Metroid II art",
 							"write": false
 						}
 					]
@@ -104186,6 +104186,18 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Unlock boss fight against Shovel Knight",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Cyber Shadow",
+					"gameID": [
+						"01008D100DE46000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock a fairy companion and player color palette matching the character",
 							"write": false
 						}
 					]
