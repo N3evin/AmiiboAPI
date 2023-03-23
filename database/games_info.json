@@ -23286,6 +23286,20 @@
 					]
 				},
 				{
+					"gameName": "The Legend of Zelda: Breath of the Wild",
+					"gameID": [
+						"00050000101C9500",
+						"00050000101C9400",
+						"00050000101C9300"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Receive materials and a rare or exclusive item",
+							"write": false
+						}
+					]
+				},
+				{
 					"gameName": "The Legend of Zelda: Twilight Princess HD",
 					"gameID": [
 						"000500001019E600",
@@ -66055,6 +66069,20 @@
 					]
 				},
 				{
+					"gameName": "Kirby: Planet Robobot",
+					"gameID": [
+						"0004000000189600",
+						"0004000000183600",
+						"0004000000189800"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
+							"write": false
+						}
+					]
+				},
+				{
 					"gameName": "Style Savvy: Styling Star",
 					"gameID": [
 						"00040000001C2500"
@@ -81564,19 +81592,6 @@
 		},
 		"0x04ba0001005d0502": {
 			"games3DS": [
-				{
-					"gameName": "Animal Crossing: Happy Home Designer",
-					"gameID": [
-						"000400000014F100",
-						"000400000014F200"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Call on amiibo phone to design the character's home on demand / Store house design and furniture for sharing",
-							"write": true
-						}
-					]
-				},
 				{
 					"gameName": "Animal Crossing: New Leaf",
 					"gameID": [
