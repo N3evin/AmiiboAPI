@@ -1,10 +1,9 @@
 name: Trigger Deploy
 
 on:
-  workflow_run:
-    workflows: ["Generate game info"]
-    types:
-      - completed
+  push:
+    branches: [master]
+  workflow_dispatch:
 
 jobs:
   deploy:
