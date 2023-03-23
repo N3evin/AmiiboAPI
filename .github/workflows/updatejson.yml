@@ -11,11 +11,11 @@ jobs:
       - uses: actions/checkout@v2
       - name: Update last-updated.json
         run: |
-          python3 last_updated.py
+          python3 .scripts/last_updated.py
 
       - name: Update sha1sum.json
         run: |
-          python3 sha1sum.py
+          python3 .scripts/sha1sum.py
 
       - name: Commit json files
         run: |

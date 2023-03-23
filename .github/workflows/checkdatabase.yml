@@ -21,4 +21,4 @@ jobs:
         with:
           python-version: 3.9
       - name: Run checkdatabase.py
-        run: python3 checkdatabase.py
+        run: python3 .scripts/checkdatabase.py
