@@ -11,8 +11,12 @@ import re
 with open('database/amiibo.json', encoding='utf-8-sig') as myfile:
 	data = myfile.read()
 
+with open('database/games_info.json', encoding='utf-8-sig') as myfile:
+	info = myfile.read()
+
 # parse database
 database = json.loads(data)
+game_info = json.loads(info)
 
 # compile the regex
 amiibo_series_regex = re.compile('^0x[0-9a-f]{2}')
@@ -72,6 +76,10 @@ for key in database['amiibos']:
 
 		if type not in used_amiibo_types:
 			used_amiibo_types.append(type)
+
+		# check if game info exists
+		if key not in game_info['amiibos']:
+			printError(1, 'No game info for: ' + key)
 
 		# check if name is set
 		if 'name' not in amiibo:
@@ -181,6 +189,76 @@ for key in database['types']:
 	else:
 		if key not in used_amiibo_types:
 			printError(1, 'Extraneous amiibo type: ' + key)
+
+def validateGamePlatform(platform, key):
+	global game_info
+	game = game_info['amiibos'][key]
+	if platform in game:
+		game_3ds = game[platform]
+		if game_3ds is not None:
+			for info_key in range(len(game_3ds)):
+				info = game_3ds[info_key]
+				if info is not None:
+					if 'amiiboUsage' in info:
+						if info['amiiboUsage'] is not None:
+							for amiibo_usage_key in range(len(info['amiiboUsage'])):
+								amiibo_usage = info['amiiboUsage'][amiibo_usage_key]
+
+								if amiibo_usage is not None:
+									if 'Usage' in amiibo_usage:
+										if amiibo_usage['Usage'] is None:
+											printError(1, platform + '[' + str(info_key) + '][\'amiiboUsage\'][' + str(amiibo_usage_key) + '][\'Usage\'] is null for: ' + key)
+									else:
+										printError(1, 'Missing ' + platform + '[' + str(info_key) + '][\'amiiboUsage\'][' + str(amiibo_usage_key) + '][\'Usage\'] for: ' + key)
+
+									if 'write' in amiibo_usage:
+										if amiibo_usage['write'] is None:
+											printError(1, platform + '[' + str(info_key) + '][\'amiiboUsage\'][' + str(amiibo_usage_key) + '][\'write\'] is null for: ' + key)
+									else:
+										printError(1, 'Missing ' + platform + '[' + str(info_key) + '][\'amiiboUsage\'][' + str(amiibo_usage_key) + '][\'write\'] for: ' + key)
+								else:
+									printError(1, platform + '[' + str(info_key) + '][\'amiiboUsage\'][' + str(amiibo_usage_key) + '] is null for: ' + key)
+					else:
+						printError(1, 'Missing ' + platform + '[' + str(info_key) + '][\'amiiboUsage\'] for: ' + key)
+
+					if 'gameID' in info:
+						if info['gameID'] is not None:
+							for game_id_key in range(len(info['gameID'])):
+								game_id = info['gameID'][game_id_key]
+
+								if game_id is not None:
+									if bool(game_id_regex.match(game_id)) == False:
+										printError(1, 'Formatting error on ' + platform + '[' + str(info_key) + '][\'gameID\'][' + str(game_id_key) + '] (' + game_id + '): ' + key)
+								else:
+									printError(1, platform + '[' + str(info_key) + '][\'gameID\'][' + str(game_id_key) + '] is null for: ' + key)
+					else:
+						printError(1, 'Missing ' + platform + '[' + str(info_key) + '][\'gameID\'] for: ' + key)
+
+					if 'gameName' in info:
+						if info['gameName'] is None:
+							printError(1, platform + '[' + str(info_key) + '][\'gameName\'] is null for: ' + key)
+					else:
+						printError(1, 'Missing ' + platform + '[' + str(info_key) + '][\'gameName\'] for: ' + key)
+				else:
+					printError(1, platform + '[' + str(info_key) + '] is null for: ' + key)
+		else:
+			printError(1, platform + ' is null for: ' + key)
+	else:
+		printError(1, 'Missing ' + platform + ' for: ' + key)
+
+# check game info keys
+for key in game_info['amiibos']:
+	if bool(amiibo_regex.match(key)):
+		game = game_info['amiibos'][key]
+
+		if key not in database['amiibos']:
+			printError(1, 'Extraneous game info for: ' + key)
+
+		validateGamePlatform('games3DS', key)
+		validateGamePlatform('gamesWiiU', key)
+		validateGamePlatform('gamesSwitch', key)
+	else:
+		printError(1, 'Formatting error on game info key: ' + key)
 
 warnings = list(set(warnings))
 warnings.sort()
