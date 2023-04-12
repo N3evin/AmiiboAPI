@@ -1,4 +1,4 @@
-FROM busybox
+FROM busybox:1.36.0-glibc
 COPY . /amiiboapi
 RUN [ "rm", "-rf", "/amiiboapi/.git" ]
 RUN [ "rm", "-rf", "/amiiboapi/images" ]
