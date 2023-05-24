@@ -1,5 +1,9 @@
+
  
 # Amiibo RESTful API
+
+### :warning: I'll no longer be developing new features due to personal commitments, rest assured that amiibo data updates and maintenance will continue. If you have exciting ideas or improvements, please feel free to submit a pull request.
+
 
 [![Offical Site](https://img.shields.io/static/v1?label=Offical&message=Site&color=3399CC)](https://amiiboapi.com)
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FN3evin%2FAmiiboAPI&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
