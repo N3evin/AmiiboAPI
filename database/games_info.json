@@ -3821,18 +3821,6 @@
 					]
 				},
 				{
-					"gameName": "Super Smash Bros. Ultimate",
-					"gameID": [
-						"01006A800016E000"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Battle and train up a computer-controlled Figure Player of the character",
-							"write": true
-						}
-					]
-				},
-				{
 					"gameName": "Yoshi's Crafted World",
 					"gameID": [
 						"01006000040C2000"
@@ -17226,7 +17214,11 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Receive helpful materials, weapons, or a paraglider fabric depending on the character",
+							"Usage": "Bring Epona into the game as a rideable horse",
+							"write": false
+						},
+						{
+							"Usage": "Receive materials and a weapon or rare item",
 							"write": false
 						}
 					]
@@ -17619,7 +17611,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Receive helpful materials, weapons, or a paraglider fabric depending on the character",
+							"Usage": "Receive materials and a weapon or rare item",
 							"write": false
 						}
 					]
@@ -18012,7 +18004,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Receive helpful materials, weapons, or a paraglider fabric depending on the character",
+							"Usage": "Receive materials and a weapon or rare item",
 							"write": false
 						}
 					]
@@ -18413,7 +18405,11 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Receive helpful materials, weapons, or a paraglider fabric depending on the character",
+							"Usage": "Bring Epona into the game as a rideable horse",
+							"write": false
+						},
+						{
+							"Usage": "Receive materials and a weapon or rare item",
 							"write": false
 						}
 					]
@@ -18806,7 +18802,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Receive helpful materials, weapons, or a paraglider fabric depending on the character",
+							"Usage": "Receive materials and a weapon or rare item",
 							"write": false
 						}
 					]
@@ -19199,7 +19195,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Receive helpful materials, weapons, or a paraglider fabric depending on the character",
+							"Usage": "Receive materials and a weapon or rare item",
 							"write": false
 						}
 					]
@@ -19592,7 +19588,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Receive helpful materials, weapons, or a paraglider fabric depending on the character",
+							"Usage": "Receive materials and a weapon or rare item",
 							"write": false
 						}
 					]
@@ -19985,7 +19981,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Receive helpful materials, weapons, or a paraglider fabric depending on the character",
+							"Usage": "Receive materials and a weapon or rare item",
 							"write": false
 						}
 					]
@@ -20366,7 +20362,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Receive helpful materials, weapons, or a paraglider fabric depending on the character",
+							"Usage": "Receive materials and a weapon or rare item",
 							"write": false
 						}
 					]
@@ -20771,7 +20767,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Receive helpful materials, weapons, or a paraglider fabric depending on the character",
+							"Usage": "Receive materials and a weapon or rare item",
 							"write": false
 						}
 					]
@@ -21164,19 +21160,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Receive weapons and materials, as well as a special fabric for Link’s paraglider",
-							"write": false
-						}
-					]
-				},
-				{
-					"gameName": "The Legend of Zelda: Tears of the Kingdom",
-					"gameID": [
-						"0100F2C0115B6000"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Receive helpful materials, weapons, or a paraglider fabric depending on the character",
+							"Usage": "Receive materials and a weapon or rare item",
 							"write": false
 						}
 					]
@@ -21567,7 +21551,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Receive helpful materials, weapons, or a paraglider fabric depending on the character",
+							"Usage": "Receive materials and a weapon or rare item",
 							"write": false
 						}
 					]
@@ -21970,7 +21954,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Receive helpful materials, weapons, or a paraglider fabric depending on the character",
+							"Usage": "Receive materials and a weapon or rare item",
 							"write": false
 						}
 					]
@@ -22310,7 +22294,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Receive helpful materials, weapons, or a paraglider fabric depending on the character",
+							"Usage": "Receive materials and a weapon or rare item",
 							"write": false
 						}
 					]
@@ -22662,7 +22646,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Receive helpful materials, weapons, or a paraglider fabric depending on the character",
+							"Usage": "Receive materials and a weapon or rare item",
 							"write": false
 						}
 					]
@@ -23014,7 +22998,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Receive helpful materials, weapons, or a paraglider fabric depending on the character",
+							"Usage": "Receive materials and a weapon or rare item",
 							"write": false
 						}
 					]
@@ -23354,7 +23338,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Receive helpful materials, weapons, or a paraglider fabric depending on the character",
+							"Usage": "Receive materials and a weapon or rare item",
 							"write": false
 						}
 					]
@@ -23718,7 +23702,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Receive helpful materials, weapons, or a paraglider fabric depending on the character",
+							"Usage": "Receive materials and a weapon or rare item",
 							"write": false
 						}
 					]
@@ -24031,7 +24015,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Receive helpful materials, weapons, or a paraglider fabric depending on the character",
+							"Usage": "Receive materials and a weapon or rare item",
 							"write": false
 						}
 					]
@@ -24264,7 +24248,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Receive helpful materials, weapons, or a paraglider fabric depending on the character",
+							"Usage": "Receive materials and a weapon or rare item",
 							"write": false
 						}
 					]
@@ -24398,7 +24382,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Receive helpful materials, weapons, or a paraglider fabric depending on the character",
+							"Usage": "Receive materials and a weapon or rare item",
 							"write": false
 						}
 					]
@@ -24532,7 +24516,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Receive helpful materials, weapons, or a paraglider fabric depending on the character",
+							"Usage": "Receive materials and a weapon or rare item",
 							"write": false
 						}
 					]
@@ -24666,7 +24650,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Receive helpful materials, weapons, or a paraglider fabric depending on the character",
+							"Usage": "Receive materials and a weapon or rare item",
 							"write": false
 						}
 					]
@@ -24800,7 +24784,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Receive helpful materials, weapons, or a paraglider fabric depending on the character",
+							"Usage": "Receive materials and a weapon or rare item",
 							"write": false
 						}
 					]
@@ -24949,7 +24933,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Receive helpful materials, weapons, or a paraglider fabric depending on the character",
+							"Usage": "Receive materials and a weapon or rare item",
 							"write": false
 						}
 					]
@@ -25098,7 +25082,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Receive helpful materials, weapons, or a paraglider fabric depending on the character",
+							"Usage": "Receive materials and a weapon or rare item",
 							"write": false
 						}
 					]
@@ -25606,6 +25590,18 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Unlock a character-themed accessory",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "WarioWare Gold",
+					"gameID": [
+						"00040000001D1C00"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Receive a sketch of the character from Wario which can be exchanged for in-game coins",
 							"write": false
 						}
 					]
@@ -49188,21 +49184,6 @@
 		},
 		"0x0286000103130502": {
 			"games3DS": [
-				{
-					"gameName": "Animal Crossing: New Leaf",
-					"gameID": [
-						"0004000000086400",
-						"0004000000086300",
-						"0004000000198F00",
-						"0004000000198E00"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Invite the character to visit your RV campsite, give you an item, and/or move to your town",
-							"write": false
-						}
-					]
-				},
 				{
 					"gameName": "Kirby: Planet Robobot",
 					"gameID": [

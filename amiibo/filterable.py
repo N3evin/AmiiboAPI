@@ -127,7 +127,7 @@ class FilterableCollection(metaclass=FilterableCollectionMeta):
     @filterable('name')
     def filter_name(self, value):
         value = value.lower()
-        return lambda x: x.name.lower() == value
+        return lambda x: value in x.name.lower()
 
     @sortable('id')
     def sort_id(self):
@@ -154,11 +154,11 @@ class AmiiboCollection(FilterableCollection):
     @filterable('game_series_id')
     def filter_game_series_id(self, value):
         return lambda x: x.game_series.id == value
-        
+
     @filterable('game_series_name')
     def filter_game_series_name(self, value):
         value = value.lower() if value else value
-        return lambda x: x.game_series.name.lower() == value
+        return lambda x: value in x.game_series.name.lower()
 
     @filterable('switch_titleid')
     def filter_switch_titleid(self, value):
@@ -179,7 +179,7 @@ class AmiiboCollection(FilterableCollection):
     @filterable('character_name')
     def filter_character_name(self, value):
         value = value.lower() if value else value
-        return lambda x: x.character.name.lower() == value
+        return lambda x: value in x.character.name.lower()
 
     @filterable('variant_id')
     def filter_variant_id(self, value):
@@ -205,7 +205,7 @@ class AmiiboCollection(FilterableCollection):
     @filterable('amiibo_series_name')
     def filter_amiibo_series_name(self, value):
         value = value.lower() if value else value
-        return lambda x: x.amiibo_series.name.lower() == value
+        return lambda x: value in x.amiibo_series.name.lower()
 
     @sortable('game_series_id')
     def sort_game_series_id(self):

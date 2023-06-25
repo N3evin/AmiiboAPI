@@ -146,8 +146,5 @@ def route_api_amiibo():
                 if value in values
             ])
 
-    if not result:
-        abort(404)
-
     respond = jsonify({'amiibo': result})
     return respond
