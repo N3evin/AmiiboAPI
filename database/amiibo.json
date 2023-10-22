@@ -7444,7 +7444,7 @@
       }
     },
     "0x3802000103951702": {
-      "name": "Daijobu",
+      "name": "Yabe",
       "release": {
         "au": null,
         "eu": null,
@@ -7462,7 +7462,7 @@
       }
     },
     "0x3804000103971702": {
-      "name": "Yabe",
+      "name": "Ganda",
       "release": {
         "au": null,
         "eu": null,
@@ -7471,7 +7471,7 @@
       }
     },
     "0x3805000103981702": {
-      "name": "Ganda",
+      "name": "Daijobu",
       "release": {
         "au": null,
         "eu": null,
@@ -8219,10 +8219,10 @@
     "0x37c1": "Richter",
     "0x3800": "Pawapuro",
     "0x3801": "Ikari",
-    "0x3802": "Daijobu",
+    "0x3802": "Yabe",
     "0x3803": "Hayakawa",
-    "0x3804": "Yabe",
-    "0x3805": "Ganda",
+    "0x3804": "Ganda",
+    "0x3805": "Daijobu",
     "0x3840": "Yuga Ohdo",
     "0x3841": "Tatsuhisa \u201cLuke\u201d Kamij\u014d",
     "0x3842": "Gakuto S\u014dgetsu",
