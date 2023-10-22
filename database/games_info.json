@@ -3673,7 +3673,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Receive a character-based costume",
+							"Usage": "Gain temporary invincibility",
 							"write": false
 						}
 					]
@@ -3685,7 +3685,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Gain temporary invincibility",
+							"Usage": "Receive a character-based costume",
 							"write": false
 						}
 					]
@@ -3817,6 +3817,18 @@
 						{
 							"Usage": "Unlock the character's shiny sticker",
 							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Super Smash Bros. Ultimate",
+					"gameID": [
+						"01006A800016E000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Battle and train up a computer-controlled Figure Player of the character",
+							"write": true
 						}
 					]
 				},
@@ -17214,6 +17226,10 @@
 					],
 					"amiiboUsage": [
 						{
+							"Usage": "Unlock an amiibo-exclusive character-specific paraglider fabric",
+							"write": false
+						},
+						{
 							"Usage": "Bring Epona into the game as a rideable horse",
 							"write": false
 						},
@@ -17611,6 +17627,10 @@
 					],
 					"amiiboUsage": [
 						{
+							"Usage": "Unlock an amiibo-exclusive character-specific paraglider fabric",
+							"write": false
+						},
+						{
 							"Usage": "Receive materials and a weapon or rare item",
 							"write": false
 						}
@@ -18003,6 +18023,10 @@
 						"0100F2C0115B6000"
 					],
 					"amiiboUsage": [
+						{
+							"Usage": "Unlock an amiibo-exclusive character-specific paraglider fabric",
+							"write": false
+						},
 						{
 							"Usage": "Receive materials and a weapon or rare item",
 							"write": false
@@ -18405,6 +18429,10 @@
 					],
 					"amiiboUsage": [
 						{
+							"Usage": "Unlock an amiibo-exclusive character-specific paraglider fabric",
+							"write": false
+						},
+						{
 							"Usage": "Bring Epona into the game as a rideable horse",
 							"write": false
 						},
@@ -18802,6 +18830,10 @@
 					],
 					"amiiboUsage": [
 						{
+							"Usage": "Unlock an amiibo-exclusive character-specific paraglider fabric",
+							"write": false
+						},
+						{
 							"Usage": "Receive materials and a weapon or rare item",
 							"write": false
 						}
@@ -19194,6 +19226,10 @@
 						"0100F2C0115B6000"
 					],
 					"amiiboUsage": [
+						{
+							"Usage": "Unlock an amiibo-exclusive character-specific paraglider fabric",
+							"write": false
+						},
 						{
 							"Usage": "Receive materials and a weapon or rare item",
 							"write": false
@@ -19588,6 +19624,10 @@
 					],
 					"amiiboUsage": [
 						{
+							"Usage": "Unlock an amiibo-exclusive character-specific paraglider fabric",
+							"write": false
+						},
+						{
 							"Usage": "Receive materials and a weapon or rare item",
 							"write": false
 						}
@@ -19981,6 +20021,10 @@
 					],
 					"amiiboUsage": [
 						{
+							"Usage": "Unlock an amiibo-exclusive character-specific paraglider fabric",
+							"write": false
+						},
+						{
 							"Usage": "Receive materials and a weapon or rare item",
 							"write": false
 						}
@@ -20361,6 +20405,10 @@
 						"0100F2C0115B6000"
 					],
 					"amiiboUsage": [
+						{
+							"Usage": "Unlock an amiibo-exclusive character-specific paraglider fabric",
+							"write": false
+						},
 						{
 							"Usage": "Receive materials and a weapon or rare item",
 							"write": false
@@ -20767,6 +20815,10 @@
 					],
 					"amiiboUsage": [
 						{
+							"Usage": "Unlock an amiibo-exclusive character-specific paraglider fabric",
+							"write": false
+						},
+						{
 							"Usage": "Receive materials and a weapon or rare item",
 							"write": false
 						}
@@ -21160,6 +21212,10 @@
 					],
 					"amiiboUsage": [
 						{
+							"Usage": "Unlock an amiibo-exclusive character-specific paraglider fabric",
+							"write": false
+						},
+						{
 							"Usage": "Receive materials and a weapon or rare item",
 							"write": false
 						}
@@ -21550,6 +21606,10 @@
 						"0100F2C0115B6000"
 					],
 					"amiiboUsage": [
+						{
+							"Usage": "Unlock an amiibo-exclusive character-specific paraglider fabric",
+							"write": false
+						},
 						{
 							"Usage": "Receive materials and a weapon or rare item",
 							"write": false
@@ -21954,6 +22014,10 @@
 					],
 					"amiiboUsage": [
 						{
+							"Usage": "Unlock an amiibo-exclusive character-specific paraglider fabric",
+							"write": false
+						},
+						{
 							"Usage": "Receive materials and a weapon or rare item",
 							"write": false
 						}
@@ -22293,6 +22357,10 @@
 						"0100F2C0115B6000"
 					],
 					"amiiboUsage": [
+						{
+							"Usage": "Unlock an amiibo-exclusive character-specific paraglider fabric",
+							"write": false
+						},
 						{
 							"Usage": "Receive materials and a weapon or rare item",
 							"write": false
@@ -22646,6 +22714,10 @@
 					],
 					"amiiboUsage": [
 						{
+							"Usage": "Unlock an amiibo-exclusive character-specific paraglider fabric",
+							"write": false
+						},
+						{
 							"Usage": "Receive materials and a weapon or rare item",
 							"write": false
 						}
@@ -22998,6 +23070,10 @@
 					],
 					"amiiboUsage": [
 						{
+							"Usage": "Unlock an amiibo-exclusive character-specific paraglider fabric",
+							"write": false
+						},
+						{
 							"Usage": "Receive materials and a weapon or rare item",
 							"write": false
 						}
@@ -23337,6 +23413,10 @@
 						"0100F2C0115B6000"
 					],
 					"amiiboUsage": [
+						{
+							"Usage": "Unlock an amiibo-exclusive character-specific paraglider fabric",
+							"write": false
+						},
 						{
 							"Usage": "Receive materials and a weapon or rare item",
 							"write": false
@@ -23702,6 +23782,10 @@
 					],
 					"amiiboUsage": [
 						{
+							"Usage": "Unlock an amiibo-exclusive character-specific paraglider fabric",
+							"write": false
+						},
+						{
 							"Usage": "Receive materials and a weapon or rare item",
 							"write": false
 						}
@@ -24015,6 +24099,10 @@
 					],
 					"amiiboUsage": [
 						{
+							"Usage": "Unlock an amiibo-exclusive character-specific paraglider fabric",
+							"write": false
+						},
+						{
 							"Usage": "Receive materials and a weapon or rare item",
 							"write": false
 						}
@@ -24248,6 +24336,10 @@
 					],
 					"amiiboUsage": [
 						{
+							"Usage": "Unlock an amiibo-exclusive character-specific paraglider fabric",
+							"write": false
+						},
+						{
 							"Usage": "Receive materials and a weapon or rare item",
 							"write": false
 						}
@@ -24381,6 +24473,10 @@
 						"0100F2C0115B6000"
 					],
 					"amiiboUsage": [
+						{
+							"Usage": "Unlock an amiibo-exclusive character-specific paraglider fabric",
+							"write": false
+						},
 						{
 							"Usage": "Receive materials and a weapon or rare item",
 							"write": false
@@ -24516,6 +24612,10 @@
 					],
 					"amiiboUsage": [
 						{
+							"Usage": "Unlock an amiibo-exclusive character-specific paraglider fabric",
+							"write": false
+						},
+						{
 							"Usage": "Receive materials and a weapon or rare item",
 							"write": false
 						}
@@ -24650,6 +24750,10 @@
 					],
 					"amiiboUsage": [
 						{
+							"Usage": "Unlock an amiibo-exclusive character-specific paraglider fabric",
+							"write": false
+						},
+						{
 							"Usage": "Receive materials and a weapon or rare item",
 							"write": false
 						}
@@ -24783,6 +24887,10 @@
 						"0100F2C0115B6000"
 					],
 					"amiiboUsage": [
+						{
+							"Usage": "Unlock an amiibo-exclusive character-specific paraglider fabric",
+							"write": false
+						},
 						{
 							"Usage": "Receive materials and a weapon or rare item",
 							"write": false
@@ -24933,6 +25041,10 @@
 					],
 					"amiiboUsage": [
 						{
+							"Usage": "Unlock an amiibo-exclusive character-specific paraglider fabric",
+							"write": false
+						},
+						{
 							"Usage": "Receive materials and a weapon or rare item",
 							"write": false
 						}
@@ -25081,6 +25193,10 @@
 						"0100F2C0115B6000"
 					],
 					"amiiboUsage": [
+						{
+							"Usage": "Unlock an amiibo-exclusive character-specific paraglider fabric",
+							"write": false
+						},
 						{
 							"Usage": "Receive materials and a weapon or rare item",
 							"write": false
@@ -35934,18 +36050,6 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
-							"write": false
-						}
-					]
-				},
-				{
-					"gameName": "Style Savvy: Styling Star",
-					"gameID": [
-						"00040000001C2500"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Unlock an Animal Crossing pattern",
 							"write": false
 						}
 					]
@@ -49184,6 +49288,21 @@
 		},
 		"0x0286000103130502": {
 			"games3DS": [
+				{
+					"gameName": "Animal Crossing: New Leaf",
+					"gameID": [
+						"0004000000086400",
+						"0004000000086300",
+						"0004000000198F00",
+						"0004000000198E00"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Invite the character to visit your RV campsite, give you an item, and/or move to your town",
+							"write": false
+						}
+					]
+				},
 				{
 					"gameName": "Kirby: Planet Robobot",
 					"gameID": [
@@ -102490,6 +102609,66 @@
 				}
 			]
 		},
+		"0x22410000041e0002": {
+			"games3DS": [],
+			"gamesWiiU": [],
+			"gamesSwitch": [
+				{
+					"gameName": "Super Smash Bros. Ultimate",
+					"gameID": [
+						"01006A800016E000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Battle and train up a computer-controlled Figure Player of the character",
+							"write": true
+						}
+					]
+				},
+				{
+					"gameName": "Xenoblade Chronicles 3",
+					"gameID": [
+						"010074F013262000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock a character-specific weapon skin for characters using the Swordfighter Class",
+							"write": false
+						}
+					]
+				}
+			]
+		},
+		"0x22420000041f0002": {
+			"games3DS": [],
+			"gamesWiiU": [],
+			"gamesSwitch": [
+				{
+					"gameName": "Super Smash Bros. Ultimate",
+					"gameID": [
+						"01006A800016E000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Battle and train up a computer-controlled Figure Player of the character",
+							"write": true
+						}
+					]
+				},
+				{
+					"gameName": "Xenoblade Chronicles 3",
+					"gameID": [
+						"010074F013262000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock a character-specific weapon skin for characters using the Swordfighter Class",
+							"write": false
+						}
+					]
+				}
+			]
+		},
 		"0x22800000002c0002": {
 			"games3DS": [
 				{
@@ -104779,6 +104958,18 @@
 					]
 				},
 				{
+					"gameName": "Shovel Knight Dig",
+					"gameID": [
+						"0100B62017E68000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Summon a fairy friend",
+							"write": false
+						}
+					]
+				},
+				{
 					"gameName": "Shovel Knight Pocket Dungeon",
 					"gameID": [
 						"01006B00126EC000"
@@ -104937,6 +105128,18 @@
 					]
 				},
 				{
+					"gameName": "Shovel Knight Dig",
+					"gameID": [
+						"0100B62017E68000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Summon a fairy friend",
+							"write": false
+						}
+					]
+				},
+				{
 					"gameName": "Shovel Knight Pocket Dungeon",
 					"gameID": [
 						"01006B00126EC000"
@@ -105054,6 +105257,18 @@
 						},
 						{
 							"Usage": "Unlock a special costume for the character",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Shovel Knight Dig",
+					"gameID": [
+						"0100B62017E68000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Summon a fairy friend",
 							"write": false
 						}
 					]
@@ -105193,6 +105408,18 @@
 					]
 				},
 				{
+					"gameName": "Shovel Knight Dig",
+					"gameID": [
+						"0100B62017E68000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Summon a fairy friend",
+							"write": false
+						}
+					]
+				},
+				{
 					"gameName": "Shovel Knight Pocket Dungeon",
 					"gameID": [
 						"01006B00126EC000"
@@ -105322,6 +105549,18 @@
 						},
 						{
 							"Usage": "Unlock a special costume for the character",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Shovel Knight Dig",
+					"gameID": [
+						"0100B62017E68000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Summon a fairy friend",
 							"write": false
 						}
 					]
@@ -105907,16 +106146,6 @@
 					]
 				}
 			]
-		},
-		"0x22410000041e0002": {
-			"games3DS": [],
-			"gamesWiiU": [],
-			"gamesSwitch": []
-		},
-		"0x22420000041f0002": {
-			"games3DS": [],
-			"gamesWiiU": [],
-			"gamesSwitch": []
 		}
 	}
 }
