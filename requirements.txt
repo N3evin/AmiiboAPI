@@ -2,7 +2,7 @@ ansicolors==1.1.8
 blinker==1.6.2
 Brotli==1.0.9
 cached-property==1.5.2
-certifi==2022.12.7
+certifi==2023.7.22
 chardet==4.0.0
 charset-normalizer==2.0.6
 click==8.1.3
