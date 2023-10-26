@@ -21,6 +21,6 @@ requests==2.31.0
 rfc3339==6.2
 six==1.16.0
 typing-extensions==3.10.0.2
-urllib3==1.26.7
+urllib3==1.26.18
 Werkzeug==2.3.3
 zipp==3.6.0
