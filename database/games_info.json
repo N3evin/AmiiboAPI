@@ -3673,7 +3673,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Gain temporary invincibility",
+							"Usage": "Receive a character-based costume",
 							"write": false
 						}
 					]
@@ -3685,7 +3685,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Receive a character-based costume",
+							"Usage": "Gain temporary invincibility",
 							"write": false
 						}
 					]
@@ -4075,7 +4075,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Unlock \"Chill\" track in Rhythm Recital mode",
+							"Usage": "Play as or receive bonus from this character, depending on the mode",
 							"write": false
 						}
 					]
@@ -4089,7 +4089,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Play as or receive bonus from this character, depending on the mode",
+							"Usage": "Unlock \"Chill\" track in Rhythm Recital mode",
 							"write": false
 						}
 					]
@@ -36050,6 +36050,18 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Style Savvy: Styling Star",
+					"gameID": [
+						"00040000001C2500"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock an Animal Crossing pattern",
 							"write": false
 						}
 					]
