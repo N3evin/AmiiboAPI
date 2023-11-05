@@ -4075,7 +4075,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Play as or receive bonus from this character, depending on the mode",
+							"Usage": "Unlock \"Chill\" track in Rhythm Recital mode",
 							"write": false
 						}
 					]
@@ -4089,7 +4089,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Unlock \"Chill\" track in Rhythm Recital mode",
+							"Usage": "Play as or receive bonus from this character, depending on the mode",
 							"write": false
 						}
 					]
@@ -15847,6 +15847,18 @@
 					]
 				},
 				{
+					"gameName": "Mario Kart 8 Deluxe",
+					"gameID": [
+						"0100152000022000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock a character-themed Mii racing suit",
+							"write": false
+						}
+					]
+				},
+				{
 					"gameName": "Miitopia",
 					"gameID": [
 						"01003DA010E8A000"
@@ -15982,6 +15994,18 @@
 					]
 				},
 				{
+					"gameName": "Mario Kart 8 Deluxe",
+					"gameID": [
+						"0100152000022000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock a character-themed Mii racing suit",
+							"write": false
+						}
+					]
+				},
+				{
 					"gameName": "Miitopia",
 					"gameID": [
 						"01003DA010E8A000"
@@ -16043,6 +16067,18 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Unlock a costume based on the character (short-hair version)",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Mario Kart 8 Deluxe",
+					"gameID": [
+						"0100152000022000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock a character-themed Mii racing suit",
 							"write": false
 						}
 					]
@@ -21780,7 +21816,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Receive a weapon rated 3 stars or higher",
+							"Usage": "Unlock the Spinner weapon",
 							"write": false
 						}
 					]
@@ -21794,7 +21830,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Unlock the Spinner weapon",
+							"Usage": "Receive a weapon rated 3 stars or higher",
 							"write": false
 						}
 					]
@@ -25777,6 +25813,18 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Invite the character for photo shoots at Photopia / Unlock a special poster of the character / Invite the character to the Roost for a cup of coffee / Invite the character to Happy Home Paradise to design their vacation home",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Mario Kart 8 Deluxe",
+					"gameID": [
+						"0100152000022000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock an Animal Crossing-themed Mii racing suit",
 							"write": false
 						}
 					]
@@ -92215,7 +92263,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Unlock a character-themed Mii racing suit",
+							"Usage": "Unlock a Splatoon-themed racing suit",
 							"write": false
 						}
 					]
@@ -92458,7 +92506,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Unlock a character-themed Mii racing suit",
+							"Usage": "Unlock a Splatoon-themed racing suit",
 							"write": false
 						}
 					]
@@ -92686,7 +92734,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Unlock a character-themed Mii racing suit",
+							"Usage": "Unlock a Splatoon-themed racing suit",
 							"write": false
 						}
 					]
@@ -92883,6 +92931,18 @@
 				}
 			],
 			"gamesSwitch": [
+				{
+					"gameName": "Mario Kart 8 Deluxe",
+					"gameID": [
+						"0100152000022000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock a Splatoon-themed racing suit",
+							"write": false
+						}
+					]
+				},
 				{
 					"gameName": "Miitopia",
 					"gameID": [
@@ -93106,7 +93166,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Unlock a character-themed Mii racing suit",
+							"Usage": "Unlock a Splatoon-themed racing suit",
 							"write": false
 						}
 					]
@@ -93337,7 +93397,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Unlock a character-themed Mii racing suit",
+							"Usage": "Unlock a Splatoon-themed racing suit",
 							"write": false
 						}
 					]
@@ -93568,7 +93628,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Unlock a character-themed Mii racing suit",
+							"Usage": "Unlock a Splatoon-themed racing suit",
 							"write": false
 						}
 					]
@@ -93784,7 +93844,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Unlock a character-themed Mii racing suit",
+							"Usage": "Unlock a Splatoon-themed racing suit",
 							"write": false
 						}
 					]
@@ -94015,7 +94075,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Unlock a character-themed Mii racing suit",
+							"Usage": "Unlock a Splatoon-themed racing suit",
 							"write": false
 						}
 					]
@@ -94246,7 +94306,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Unlock a character-themed Mii racing suit",
+							"Usage": "Unlock a Splatoon-themed racing suit",
 							"write": false
 						}
 					]
@@ -94462,7 +94522,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Unlock a character-themed Mii racing suit",
+							"Usage": "Unlock a Splatoon-themed racing suit",
 							"write": false
 						}
 					]
@@ -94666,7 +94726,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Unlock a character-themed Mii racing suit",
+							"Usage": "Unlock a Splatoon-themed racing suit",
 							"write": false
 						}
 					]
@@ -94870,7 +94930,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Unlock a character-themed Mii racing suit",
+							"Usage": "Unlock a Splatoon-themed racing suit",
 							"write": false
 						}
 					]
@@ -94973,7 +95033,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Unlock a character-themed Mii racing suit",
+							"Usage": "Unlock a Splatoon-themed racing suit",
 							"write": false
 						}
 					]
@@ -95064,7 +95124,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Unlock a character-themed Mii racing suit",
+							"Usage": "Unlock a Splatoon-themed racing suit",
 							"write": false
 						}
 					]
@@ -95143,7 +95203,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Unlock a character-themed Mii racing suit",
+							"Usage": "Unlock a Splatoon-themed racing suit",
 							"write": false
 						}
 					]
@@ -95222,7 +95282,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Unlock a character-themed Mii racing suit",
+							"Usage": "Unlock a Splatoon-themed racing suit",
 							"write": false
 						}
 					]
@@ -95301,7 +95361,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Unlock a character-themed Mii racing suit",
+							"Usage": "Unlock a Splatoon-themed racing suit",
 							"write": false
 						}
 					]
@@ -95368,7 +95428,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Unlock a character-themed Mii racing suit",
+							"Usage": "Unlock a Splatoon-themed racing suit",
 							"write": false
 						}
 					]
@@ -95447,7 +95507,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Unlock a character-themed Mii racing suit",
+							"Usage": "Unlock a Splatoon-themed racing suit",
 							"write": false
 						}
 					]
