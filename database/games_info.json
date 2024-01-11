@@ -142,18 +142,6 @@
 					]
 				},
 				{
-					"gameName": "Metroid Prime: Blast Ball",
-					"gameID": [
-						"0004000000175300"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Unlock an armor paint job based on the character",
-							"write": false
-						}
-					]
-				},
-				{
 					"gameName": "Metroid Prime: Federation Force",
 					"gameID": [
 						"000400000016E300",
@@ -1596,6 +1584,19 @@
 					]
 				},
 				{
+					"gameName": "Chibi-Robo! Zip Lash",
+					"gameID": [
+						"0004000000163000",
+						"0004000000162F00"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock figure in the pose of the character (requires Chibi-Robo amiibo)",
+							"write": false
+						}
+					]
+				},
+				{
 					"gameName": "Hey! Pikmin",
 					"gameID": [
 						"00040000001A9200",
@@ -2777,18 +2778,6 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Minigame Island: If you land on an amiibo space, use to receive coins / Use to revive your character once",
-							"write": false
-						}
-					]
-				},
-				{
-					"gameName": "Metroid Prime: Blast Ball",
-					"gameID": [
-						"0004000000175300"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Unlock an armor paint job based on the character",
 							"write": false
 						}
 					]
@@ -4408,19 +4397,11 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Gain temporary invincibility",
-							"write": false
-						}
-					]
-				},
-				{
-					"gameName": "Super Mario Odyssey",
-					"gameID": [
-						"0100000000010000"
-					],
-					"amiiboUsage": [
-						{
 							"Usage": "Receive a character-based costume",
+							"write": false
+						},
+						{
+							"Usage": "Gain temporary invincibility",
 							"write": false
 						}
 					]
@@ -4919,22 +4900,6 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Receive a particular power-up depending on the character",
-							"write": false
-						}
-					]
-				},
-				{
-					"gameName": "Super Mario Odyssey",
-					"gameID": [
-						"0100000000010000"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Receive a character-based costume",
-							"write": false
-						},
-						{
-							"Usage": "Gain temporary invincibility",
 							"write": false
 						}
 					]
@@ -6577,18 +6542,6 @@
 					]
 				},
 				{
-					"gameName": "Metroid Prime: Blast Ball",
-					"gameID": [
-						"0004000000175300"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Unlock an armor paint job based on the character",
-							"write": false
-						}
-					]
-				},
-				{
 					"gameName": "Metroid Prime: Federation Force",
 					"gameID": [
 						"000400000016E300",
@@ -6934,21 +6887,6 @@
 		"0x0002000003720102": {
 			"games3DS": [
 				{
-					"gameName": "Ace Combat Assault Horizon Legacy+",
-					"gameID": [
-						"0004000000064900",
-						"000400000006CC00",
-						"000400000015A300",
-						"000400000015C000"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Unlock character-themed aircraft early",
-							"write": false
-						}
-					]
-				},
-				{
 					"gameName": "Captain Toad: Treasure Tracker",
 					"gameID": [
 						"00040000001CB200",
@@ -6957,6 +6895,19 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Unlock Super Mario Odyssey-themed levels early",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Chibi-Robo! Zip Lash",
+					"gameID": [
+						"0004000000163000",
+						"0004000000162F00"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock figure in the pose of the character (requires Chibi-Robo amiibo)",
 							"write": false
 						}
 					]
@@ -7646,6 +7597,19 @@
 					]
 				},
 				{
+					"gameName": "Mario Party: The Top 100",
+					"gameID": [
+						"00040000001C4E00",
+						"00040000001C4D00"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Minigame Island: If you land on an amiibo space, use to receive coins / Use to revive your character once",
+							"write": false
+						}
+					]
+				},
+				{
 					"gameName": "Metroid Prime: Blast Ball",
 					"gameID": [
 						"0004000000175300"
@@ -7946,18 +7910,6 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Receive a particular power-up depending on the character",
-							"write": false
-						}
-					]
-				},
-				{
-					"gameName": "Super Mario Odyssey",
-					"gameID": [
-						"0100000000010000"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Receive a life-up heart",
 							"write": false
 						}
 					]
@@ -9385,20 +9337,6 @@
 					]
 				},
 				{
-					"gameName": "Miitopia",
-					"gameID": [
-						"0004000000178800",
-						"00040000001B4F00",
-						"00040000001B4E00"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Unlock a character-based costume",
-							"write": false
-						}
-					]
-				},
-				{
 					"gameName": "Mini Mario & Friends amiibo Challenge",
 					"gameID": [
 						"000400000016C300",
@@ -9494,8 +9432,8 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Activate Double Yoshi mode",
-							"write": false
+							"Usage": "Save your favorite yarn pattern to your amiibo",
+							"write": true
 						}
 					]
 				},
@@ -9509,8 +9447,8 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Save your favorite yarn pattern to your amiibo",
-							"write": true
+							"Usage": "Activate Double Yoshi mode",
+							"write": false
 						}
 					]
 				}
@@ -10589,6 +10527,20 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Figure appears in-game and can be collected to gain energy points",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Kirby: Planet Robobot",
+					"gameID": [
+						"0004000000189600",
+						"0004000000183600",
+						"0004000000189800"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
 							"write": false
 						}
 					]
@@ -12519,7 +12471,15 @@
 						{
 							"Usage": "Receive a character-based costume",
 							"write": false
-						},
+						}
+					]
+				},
+				{
+					"gameName": "Super Mario Odyssey",
+					"gameID": [
+						"0100000000010000"
+					],
+					"amiiboUsage": [
 						{
 							"Usage": "Reveal regional coin locations",
 							"write": false
@@ -12670,6 +12630,19 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Play as or receive bonus from this character, depending on the mode",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Mario Party: The Top 100",
+					"gameID": [
+						"00040000001C4E00",
+						"00040000001C4D00"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Minigame Island: If you land on an amiibo space, use to receive coins / Use to revive your character once",
 							"write": false
 						}
 					]
@@ -13842,6 +13815,19 @@
 					]
 				},
 				{
+					"gameName": "Mario Party: The Top 100",
+					"gameID": [
+						"00040000001C4E00",
+						"00040000001C4D00"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Minigame Island: If you land on an amiibo space, use to receive coins / Use to revive your character once",
+							"write": false
+						}
+					]
+				},
+				{
 					"gameName": "Miitopia",
 					"gameID": [
 						"0004000000178800",
@@ -14263,6 +14249,24 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Unlock a character-themed Mii racing suit",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Mario Party 10",
+					"gameID": [
+						"0005000010162E00",
+						"0005000010162D00",
+						"0005000010161F00"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Use as game piece in amiibo Party",
+							"write": true
+						},
+						{
+							"Usage": "Customize game board in amiibo Party",
 							"write": false
 						}
 					]
@@ -15343,18 +15347,6 @@
 					]
 				},
 				{
-					"gameName": "Picross 3D Round 2",
-					"gameID": [
-						"0004000000187E00"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Unlock a character-based puzzle",
-							"write": false
-						}
-					]
-				},
-				{
 					"gameName": "WarioWare Gold",
 					"gameID": [
 						"00040000001D1C00"
@@ -15998,6 +15990,18 @@
 					]
 				},
 				{
+					"gameName": "Super Mario 3D World + Bowser's Fury",
+					"gameID": [
+						"010028600EBDA000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Receive a particular power-up depending on the character",
+							"write": false
+						}
+					]
+				},
+				{
 					"gameName": "Super Mario Party",
 					"gameID": [
 						"010036B0034E4000"
@@ -16464,6 +16468,18 @@
 					]
 				},
 				{
+					"gameName": "Super Mario 3D World + Bowser's Fury",
+					"gameID": [
+						"010028600EBDA000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Receive a particular power-up depending on the character",
+							"write": false
+						}
+					]
+				},
+				{
 					"gameName": "Super Mario Party",
 					"gameID": [
 						"010036B0034E4000"
@@ -16590,6 +16606,18 @@
 					]
 				},
 				{
+					"gameName": "Super Mario Party",
+					"gameID": [
+						"010036B0034E4000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock the character's shiny sticker",
+							"write": false
+						}
+					]
+				},
+				{
 					"gameName": "Super Smash Bros. Ultimate",
 					"gameID": [
 						"01006A800016E000"
@@ -16597,18 +16625,6 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Receive a Spirit of the character",
-							"write": false
-						}
-					]
-				},
-				{
-					"gameName": "Yoshi's Crafted World",
-					"gameID": [
-						"01006000040C2000"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Unlock a character-based costume",
 							"write": false
 						}
 					]
@@ -17357,20 +17373,6 @@
 					]
 				},
 				{
-					"gameName": "The Legend of Zelda: Breath of the Wild",
-					"gameID": [
-						"00050000101C9500",
-						"00050000101C9400",
-						"00050000101C9300"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Receive materials and a rare or exclusive item",
-							"write": false
-						}
-					]
-				},
-				{
 					"gameName": "The Legend of Zelda: Twilight Princess HD",
 					"gameID": [
 						"000500001019E600",
@@ -18058,18 +18060,6 @@
 						{
 							"Usage": "Battle and train up a computer-controlled Figure Player of the character",
 							"write": true
-						}
-					]
-				},
-				{
-					"gameName": "WarioWare Gold",
-					"gameID": [
-						"00040000001D1C00"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Receive a sketch of the character from Wario which can be exchanged for in-game coins",
-							"write": false
 						}
 					]
 				},
@@ -18971,6 +18961,20 @@
 					]
 				},
 				{
+					"gameName": "The Legend of Zelda: Twilight Princess HD",
+					"gameID": [
+						"000500001019E600",
+						"000500001019E500",
+						"000500001019C800"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Get a refill of arrows, once a day per amiibo",
+							"write": false
+						}
+					]
+				},
+				{
 					"gameName": "Yoshi's Woolly World",
 					"gameID": [
 						"0005000010131F00"
@@ -19746,20 +19750,6 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Receive materials and a rare or exclusive item",
-							"write": false
-						}
-					]
-				},
-				{
-					"gameName": "The Legend of Zelda: Twilight Princess HD",
-					"gameID": [
-						"000500001019E600",
-						"000500001019E500",
-						"000500001019C800"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Get a refill of arrows, once a day per amiibo",
 							"write": false
 						}
 					]
@@ -22236,6 +22226,22 @@
 					]
 				},
 				{
+					"gameName": "The Legend of Zelda: Link's Awakening",
+					"gameID": [
+						"01006BB00C6F0000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock one of five amiibo-exclusive Chamber Dungeon chambers",
+							"write": false
+						},
+						{
+							"Usage": "Save your Chamber Dungeon to the amiibo to share with friends",
+							"write": true
+						}
+					]
+				},
+				{
 					"gameName": "The Legend of Zelda: Tears of the Kingdom",
 					"gameID": [
 						"0100F2C0115B6000"
@@ -23788,20 +23794,6 @@
 					]
 				},
 				{
-					"gameName": "Miitopia",
-					"gameID": [
-						"0004000000178800",
-						"00040000001B4F00",
-						"00040000001B4E00"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Unlock a character-based costume",
-							"write": false
-						}
-					]
-				},
-				{
 					"gameName": "Style Savvy: Fashion Forward",
 					"gameID": [
 						"0004000000196500"
@@ -23906,20 +23898,6 @@
 						{
 							"Usage": "Battle and train up a computer-controlled Figure Player of the character",
 							"write": true
-						}
-					]
-				},
-				{
-					"gameName": "The Legend of Zelda: Breath of the Wild",
-					"gameID": [
-						"00050000101C9500",
-						"00050000101C9400",
-						"00050000101C9300"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Receive materials and a rare or exclusive item",
-							"write": false
 						}
 					]
 				},
@@ -24031,18 +24009,6 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Receive a chest of loot, potentially containing gear inspired by the Legend of Zelda series",
-							"write": false
-						}
-					]
-				},
-				{
-					"gameName": "The Legend of Zelda: Breath of the Wild",
-					"gameID": [
-						"01007EF00011E000"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Receive materials and a rare or exclusive item",
 							"write": false
 						}
 					]
@@ -24592,6 +24558,20 @@
 					]
 				},
 				{
+					"gameName": "The Legend of Zelda: Breath of the Wild",
+					"gameID": [
+						"00050000101C9500",
+						"00050000101C9400",
+						"00050000101C9300"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Receive materials and a rare or exclusive item",
+							"write": false
+						}
+					]
+				},
+				{
 					"gameName": "The Legend of Zelda: Twilight Princess HD",
 					"gameID": [
 						"000500001019E600",
@@ -24699,6 +24679,18 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Receive a chest of loot, potentially containing gear inspired by the Legend of Zelda series",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "The Legend of Zelda: Breath of the Wild",
+					"gameID": [
+						"01007EF00011E000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Receive materials and a rare or exclusive item",
 							"write": false
 						}
 					]
@@ -25241,6 +25233,18 @@
 					]
 				},
 				{
+					"gameName": "The Legend of Zelda: Breath of the Wild",
+					"gameID": [
+						"01007EF00011E000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Receive materials and a rare or exclusive item",
+							"write": false
+						}
+					]
+				},
+				{
 					"gameName": "The Legend of Zelda: Link's Awakening",
 					"gameID": [
 						"01006BB00C6F0000"
@@ -25331,6 +25335,18 @@
 					]
 				},
 				{
+					"gameName": "Hyrule Warriors: Age of Calamity",
+					"gameID": [
+						"01002B00111A2000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Receive specific crafting materials or a weapon for the character",
+							"write": false
+						}
+					]
+				},
+				{
 					"gameName": "Mario Kart 8 Deluxe",
 					"gameID": [
 						"0100152000022000"
@@ -25362,18 +25378,6 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Receive a chest of loot, potentially containing gear inspired by the Legend of Zelda series",
-							"write": false
-						}
-					]
-				},
-				{
-					"gameName": "The Legend of Zelda: Breath of the Wild",
-					"gameID": [
-						"01007EF00011E000"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Receive materials and a rare or exclusive item",
 							"write": false
 						}
 					]
@@ -25729,21 +25733,6 @@
 		},
 		"0x01410000035c0902": {
 			"games3DS": [
-				{
-					"gameName": "Animal Crossing: New Leaf",
-					"gameID": [
-						"0004000000086400",
-						"0004000000086300",
-						"0004000000198F00",
-						"0004000000198E00"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Invite an amiibo-exclusive Legend of Zelda-themed villager to visit your RV campsite, give you an item, and/or move to your town",
-							"write": false
-						}
-					]
-				},
 				{
 					"gameName": "Style Savvy: Styling Star",
 					"gameID": [
@@ -26393,6 +26382,18 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Unlock a character-themed accessory",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "WarioWare Gold",
+					"gameID": [
+						"00040000001D1C00"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Receive a sketch of the character from Wario which can be exchanged for in-game coins",
 							"write": false
 						}
 					]
@@ -28532,18 +28533,6 @@
 					]
 				},
 				{
-					"gameName": "Style Savvy: Styling Star",
-					"gameID": [
-						"00040000001C2500"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Unlock an Animal Crossing pattern",
-							"write": false
-						}
-					]
-				},
-				{
 					"gameName": "Yoshi's Woolly World",
 					"gameID": [
 						"00040000001A4200",
@@ -28610,18 +28599,6 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Invite the character for photo shoots at Photopia / Unlock a special poster of the character / Invite the character to the Roost for a cup of coffee / Invite the character to Happy Home Paradise to design their vacation home",
-							"write": false
-						}
-					]
-				},
-				{
-					"gameName": "Conga Master Party!",
-					"gameID": [
-						"01007EF00399C000"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Unlock a special costume",
 							"write": false
 						}
 					]
@@ -29501,13 +29478,15 @@
 					]
 				},
 				{
-					"gameName": "Style Savvy: Styling Star",
+					"gameName": "Kirby: Planet Robobot",
 					"gameID": [
-						"00040000001C2500"
+						"0004000000189600",
+						"0004000000183600",
+						"0004000000189800"
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Unlock an Animal Crossing pattern",
+							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
 							"write": false
 						}
 					]
@@ -29821,6 +29800,21 @@
 					]
 				},
 				{
+					"gameName": "Animal Crossing: New Leaf",
+					"gameID": [
+						"0004000000086400",
+						"0004000000086300",
+						"0004000000198F00",
+						"0004000000198E00"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Invite the character to give you a special item",
+							"write": false
+						}
+					]
+				},
+				{
 					"gameName": "Kirby: Planet Robobot",
 					"gameID": [
 						"0004000000189600",
@@ -29945,13 +29939,15 @@
 					]
 				},
 				{
-					"gameName": "Style Savvy: Styling Star",
+					"gameName": "Kirby: Planet Robobot",
 					"gameID": [
-						"00040000001C2500"
+						"0004000000189600",
+						"0004000000183600",
+						"0004000000189800"
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Unlock an Animal Crossing pattern",
+							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
 							"write": false
 						}
 					]
@@ -30064,18 +30060,6 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
-							"write": false
-						}
-					]
-				},
-				{
-					"gameName": "Style Savvy: Styling Star",
-					"gameID": [
-						"00040000001C2500"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Unlock an Animal Crossing pattern",
 							"write": false
 						}
 					]
@@ -30546,6 +30530,20 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Invite the character to give you a special item",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Kirby: Planet Robobot",
+					"gameID": [
+						"0004000000189600",
+						"0004000000183600",
+						"0004000000189800"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
 							"write": false
 						}
 					]
@@ -31392,6 +31390,21 @@
 					]
 				},
 				{
+					"gameName": "Animal Crossing: New Leaf",
+					"gameID": [
+						"0004000000086400",
+						"0004000000086300",
+						"0004000000198F00",
+						"0004000000198E00"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Invite the character to give you a special item",
+							"write": false
+						}
+					]
+				},
+				{
 					"gameName": "Kirby: Planet Robobot",
 					"gameID": [
 						"0004000000189600",
@@ -31401,18 +31414,6 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
-							"write": false
-						}
-					]
-				},
-				{
-					"gameName": "Style Savvy: Styling Star",
-					"gameID": [
-						"00040000001C2500"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Unlock an Animal Crossing pattern",
 							"write": false
 						}
 					]
@@ -31679,19 +31680,6 @@
 		},
 		"0x018a000100a90502": {
 			"games3DS": [
-				{
-					"gameName": "Animal Crossing: Happy Home Designer",
-					"gameID": [
-						"000400000014F100",
-						"000400000014F200"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Call on amiibo phone to design the character's home on demand / Store house design and furniture for sharing",
-							"write": true
-						}
-					]
-				},
 				{
 					"gameName": "Animal Crossing: New Leaf",
 					"gameID": [
@@ -32024,19 +32012,6 @@
 		},
 		"0x018b000101150502": {
 			"games3DS": [
-				{
-					"gameName": "Animal Crossing: Happy Home Designer",
-					"gameID": [
-						"000400000014F100",
-						"000400000014F200"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Call on amiibo phone to design the character's home on demand / Store house design and furniture for sharing",
-							"write": true
-						}
-					]
-				},
 				{
 					"gameName": "Animal Crossing: New Leaf",
 					"gameID": [
@@ -33252,6 +33227,21 @@
 					]
 				},
 				{
+					"gameName": "Animal Crossing: New Leaf",
+					"gameID": [
+						"0004000000086400",
+						"0004000000086300",
+						"0004000000198F00",
+						"0004000000198E00"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Invite the character to give you a special item",
+							"write": false
+						}
+					]
+				},
+				{
 					"gameName": "Kirby: Planet Robobot",
 					"gameID": [
 						"0004000000189600",
@@ -33558,13 +33548,15 @@
 					]
 				},
 				{
-					"gameName": "Style Savvy: Styling Star",
+					"gameName": "Kirby: Planet Robobot",
 					"gameID": [
-						"00040000001C2500"
+						"0004000000189600",
+						"0004000000183600",
+						"0004000000189800"
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Unlock an Animal Crossing pattern",
+							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
 							"write": false
 						}
 					]
@@ -33649,21 +33641,6 @@
 						{
 							"Usage": "Call on amiibo phone to design the character's home on demand / Store house design and furniture for sharing",
 							"write": true
-						}
-					]
-				},
-				{
-					"gameName": "Animal Crossing: New Leaf",
-					"gameID": [
-						"0004000000086400",
-						"0004000000086300",
-						"0004000000198F00",
-						"0004000000198E00"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Invite the character to give you a special item",
-							"write": false
 						}
 					]
 				},
@@ -35252,21 +35229,6 @@
 							"write": false
 						}
 					]
-				},
-				{
-					"gameName": "Yoshi's Woolly World",
-					"gameID": [
-						"00040000001A4200",
-						"00040000001A4100",
-						"00040000001B6C00",
-						"00040000001B6D00"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Unlock a character-based Yoshi yarn pattern",
-							"write": false
-						}
-					]
 				}
 			],
 			"gamesWiiU": [
@@ -35332,18 +35294,6 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Unlock a special costume",
-							"write": false
-						}
-					]
-				},
-				{
-					"gameName": "Mario Kart 8 Deluxe",
-					"gameID": [
-						"0100152000022000"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Unlock an Animal Crossing-themed Mii racing suit",
 							"write": false
 						}
 					]
@@ -35874,6 +35824,21 @@
 							"write": false
 						}
 					]
+				},
+				{
+					"gameName": "Yoshi's Woolly World",
+					"gameID": [
+						"00040000001A4200",
+						"00040000001A4100",
+						"00040000001B6C00",
+						"00040000001B6D00"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock a character-based Yoshi yarn pattern",
+							"write": false
+						}
+					]
 				}
 			],
 			"gamesWiiU": [
@@ -35997,6 +35962,18 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Style Savvy: Styling Star",
+					"gameID": [
+						"00040000001C2500"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock an Animal Crossing pattern",
 							"write": false
 						}
 					]
@@ -36444,28 +36421,16 @@
 		"0x019b000100b60502": {
 			"games3DS": [
 				{
-					"gameName": "Animal Crossing: Happy Home Designer",
+					"gameName": "Animal Crossing: New Leaf",
 					"gameID": [
-						"000400000014F100",
-						"000400000014F200"
+						"0004000000086400",
+						"0004000000086300",
+						"0004000000198F00",
+						"0004000000198E00"
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Call on amiibo phone to design the character's home on demand / Store house design and furniture for sharing",
-							"write": true
-						}
-					]
-				},
-				{
-					"gameName": "Kirby: Planet Robobot",
-					"gameID": [
-						"0004000000189600",
-						"0004000000183600",
-						"0004000000189800"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
+							"Usage": "Invite the character to give you an item or move to your town",
 							"write": false
 						}
 					]
@@ -37069,20 +37034,6 @@
 					]
 				},
 				{
-					"gameName": "Kirby: Planet Robobot",
-					"gameID": [
-						"0004000000189600",
-						"0004000000183600",
-						"0004000000189800"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
-							"write": false
-						}
-					]
-				},
-				{
 					"gameName": "Style Savvy: Styling Star",
 					"gameID": [
 						"00040000001C2500"
@@ -37426,21 +37377,6 @@
 					]
 				},
 				{
-					"gameName": "Animal Crossing: New Leaf",
-					"gameID": [
-						"0004000000086400",
-						"0004000000086300",
-						"0004000000198F00",
-						"0004000000198E00"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Invite the character to give you a special item",
-							"write": false
-						}
-					]
-				},
-				{
 					"gameName": "Kirby: Planet Robobot",
 					"gameID": [
 						"0004000000189600",
@@ -37546,6 +37482,21 @@
 						{
 							"Usage": "Call on amiibo phone to design the character's home on demand / Store house design and furniture for sharing",
 							"write": true
+						}
+					]
+				},
+				{
+					"gameName": "Animal Crossing: New Leaf",
+					"gameID": [
+						"0004000000086400",
+						"0004000000086300",
+						"0004000000198F00",
+						"0004000000198E00"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Invite the character to give you a special item",
+							"write": false
 						}
 					]
 				},
@@ -37907,21 +37858,6 @@
 					]
 				},
 				{
-					"gameName": "Animal Crossing: New Leaf",
-					"gameID": [
-						"0004000000086400",
-						"0004000000086300",
-						"0004000000198F00",
-						"0004000000198E00"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Invite the character to give you a special item",
-							"write": false
-						}
-					]
-				},
-				{
 					"gameName": "Kirby: Planet Robobot",
 					"gameID": [
 						"0004000000189600",
@@ -38027,6 +37963,21 @@
 						{
 							"Usage": "Call on amiibo phone to design the character's home on demand / Store house design and furniture for sharing",
 							"write": true
+						}
+					]
+				},
+				{
+					"gameName": "Animal Crossing: New Leaf",
+					"gameID": [
+						"0004000000086400",
+						"0004000000086300",
+						"0004000000198F00",
+						"0004000000198E00"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Invite the character to give you a special item",
+							"write": false
 						}
 					]
 				},
@@ -38279,20 +38230,6 @@
 					]
 				},
 				{
-					"gameName": "Kirby: Planet Robobot",
-					"gameID": [
-						"0004000000189600",
-						"0004000000183600",
-						"0004000000189800"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
-							"write": false
-						}
-					]
-				},
-				{
 					"gameName": "Style Savvy: Styling Star",
 					"gameID": [
 						"00040000001C2500"
@@ -38522,6 +38459,20 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Invite the character to give you a special item",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Kirby: Planet Robobot",
+					"gameID": [
+						"0004000000189600",
+						"0004000000183600",
+						"0004000000189800"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
 							"write": false
 						}
 					]
@@ -38761,20 +38712,6 @@
 					]
 				},
 				{
-					"gameName": "Kirby: Planet Robobot",
-					"gameID": [
-						"0004000000189600",
-						"0004000000183600",
-						"0004000000189800"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
-							"write": false
-						}
-					]
-				},
-				{
 					"gameName": "Style Savvy: Styling Star",
 					"gameID": [
 						"00040000001C2500"
@@ -39004,6 +38941,20 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Invite the character to give you a special item",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Kirby: Planet Robobot",
+					"gameID": [
+						"0004000000189600",
+						"0004000000183600",
+						"0004000000189800"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
 							"write": false
 						}
 					]
@@ -39252,6 +39203,18 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Style Savvy: Styling Star",
+					"gameID": [
+						"00040000001C2500"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock an Animal Crossing pattern",
 							"write": false
 						}
 					]
@@ -39612,18 +39575,6 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
-							"write": false
-						}
-					]
-				},
-				{
-					"gameName": "Style Savvy: Styling Star",
-					"gameID": [
-						"00040000001C2500"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Unlock an Animal Crossing pattern",
 							"write": false
 						}
 					]
@@ -40080,21 +40031,6 @@
 						{
 							"Usage": "Call on amiibo phone to design the character's home on demand / Store house design and furniture for sharing",
 							"write": true
-						}
-					]
-				},
-				{
-					"gameName": "Animal Crossing: New Leaf",
-					"gameID": [
-						"0004000000086400",
-						"0004000000086300",
-						"0004000000198F00",
-						"0004000000198E00"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Invite the character to give you a special item",
-							"write": false
 						}
 					]
 				},
@@ -40592,6 +40528,21 @@
 							"write": false
 						}
 					]
+				},
+				{
+					"gameName": "Yoshi's Woolly World",
+					"gameID": [
+						"00040000001A4200",
+						"00040000001A4100",
+						"00040000001B6C00",
+						"00040000001B6D00"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock a character-based Yoshi yarn pattern",
+							"write": false
+						}
+					]
 				}
 			],
 			"gamesWiiU": [
@@ -40720,6 +40671,18 @@
 					]
 				},
 				{
+					"gameName": "Style Savvy: Styling Star",
+					"gameID": [
+						"00040000001C2500"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock an Animal Crossing pattern",
+							"write": false
+						}
+					]
+				},
+				{
 					"gameName": "Yoshi's Woolly World",
 					"gameID": [
 						"00040000001A4200",
@@ -40832,6 +40795,21 @@
 					]
 				},
 				{
+					"gameName": "Animal Crossing: New Leaf",
+					"gameID": [
+						"0004000000086400",
+						"0004000000086300",
+						"0004000000198F00",
+						"0004000000198E00"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Invite the character to give you an item or move to your town",
+							"write": false
+						}
+					]
+				},
+				{
 					"gameName": "Kirby: Planet Robobot",
 					"gameID": [
 						"0004000000189600",
@@ -40841,18 +40819,6 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
-							"write": false
-						}
-					]
-				},
-				{
-					"gameName": "Style Savvy: Styling Star",
-					"gameID": [
-						"00040000001C2500"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Unlock an Animal Crossing pattern",
 							"write": false
 						}
 					]
@@ -41228,18 +41194,6 @@
 							"write": false
 						}
 					]
-				},
-				{
-					"gameName": "Style Savvy: Styling Star",
-					"gameID": [
-						"00040000001C2500"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Unlock an Animal Crossing pattern",
-							"write": false
-						}
-					]
 				}
 			],
 			"gamesWiiU": [
@@ -41343,18 +41297,6 @@
 							"write": false
 						}
 					]
-				},
-				{
-					"gameName": "Style Savvy: Styling Star",
-					"gameID": [
-						"00040000001C2500"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Unlock an Animal Crossing pattern",
-							"write": false
-						}
-					]
 				}
 			],
 			"gamesWiiU": [],
@@ -41423,20 +41365,6 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Invite the character to give you an item or move to your town",
-							"write": false
-						}
-					]
-				},
-				{
-					"gameName": "Kirby: Planet Robobot",
-					"gameID": [
-						"0004000000189600",
-						"0004000000183600",
-						"0004000000189800"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
 							"write": false
 						}
 					]
@@ -41812,6 +41740,20 @@
 					]
 				},
 				{
+					"gameName": "Kirby: Planet Robobot",
+					"gameID": [
+						"0004000000189600",
+						"0004000000183600",
+						"0004000000189800"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
+							"write": false
+						}
+					]
+				},
+				{
 					"gameName": "Style Savvy: Styling Star",
 					"gameID": [
 						"00040000001C2500"
@@ -41938,6 +41880,18 @@
 							"write": false
 						}
 					]
+				},
+				{
+					"gameName": "Style Savvy: Styling Star",
+					"gameID": [
+						"00040000001C2500"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock an Animal Crossing pattern",
+							"write": false
+						}
+					]
 				}
 			],
 			"gamesWiiU": [
@@ -42023,21 +41977,6 @@
 						{
 							"Usage": "Call on amiibo phone to design the character's home on demand / Store house design and furniture for sharing",
 							"write": true
-						}
-					]
-				},
-				{
-					"gameName": "Animal Crossing: New Leaf",
-					"gameID": [
-						"0004000000086400",
-						"0004000000086300",
-						"0004000000198F00",
-						"0004000000198E00"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Invite the character to give you an item or move to your town",
-							"write": false
 						}
 					]
 				},
@@ -42151,6 +42090,21 @@
 						{
 							"Usage": "Call on amiibo phone to design the character's home on demand / Store house design and furniture for sharing",
 							"write": true
+						}
+					]
+				},
+				{
+					"gameName": "Animal Crossing: New Leaf",
+					"gameID": [
+						"0004000000086400",
+						"0004000000086300",
+						"0004000000198F00",
+						"0004000000198E00"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Invite the character to give you an item or move to your town",
+							"write": false
 						}
 					]
 				},
@@ -42278,20 +42232,6 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Invite the character to give you an item or move to your town",
-							"write": false
-						}
-					]
-				},
-				{
-					"gameName": "Kirby: Planet Robobot",
-					"gameID": [
-						"0004000000189600",
-						"0004000000183600",
-						"0004000000189800"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
 							"write": false
 						}
 					]
@@ -42763,6 +42703,18 @@
 							"write": false
 						}
 					]
+				},
+				{
+					"gameName": "Style Savvy: Styling Star",
+					"gameID": [
+						"00040000001C2500"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock an Animal Crossing pattern",
+							"write": false
+						}
+					]
 				}
 			],
 			"gamesWiiU": [
@@ -42866,18 +42818,6 @@
 							"write": false
 						}
 					]
-				},
-				{
-					"gameName": "Style Savvy: Styling Star",
-					"gameID": [
-						"00040000001C2500"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Unlock an Animal Crossing pattern",
-							"write": false
-						}
-					]
 				}
 			],
 			"gamesWiiU": [],
@@ -42932,21 +42872,6 @@
 						{
 							"Usage": "Call on amiibo phone to design the character's home on demand / Store house design and furniture for sharing",
 							"write": true
-						}
-					]
-				},
-				{
-					"gameName": "Animal Crossing: New Leaf",
-					"gameID": [
-						"0004000000086400",
-						"0004000000086300",
-						"0004000000198F00",
-						"0004000000198E00"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Invite the character to give you an item or move to your town",
-							"write": false
 						}
 					]
 				},
@@ -43188,6 +43113,21 @@
 						{
 							"Usage": "Call on amiibo phone to design the character's home on demand / Store house design and furniture for sharing",
 							"write": true
+						}
+					]
+				},
+				{
+					"gameName": "Animal Crossing: New Leaf",
+					"gameID": [
+						"0004000000086400",
+						"0004000000086300",
+						"0004000000198F00",
+						"0004000000198E00"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Invite the character to give you an item or move to your town",
+							"write": false
 						}
 					]
 				},
@@ -43460,18 +43400,6 @@
 							"write": false
 						}
 					]
-				},
-				{
-					"gameName": "Style Savvy: Styling Star",
-					"gameID": [
-						"00040000001C2500"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Unlock an Animal Crossing pattern",
-							"write": false
-						}
-					]
 				}
 			],
 			"gamesWiiU": [
@@ -43689,6 +43617,21 @@
 					]
 				},
 				{
+					"gameName": "Animal Crossing: New Leaf",
+					"gameID": [
+						"0004000000086400",
+						"0004000000086300",
+						"0004000000198F00",
+						"0004000000198E00"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Invite the character to give you an item or move to your town",
+							"write": false
+						}
+					]
+				},
+				{
 					"gameName": "Kirby: Planet Robobot",
 					"gameID": [
 						"0004000000189600",
@@ -43698,18 +43641,6 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
-							"write": false
-						}
-					]
-				},
-				{
-					"gameName": "Style Savvy: Styling Star",
-					"gameID": [
-						"00040000001C2500"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Unlock an Animal Crossing pattern",
 							"write": false
 						}
 					]
@@ -44125,18 +44056,6 @@
 							"write": false
 						}
 					]
-				},
-				{
-					"gameName": "Style Savvy: Styling Star",
-					"gameID": [
-						"00040000001C2500"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Unlock an Animal Crossing pattern",
-							"write": false
-						}
-					]
 				}
 			],
 			"gamesWiiU": [
@@ -44172,6 +44091,18 @@
 				}
 			],
 			"gamesSwitch": [
+				{
+					"gameName": "Animal Crossing: New Horizons",
+					"gameID": [
+						"01006F8002326000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Invite the character to your campsite and, eventually, to move to your island / Invite the character for photo shoots at Photopia / Unlock a special poster of the character / Invite the character to the Roost for a cup of coffee / Invite the character to Happy Home Paradise to design their vacation home",
+							"write": false
+						}
+					]
+				},
 				{
 					"gameName": "Conga Master Party!",
 					"gameID": [
@@ -44426,6 +44357,21 @@
 					]
 				},
 				{
+					"gameName": "Animal Crossing: New Leaf",
+					"gameID": [
+						"0004000000086400",
+						"0004000000086300",
+						"0004000000198F00",
+						"0004000000198E00"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Invite the character to give you an item or move to your town",
+							"write": false
+						}
+					]
+				},
+				{
 					"gameName": "Kirby: Planet Robobot",
 					"gameID": [
 						"0004000000189600",
@@ -44654,6 +44600,19 @@
 		"0x023f000101660502": {
 			"games3DS": [
 				{
+					"gameName": "Animal Crossing: Happy Home Designer",
+					"gameID": [
+						"000400000014F100",
+						"000400000014F200"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Call on amiibo phone to design the character's home on demand / Store house design and furniture for sharing",
+							"write": true
+						}
+					]
+				},
+				{
 					"gameName": "Animal Crossing: New Leaf",
 					"gameID": [
 						"0004000000086400",
@@ -44778,6 +44737,21 @@
 						{
 							"Usage": "Call on amiibo phone to design the character's home on demand / Store house design and furniture for sharing",
 							"write": true
+						}
+					]
+				},
+				{
+					"gameName": "Animal Crossing: New Leaf",
+					"gameID": [
+						"0004000000086400",
+						"0004000000086300",
+						"0004000000198F00",
+						"0004000000198E00"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Invite the character to give you an item or move to your town",
+							"write": false
 						}
 					]
 				},
@@ -45025,20 +44999,6 @@
 					]
 				},
 				{
-					"gameName": "Kirby: Planet Robobot",
-					"gameID": [
-						"0004000000189600",
-						"0004000000183600",
-						"0004000000189800"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
-							"write": false
-						}
-					]
-				},
-				{
 					"gameName": "Style Savvy: Styling Star",
 					"gameID": [
 						"00040000001C2500"
@@ -45131,18 +45091,6 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
-							"write": false
-						}
-					]
-				},
-				{
-					"gameName": "Style Savvy: Styling Star",
-					"gameID": [
-						"00040000001C2500"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Unlock an Animal Crossing pattern",
 							"write": false
 						}
 					]
@@ -45748,20 +45696,6 @@
 					]
 				},
 				{
-					"gameName": "Kirby: Planet Robobot",
-					"gameID": [
-						"0004000000189600",
-						"0004000000183600",
-						"0004000000189800"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
-							"write": false
-						}
-					]
-				},
-				{
 					"gameName": "Style Savvy: Styling Star",
 					"gameID": [
 						"00040000001C2500"
@@ -45922,7 +45856,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Use the character in mini-games",
+							"Usage": "Place the character's house on the game board",
 							"write": false
 						}
 					]
@@ -45936,7 +45870,7 @@
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Place the character's house on the game board",
+							"Usage": "Use the character in mini-games",
 							"write": false
 						}
 					]
@@ -46005,21 +45939,6 @@
 						{
 							"Usage": "Call on amiibo phone to design the character's home on demand / Store house design and furniture for sharing",
 							"write": true
-						}
-					]
-				},
-				{
-					"gameName": "Animal Crossing: New Leaf",
-					"gameID": [
-						"0004000000086400",
-						"0004000000086300",
-						"0004000000198F00",
-						"0004000000198E00"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Invite the character to give you an item or move to your town",
-							"write": false
 						}
 					]
 				},
@@ -46161,18 +46080,6 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
-							"write": false
-						}
-					]
-				},
-				{
-					"gameName": "Style Savvy: Styling Star",
-					"gameID": [
-						"00040000001C2500"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Unlock an Animal Crossing pattern",
 							"write": false
 						}
 					]
@@ -46389,6 +46296,21 @@
 						{
 							"Usage": "Call on amiibo phone to design the character's home on demand / Store house design and furniture for sharing",
 							"write": true
+						}
+					]
+				},
+				{
+					"gameName": "Animal Crossing: New Leaf",
+					"gameID": [
+						"0004000000086400",
+						"0004000000086300",
+						"0004000000198F00",
+						"0004000000198E00"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Invite the character to give you an item or move to your town",
+							"write": false
 						}
 					]
 				},
@@ -46634,21 +46556,6 @@
 					]
 				},
 				{
-					"gameName": "Animal Crossing: New Leaf",
-					"gameID": [
-						"0004000000086400",
-						"0004000000086300",
-						"0004000000198F00",
-						"0004000000198E00"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Invite the character to give you an item or move to your town",
-							"write": false
-						}
-					]
-				},
-				{
 					"gameName": "Kirby: Planet Robobot",
 					"gameID": [
 						"0004000000189600",
@@ -46758,21 +46665,6 @@
 						{
 							"Usage": "Call on amiibo phone to design the character's home on demand / Store house design and furniture for sharing",
 							"write": true
-						}
-					]
-				},
-				{
-					"gameName": "Animal Crossing: New Leaf",
-					"gameID": [
-						"0004000000086400",
-						"0004000000086300",
-						"0004000000198F00",
-						"0004000000198E00"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Invite the character to give you an item or move to your town",
-							"write": false
 						}
 					]
 				},
@@ -46890,21 +46782,6 @@
 					]
 				},
 				{
-					"gameName": "Animal Crossing: New Leaf",
-					"gameID": [
-						"0004000000086400",
-						"0004000000086300",
-						"0004000000198F00",
-						"0004000000198E00"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Invite the character to give you an item or move to your town",
-							"write": false
-						}
-					]
-				},
-				{
 					"gameName": "Kirby: Planet Robobot",
 					"gameID": [
 						"0004000000189600",
@@ -46914,6 +46791,18 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Style Savvy: Styling Star",
+					"gameID": [
+						"00040000001C2500"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock an Animal Crossing pattern",
 							"write": false
 						}
 					]
@@ -48195,18 +48084,6 @@
 							"write": false
 						}
 					]
-				},
-				{
-					"gameName": "Style Savvy: Styling Star",
-					"gameID": [
-						"00040000001C2500"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Unlock an Animal Crossing pattern",
-							"write": false
-						}
-					]
 				}
 			],
 			"gamesWiiU": [
@@ -48835,18 +48712,6 @@
 							"write": false
 						}
 					]
-				},
-				{
-					"gameName": "Style Savvy: Styling Star",
-					"gameID": [
-						"00040000001C2500"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Unlock an Animal Crossing pattern",
-							"write": false
-						}
-					]
 				}
 			],
 			"gamesWiiU": [
@@ -49202,6 +49067,21 @@
 					]
 				},
 				{
+					"gameName": "Animal Crossing: New Leaf",
+					"gameID": [
+						"0004000000086400",
+						"0004000000086300",
+						"0004000000198F00",
+						"0004000000198E00"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Invite the character to give you an item or move to your town",
+							"write": false
+						}
+					]
+				},
+				{
 					"gameName": "Kirby: Planet Robobot",
 					"gameID": [
 						"0004000000189600",
@@ -49321,21 +49201,6 @@
 						{
 							"Usage": "Call on amiibo phone to design the character's home on demand / Store house design and furniture for sharing",
 							"write": true
-						}
-					]
-				},
-				{
-					"gameName": "Animal Crossing: New Leaf",
-					"gameID": [
-						"0004000000086400",
-						"0004000000086300",
-						"0004000000198F00",
-						"0004000000198E00"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Invite the character to give you an item or move to your town",
-							"write": false
 						}
 					]
 				},
@@ -49467,18 +49332,6 @@
 							"write": false
 						}
 					]
-				},
-				{
-					"gameName": "Style Savvy: Styling Star",
-					"gameID": [
-						"00040000001C2500"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Unlock an Animal Crossing pattern",
-							"write": false
-						}
-					]
 				}
 			],
 			"gamesWiiU": [],
@@ -49539,13 +49392,15 @@
 					]
 				},
 				{
-					"gameName": "Style Savvy: Styling Star",
+					"gameName": "Kirby: Planet Robobot",
 					"gameID": [
-						"00040000001C2500"
+						"0004000000189600",
+						"0004000000183600",
+						"0004000000189800"
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Unlock an Animal Crossing pattern",
+							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
 							"write": false
 						}
 					]
@@ -49732,20 +49587,6 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Invite the character to visit your RV campsite, give you an item, and/or move to your town",
-							"write": false
-						}
-					]
-				},
-				{
-					"gameName": "Kirby: Planet Robobot",
-					"gameID": [
-						"0004000000189600",
-						"0004000000183600",
-						"0004000000189800"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
 							"write": false
 						}
 					]
@@ -50873,6 +50714,18 @@
 							"write": false
 						}
 					]
+				},
+				{
+					"gameName": "Mario Kart 8 Deluxe",
+					"gameID": [
+						"0100152000022000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock an Animal Crossing-themed Mii racing suit",
+							"write": false
+						}
+					]
 				}
 			]
 		},
@@ -51034,18 +50887,6 @@
 							"write": false
 						}
 					]
-				},
-				{
-					"gameName": "Style Savvy: Styling Star",
-					"gameID": [
-						"00040000001C2500"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Unlock an Animal Crossing pattern",
-							"write": false
-						}
-					]
 				}
 			],
 			"gamesWiiU": [],
@@ -51114,20 +50955,6 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Invite the character to give you an item or move to your town",
-							"write": false
-						}
-					]
-				},
-				{
-					"gameName": "Kirby: Planet Robobot",
-					"gameID": [
-						"0004000000189600",
-						"0004000000183600",
-						"0004000000189800"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
 							"write": false
 						}
 					]
@@ -51242,6 +51069,20 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Invite the character to give you an item or move to your town",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Kirby: Planet Robobot",
+					"gameID": [
+						"0004000000189600",
+						"0004000000183600",
+						"0004000000189800"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
 							"write": false
 						}
 					]
@@ -51470,6 +51311,21 @@
 						{
 							"Usage": "Call on amiibo phone to design the character's home on demand / Store house design and furniture for sharing",
 							"write": true
+						}
+					]
+				},
+				{
+					"gameName": "Animal Crossing: New Leaf",
+					"gameID": [
+						"0004000000086400",
+						"0004000000086300",
+						"0004000000198F00",
+						"0004000000198E00"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Invite the character to give you an item or move to your town",
+							"write": false
 						}
 					]
 				},
@@ -51799,6 +51655,21 @@
 					]
 				},
 				{
+					"gameName": "Animal Crossing: New Leaf",
+					"gameID": [
+						"0004000000086400",
+						"0004000000086300",
+						"0004000000198F00",
+						"0004000000198E00"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Invite the character to give you an item or move to your town",
+							"write": false
+						}
+					]
+				},
+				{
 					"gameName": "Kirby: Planet Robobot",
 					"gameID": [
 						"0004000000189600",
@@ -51939,18 +51810,6 @@
 							"write": false
 						}
 					]
-				},
-				{
-					"gameName": "Style Savvy: Styling Star",
-					"gameID": [
-						"00040000001C2500"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Unlock an Animal Crossing pattern",
-							"write": false
-						}
-					]
 				}
 			],
 			"gamesWiiU": [
@@ -52036,6 +51895,21 @@
 						{
 							"Usage": "Call on amiibo phone to design the character's home on demand / Store house design and furniture for sharing",
 							"write": true
+						}
+					]
+				},
+				{
+					"gameName": "Animal Crossing: New Leaf",
+					"gameID": [
+						"0004000000086400",
+						"0004000000086300",
+						"0004000000198F00",
+						"0004000000198E00"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Invite the character to give you an item or move to your town",
+							"write": false
 						}
 					]
 				},
@@ -52264,6 +52138,18 @@
 							"write": false
 						}
 					]
+				},
+				{
+					"gameName": "Style Savvy: Styling Star",
+					"gameID": [
+						"00040000001C2500"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock an Animal Crossing pattern",
+							"write": false
+						}
+					]
 				}
 			],
 			"gamesWiiU": [
@@ -52349,21 +52235,6 @@
 						{
 							"Usage": "Call on amiibo phone to design the character's home on demand / Store house design and furniture for sharing",
 							"write": true
-						}
-					]
-				},
-				{
-					"gameName": "Animal Crossing: New Leaf",
-					"gameID": [
-						"0004000000086400",
-						"0004000000086300",
-						"0004000000198F00",
-						"0004000000198E00"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Invite the character to give you an item or move to your town",
-							"write": false
 						}
 					]
 				},
@@ -52505,18 +52376,6 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
-							"write": false
-						}
-					]
-				},
-				{
-					"gameName": "Style Savvy: Styling Star",
-					"gameID": [
-						"00040000001C2500"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Unlock an Animal Crossing pattern",
 							"write": false
 						}
 					]
@@ -52962,6 +52821,18 @@
 							"write": false
 						}
 					]
+				},
+				{
+					"gameName": "Mario Kart 8 Deluxe",
+					"gameID": [
+						"0100152000022000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock an Animal Crossing-themed Mii racing suit",
+							"write": false
+						}
+					]
 				}
 			]
 		},
@@ -53109,21 +52980,6 @@
 					]
 				},
 				{
-					"gameName": "Animal Crossing: New Leaf",
-					"gameID": [
-						"0004000000086400",
-						"0004000000086300",
-						"0004000000198F00",
-						"0004000000198E00"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Invite the character to give you an item or move to your town",
-							"write": false
-						}
-					]
-				},
-				{
 					"gameName": "Kirby: Planet Robobot",
 					"gameID": [
 						"0004000000189600",
@@ -53247,6 +53103,20 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Invite the character to give you an item or move to your town",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Kirby: Planet Robobot",
+					"gameID": [
+						"0004000000189600",
+						"0004000000183600",
+						"0004000000189800"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
 							"write": false
 						}
 					]
@@ -53863,13 +53733,15 @@
 					]
 				},
 				{
-					"gameName": "Style Savvy: Styling Star",
+					"gameName": "Kirby: Planet Robobot",
 					"gameID": [
-						"00040000001C2500"
+						"0004000000189600",
+						"0004000000183600",
+						"0004000000189800"
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Unlock an Animal Crossing pattern",
+							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
 							"write": false
 						}
 					]
@@ -53948,21 +53820,6 @@
 		},
 		"0x02e00101031d0502": {
 			"games3DS": [
-				{
-					"gameName": "Animal Crossing: New Leaf",
-					"gameID": [
-						"0004000000086400",
-						"0004000000086300",
-						"0004000000198F00",
-						"0004000000198E00"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Invite the character to visit your RV campsite, give you an item, and/or move to your town",
-							"write": false
-						}
-					]
-				},
 				{
 					"gameName": "Kirby: Planet Robobot",
 					"gameID": [
@@ -54329,20 +54186,6 @@
 					]
 				},
 				{
-					"gameName": "Kirby: Planet Robobot",
-					"gameID": [
-						"0004000000189600",
-						"0004000000183600",
-						"0004000000189800"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
-							"write": false
-						}
-					]
-				},
-				{
 					"gameName": "Style Savvy: Styling Star",
 					"gameID": [
 						"00040000001C2500"
@@ -54570,21 +54413,6 @@
 					]
 				},
 				{
-					"gameName": "Animal Crossing: New Leaf",
-					"gameID": [
-						"0004000000086400",
-						"0004000000086300",
-						"0004000000198F00",
-						"0004000000198E00"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Invite the character to give you an item or move to your town",
-							"write": false
-						}
-					]
-				},
-				{
 					"gameName": "Kirby: Planet Robobot",
 					"gameID": [
 						"0004000000189600",
@@ -54698,21 +54526,6 @@
 					]
 				},
 				{
-					"gameName": "Animal Crossing: New Leaf",
-					"gameID": [
-						"0004000000086400",
-						"0004000000086300",
-						"0004000000198F00",
-						"0004000000198E00"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Invite the character to give you an item or move to your town",
-							"write": false
-						}
-					]
-				},
-				{
 					"gameName": "Kirby: Planet Robobot",
 					"gameID": [
 						"0004000000189600",
@@ -54722,6 +54535,18 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Style Savvy: Styling Star",
+					"gameID": [
+						"00040000001C2500"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock an Animal Crossing pattern",
 							"write": false
 						}
 					]
@@ -55410,21 +55235,6 @@
 					]
 				},
 				{
-					"gameName": "Animal Crossing: New Leaf",
-					"gameID": [
-						"0004000000086400",
-						"0004000000086300",
-						"0004000000198F00",
-						"0004000000198E00"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Invite the character to give you an item or move to your town",
-							"write": false
-						}
-					]
-				},
-				{
 					"gameName": "Kirby: Planet Robobot",
 					"gameID": [
 						"0004000000189600",
@@ -55548,6 +55358,20 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Invite the character to give you an item or move to your town",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Kirby: Planet Robobot",
+					"gameID": [
+						"0004000000189600",
+						"0004000000183600",
+						"0004000000189800"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
 							"write": false
 						}
 					]
@@ -55780,15 +55604,16 @@
 					]
 				},
 				{
-					"gameName": "Kirby: Planet Robobot",
+					"gameName": "Animal Crossing: New Leaf",
 					"gameID": [
-						"0004000000189600",
-						"0004000000183600",
-						"0004000000189800"
+						"0004000000086400",
+						"0004000000086300",
+						"0004000000198F00",
+						"0004000000198E00"
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
+							"Usage": "Invite the character to give you an item or move to your town",
 							"write": false
 						}
 					]
@@ -55917,18 +55742,6 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
-							"write": false
-						}
-					]
-				},
-				{
-					"gameName": "Style Savvy: Styling Star",
-					"gameID": [
-						"00040000001C2500"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Unlock an Animal Crossing pattern",
 							"write": false
 						}
 					]
@@ -56533,6 +56346,21 @@
 					]
 				},
 				{
+					"gameName": "Animal Crossing: New Leaf",
+					"gameID": [
+						"0004000000086400",
+						"0004000000086300",
+						"0004000000198F00",
+						"0004000000198E00"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Invite the character to give you an item or move to your town",
+							"write": false
+						}
+					]
+				},
+				{
 					"gameName": "Kirby: Planet Robobot",
 					"gameID": [
 						"0004000000189600",
@@ -56642,21 +56470,6 @@
 						{
 							"Usage": "Call on amiibo phone to design the character's home on demand / Store house design and furniture for sharing",
 							"write": true
-						}
-					]
-				},
-				{
-					"gameName": "Animal Crossing: New Leaf",
-					"gameID": [
-						"0004000000086400",
-						"0004000000086300",
-						"0004000000198F00",
-						"0004000000198E00"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Invite the character to give you an item or move to your town",
-							"write": false
 						}
 					]
 				},
@@ -57030,21 +56843,6 @@
 					]
 				},
 				{
-					"gameName": "Animal Crossing: New Leaf",
-					"gameID": [
-						"0004000000086400",
-						"0004000000086300",
-						"0004000000198F00",
-						"0004000000198E00"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Invite the character to give you an item or move to your town",
-							"write": false
-						}
-					]
-				},
-				{
 					"gameName": "Kirby: Planet Robobot",
 					"gameID": [
 						"0004000000189600",
@@ -57286,6 +57084,21 @@
 					]
 				},
 				{
+					"gameName": "Animal Crossing: New Leaf",
+					"gameID": [
+						"0004000000086400",
+						"0004000000086300",
+						"0004000000198F00",
+						"0004000000198E00"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Invite the character to give you an item or move to your town",
+							"write": false
+						}
+					]
+				},
+				{
 					"gameName": "Kirby: Planet Robobot",
 					"gameID": [
 						"0004000000189600",
@@ -57395,21 +57208,6 @@
 						{
 							"Usage": "Call on amiibo phone to design the character's home on demand / Store house design and furniture for sharing",
 							"write": true
-						}
-					]
-				},
-				{
-					"gameName": "Animal Crossing: New Leaf",
-					"gameID": [
-						"0004000000086400",
-						"0004000000086300",
-						"0004000000198F00",
-						"0004000000198E00"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Invite the character to give you an item or move to your town",
-							"write": false
 						}
 					]
 				},
@@ -57626,20 +57424,6 @@
 					]
 				},
 				{
-					"gameName": "Kirby: Planet Robobot",
-					"gameID": [
-						"0004000000189600",
-						"0004000000183600",
-						"0004000000189800"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
-							"write": false
-						}
-					]
-				},
-				{
 					"gameName": "Style Savvy: Styling Star",
 					"gameID": [
 						"00040000001C2500"
@@ -57726,21 +57510,6 @@
 		"0x0314000102f40502": {
 			"games3DS": [
 				{
-					"gameName": "Animal Crossing: New Leaf",
-					"gameID": [
-						"0004000000086400",
-						"0004000000086300",
-						"0004000000198F00",
-						"0004000000198E00"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Invite the character to visit your RV campsite, give you an item, and/or move to your town",
-							"write": false
-						}
-					]
-				},
-				{
 					"gameName": "Kirby: Planet Robobot",
 					"gameID": [
 						"0004000000189600",
@@ -57809,19 +57578,6 @@
 		},
 		"0x0316000101c00502": {
 			"games3DS": [
-				{
-					"gameName": "Animal Crossing: Happy Home Designer",
-					"gameID": [
-						"000400000014F100",
-						"000400000014F200"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Call on amiibo phone to design the character's home on demand / Store house design and furniture for sharing",
-							"write": true
-						}
-					]
-				},
 				{
 					"gameName": "Animal Crossing: New Leaf",
 					"gameID": [
@@ -58192,6 +57948,21 @@
 					]
 				},
 				{
+					"gameName": "Animal Crossing: New Leaf",
+					"gameID": [
+						"0004000000086400",
+						"0004000000086300",
+						"0004000000198F00",
+						"0004000000198E00"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Invite the character to give you an item or move to your town",
+							"write": false
+						}
+					]
+				},
+				{
 					"gameName": "Kirby: Planet Robobot",
 					"gameID": [
 						"0004000000189600",
@@ -58301,6 +58072,21 @@
 						{
 							"Usage": "Call on amiibo phone to design the character's home on demand / Store house design and furniture for sharing",
 							"write": true
+						}
+					]
+				},
+				{
+					"gameName": "Animal Crossing: New Leaf",
+					"gameID": [
+						"0004000000086400",
+						"0004000000086300",
+						"0004000000198F00",
+						"0004000000198E00"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Invite the character to give you an item or move to your town",
+							"write": false
 						}
 					]
 				},
@@ -58490,6 +58276,18 @@
 					]
 				},
 				{
+					"gameName": "Conga Master Party!",
+					"gameID": [
+						"01007EF00399C000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock a special costume",
+							"write": false
+						}
+					]
+				},
+				{
 					"gameName": "Mario Kart 8 Deluxe",
 					"gameID": [
 						"0100152000022000"
@@ -58543,6 +58341,18 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Style Savvy: Styling Star",
+					"gameID": [
+						"00040000001C2500"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock an Animal Crossing pattern",
 							"write": false
 						}
 					]
@@ -58843,6 +58653,21 @@
 						{
 							"Usage": "Call on amiibo phone to design the character's home on demand / Store house design and furniture for sharing",
 							"write": true
+						}
+					]
+				},
+				{
+					"gameName": "Animal Crossing: New Leaf",
+					"gameID": [
+						"0004000000086400",
+						"0004000000086300",
+						"0004000000198F00",
+						"0004000000198E00"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Invite the character to give you an item or move to your town",
+							"write": false
 						}
 					]
 				},
@@ -59172,6 +58997,20 @@
 					]
 				},
 				{
+					"gameName": "Kirby: Planet Robobot",
+					"gameID": [
+						"0004000000189600",
+						"0004000000183600",
+						"0004000000189800"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
+							"write": false
+						}
+					]
+				},
+				{
 					"gameName": "Style Savvy: Styling Star",
 					"gameID": [
 						"00040000001C2500"
@@ -59285,6 +59124,18 @@
 							"write": false
 						}
 					]
+				},
+				{
+					"gameName": "Style Savvy: Styling Star",
+					"gameID": [
+						"00040000001C2500"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock an Animal Crossing pattern",
+							"write": false
+						}
+					]
 				}
 			],
 			"gamesWiiU": [],
@@ -59347,15 +59198,16 @@
 					]
 				},
 				{
-					"gameName": "Kirby: Planet Robobot",
+					"gameName": "Animal Crossing: New Leaf",
 					"gameID": [
-						"0004000000189600",
-						"0004000000183600",
-						"0004000000189800"
+						"0004000000086400",
+						"0004000000086300",
+						"0004000000198F00",
+						"0004000000198E00"
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
+							"Usage": "Invite the character to give you an item or move to your town",
 							"write": false
 						}
 					]
@@ -59456,6 +59308,21 @@
 						{
 							"Usage": "Call on amiibo phone to design the character's home on demand / Store house design and furniture for sharing",
 							"write": true
+						}
+					]
+				},
+				{
+					"gameName": "Animal Crossing: New Leaf",
+					"gameID": [
+						"0004000000086400",
+						"0004000000086300",
+						"0004000000198F00",
+						"0004000000198E00"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Invite the character to give you an item or move to your town",
+							"write": false
 						}
 					]
 				},
@@ -59600,6 +59467,18 @@
 							"write": false
 						}
 					]
+				},
+				{
+					"gameName": "Style Savvy: Styling Star",
+					"gameID": [
+						"00040000001C2500"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock an Animal Crossing pattern",
+							"write": false
+						}
+					]
 				}
 			],
 			"gamesWiiU": [
@@ -59716,18 +59595,6 @@
 							"write": false
 						}
 					]
-				},
-				{
-					"gameName": "Style Savvy: Styling Star",
-					"gameID": [
-						"00040000001C2500"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Unlock an Animal Crossing pattern",
-							"write": false
-						}
-					]
 				}
 			],
 			"gamesWiiU": [
@@ -59841,18 +59708,6 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
-							"write": false
-						}
-					]
-				},
-				{
-					"gameName": "Style Savvy: Styling Star",
-					"gameID": [
-						"00040000001C2500"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Unlock an Animal Crossing pattern",
 							"write": false
 						}
 					]
@@ -60097,18 +59952,6 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
-							"write": false
-						}
-					]
-				},
-				{
-					"gameName": "Style Savvy: Styling Star",
-					"gameID": [
-						"00040000001C2500"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Unlock an Animal Crossing pattern",
 							"write": false
 						}
 					]
@@ -60413,15 +60256,16 @@
 					]
 				},
 				{
-					"gameName": "Kirby: Planet Robobot",
+					"gameName": "Animal Crossing: New Leaf",
 					"gameID": [
-						"0004000000189600",
-						"0004000000183600",
-						"0004000000189800"
+						"0004000000086400",
+						"0004000000086300",
+						"0004000000198F00",
+						"0004000000198E00"
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
+							"Usage": "Invite the character to give you an item or move to your town",
 							"write": false
 						}
 					]
@@ -60610,6 +60454,21 @@
 					]
 				},
 				{
+					"gameName": "Animal Crossing: New Leaf",
+					"gameID": [
+						"0004000000086400",
+						"0004000000086300",
+						"0004000000198F00",
+						"0004000000198E00"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Invite the character to give you an item or move to your town",
+							"write": false
+						}
+					]
+				},
+				{
 					"gameName": "Kirby: Planet Robobot",
 					"gameID": [
 						"0004000000189600",
@@ -60750,18 +60609,6 @@
 							"write": false
 						}
 					]
-				},
-				{
-					"gameName": "Style Savvy: Styling Star",
-					"gameID": [
-						"00040000001C2500"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Unlock an Animal Crossing pattern",
-							"write": false
-						}
-					]
 				}
 			],
 			"gamesWiiU": [
@@ -60853,6 +60700,20 @@
 					]
 				},
 				{
+					"gameName": "Kirby: Planet Robobot",
+					"gameID": [
+						"0004000000189600",
+						"0004000000183600",
+						"0004000000189800"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
+							"write": false
+						}
+					]
+				},
+				{
 					"gameName": "Style Savvy: Styling Star",
 					"gameID": [
 						"00040000001C2500"
@@ -60917,6 +60778,21 @@
 						{
 							"Usage": "Call on amiibo phone to design the character's home on demand / Store house design and furniture for sharing",
 							"write": true
+						}
+					]
+				},
+				{
+					"gameName": "Animal Crossing: New Leaf",
+					"gameID": [
+						"0004000000086400",
+						"0004000000086300",
+						"0004000000198F00",
+						"0004000000198E00"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Invite the character to give you an item or move to your town",
+							"write": false
 						}
 					]
 				},
@@ -61049,15 +60925,13 @@
 					]
 				},
 				{
-					"gameName": "Kirby: Planet Robobot",
+					"gameName": "Style Savvy: Styling Star",
 					"gameID": [
-						"0004000000189600",
-						"0004000000183600",
-						"0004000000189800"
+						"00040000001C2500"
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
+							"Usage": "Unlock an Animal Crossing pattern",
 							"write": false
 						}
 					]
@@ -61278,21 +61152,6 @@
 					]
 				},
 				{
-					"gameName": "Animal Crossing: New Leaf",
-					"gameID": [
-						"0004000000086400",
-						"0004000000086300",
-						"0004000000198F00",
-						"0004000000198E00"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Invite the character to give you an item or move to your town",
-							"write": false
-						}
-					]
-				},
-				{
 					"gameName": "Kirby: Planet Robobot",
 					"gameID": [
 						"0004000000189600",
@@ -61406,6 +61265,21 @@
 					]
 				},
 				{
+					"gameName": "Animal Crossing: New Leaf",
+					"gameID": [
+						"0004000000086400",
+						"0004000000086300",
+						"0004000000198F00",
+						"0004000000198E00"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Invite the character to give you an item or move to your town",
+							"write": false
+						}
+					]
+				},
+				{
 					"gameName": "Kirby: Planet Robobot",
 					"gameID": [
 						"0004000000189600",
@@ -61515,6 +61389,21 @@
 						{
 							"Usage": "Call on amiibo phone to design the character's home on demand / Store house design and furniture for sharing",
 							"write": true
+						}
+					]
+				},
+				{
+					"gameName": "Animal Crossing: New Leaf",
+					"gameID": [
+						"0004000000086400",
+						"0004000000086300",
+						"0004000000198F00",
+						"0004000000198E00"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Invite the character to give you an item or move to your town",
+							"write": false
 						}
 					]
 				},
@@ -61646,18 +61535,6 @@
 							"write": false
 						}
 					]
-				},
-				{
-					"gameName": "Style Savvy: Styling Star",
-					"gameID": [
-						"00040000001C2500"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Unlock an Animal Crossing pattern",
-							"write": false
-						}
-					]
 				}
 			],
 			"gamesWiiU": [],
@@ -61740,6 +61617,18 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Style Savvy: Styling Star",
+					"gameID": [
+						"00040000001C2500"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock an Animal Crossing pattern",
 							"write": false
 						}
 					]
@@ -62098,6 +61987,20 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Invite the character to give you an item or move to your town",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Kirby: Planet Robobot",
+					"gameID": [
+						"0004000000189600",
+						"0004000000183600",
+						"0004000000189800"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
 							"write": false
 						}
 					]
@@ -62754,6 +62657,20 @@
 					]
 				},
 				{
+					"gameName": "Kirby: Planet Robobot",
+					"gameID": [
+						"0004000000189600",
+						"0004000000183600",
+						"0004000000189800"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
+							"write": false
+						}
+					]
+				},
+				{
 					"gameName": "Style Savvy: Styling Star",
 					"gameID": [
 						"00040000001C2500"
@@ -62894,6 +62811,18 @@
 					]
 				},
 				{
+					"gameName": "Style Savvy: Styling Star",
+					"gameID": [
+						"00040000001C2500"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock an Animal Crossing pattern",
+							"write": false
+						}
+					]
+				},
+				{
 					"gameName": "Yoshi's Woolly World",
 					"gameID": [
 						"00040000001A4200",
@@ -63014,21 +62943,6 @@
 						{
 							"Usage": "Call on amiibo phone to design the character's home on demand / Store house design and furniture for sharing",
 							"write": true
-						}
-					]
-				},
-				{
-					"gameName": "Animal Crossing: New Leaf",
-					"gameID": [
-						"0004000000086400",
-						"0004000000086300",
-						"0004000000198F00",
-						"0004000000198E00"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Invite the character to give you an item or move to your town",
-							"write": false
 						}
 					]
 				},
@@ -63517,6 +63431,18 @@
 							"write": false
 						}
 					]
+				},
+				{
+					"gameName": "Style Savvy: Styling Star",
+					"gameID": [
+						"00040000001C2500"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock an Animal Crossing pattern",
+							"write": false
+						}
+					]
 				}
 			],
 			"gamesWiiU": [
@@ -63749,18 +63675,6 @@
 							"write": false
 						}
 					]
-				},
-				{
-					"gameName": "Style Savvy: Styling Star",
-					"gameID": [
-						"00040000001C2500"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Unlock an Animal Crossing pattern",
-							"write": false
-						}
-					]
 				}
 			],
 			"gamesWiiU": [
@@ -63846,21 +63760,6 @@
 						{
 							"Usage": "Call on amiibo phone to design the character's home on demand / Store house design and furniture for sharing",
 							"write": true
-						}
-					]
-				},
-				{
-					"gameName": "Animal Crossing: New Leaf",
-					"gameID": [
-						"0004000000086400",
-						"0004000000086300",
-						"0004000000198F00",
-						"0004000000198E00"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Invite the character to give you an item or move to your town",
-							"write": false
 						}
 					]
 				},
@@ -63978,16 +63877,15 @@
 					]
 				},
 				{
-					"gameName": "Animal Crossing: New Leaf",
+					"gameName": "Kirby: Planet Robobot",
 					"gameID": [
-						"0004000000086400",
-						"0004000000086300",
-						"0004000000198F00",
-						"0004000000198E00"
+						"0004000000189600",
+						"0004000000183600",
+						"0004000000189800"
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Invite the character to give you an item or move to your town",
+							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
 							"write": false
 						}
 					]
@@ -64119,6 +64017,18 @@
 							"write": false
 						}
 					]
+				},
+				{
+					"gameName": "Style Savvy: Styling Star",
+					"gameID": [
+						"00040000001C2500"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock an Animal Crossing pattern",
+							"write": false
+						}
+					]
 				}
 			],
 			"gamesWiiU": [
@@ -64204,6 +64114,21 @@
 						{
 							"Usage": "Call on amiibo phone to design the character's home on demand / Store house design and furniture for sharing",
 							"write": true
+						}
+					]
+				},
+				{
+					"gameName": "Animal Crossing: New Leaf",
+					"gameID": [
+						"0004000000086400",
+						"0004000000086300",
+						"0004000000198F00",
+						"0004000000198E00"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Invite the character to give you an item or move to your town",
+							"write": false
 						}
 					]
 				},
@@ -64345,6 +64270,18 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Style Savvy: Styling Star",
+					"gameID": [
+						"00040000001C2500"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock an Animal Crossing pattern",
 							"write": false
 						}
 					]
@@ -64580,6 +64517,20 @@
 					]
 				},
 				{
+					"gameName": "Kirby: Planet Robobot",
+					"gameID": [
+						"0004000000189600",
+						"0004000000183600",
+						"0004000000189800"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
+							"write": false
+						}
+					]
+				},
+				{
 					"gameName": "Style Savvy: Styling Star",
 					"gameID": [
 						"00040000001C2500"
@@ -64689,6 +64640,20 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Invite the character to give you an item or move to your town",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Kirby: Planet Robobot",
+					"gameID": [
+						"0004000000189600",
+						"0004000000183600",
+						"0004000000189800"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
 							"write": false
 						}
 					]
@@ -64864,19 +64829,6 @@
 		"0x0398000100bf0502": {
 			"games3DS": [
 				{
-					"gameName": "Animal Crossing: Happy Home Designer",
-					"gameID": [
-						"000400000014F100",
-						"000400000014F200"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Call on amiibo phone to design the character's home on demand / Store house design and furniture for sharing",
-							"write": true
-						}
-					]
-				},
-				{
 					"gameName": "Animal Crossing: New Leaf",
 					"gameID": [
 						"0004000000086400",
@@ -64887,20 +64839,6 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Invite the character to give you an item or move to your town",
-							"write": false
-						}
-					]
-				},
-				{
-					"gameName": "Kirby: Planet Robobot",
-					"gameID": [
-						"0004000000189600",
-						"0004000000183600",
-						"0004000000189800"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
 							"write": false
 						}
 					]
@@ -65001,6 +64939,21 @@
 						{
 							"Usage": "Call on amiibo phone to design the character's home on demand / Store house design and furniture for sharing",
 							"write": true
+						}
+					]
+				},
+				{
+					"gameName": "Animal Crossing: New Leaf",
+					"gameID": [
+						"0004000000086400",
+						"0004000000086300",
+						"0004000000198F00",
+						"0004000000198E00"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Invite the character to give you an item or move to your town",
+							"write": false
 						}
 					]
 				},
@@ -65374,21 +65327,6 @@
 					]
 				},
 				{
-					"gameName": "Animal Crossing: New Leaf",
-					"gameID": [
-						"0004000000086400",
-						"0004000000086300",
-						"0004000000198F00",
-						"0004000000198E00"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Invite the character to give you an item or move to your town",
-							"write": false
-						}
-					]
-				},
-				{
 					"gameName": "Kirby: Planet Robobot",
 					"gameID": [
 						"0004000000189600",
@@ -65398,6 +65336,18 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Style Savvy: Styling Star",
+					"gameID": [
+						"00040000001C2500"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock an Animal Crossing pattern",
 							"write": false
 						}
 					]
@@ -65505,6 +65455,20 @@
 					]
 				},
 				{
+					"gameName": "Kirby: Planet Robobot",
+					"gameID": [
+						"0004000000189600",
+						"0004000000183600",
+						"0004000000189800"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
+							"write": false
+						}
+					]
+				},
+				{
 					"gameName": "Style Savvy: Styling Star",
 					"gameID": [
 						"00040000001C2500"
@@ -65604,6 +65568,21 @@
 					]
 				},
 				{
+					"gameName": "Animal Crossing: New Leaf",
+					"gameID": [
+						"0004000000086400",
+						"0004000000086300",
+						"0004000000198F00",
+						"0004000000198E00"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Invite the character to give you an item or move to your town",
+							"write": false
+						}
+					]
+				},
+				{
 					"gameName": "Kirby: Planet Robobot",
 					"gameID": [
 						"0004000000189600",
@@ -65613,18 +65592,6 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
-							"write": false
-						}
-					]
-				},
-				{
-					"gameName": "Style Savvy: Styling Star",
-					"gameID": [
-						"00040000001C2500"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Unlock an Animal Crossing pattern",
 							"write": false
 						}
 					]
@@ -65872,18 +65839,6 @@
 							"write": false
 						}
 					]
-				},
-				{
-					"gameName": "Style Savvy: Styling Star",
-					"gameID": [
-						"00040000001C2500"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Unlock an Animal Crossing pattern",
-							"write": false
-						}
-					]
 				}
 			],
 			"gamesWiiU": [
@@ -65966,6 +65921,20 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Invite the character to visit your RV campsite, give you an item, and/or move to your town",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Kirby: Planet Robobot",
+					"gameID": [
+						"0004000000189600",
+						"0004000000183600",
+						"0004000000189800"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
 							"write": false
 						}
 					]
@@ -66291,21 +66260,6 @@
 						{
 							"Usage": "Call on amiibo phone to design the character's home on demand / Store house design and furniture for sharing",
 							"write": true
-						}
-					]
-				},
-				{
-					"gameName": "Animal Crossing: New Leaf",
-					"gameID": [
-						"0004000000086400",
-						"0004000000086300",
-						"0004000000198F00",
-						"0004000000198E00"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Invite the character to give you an item or move to your town",
-							"write": false
 						}
 					]
 				},
@@ -66679,6 +66633,21 @@
 					]
 				},
 				{
+					"gameName": "Animal Crossing: New Leaf",
+					"gameID": [
+						"0004000000086400",
+						"0004000000086300",
+						"0004000000198F00",
+						"0004000000198E00"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Invite the character to give you an item or move to your town",
+							"write": false
+						}
+					]
+				},
+				{
 					"gameName": "Kirby: Planet Robobot",
 					"gameID": [
 						"0004000000189600",
@@ -66916,6 +66885,21 @@
 						{
 							"Usage": "Call on amiibo phone to design the character's home on demand / Store house design and furniture for sharing",
 							"write": true
+						}
+					]
+				},
+				{
+					"gameName": "Animal Crossing: New Leaf",
+					"gameID": [
+						"0004000000086400",
+						"0004000000086300",
+						"0004000000198F00",
+						"0004000000198E00"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Invite the character to give you an item or move to your town",
+							"write": false
 						}
 					]
 				},
@@ -67373,6 +67357,21 @@
 					]
 				},
 				{
+					"gameName": "Animal Crossing: New Leaf",
+					"gameID": [
+						"0004000000086400",
+						"0004000000086300",
+						"0004000000198F00",
+						"0004000000198E00"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Invite the character to give you an item or move to your town",
+							"write": false
+						}
+					]
+				},
+				{
 					"gameName": "Kirby: Planet Robobot",
 					"gameID": [
 						"0004000000189600",
@@ -67382,18 +67381,6 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
-							"write": false
-						}
-					]
-				},
-				{
-					"gameName": "Style Savvy: Styling Star",
-					"gameID": [
-						"00040000001C2500"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Unlock an Animal Crossing pattern",
 							"write": false
 						}
 					]
@@ -67614,6 +67601,21 @@
 					]
 				},
 				{
+					"gameName": "Animal Crossing: New Leaf",
+					"gameID": [
+						"0004000000086400",
+						"0004000000086300",
+						"0004000000198F00",
+						"0004000000198E00"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Invite the character to give you an item or move to your town",
+							"write": false
+						}
+					]
+				},
+				{
 					"gameName": "Kirby: Planet Robobot",
 					"gameID": [
 						"0004000000189600",
@@ -67723,21 +67725,6 @@
 						{
 							"Usage": "Call on amiibo phone to design the character's home on demand / Store house design and furniture for sharing",
 							"write": true
-						}
-					]
-				},
-				{
-					"gameName": "Animal Crossing: New Leaf",
-					"gameID": [
-						"0004000000086400",
-						"0004000000086300",
-						"0004000000198F00",
-						"0004000000198E00"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Invite the character to give you an item or move to your town",
-							"write": false
 						}
 					]
 				},
@@ -67983,15 +67970,16 @@
 					]
 				},
 				{
-					"gameName": "Kirby: Planet Robobot",
+					"gameName": "Animal Crossing: New Leaf",
 					"gameID": [
-						"0004000000189600",
-						"0004000000183600",
-						"0004000000189800"
+						"0004000000086400",
+						"0004000000086300",
+						"0004000000198F00",
+						"0004000000198E00"
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
+							"Usage": "Invite the character to give you an item or move to your town",
 							"write": false
 						}
 					]
@@ -68110,18 +68098,6 @@
 							"write": false
 						}
 					]
-				},
-				{
-					"gameName": "Style Savvy: Styling Star",
-					"gameID": [
-						"00040000001C2500"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Unlock an Animal Crossing pattern",
-							"write": false
-						}
-					]
 				}
 			],
 			"gamesWiiU": [],
@@ -68204,6 +68180,18 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Style Savvy: Styling Star",
+					"gameID": [
+						"00040000001C2500"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock an Animal Crossing pattern",
 							"write": false
 						}
 					]
@@ -68292,6 +68280,21 @@
 						{
 							"Usage": "Call on amiibo phone to design the character's home on demand / Store house design and furniture for sharing",
 							"write": true
+						}
+					]
+				},
+				{
+					"gameName": "Animal Crossing: New Leaf",
+					"gameID": [
+						"0004000000086400",
+						"0004000000086300",
+						"0004000000198F00",
+						"0004000000198E00"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Invite the character to give you an item or move to your town",
+							"write": false
 						}
 					]
 				},
@@ -68405,21 +68408,6 @@
 						{
 							"Usage": "Call on amiibo phone to design the character's home on demand / Store house design and furniture for sharing",
 							"write": true
-						}
-					]
-				},
-				{
-					"gameName": "Animal Crossing: New Leaf",
-					"gameID": [
-						"0004000000086400",
-						"0004000000086300",
-						"0004000000198F00",
-						"0004000000198E00"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Invite the character to give you an item or move to your town",
-							"write": false
 						}
 					]
 				},
@@ -68793,6 +68781,21 @@
 					]
 				},
 				{
+					"gameName": "Animal Crossing: New Leaf",
+					"gameID": [
+						"0004000000086400",
+						"0004000000086300",
+						"0004000000198F00",
+						"0004000000198E00"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Invite the character to give you an item or move to your town",
+							"write": false
+						}
+					]
+				},
+				{
 					"gameName": "Kirby: Planet Robobot",
 					"gameID": [
 						"0004000000189600",
@@ -68802,18 +68805,6 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
-							"write": false
-						}
-					]
-				},
-				{
-					"gameName": "Style Savvy: Styling Star",
-					"gameID": [
-						"00040000001C2500"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Unlock an Animal Crossing pattern",
 							"write": false
 						}
 					]
@@ -68921,20 +68912,6 @@
 					]
 				},
 				{
-					"gameName": "Kirby: Planet Robobot",
-					"gameID": [
-						"0004000000189600",
-						"0004000000183600",
-						"0004000000189800"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
-							"write": false
-						}
-					]
-				},
-				{
 					"gameName": "Style Savvy: Styling Star",
 					"gameID": [
 						"00040000001C2500"
@@ -69036,20 +69013,6 @@
 					]
 				},
 				{
-					"gameName": "Kirby: Planet Robobot",
-					"gameID": [
-						"0004000000189600",
-						"0004000000183600",
-						"0004000000189800"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
-							"write": false
-						}
-					]
-				},
-				{
 					"gameName": "Style Savvy: Styling Star",
 					"gameID": [
 						"00040000001C2500"
@@ -69115,6 +69078,20 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Invite the character to visit your RV campsite, give you an item, and/or move to your town",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Kirby: Planet Robobot",
+					"gameID": [
+						"0004000000189600",
+						"0004000000183600",
+						"0004000000189800"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
 							"write": false
 						}
 					]
@@ -69198,6 +69175,20 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Invite the character to give you an item or move to your town",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Kirby: Planet Robobot",
+					"gameID": [
+						"0004000000189600",
+						"0004000000183600",
+						"0004000000189800"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
 							"write": false
 						}
 					]
@@ -69298,6 +69289,21 @@
 						{
 							"Usage": "Call on amiibo phone to design the character's home on demand / Store house design and furniture for sharing",
 							"write": true
+						}
+					]
+				},
+				{
+					"gameName": "Animal Crossing: New Leaf",
+					"gameID": [
+						"0004000000086400",
+						"0004000000086300",
+						"0004000000198F00",
+						"0004000000198E00"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Invite the character to give you an item or move to your town",
+							"write": false
 						}
 					]
 				},
@@ -69415,6 +69421,21 @@
 					]
 				},
 				{
+					"gameName": "Animal Crossing: New Leaf",
+					"gameID": [
+						"0004000000086400",
+						"0004000000086300",
+						"0004000000198F00",
+						"0004000000198E00"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Invite the character to give you an item or move to your town",
+							"write": false
+						}
+					]
+				},
+				{
 					"gameName": "Kirby: Planet Robobot",
 					"gameID": [
 						"0004000000189600",
@@ -69424,18 +69445,6 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
-							"write": false
-						}
-					]
-				},
-				{
-					"gameName": "Style Savvy: Styling Star",
-					"gameID": [
-						"00040000001C2500"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Unlock an Animal Crossing pattern",
 							"write": false
 						}
 					]
@@ -69555,18 +69564,6 @@
 							"write": false
 						}
 					]
-				},
-				{
-					"gameName": "Style Savvy: Styling Star",
-					"gameID": [
-						"00040000001C2500"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Unlock an Animal Crossing pattern",
-							"write": false
-						}
-					]
 				}
 			],
 			"gamesWiiU": [
@@ -69652,21 +69649,6 @@
 						{
 							"Usage": "Call on amiibo phone to design the character's home on demand / Store house design and furniture for sharing",
 							"write": true
-						}
-					]
-				},
-				{
-					"gameName": "Animal Crossing: New Leaf",
-					"gameID": [
-						"0004000000086400",
-						"0004000000086300",
-						"0004000000198F00",
-						"0004000000198E00"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Invite the character to give you an item or move to your town",
-							"write": false
 						}
 					]
 				},
@@ -69780,21 +69762,6 @@
 						{
 							"Usage": "Call on amiibo phone to design the character's home on demand / Store house design and furniture for sharing",
 							"write": true
-						}
-					]
-				},
-				{
-					"gameName": "Animal Crossing: New Leaf",
-					"gameID": [
-						"0004000000086400",
-						"0004000000086300",
-						"0004000000198F00",
-						"0004000000198E00"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Invite the character to give you an item or move to your town",
-							"write": false
 						}
 					]
 				},
@@ -70183,6 +70150,20 @@
 					]
 				},
 				{
+					"gameName": "Kirby: Planet Robobot",
+					"gameID": [
+						"0004000000189600",
+						"0004000000183600",
+						"0004000000189800"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
+							"write": false
+						}
+					]
+				},
+				{
 					"gameName": "Style Savvy: Styling Star",
 					"gameID": [
 						"00040000001C2500"
@@ -70278,6 +70259,21 @@
 						{
 							"Usage": "Call on amiibo phone to design the character's home on demand / Store house design and furniture for sharing",
 							"write": true
+						}
+					]
+				},
+				{
+					"gameName": "Animal Crossing: New Leaf",
+					"gameID": [
+						"0004000000086400",
+						"0004000000086300",
+						"0004000000198F00",
+						"0004000000198E00"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Invite the character to give you an item or move to your town",
+							"write": false
 						}
 					]
 				},
@@ -70395,15 +70391,16 @@
 					]
 				},
 				{
-					"gameName": "Kirby: Planet Robobot",
+					"gameName": "Animal Crossing: New Leaf",
 					"gameID": [
-						"0004000000189600",
-						"0004000000183600",
-						"0004000000189800"
+						"0004000000086400",
+						"0004000000086300",
+						"0004000000198F00",
+						"0004000000198E00"
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
+							"Usage": "Invite the character to give you an item or move to your town",
 							"write": false
 						}
 					]
@@ -70523,20 +70520,6 @@
 					]
 				},
 				{
-					"gameName": "Kirby: Planet Robobot",
-					"gameID": [
-						"0004000000189600",
-						"0004000000183600",
-						"0004000000189800"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
-							"write": false
-						}
-					]
-				},
-				{
 					"gameName": "Style Savvy: Styling Star",
 					"gameID": [
 						"00040000001C2500"
@@ -70632,21 +70615,6 @@
 						{
 							"Usage": "Call on amiibo phone to design the character's home on demand / Store house design and furniture for sharing",
 							"write": true
-						}
-					]
-				},
-				{
-					"gameName": "Animal Crossing: New Leaf",
-					"gameID": [
-						"0004000000086400",
-						"0004000000086300",
-						"0004000000198F00",
-						"0004000000198E00"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Invite the character to give you an item or move to your town",
-							"write": false
 						}
 					]
 				},
@@ -70791,18 +70759,6 @@
 							"write": false
 						}
 					]
-				},
-				{
-					"gameName": "Style Savvy: Styling Star",
-					"gameID": [
-						"00040000001C2500"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Unlock an Animal Crossing pattern",
-							"write": false
-						}
-					]
 				}
 			],
 			"gamesWiiU": [
@@ -70902,6 +70858,20 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Invite the character to give you an item or move to your town",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Kirby: Planet Robobot",
+					"gameID": [
+						"0004000000189600",
+						"0004000000183600",
+						"0004000000189800"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
 							"write": false
 						}
 					]
@@ -71346,6 +71316,21 @@
 					]
 				},
 				{
+					"gameName": "Animal Crossing: New Leaf",
+					"gameID": [
+						"0004000000086400",
+						"0004000000086300",
+						"0004000000198F00",
+						"0004000000198E00"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Invite the character to give you an item or move to your town",
+							"write": false
+						}
+					]
+				},
+				{
 					"gameName": "Kirby: Planet Robobot",
 					"gameID": [
 						"0004000000189600",
@@ -71455,21 +71440,6 @@
 						{
 							"Usage": "Call on amiibo phone to design the character's home on demand / Store house design and furniture for sharing",
 							"write": true
-						}
-					]
-				},
-				{
-					"gameName": "Animal Crossing: New Leaf",
-					"gameID": [
-						"0004000000086400",
-						"0004000000086300",
-						"0004000000198F00",
-						"0004000000198E00"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Invite the character to give you an item or move to your town",
-							"write": false
 						}
 					]
 				},
@@ -71730,6 +71700,20 @@
 					]
 				},
 				{
+					"gameName": "Kirby: Planet Robobot",
+					"gameID": [
+						"0004000000189600",
+						"0004000000183600",
+						"0004000000189800"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
+							"write": false
+						}
+					]
+				},
+				{
 					"gameName": "Style Savvy: Styling Star",
 					"gameID": [
 						"00040000001C2500"
@@ -71839,20 +71823,6 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Invite the character to give you an item or move to your town",
-							"write": false
-						}
-					]
-				},
-				{
-					"gameName": "Kirby: Planet Robobot",
-					"gameID": [
-						"0004000000189600",
-						"0004000000183600",
-						"0004000000189800"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
 							"write": false
 						}
 					]
@@ -71972,20 +71942,6 @@
 					]
 				},
 				{
-					"gameName": "Kirby: Planet Robobot",
-					"gameID": [
-						"0004000000189600",
-						"0004000000183600",
-						"0004000000189800"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
-							"write": false
-						}
-					]
-				},
-				{
 					"gameName": "Style Savvy: Styling Star",
 					"gameID": [
 						"00040000001C2500"
@@ -72085,21 +72041,6 @@
 					]
 				},
 				{
-					"gameName": "Animal Crossing: New Leaf",
-					"gameID": [
-						"0004000000086400",
-						"0004000000086300",
-						"0004000000198F00",
-						"0004000000198E00"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Invite the character to give you an item or move to your town",
-							"write": false
-						}
-					]
-				},
-				{
 					"gameName": "Kirby: Planet Robobot",
 					"gameID": [
 						"0004000000189600",
@@ -72109,6 +72050,18 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Style Savvy: Styling Star",
+					"gameID": [
+						"00040000001C2500"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock an Animal Crossing pattern",
 							"write": false
 						}
 					]
@@ -72211,6 +72164,20 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Invite the character to give you an item or move to your town",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Kirby: Planet Robobot",
+					"gameID": [
+						"0004000000189600",
+						"0004000000183600",
+						"0004000000189800"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
 							"write": false
 						}
 					]
@@ -72441,20 +72408,6 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Invite the character to give you an item or move to your town",
-							"write": false
-						}
-					]
-				},
-				{
-					"gameName": "Kirby: Planet Robobot",
-					"gameID": [
-						"0004000000189600",
-						"0004000000183600",
-						"0004000000189800"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
 							"write": false
 						}
 					]
@@ -72842,18 +72795,6 @@
 							"write": false
 						}
 					]
-				},
-				{
-					"gameName": "Style Savvy: Styling Star",
-					"gameID": [
-						"00040000001C2500"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Unlock an Animal Crossing pattern",
-							"write": false
-						}
-					]
 				}
 			],
 			"gamesWiiU": [
@@ -73024,20 +72965,6 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Invite the character to visit your RV campsite, give you an item, and/or move to your town",
-							"write": false
-						}
-					]
-				},
-				{
-					"gameName": "Kirby: Planet Robobot",
-					"gameID": [
-						"0004000000189600",
-						"0004000000183600",
-						"0004000000189800"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
 							"write": false
 						}
 					]
@@ -73249,20 +73176,6 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Invite the character to give you an item or move to your town",
-							"write": false
-						}
-					]
-				},
-				{
-					"gameName": "Kirby: Planet Robobot",
-					"gameID": [
-						"0004000000189600",
-						"0004000000183600",
-						"0004000000189800"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
 							"write": false
 						}
 					]
@@ -73505,6 +73418,20 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Invite the character to give you an item or move to your town",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Kirby: Planet Robobot",
+					"gameID": [
+						"0004000000189600",
+						"0004000000183600",
+						"0004000000189800"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
 							"write": false
 						}
 					]
@@ -73978,21 +73905,6 @@
 					]
 				},
 				{
-					"gameName": "Animal Crossing: New Leaf",
-					"gameID": [
-						"0004000000086400",
-						"0004000000086300",
-						"0004000000198F00",
-						"0004000000198E00"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Invite the character to give you an item or move to your town",
-							"write": false
-						}
-					]
-				},
-				{
 					"gameName": "Kirby: Planet Robobot",
 					"gameID": [
 						"0004000000189600",
@@ -74075,6 +73987,18 @@
 							"write": false
 						}
 					]
+				},
+				{
+					"gameName": "Mario Kart 8 Deluxe",
+					"gameID": [
+						"0100152000022000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock an Animal Crossing-themed Mii racing suit",
+							"write": false
+						}
+					]
 				}
 			]
 		},
@@ -74090,21 +74014,6 @@
 						{
 							"Usage": "Call on amiibo phone to design the character's home on demand / Store house design and furniture for sharing",
 							"write": true
-						}
-					]
-				},
-				{
-					"gameName": "Animal Crossing: New Leaf",
-					"gameID": [
-						"0004000000086400",
-						"0004000000086300",
-						"0004000000198F00",
-						"0004000000198E00"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Invite the character to give you an item or move to your town",
-							"write": false
 						}
 					]
 				},
@@ -74306,6 +74215,21 @@
 					]
 				},
 				{
+					"gameName": "Animal Crossing: New Leaf",
+					"gameID": [
+						"0004000000086400",
+						"0004000000086300",
+						"0004000000198F00",
+						"0004000000198E00"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Invite the character to give you an item or move to your town",
+							"write": false
+						}
+					]
+				},
+				{
 					"gameName": "Kirby: Planet Robobot",
 					"gameID": [
 						"0004000000189600",
@@ -74315,18 +74239,6 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
-							"write": false
-						}
-					]
-				},
-				{
-					"gameName": "Style Savvy: Styling Star",
-					"gameID": [
-						"00040000001C2500"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Unlock an Animal Crossing pattern",
 							"write": false
 						}
 					]
@@ -74698,6 +74610,18 @@
 							"write": false
 						}
 					]
+				},
+				{
+					"gameName": "Style Savvy: Styling Star",
+					"gameID": [
+						"00040000001C2500"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock an Animal Crossing pattern",
+							"write": false
+						}
+					]
 				}
 			],
 			"gamesWiiU": [
@@ -74814,6 +74738,18 @@
 							"write": false
 						}
 					]
+				},
+				{
+					"gameName": "Style Savvy: Styling Star",
+					"gameID": [
+						"00040000001C2500"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock an Animal Crossing pattern",
+							"write": false
+						}
+					]
 				}
 			],
 			"gamesWiiU": [
@@ -74899,6 +74835,21 @@
 						{
 							"Usage": "Call on amiibo phone to design the character's home on demand / Store house design and furniture for sharing",
 							"write": true
+						}
+					]
+				},
+				{
+					"gameName": "Animal Crossing: New Leaf",
+					"gameID": [
+						"0004000000086400",
+						"0004000000086300",
+						"0004000000198F00",
+						"0004000000198E00"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Invite the character to give you an item or move to your town",
+							"write": false
 						}
 					]
 				},
@@ -75012,6 +74963,21 @@
 						{
 							"Usage": "Call on amiibo phone to design the character's home on demand / Store house design and furniture for sharing",
 							"write": true
+						}
+					]
+				},
+				{
+					"gameName": "Animal Crossing: New Leaf",
+					"gameID": [
+						"0004000000086400",
+						"0004000000086300",
+						"0004000000198F00",
+						"0004000000198E00"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Invite the character to give you an item or move to your town",
+							"write": false
 						}
 					]
 				},
@@ -75509,6 +75475,21 @@
 						{
 							"Usage": "Call on amiibo phone to design the character's home on demand / Store house design and furniture for sharing",
 							"write": true
+						}
+					]
+				},
+				{
+					"gameName": "Animal Crossing: New Leaf",
+					"gameID": [
+						"0004000000086400",
+						"0004000000086300",
+						"0004000000198F00",
+						"0004000000198E00"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Invite the character to give you an item or move to your town",
+							"write": false
 						}
 					]
 				},
@@ -76094,6 +76075,21 @@
 					]
 				},
 				{
+					"gameName": "Animal Crossing: New Leaf",
+					"gameID": [
+						"0004000000086400",
+						"0004000000086300",
+						"0004000000198F00",
+						"0004000000198E00"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Invite the character to give you an item or move to your town",
+							"write": false
+						}
+					]
+				},
+				{
 					"gameName": "Kirby: Planet Robobot",
 					"gameID": [
 						"0004000000189600",
@@ -76217,6 +76213,20 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Invite the character to give you an item or move to your town",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Kirby: Planet Robobot",
+					"gameID": [
+						"0004000000189600",
+						"0004000000183600",
+						"0004000000189800"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
 							"write": false
 						}
 					]
@@ -76592,20 +76602,6 @@
 					]
 				},
 				{
-					"gameName": "Kirby: Planet Robobot",
-					"gameID": [
-						"0004000000189600",
-						"0004000000183600",
-						"0004000000189800"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
-							"write": false
-						}
-					]
-				},
-				{
 					"gameName": "Style Savvy: Styling Star",
 					"gameID": [
 						"00040000001C2500"
@@ -76848,20 +76844,6 @@
 					]
 				},
 				{
-					"gameName": "Kirby: Planet Robobot",
-					"gameID": [
-						"0004000000189600",
-						"0004000000183600",
-						"0004000000189800"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
-							"write": false
-						}
-					]
-				},
-				{
 					"gameName": "Style Savvy: Styling Star",
 					"gameID": [
 						"00040000001C2500"
@@ -76985,18 +76967,6 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
-							"write": false
-						}
-					]
-				},
-				{
-					"gameName": "Style Savvy: Styling Star",
-					"gameID": [
-						"00040000001C2500"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Unlock an Animal Crossing pattern",
 							"write": false
 						}
 					]
@@ -77416,21 +77386,6 @@
 		"0x0482000102fd0502": {
 			"games3DS": [
 				{
-					"gameName": "Animal Crossing: New Leaf",
-					"gameID": [
-						"0004000000086400",
-						"0004000000086300",
-						"0004000000198F00",
-						"0004000000198E00"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Invite the character to visit your RV campsite, give you an item, and/or move to your town",
-							"write": false
-						}
-					]
-				},
-				{
 					"gameName": "Kirby: Planet Robobot",
 					"gameID": [
 						"0004000000189600",
@@ -77523,6 +77478,20 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Invite the character to give you an item or move to your town",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Kirby: Planet Robobot",
+					"gameID": [
+						"0004000000189600",
+						"0004000000183600",
+						"0004000000189800"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
 							"write": false
 						}
 					]
@@ -77623,21 +77592,6 @@
 						{
 							"Usage": "Call on amiibo phone to design the character's home on demand / Store house design and furniture for sharing",
 							"write": true
-						}
-					]
-				},
-				{
-					"gameName": "Animal Crossing: New Leaf",
-					"gameID": [
-						"0004000000086400",
-						"0004000000086300",
-						"0004000000198F00",
-						"0004000000198E00"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Invite the character to give you an item or move to your town",
-							"write": false
 						}
 					]
 				},
@@ -77883,28 +77837,15 @@
 					]
 				},
 				{
-					"gameName": "Animal Crossing: New Leaf",
+					"gameName": "Kirby: Planet Robobot",
 					"gameID": [
-						"0004000000086400",
-						"0004000000086300",
-						"0004000000198F00",
-						"0004000000198E00"
+						"0004000000189600",
+						"0004000000183600",
+						"0004000000189800"
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Invite the character to give you an item or move to your town",
-							"write": false
-						}
-					]
-				},
-				{
-					"gameName": "Style Savvy: Styling Star",
-					"gameID": [
-						"00040000001C2500"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Unlock an Animal Crossing pattern",
+							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
 							"write": false
 						}
 					]
@@ -77993,6 +77934,21 @@
 						{
 							"Usage": "Call on amiibo phone to design the character's home on demand / Store house design and furniture for sharing",
 							"write": true
+						}
+					]
+				},
+				{
+					"gameName": "Animal Crossing: New Leaf",
+					"gameID": [
+						"0004000000086400",
+						"0004000000086300",
+						"0004000000198F00",
+						"0004000000198E00"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Invite the character to give you an item or move to your town",
+							"write": false
 						}
 					]
 				},
@@ -78262,18 +78218,6 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
-							"write": false
-						}
-					]
-				},
-				{
-					"gameName": "Style Savvy: Styling Star",
-					"gameID": [
-						"00040000001C2500"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Unlock an Animal Crossing pattern",
 							"write": false
 						}
 					]
@@ -78765,6 +78709,20 @@
 					]
 				},
 				{
+					"gameName": "Kirby: Planet Robobot",
+					"gameID": [
+						"0004000000189600",
+						"0004000000183600",
+						"0004000000189800"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
+							"write": false
+						}
+					]
+				},
+				{
 					"gameName": "Style Savvy: Styling Star",
 					"gameID": [
 						"00040000001C2500"
@@ -78888,6 +78846,18 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Style Savvy: Styling Star",
+					"gameID": [
+						"00040000001C2500"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock an Animal Crossing pattern",
 							"write": false
 						}
 					]
@@ -79251,6 +79221,20 @@
 					]
 				},
 				{
+					"gameName": "Kirby: Planet Robobot",
+					"gameID": [
+						"0004000000189600",
+						"0004000000183600",
+						"0004000000189800"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
+							"write": false
+						}
+					]
+				},
+				{
 					"gameName": "Style Savvy: Styling Star",
 					"gameID": [
 						"00040000001C2500"
@@ -79360,20 +79344,6 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Invite the character to give you an item or move to your town",
-							"write": false
-						}
-					]
-				},
-				{
-					"gameName": "Kirby: Planet Robobot",
-					"gameID": [
-						"0004000000189600",
-						"0004000000183600",
-						"0004000000189800"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
 							"write": false
 						}
 					]
@@ -79802,6 +79772,21 @@
 						{
 							"Usage": "Call on amiibo phone to design the character's home on demand / Store house design and furniture for sharing",
 							"write": true
+						}
+					]
+				},
+				{
+					"gameName": "Animal Crossing: New Leaf",
+					"gameID": [
+						"0004000000086400",
+						"0004000000086300",
+						"0004000000198F00",
+						"0004000000198E00"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Invite the character to give you an item or move to your town",
+							"write": false
 						}
 					]
 				},
@@ -80259,6 +80244,21 @@
 					]
 				},
 				{
+					"gameName": "Animal Crossing: New Leaf",
+					"gameID": [
+						"0004000000086400",
+						"0004000000086300",
+						"0004000000198F00",
+						"0004000000198E00"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Invite the character to give you an item or move to your town",
+							"write": false
+						}
+					]
+				},
+				{
 					"gameName": "Kirby: Planet Robobot",
 					"gameID": [
 						"0004000000189600",
@@ -80372,21 +80372,6 @@
 					]
 				},
 				{
-					"gameName": "Animal Crossing: New Leaf",
-					"gameID": [
-						"0004000000086400",
-						"0004000000086300",
-						"0004000000198F00",
-						"0004000000198E00"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Invite the character to give you an item or move to your town",
-							"write": false
-						}
-					]
-				},
-				{
 					"gameName": "Kirby: Planet Robobot",
 					"gameID": [
 						"0004000000189600",
@@ -80496,6 +80481,21 @@
 						{
 							"Usage": "Call on amiibo phone to design the character's home on demand / Store house design and furniture for sharing",
 							"write": true
+						}
+					]
+				},
+				{
+					"gameName": "Animal Crossing: New Leaf",
+					"gameID": [
+						"0004000000086400",
+						"0004000000086300",
+						"0004000000198F00",
+						"0004000000198E00"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Invite the character to give you an item or move to your town",
+							"write": false
 						}
 					]
 				},
@@ -80701,21 +80701,6 @@
 					]
 				},
 				{
-					"gameName": "Animal Crossing: New Leaf",
-					"gameID": [
-						"0004000000086400",
-						"0004000000086300",
-						"0004000000198F00",
-						"0004000000198E00"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Invite the character to give you an item or move to your town",
-							"write": false
-						}
-					]
-				},
-				{
 					"gameName": "Kirby: Planet Robobot",
 					"gameID": [
 						"0004000000189600",
@@ -80853,18 +80838,6 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
-							"write": false
-						}
-					]
-				},
-				{
-					"gameName": "Style Savvy: Styling Star",
-					"gameID": [
-						"00040000001C2500"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Unlock an Animal Crossing pattern",
 							"write": false
 						}
 					]
@@ -81381,6 +81354,21 @@
 					]
 				},
 				{
+					"gameName": "Animal Crossing: New Leaf",
+					"gameID": [
+						"0004000000086400",
+						"0004000000086300",
+						"0004000000198F00",
+						"0004000000198E00"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Invite the character to give you an item or move to your town",
+							"write": false
+						}
+					]
+				},
+				{
 					"gameName": "Kirby: Planet Robobot",
 					"gameID": [
 						"0004000000189600",
@@ -81649,18 +81637,6 @@
 							"write": false
 						}
 					]
-				},
-				{
-					"gameName": "Style Savvy: Styling Star",
-					"gameID": [
-						"00040000001C2500"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Unlock an Animal Crossing pattern",
-							"write": false
-						}
-					]
 				}
 			],
 			"gamesWiiU": [
@@ -81736,6 +81712,21 @@
 		},
 		"0x04c8000102ed0502": {
 			"games3DS": [
+				{
+					"gameName": "Animal Crossing: New Leaf",
+					"gameID": [
+						"0004000000086400",
+						"0004000000086300",
+						"0004000000198F00",
+						"0004000000198E00"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Invite the character to visit your RV campsite, give you an item, and/or move to your town",
+							"write": false
+						}
+					]
+				},
 				{
 					"gameName": "Kirby: Planet Robobot",
 					"gameID": [
@@ -81816,20 +81807,6 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Invite the character to visit your RV campsite, give you an item, and/or move to your town",
-							"write": false
-						}
-					]
-				},
-				{
-					"gameName": "Kirby: Planet Robobot",
-					"gameID": [
-						"0004000000189600",
-						"0004000000183600",
-						"0004000000189800"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
 							"write": false
 						}
 					]
@@ -82031,21 +82008,6 @@
 					]
 				},
 				{
-					"gameName": "Animal Crossing: New Leaf",
-					"gameID": [
-						"0004000000086400",
-						"0004000000086300",
-						"0004000000198F00",
-						"0004000000198E00"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Invite the character to give you an item or move to your town",
-							"write": false
-						}
-					]
-				},
-				{
 					"gameName": "Kirby: Planet Robobot",
 					"gameID": [
 						"0004000000189600",
@@ -82155,6 +82117,21 @@
 						{
 							"Usage": "Call on amiibo phone to design the character's home on demand / Store house design and furniture for sharing",
 							"write": true
+						}
+					]
+				},
+				{
+					"gameName": "Animal Crossing: New Leaf",
+					"gameID": [
+						"0004000000086400",
+						"0004000000086300",
+						"0004000000198F00",
+						"0004000000198E00"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Invite the character to give you an item or move to your town",
+							"write": false
 						}
 					]
 				},
@@ -82555,18 +82532,6 @@
 							"write": false
 						}
 					]
-				},
-				{
-					"gameName": "Style Savvy: Styling Star",
-					"gameID": [
-						"00040000001C2500"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Unlock an Animal Crossing pattern",
-							"write": false
-						}
-					]
 				}
 			],
 			"gamesWiiU": [
@@ -82680,18 +82645,6 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
-							"write": false
-						}
-					]
-				},
-				{
-					"gameName": "Style Savvy: Styling Star",
-					"gameID": [
-						"00040000001C2500"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Unlock an Animal Crossing pattern",
 							"write": false
 						}
 					]
@@ -82872,21 +82825,6 @@
 					]
 				},
 				{
-					"gameName": "Animal Crossing: New Leaf",
-					"gameID": [
-						"0004000000086400",
-						"0004000000086300",
-						"0004000000198F00",
-						"0004000000198E00"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Invite the character to give you an item or move to your town",
-							"write": false
-						}
-					]
-				},
-				{
 					"gameName": "Kirby: Planet Robobot",
 					"gameID": [
 						"0004000000189600",
@@ -82986,19 +82924,6 @@
 		},
 		"0x04de000100ce0502": {
 			"games3DS": [
-				{
-					"gameName": "Animal Crossing: Happy Home Designer",
-					"gameID": [
-						"000400000014F100",
-						"000400000014F200"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Call on amiibo phone to design the character's home on demand / Store house design and furniture for sharing",
-							"write": true
-						}
-					]
-				},
 				{
 					"gameName": "Animal Crossing: New Leaf",
 					"gameID": [
@@ -83128,21 +83053,6 @@
 					]
 				},
 				{
-					"gameName": "Animal Crossing: New Leaf",
-					"gameID": [
-						"0004000000086400",
-						"0004000000086300",
-						"0004000000198F00",
-						"0004000000198E00"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Invite the character to give you an item or move to your town",
-							"write": false
-						}
-					]
-				},
-				{
 					"gameName": "Kirby: Planet Robobot",
 					"gameID": [
 						"0004000000189600",
@@ -83252,6 +83162,21 @@
 						{
 							"Usage": "Call on amiibo phone to design the character's home on demand / Store house design and furniture for sharing",
 							"write": true
+						}
+					]
+				},
+				{
+					"gameName": "Animal Crossing: New Leaf",
+					"gameID": [
+						"0004000000086400",
+						"0004000000086300",
+						"0004000000198F00",
+						"0004000000198E00"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Invite the character to give you an item or move to your town",
+							"write": false
 						}
 					]
 				},
@@ -84125,16 +84050,15 @@
 					]
 				},
 				{
-					"gameName": "Animal Crossing: New Leaf",
+					"gameName": "Kirby: Planet Robobot",
 					"gameID": [
-						"0004000000086400",
-						"0004000000086300",
-						"0004000000198F00",
-						"0004000000198E00"
+						"0004000000189600",
+						"0004000000183600",
+						"0004000000189800"
 					],
 					"amiiboUsage": [
 						{
-							"Usage": "Invite the character to give you an item or move to your town",
+							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
 							"write": false
 						}
 					]
@@ -84465,18 +84389,6 @@
 							"write": false
 						}
 					]
-				},
-				{
-					"gameName": "Style Savvy: Styling Star",
-					"gameID": [
-						"00040000001C2500"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Unlock an Animal Crossing pattern",
-							"write": false
-						}
-					]
 				}
 			],
 			"gamesWiiU": [],
@@ -84531,6 +84443,21 @@
 						{
 							"Usage": "Call on amiibo phone to design the character's home on demand / Store house design and furniture for sharing",
 							"write": true
+						}
+					]
+				},
+				{
+					"gameName": "Animal Crossing: New Leaf",
+					"gameID": [
+						"0004000000086400",
+						"0004000000086300",
+						"0004000000198F00",
+						"0004000000198E00"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Invite the character to give you an item or move to your town",
+							"write": false
 						}
 					]
 				},
@@ -85160,6 +85087,21 @@
 					]
 				},
 				{
+					"gameName": "Animal Crossing: New Leaf",
+					"gameID": [
+						"0004000000086400",
+						"0004000000086300",
+						"0004000000198F00",
+						"0004000000198E00"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Invite the character to give you an item or move to your town",
+							"write": false
+						}
+					]
+				},
+				{
 					"gameName": "Kirby: Planet Robobot",
 					"gameID": [
 						"0004000000189600",
@@ -85275,20 +85217,6 @@
 					]
 				},
 				{
-					"gameName": "Kirby: Planet Robobot",
-					"gameID": [
-						"0004000000189600",
-						"0004000000183600",
-						"0004000000189800"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
-							"write": false
-						}
-					]
-				},
-				{
 					"gameName": "Style Savvy: Styling Star",
 					"gameID": [
 						"00040000001C2500"
@@ -85353,6 +85281,21 @@
 						{
 							"Usage": "Call on amiibo phone to design the character's home on demand / Store house design and furniture for sharing",
 							"write": true
+						}
+					]
+				},
+				{
+					"gameName": "Animal Crossing: New Leaf",
+					"gameID": [
+						"0004000000086400",
+						"0004000000086300",
+						"0004000000198F00",
+						"0004000000198E00"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Invite the character to give you an item or move to your town",
+							"write": false
 						}
 					]
 				},
@@ -85470,6 +85413,21 @@
 					]
 				},
 				{
+					"gameName": "Animal Crossing: New Leaf",
+					"gameID": [
+						"0004000000086400",
+						"0004000000086300",
+						"0004000000198F00",
+						"0004000000198E00"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Invite the character to give you an item or move to your town",
+							"write": false
+						}
+					]
+				},
+				{
 					"gameName": "Kirby: Planet Robobot",
 					"gameID": [
 						"0004000000189600",
@@ -85479,18 +85437,6 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
-							"write": false
-						}
-					]
-				},
-				{
-					"gameName": "Style Savvy: Styling Star",
-					"gameID": [
-						"00040000001C2500"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Unlock an Animal Crossing pattern",
 							"write": false
 						}
 					]
@@ -85953,6 +85899,21 @@
 					]
 				},
 				{
+					"gameName": "Animal Crossing: New Leaf",
+					"gameID": [
+						"0004000000086400",
+						"0004000000086300",
+						"0004000000198F00",
+						"0004000000198E00"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Invite the character to give you an item or move to your town",
+							"write": false
+						}
+					]
+				},
+				{
 					"gameName": "Kirby: Planet Robobot",
 					"gameID": [
 						"0004000000189600",
@@ -85962,18 +85923,6 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
-							"write": false
-						}
-					]
-				},
-				{
-					"gameName": "Style Savvy: Styling Star",
-					"gameID": [
-						"00040000001C2500"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Unlock an Animal Crossing pattern",
 							"write": false
 						}
 					]
@@ -86194,21 +86143,6 @@
 					]
 				},
 				{
-					"gameName": "Animal Crossing: New Leaf",
-					"gameID": [
-						"0004000000086400",
-						"0004000000086300",
-						"0004000000198F00",
-						"0004000000198E00"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Invite the character to give you an item or move to your town",
-							"write": false
-						}
-					]
-				},
-				{
 					"gameName": "Kirby: Planet Robobot",
 					"gameID": [
 						"0004000000189600",
@@ -86319,6 +86253,20 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Invite the character to visit your RV campsite, give you an item, and/or move to your town",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Kirby: Planet Robobot",
+					"gameID": [
+						"0004000000189600",
+						"0004000000183600",
+						"0004000000189800"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
 							"write": false
 						}
 					]
@@ -86530,6 +86478,20 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Invite the character to give you an item or move to your town",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Kirby: Planet Robobot",
+					"gameID": [
+						"0004000000189600",
+						"0004000000183600",
+						"0004000000189800"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
 							"write": false
 						}
 					]
@@ -88753,18 +88715,6 @@
 					]
 				},
 				{
-					"gameName": "Mario Kart 8 Deluxe",
-					"gameID": [
-						"0100152000022000"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Unlock a Metroid-themed Mii racing suit",
-							"write": false
-						}
-					]
-				},
-				{
 					"gameName": "Metroid Dread",
 					"gameID": [
 						"010093801237C000"
@@ -89241,6 +89191,19 @@
 		"0x06c00000000f0002": {
 			"games3DS": [
 				{
+					"gameName": "Chibi-Robo! Zip Lash",
+					"gameID": [
+						"0004000000163000",
+						"0004000000162F00"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock figure in the pose of the character (requires Chibi-Robo amiibo)",
+							"write": false
+						}
+					]
+				},
+				{
 					"gameName": "Kirby: Planet Robobot",
 					"gameID": [
 						"0004000000189600",
@@ -89275,21 +89238,6 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Receive a sketch of the character from Wario which can be exchanged for in-game coins",
-							"write": false
-						}
-					]
-				},
-				{
-					"gameName": "Yoshi's Woolly World",
-					"gameID": [
-						"00040000001A4200",
-						"00040000001A4100",
-						"00040000001B6C00",
-						"00040000001B6D00"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Unlock a character-based Yoshi yarn pattern",
 							"write": false
 						}
 					]
@@ -89736,6 +89684,19 @@
 		"0x07420000001f0002": {
 			"games3DS": [
 				{
+					"gameName": "Chibi-Robo! Zip Lash",
+					"gameID": [
+						"0004000000163000",
+						"0004000000162F00"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock figure in the pose of the character (requires Chibi-Robo amiibo)",
+							"write": false
+						}
+					]
+				},
+				{
 					"gameName": "Kirby: Planet Robobot",
 					"gameID": [
 						"0004000000189600",
@@ -90039,6 +90000,21 @@
 							"write": false
 						}
 					]
+				},
+				{
+					"gameName": "Yoshi's Woolly World",
+					"gameID": [
+						"00040000001A4200",
+						"00040000001A4100",
+						"00040000001B6C00",
+						"00040000001B6D00"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock a character-based Yoshi yarn pattern",
+							"write": false
+						}
+					]
 				}
 			],
 			"gamesWiiU": [
@@ -90100,19 +90076,6 @@
 		},
 		"0x0781000000330002": {
 			"games3DS": [
-				{
-					"gameName": "Chibi-Robo! Zip Lash",
-					"gameID": [
-						"0004000000163000",
-						"0004000000162F00"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Unlock figure in the pose of the character (requires Chibi-Robo amiibo)",
-							"write": false
-						}
-					]
-				},
 				{
 					"gameName": "Kirby: Planet Robobot",
 					"gameID": [
@@ -90227,6 +90190,19 @@
 		},
 		"0x07820000002f0002": {
 			"games3DS": [
+				{
+					"gameName": "Chibi-Robo! Zip Lash",
+					"gameID": [
+						"0004000000163000",
+						"0004000000162F00"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock figure in the pose of the character (requires Chibi-Robo amiibo)",
+							"write": false
+						}
+					]
+				},
 				{
 					"gameName": "Kirby: Planet Robobot",
 					"gameID": [
@@ -90368,6 +90344,20 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Unlock figure in the pose of the character (requires Chibi-Robo amiibo)",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Kirby: Planet Robobot",
+					"gameID": [
+						"0004000000189600",
+						"0004000000183600",
+						"0004000000189800"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
 							"write": false
 						}
 					]
@@ -92008,18 +91998,6 @@
 							"write": true
 						}
 					]
-				},
-				{
-					"gameName": "Super Smash Bros. Ultimate",
-					"gameID": [
-						"01006A800016E000"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Battle and train up a computer-controlled Figure Player of the character",
-							"write": true
-						}
-					]
 				}
 			]
 		},
@@ -92064,34 +92042,6 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Figure appears in-game and can be collected to gain energy points",
-							"write": false
-						}
-					]
-				},
-				{
-					"gameName": "Kirby: Planet Robobot",
-					"gameID": [
-						"0004000000189600",
-						"0004000000183600",
-						"0004000000189800"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
-							"write": false
-						}
-					]
-				},
-				{
-					"gameName": "Miitopia",
-					"gameID": [
-						"0004000000178800",
-						"00040000001B4F00",
-						"00040000001B4E00"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Unlock a character-based costume",
 							"write": false
 						}
 					]
@@ -92797,21 +92747,6 @@
 							"write": false
 						}
 					]
-				},
-				{
-					"gameName": "Yoshi's Woolly World",
-					"gameID": [
-						"00040000001A4200",
-						"00040000001A4100",
-						"00040000001B6C00",
-						"00040000001B6D00"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Unlock a character-based Yoshi yarn pattern",
-							"write": false
-						}
-					]
 				}
 			],
 			"gamesWiiU": [
@@ -93315,9 +93250,9 @@
 					]
 				},
 				{
-					"gameName": "Splatoon 3",
+					"gameName": "Splatoon 2",
 					"gameID": [
-						"0100C2500FC20000"
+						"01003BC0000A0000"
 					],
 					"amiiboUsage": [
 						{
@@ -93756,6 +93691,18 @@
 					]
 				},
 				{
+					"gameName": "Splatoon 2",
+					"gameID": [
+						"01003BC0000A0000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock exclusive gear / Save favorite weapons, gear, and control settings / Take photos with the character or saved gear",
+							"write": true
+						}
+					]
+				},
+				{
 					"gameName": "Splatoon 3",
 					"gameID": [
 						"0100C2500FC20000"
@@ -93878,6 +93825,18 @@
 			"gamesWiiU": [],
 			"gamesSwitch": [
 				{
+					"gameName": "Conga Master Party!",
+					"gameID": [
+						"01007EF00399C000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock a special costume",
+							"write": false
+						}
+					]
+				},
+				{
 					"gameName": "Mario Kart 8 Deluxe",
 					"gameID": [
 						"0100152000022000"
@@ -93957,18 +93916,6 @@
 					]
 				},
 				{
-					"gameName": "Splatoon 2",
-					"gameID": [
-						"01003BC0000A0000"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Unlock exclusive gear / Save favorite weapons, gear, and control settings / Take photos with the character or saved gear",
-							"write": true
-						}
-					]
-				},
-				{
 					"gameName": "Splatoon 3",
 					"gameID": [
 						"0100C2500FC20000"
@@ -94011,6 +93958,18 @@
 			],
 			"gamesWiiU": [],
 			"gamesSwitch": [
+				{
+					"gameName": "Conga Master Party!",
+					"gameID": [
+						"01007EF00399C000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock a special costume",
+							"write": false
+						}
+					]
+				},
 				{
 					"gameName": "Mario Kart 8 Deluxe",
 					"gameID": [
@@ -96017,6 +95976,18 @@
 							"write": false
 						}
 					]
+				},
+				{
+					"gameName": "Mario Kart 8 Deluxe",
+					"gameID": [
+						"0100152000022000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock an Animal Crossing-themed Mii racing suit",
+							"write": false
+						}
+					]
 				}
 			]
 		},
@@ -96032,6 +96003,18 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Invite the character for photo shoots at Photopia / Unlock a special poster of the character / Invite the character to the Roost for a cup of coffee / Invite the character to Happy Home Paradise to design their vacation home",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Mario Kart 8 Deluxe",
+					"gameID": [
+						"0100152000022000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock an Animal Crossing-themed Mii racing suit",
 							"write": false
 						}
 					]
@@ -96053,6 +96036,18 @@
 							"write": false
 						}
 					]
+				},
+				{
+					"gameName": "Mario Kart 8 Deluxe",
+					"gameID": [
+						"0100152000022000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock an Animal Crossing-themed Mii racing suit",
+							"write": false
+						}
+					]
 				}
 			]
 		},
@@ -96068,6 +96063,18 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Invite the character for photo shoots at Photopia / Unlock a special poster of the character / Invite the character to the Roost for a cup of coffee / Invite the character to Happy Home Paradise to design their vacation home",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Mario Kart 8 Deluxe",
+					"gameID": [
+						"0100152000022000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock an Animal Crossing-themed Mii racing suit",
 							"write": false
 						}
 					]
@@ -96089,6 +96096,18 @@
 							"write": false
 						}
 					]
+				},
+				{
+					"gameName": "Mario Kart 8 Deluxe",
+					"gameID": [
+						"0100152000022000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock an Animal Crossing-themed Mii racing suit",
+							"write": false
+						}
+					]
 				}
 			]
 		},
@@ -96104,6 +96123,18 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Invite the character for photo shoots at Photopia / Unlock a special poster of the character / Invite the character to the Roost for a cup of coffee / Invite the character to Happy Home Paradise to design their vacation home",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Mario Kart 8 Deluxe",
+					"gameID": [
+						"0100152000022000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock an Animal Crossing-themed Mii racing suit",
 							"write": false
 						}
 					]
@@ -96125,6 +96156,18 @@
 							"write": false
 						}
 					]
+				},
+				{
+					"gameName": "Mario Kart 8 Deluxe",
+					"gameID": [
+						"0100152000022000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock an Animal Crossing-themed Mii racing suit",
+							"write": false
+						}
+					]
 				}
 			]
 		},
@@ -96140,6 +96183,18 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Invite the character for photo shoots at Photopia / Unlock a special poster of the character / Invite the character to the Roost for a cup of coffee / Invite the character to Happy Home Paradise to design their vacation home",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Mario Kart 8 Deluxe",
+					"gameID": [
+						"0100152000022000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock an Animal Crossing-themed Mii racing suit",
 							"write": false
 						}
 					]
@@ -96161,6 +96216,18 @@
 							"write": false
 						}
 					]
+				},
+				{
+					"gameName": "Mario Kart 8 Deluxe",
+					"gameID": [
+						"0100152000022000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock an Animal Crossing-themed Mii racing suit",
+							"write": false
+						}
+					]
 				}
 			]
 		},
@@ -96176,6 +96243,18 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Invite the character to your campsite and, eventually, to move to your island / Invite the character for photo shoots at Photopia / Unlock a special poster of the character / Invite the character to the Roost for a cup of coffee / Invite the character to Happy Home Paradise to design their vacation home",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Mario Kart 8 Deluxe",
+					"gameID": [
+						"0100152000022000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock an Animal Crossing-themed Mii racing suit",
 							"write": false
 						}
 					]
@@ -96197,6 +96276,18 @@
 							"write": false
 						}
 					]
+				},
+				{
+					"gameName": "Mario Kart 8 Deluxe",
+					"gameID": [
+						"0100152000022000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock an Animal Crossing-themed Mii racing suit",
+							"write": false
+						}
+					]
 				}
 			]
 		},
@@ -96212,6 +96303,18 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Invite the character to your campsite and, eventually, to move to your island / Invite the character for photo shoots at Photopia / Unlock a special poster of the character / Invite the character to the Roost for a cup of coffee / Invite the character to Happy Home Paradise to design their vacation home",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Mario Kart 8 Deluxe",
+					"gameID": [
+						"0100152000022000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock an Animal Crossing-themed Mii racing suit",
 							"write": false
 						}
 					]
@@ -96233,6 +96336,18 @@
 							"write": false
 						}
 					]
+				},
+				{
+					"gameName": "Mario Kart 8 Deluxe",
+					"gameID": [
+						"0100152000022000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock an Animal Crossing-themed Mii racing suit",
+							"write": false
+						}
+					]
 				}
 			]
 		},
@@ -96248,6 +96363,18 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Invite the character to your campsite and, eventually, to move to your island / Invite the character for photo shoots at Photopia / Unlock a special poster of the character / Invite the character to the Roost for a cup of coffee / Invite the character to Happy Home Paradise to design their vacation home",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Mario Kart 8 Deluxe",
+					"gameID": [
+						"0100152000022000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock an Animal Crossing-themed Mii racing suit",
 							"write": false
 						}
 					]
@@ -96269,6 +96396,18 @@
 							"write": false
 						}
 					]
+				},
+				{
+					"gameName": "Mario Kart 8 Deluxe",
+					"gameID": [
+						"0100152000022000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock an Animal Crossing-themed Mii racing suit",
+							"write": false
+						}
+					]
 				}
 			]
 		},
@@ -96284,6 +96423,18 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Invite the character to your campsite and, eventually, to move to your island / Invite the character for photo shoots at Photopia / Unlock a special poster of the character / Invite the character to the Roost for a cup of coffee / Invite the character to Happy Home Paradise to design their vacation home",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Mario Kart 8 Deluxe",
+					"gameID": [
+						"0100152000022000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock an Animal Crossing-themed Mii racing suit",
 							"write": false
 						}
 					]
@@ -96305,6 +96456,18 @@
 							"write": false
 						}
 					]
+				},
+				{
+					"gameName": "Mario Kart 8 Deluxe",
+					"gameID": [
+						"0100152000022000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock an Animal Crossing-themed Mii racing suit",
+							"write": false
+						}
+					]
 				}
 			]
 		},
@@ -96320,6 +96483,18 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Invite the character to your campsite and, eventually, to move to your island / Invite the character for photo shoots at Photopia / Unlock a special poster of the character / Invite the character to the Roost for a cup of coffee / Invite the character to Happy Home Paradise to design their vacation home",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Mario Kart 8 Deluxe",
+					"gameID": [
+						"0100152000022000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock an Animal Crossing-themed Mii racing suit",
 							"write": false
 						}
 					]
@@ -96469,6 +96644,18 @@
 							"write": false
 						}
 					]
+				},
+				{
+					"gameName": "Mario Kart 8 Deluxe",
+					"gameID": [
+						"0100152000022000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock an Animal Crossing-themed Mii racing suit",
+							"write": false
+						}
+					]
 				}
 			]
 		},
@@ -96484,6 +96671,18 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Invite the character to your campsite and, eventually, to move to your island / Invite the character for photo shoots at Photopia / Unlock a special poster of the character / Invite the character to the Roost for a cup of coffee / Invite the character to Happy Home Paradise to design their vacation home",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Mario Kart 8 Deluxe",
+					"gameID": [
+						"0100152000022000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock an Animal Crossing-themed Mii racing suit",
 							"write": false
 						}
 					]
@@ -96505,6 +96704,18 @@
 							"write": false
 						}
 					]
+				},
+				{
+					"gameName": "Mario Kart 8 Deluxe",
+					"gameID": [
+						"0100152000022000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock an Animal Crossing-themed Mii racing suit",
+							"write": false
+						}
+					]
 				}
 			]
 		},
@@ -96520,6 +96731,18 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Invite the character to your campsite and, eventually, to move to your island / Invite the character for photo shoots at Photopia / Unlock a special poster of the character / Invite the character to the Roost for a cup of coffee / Invite the character to Happy Home Paradise to design their vacation home",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Mario Kart 8 Deluxe",
+					"gameID": [
+						"0100152000022000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock an Animal Crossing-themed Mii racing suit",
 							"write": false
 						}
 					]
@@ -96541,6 +96764,18 @@
 							"write": false
 						}
 					]
+				},
+				{
+					"gameName": "Mario Kart 8 Deluxe",
+					"gameID": [
+						"0100152000022000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock an Animal Crossing-themed Mii racing suit",
+							"write": false
+						}
+					]
 				}
 			]
 		},
@@ -96556,6 +96791,18 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Invite the character to your campsite and, eventually, to move to your island / Invite the character for photo shoots at Photopia / Unlock a special poster of the character / Invite the character to the Roost for a cup of coffee / Invite the character to Happy Home Paradise to design their vacation home",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Mario Kart 8 Deluxe",
+					"gameID": [
+						"0100152000022000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock an Animal Crossing-themed Mii racing suit",
 							"write": false
 						}
 					]
@@ -96577,6 +96824,18 @@
 							"write": false
 						}
 					]
+				},
+				{
+					"gameName": "Mario Kart 8 Deluxe",
+					"gameID": [
+						"0100152000022000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock an Animal Crossing-themed Mii racing suit",
+							"write": false
+						}
+					]
 				}
 			]
 		},
@@ -96595,6 +96854,18 @@
 							"write": false
 						}
 					]
+				},
+				{
+					"gameName": "Mario Kart 8 Deluxe",
+					"gameID": [
+						"0100152000022000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock an Animal Crossing-themed Mii racing suit",
+							"write": false
+						}
+					]
 				}
 			]
 		},
@@ -96610,6 +96881,18 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Invite the character to your campsite and, eventually, to move to your island / Invite the character for photo shoots at Photopia / Unlock a special poster of the character / Invite the character to the Roost for a cup of coffee / Invite the character to Happy Home Paradise to design their vacation home",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Mario Kart 8 Deluxe",
+					"gameID": [
+						"0100152000022000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock an Animal Crossing-themed Mii racing suit",
 							"write": false
 						}
 					]
@@ -96719,6 +97002,18 @@
 							"write": false
 						}
 					]
+				},
+				{
+					"gameName": "Mario Kart 8 Deluxe",
+					"gameID": [
+						"0100152000022000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock an Animal Crossing-themed Mii racing suit",
+							"write": false
+						}
+					]
 				}
 			]
 		},
@@ -96734,6 +97029,18 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Invite the character to your campsite and, eventually, to move to your island / Invite the character for photo shoots at Photopia / Unlock a special poster of the character / Invite the character to the Roost for a cup of coffee / Invite the character to Happy Home Paradise to design their vacation home",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Mario Kart 8 Deluxe",
+					"gameID": [
+						"0100152000022000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock an Animal Crossing-themed Mii racing suit",
 							"write": false
 						}
 					]
@@ -96755,6 +97062,18 @@
 							"write": false
 						}
 					]
+				},
+				{
+					"gameName": "Mario Kart 8 Deluxe",
+					"gameID": [
+						"0100152000022000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock an Animal Crossing-themed Mii racing suit",
+							"write": false
+						}
+					]
 				}
 			]
 		},
@@ -96770,6 +97089,18 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Invite the character to your campsite and, eventually, to move to your island / Invite the character for photo shoots at Photopia / Unlock a special poster of the character / Invite the character to the Roost for a cup of coffee / Invite the character to Happy Home Paradise to design their vacation home",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Mario Kart 8 Deluxe",
+					"gameID": [
+						"0100152000022000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock an Animal Crossing-themed Mii racing suit",
 							"write": false
 						}
 					]
@@ -96843,20 +97174,6 @@
 				}
 			],
 			"gamesWiiU": [
-				{
-					"gameName": "Super Mario Maker",
-					"gameID": [
-						"000500001018DD00",
-						"000500001018DC00",
-						"000500001018DB00"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Unlock a character-based Mystery Mushroom costume",
-							"write": false
-						}
-					]
-				},
 				{
 					"gameName": "Super Smash Bros. for Wii U",
 					"gameID": [
@@ -97011,20 +97328,6 @@
 				}
 			],
 			"gamesWiiU": [
-				{
-					"gameName": "Super Mario Maker",
-					"gameID": [
-						"000500001018DD00",
-						"000500001018DC00",
-						"000500001018DB00"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Unlock a character-based Mystery Mushroom costume",
-							"write": false
-						}
-					]
-				},
 				{
 					"gameName": "Super Smash Bros. for Wii U",
 					"gameID": [
@@ -97265,6 +97568,20 @@
 						{
 							"Usage": "Unlock a character-based Mystery Mushroom costume",
 							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Super Smash Bros. for Wii U",
+					"gameID": [
+						"0005000010145000",
+						"0005000010144F00",
+						"0005000010110E00"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Battle and train up a computer-controlled Figure Player of the character",
+							"write": true
 						}
 					]
 				}
@@ -98119,6 +98436,19 @@
 					]
 				},
 				{
+					"gameName": "Kirby's Extra Epic Yarn",
+					"gameID": [
+						"00040000001D1E00",
+						"00040000001D1F00"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Equip a power-up hat matching the character",
+							"write": false
+						}
+					]
+				},
+				{
 					"gameName": "Picross 3D Round 2",
 					"gameID": [
 						"0004000000187E00"
@@ -98377,6 +98707,19 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Build a statue in the plaza that plays music",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Kirby's Extra Epic Yarn",
+					"gameID": [
+						"00040000001D1E00",
+						"00040000001D1F00"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Equip a power-up hat matching the character",
 							"write": false
 						}
 					]
@@ -98695,6 +99038,19 @@
 					]
 				},
 				{
+					"gameName": "Team Kirby Clash Deluxe",
+					"gameID": [
+						"00040000001AB900",
+						"00040000001AB800"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Receive 10 Fragments",
+							"write": false
+						}
+					]
+				},
+				{
 					"gameName": "Yoshi's Woolly World",
 					"gameID": [
 						"00040000001A4200",
@@ -98891,18 +99247,6 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
-							"write": false
-						}
-					]
-				},
-				{
-					"gameName": "Kirby's Blowout Blast",
-					"gameID": [
-						"0004000000196F00"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Build a statue in the plaza that plays music",
 							"write": false
 						}
 					]
@@ -99140,6 +99484,20 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Receive amiibo-exclusive cosmetic gear based on the character",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Kirby: Planet Robobot",
+					"gameID": [
+						"0004000000189600",
+						"0004000000183600",
+						"0004000000189800"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Give Kirby a Copy ability based on the character's abilities and a health item",
 							"write": false
 						}
 					]
@@ -100525,18 +100883,6 @@
 					]
 				},
 				{
-					"gameName": "Fire Emblem Warriors",
-					"gameID": [
-						"0100F15003E64000"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Receive a weapon",
-							"write": false
-						}
-					]
-				},
-				{
 					"gameName": "Fire Emblem Warriors: Three Hopes",
 					"gameID": [
 						"010071F0143EA000"
@@ -100758,18 +101104,6 @@
 					]
 				},
 				{
-					"gameName": "Fire Emblem Warriors: Three Hopes",
-					"gameID": [
-						"010071F0143EA000"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Receive better-quality randomized resources, weapons, or equipment",
-							"write": false
-						}
-					]
-				},
-				{
 					"gameName": "Fire Emblem: Three Houses",
 					"gameID": [
 						"010055D009F78000"
@@ -100938,6 +101272,18 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Receive better-quality randomized resources, weapons, or equipment",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Fire Emblem: Three Houses",
+					"gameID": [
+						"010055D009F78000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock a special piece of battle music / Receive higher-quality items and materials",
 							"write": false
 						}
 					]
@@ -101225,21 +101571,6 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Receive in-game tokens, which can be used to unlock music and animated 3D models of various characters",
-							"write": false
-						}
-					]
-				},
-				{
-					"gameName": "Yoshi's Woolly World",
-					"gameID": [
-						"00040000001A4200",
-						"00040000001A4100",
-						"00040000001B6C00",
-						"00040000001B6D00"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Unlock a character-based Yoshi yarn pattern",
 							"write": false
 						}
 					]
@@ -101905,6 +102236,18 @@
 			],
 			"gamesSwitch": [
 				{
+					"gameName": "Bayonetta 2",
+					"gameID": [
+						"01007960049A0000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock the Super Mirror and Super Mirror 64 and all the costumes they contain",
+							"write": false
+						}
+					]
+				},
+				{
 					"gameName": "Super Smash Bros. Ultimate",
 					"gameID": [
 						"01006A800016E000"
@@ -102429,6 +102772,18 @@
 					]
 				},
 				{
+					"gameName": "Mega Man Legacy Collection 2",
+					"gameID": [
+						"0100842008EC4000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock new platforming challenges",
+							"write": false
+						}
+					]
+				},
+				{
 					"gameName": "Resident Evil Revelations",
 					"gameID": [
 						"0100643002136000"
@@ -102806,18 +103161,6 @@
 					"gameName": "Resident Evil Revelations",
 					"gameID": [
 						"0100643002136000"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Receive a lot of BP / Receive better supplies (compared to other amiibo)",
-							"write": false
-						}
-					]
-				},
-				{
-					"gameName": "Resident Evil Revelations 2",
-					"gameID": [
-						"010095300212A000"
 					],
 					"amiiboUsage": [
 						{
@@ -103639,18 +103982,6 @@
 					]
 				},
 				{
-					"gameName": "Shovel Knight Pocket Dungeon",
-					"gameID": [
-						"01006B00126EC000"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Summon a fairy friend",
-							"write": false
-						}
-					]
-				},
-				{
 					"gameName": "Shovel Knight Showdown",
 					"gameID": [
 						"0100B380022AE000"
@@ -103760,6 +104091,18 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Unlock a fairy companion and player color palette matching the character",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Just Shapes & Beats",
+					"gameID": [
+						"0100830008426000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock a character-specific Shovel Knight remix immediately",
 							"write": false
 						}
 					]
@@ -104040,26 +104383,6 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Unlock a character-specific Shovel Knight remix immediately",
-							"write": false
-						}
-					]
-				},
-				{
-					"gameName": "Shovel Knight",
-					"gameID": [
-						"010057D0021E8000"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Unlock challenge stages and customizable gear",
-							"write": true
-						},
-						{
-							"Usage": "Summon a Fairy of Shovelry to keep you company during your quest",
-							"write": false
-						},
-						{
-							"Usage": "Unlock a special costume for the character",
 							"write": false
 						}
 					]
