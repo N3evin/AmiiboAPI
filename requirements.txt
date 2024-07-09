@@ -23,4 +23,4 @@ six==1.16.0
 typing-extensions==3.10.0.2
 urllib3==1.26.18
 Werkzeug==3.0.1
-zipp==3.6.0
+zipp==3.19.1
