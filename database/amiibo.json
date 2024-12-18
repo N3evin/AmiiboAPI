@@ -7618,10 +7618,10 @@
 			"name": "Diddy Kong - Power Up Band",
 			"release":
 			{
-				"au": "na",
-				"eu": "na",
-				"jp": "2024-12-11",
-				"na": "na"
+				"au": null,
+				"na": null,
+				"eu": null,
+				"jp": "2024-12-11"
 			}
 		},
 		"0x03c40001012b0502":
@@ -9048,10 +9048,10 @@
 			"name": "Donkey Kong - Power Up Band",
 			"release":
 			{
-				"au": "na",
-				"eu": "na",
-				"jp": "2024-12-11",
-				"na": "na"
+				"au": null,
+				"na": null,
+				"eu": null,
+				"jp": "2024-12-11"
 			}
 		},
 		"0x02fb000100900502":
