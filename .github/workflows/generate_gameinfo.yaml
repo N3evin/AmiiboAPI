@@ -1,35 +1,36 @@
 name: Generate game info
 
 on:
-  push:
-    branches: [dev]
   workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * *'
 
 jobs:
+  get_info:
+    uses: MrKev312/AmiiboGamelistGenerator/.github/workflows/game_info.yml@main
+    with:
+      repo: MrKev312/AmiiboGamelistGenerator
+      repo-ref: main
+
   report:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
+    needs: [get_info]
+    permissions:
+      contents: write
+      
     steps:
-      - uses: actions/checkout@v2
-      - name: Copy amiibo.json to gameinfo_generator
-        run: |
-          copy-item database/amiibo.json gameinfo_generator
-        shell: powershell
+      - uses: actions/checkout@v4
 
-      - name: Run game_info generator
-        working-directory: ./gameinfo_generator
-        run: |
-          AmiiboGameList.exe -log 0
-        shell: cmd
-
-      - name: Copy games_info.json to database folder
-        run: |
-          copy-item gameinfo_generator/games_info.json database
-        shell: powershell
+      - name: Download artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: games_info
+          path: database/
 
       - name: Commit json files
         run: |
           git config --global user.name 'N3evin (Automated)'
-          git config --global user.email 'N3evin@users.noreply.github.com'
+          git config --global user.email '2455104+N3evin@users.noreply.github.com'
           git pull
           git add -A database/games_info.json
           if(git commit -m "[Automated] Update: $(git diff --name-only --staged)") {
