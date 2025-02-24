@@ -28,6 +28,7 @@ jobs:
           path: database/
 
       - name: Commit json files
+        shell: pwsh
         run: |
           git config --global user.name 'N3evin (Automated)'
           git config --global user.email '2455104+N3evin@users.noreply.github.com'
