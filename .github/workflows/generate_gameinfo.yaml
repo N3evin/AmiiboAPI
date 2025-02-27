@@ -1,9 +1,9 @@
 name: Generate game info
 
 on:
-  push:
-    branches: [dev]
   workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * *'
 
 jobs:
   get_info:
