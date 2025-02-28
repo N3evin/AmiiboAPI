@@ -1,9 +1,9 @@
 name: Generate game info
 
 on:
-  push:
-    branches: [dev]
   workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * *'
 
 jobs:
   get_info:
@@ -20,6 +20,8 @@ jobs:
       
     steps:
       - uses: actions/checkout@v4
+        with:
+            ref: dev
 
       - name: Download artifact
         uses: actions/download-artifact@v4
@@ -32,7 +34,7 @@ jobs:
         run: |
           git config --global user.name 'N3evin (Automated)'
           git config --global user.email '2455104+N3evin@users.noreply.github.com'
-          git pull
+          git pull origin dev
           git add -A database/games_info.json
           if(git commit -m "[Automated] Update: $(git diff --name-only --staged)") {
             git push
