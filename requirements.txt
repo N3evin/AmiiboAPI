@@ -10,7 +10,7 @@ Flask==2.2.5
 Flask-Compress==1.10.1
 Flask-Cors==4.0.2
 Flask-Limiter==1.4
-gunicorn==22.0.0
+gunicorn==23.0.0
 idna==3.7
 importlib-metadata==4.8.1
 itsdangerous==2.1.2
