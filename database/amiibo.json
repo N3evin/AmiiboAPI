@@ -9695,7 +9695,8 @@
 		"0x07": "Skylanders",
 		"0x16": "Diablo",
 		"0x17": "Power Pros",
-		"0x1b": "Xenoblade Chronicles 3"
+		"0x1b": "Xenoblade Chronicles 3",
+		"0x1d": "Street FIghter 6"
 	},
 	"game_series":
 	{
@@ -9791,7 +9792,8 @@
 		"0x3f0": "Kingdom Hearts",
 		"0x1d4": "Pokemon",
 		"0x1d0": "Pokemon",
-		"0x34c": "Street fighter",
+		"0x34c": "Street Fighter",
+		"0x34d": "Street Fighter",
 		"0x038": "Animal Crossing",
 		"0x019": "Animal Crossing",
 		"0x039": "Animal Crossing",
