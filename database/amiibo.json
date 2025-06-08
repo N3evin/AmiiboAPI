@@ -3203,7 +3203,7 @@
 			}
 		},
 		"0x010b000004a50902": {
-			"name": "Tulin - Tears of the Kingdom",
+			"name": "Tulin",
 			"release": {
 				"au": "2025-06-05",
 				"eu": "2025-06-05",
@@ -3212,7 +3212,7 @@
 			}
 		},
 		"0x010c000004a60902": {
-			"name": "Yunobo - Tears of the Kingdom",
+			"name": "Yunobo",
 			"release": {
 				"au": "2025-06-05",
 				"eu": "2025-06-05",
@@ -3221,7 +3221,7 @@
 			}
 		},
 		"0x010a000004a40902": {
-			"name": "Sidon - Tears of the Kingdom",
+			"name": "Sidon",
 			"release": {
 				"au": "2025-06-05",
 				"eu": "2025-06-05",
@@ -3230,7 +3230,7 @@
 			}
 		},
 		"0x0109000004a30902": {
-			"name": "Riju - Tears of the Kingdom",
+			"name": "Riju",
 			"release": {
 				"au": "2025-06-05",
 				"eu": "2025-06-05",
@@ -8042,7 +8042,7 @@
 				"na": "2025-06-05"
 			}
 		},
-		"0x34cd000104bb1d02": {
+		"0x34cd000104b81d02": {
 			"name": "Marisa",
 			"release": {
 				"au": "2025-06-05",
