@@ -108772,6 +108772,151 @@
 					]
 				}
 			]
+		},
+		"0x010b000004a50902": {
+			"games3DS": [],
+			"gamesWiiU": [],
+			"gamesSwitch":  []
+		},
+		"0x010c000004a60902": {
+			"games3DS": [],
+			"gamesWiiU": [],
+			"gamesSwitch":  []
+		},
+		"0x010a000004a40902": {
+			"games3DS": [],
+			"gamesWiiU": [],
+			"gamesSwitch":  []
+		},
+		"0x0109000004a30902": {
+			"games3DS": [],
+			"gamesWiiU": [],
+			"gamesSwitch":  []
+		},
+		"0x34c2000004aa1d02": {
+			"games3DS": [],
+			"gamesWiiU": [],
+			"gamesSwitch":  []
+		},
+		"0x34c2000104ab1d02": {
+			"games3DS": [],
+			"gamesWiiU": [],
+			"gamesSwitch":  []
+		},
+		"0x34c3000004ac1d02": {
+			"games3DS": [],
+			"gamesWiiU": [],
+			"gamesSwitch":  []
+		},
+		"0x34c3000104ad1d02": {
+			"games3DS": [],
+			"gamesWiiU": [],
+			"gamesSwitch":  []
+		},
+		"0x34cc000104b71d02": {
+			"games3DS": [],
+			"gamesWiiU": [],
+			"gamesSwitch":  []
+		},
+		"0x34c4000004ae1d02": {
+			"games3DS": [],
+			"gamesWiiU": [],
+			"gamesSwitch":  []
+		},
+		"0x34c4000104af1d02": {
+			"games3DS": [],
+			"gamesWiiU": [],
+			"gamesSwitch":  []
+		},
+		"0x34cd000104bb1d02": {
+			"games3DS": [],
+			"gamesWiiU": [],
+			"gamesSwitch":  []
+		},
+		"0x34d0000104bb1d02": {
+			"games3DS": [],
+			"gamesWiiU": [],
+			"gamesSwitch":  []
+		},
+		"0x34ce000104b91d02": {
+			"games3DS": [],
+			"gamesWiiU": [],
+			"gamesSwitch":  []
+		},
+		"0x34c7000104b21d02": {
+			"games3DS": [],
+			"gamesWiiU": [],
+			"gamesSwitch":  []
+		},
+		"0x34cb000104b61d02": {
+			"games3DS": [],
+			"gamesWiiU": [],
+			"gamesSwitch":  []
+		},
+		"0x34d1000104bc1d02": {
+			"games3DS": [],
+			"gamesWiiU": [],
+			"gamesSwitch":  []
+		},
+		"0x34c0000104a81d02": {
+			"games3DS": [],
+			"gamesWiiU": [],
+			"gamesSwitch":  []
+		},
+		"0x34ca000104b51d02": {
+			"games3DS": [],
+			"gamesWiiU": [],
+			"gamesSwitch":  []
+		},
+		"0x34c8000104b31d02": {
+			"games3DS": [],
+			"gamesWiiU": [],
+			"gamesSwitch":  []
+		},
+		"0x34c6000104b11d02": {
+			"games3DS": [],
+			"gamesWiiU": [],
+			"gamesSwitch":  []
+		},
+		"0x34c1000104a91d02": {
+			"games3DS": [],
+			"gamesWiiU": [],
+			"gamesSwitch":  []
+		},
+		"0x34c5000104b01d02": {
+			"games3DS": [],
+			"gamesWiiU": [],
+			"gamesSwitch":  []
+		},
+		"0x34cf000104ba1d02": {
+			"games3DS": [],
+			"gamesWiiU": [],
+			"gamesSwitch":  []
+		},
+		"0x34c9000104b41d02": {
+			"games3DS": [],
+			"gamesWiiU": [],
+			"gamesSwitch":  []
+		},
+		"0x34d2000104bd1d02": {
+			"games3DS": [],
+			"gamesWiiU": [],
+			"gamesSwitch":  []
+		},
+		"0x34d3000104be1d02": {
+			"games3DS": [],
+			"gamesWiiU": [],
+			"gamesSwitch":  []
+		},
+		"0x34d4000104bf1d02": {
+			"games3DS": [],
+			"gamesWiiU": [],
+			"gamesSwitch":  []
+		},
+		"0x34d5000104c01d02": {
+			"games3DS": [],
+			"gamesWiiU": [],
+			"gamesSwitch":  []
 		}
 	}
 }
