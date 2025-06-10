@@ -18,7 +18,7 @@ Jinja2==3.1.5
 limits==1.5.1
 MarkupSafe==2.1.2
 packaging==24.1
-requests==2.32.3
+requests==2.32.4
 rfc3339==6.2
 six==1.16.0
 typing-extensions==3.10.0.2
