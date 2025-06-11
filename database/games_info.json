@@ -26166,6 +26166,306 @@
 				}
 			]
 		},
+		"0x0109000004a30902": {
+			"games3DS": [
+				{
+					"gameName": "Style Savvy: Styling Star",
+					"gameID": [
+						"00040000001C2500"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock a Legend of Zelda pattern",
+							"write": false
+						}
+					]
+				}
+			],
+			"gamesWiiU": [],
+			"gamesSwitch": [
+				{
+					"gameName": "Conga Master Party!",
+					"gameID": [
+						"01007EF00399C000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock a special costume",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Mario Kart 8 Deluxe",
+					"gameID": [
+						"0100152000022000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock a Legend of Zelda-themed Mii racing suit",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "The Legend of Zelda: Link's Awakening",
+					"gameID": [
+						"01006BB00C6F0000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Save your Chamber Dungeon to the amiibo to share with friends",
+							"write": true
+						},
+						{
+							"Usage": "Unlock one of five amiibo-exclusive Chamber Dungeon chambers",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "The Legend of Zelda: Tears of the Kingdom",
+					"gameID": [
+						"0100F2C0115B6000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Receive materials and a weapon or rare item",
+							"write": false
+						},
+						{
+							"Usage": "Unlock an amiibo-exclusive character-specific paraglider fabric",
+							"write": false
+						}
+					]
+				}
+			]
+		},
+		"0x010a000004a40902": {
+			"games3DS": [
+				{
+					"gameName": "Style Savvy: Styling Star",
+					"gameID": [
+						"00040000001C2500"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock a Legend of Zelda pattern",
+							"write": false
+						}
+					]
+				}
+			],
+			"gamesWiiU": [],
+			"gamesSwitch": [
+				{
+					"gameName": "Conga Master Party!",
+					"gameID": [
+						"01007EF00399C000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock a special costume",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Mario Kart 8 Deluxe",
+					"gameID": [
+						"0100152000022000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock a Legend of Zelda-themed Mii racing suit",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "The Legend of Zelda: Link's Awakening",
+					"gameID": [
+						"01006BB00C6F0000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Save your Chamber Dungeon to the amiibo to share with friends",
+							"write": true
+						},
+						{
+							"Usage": "Unlock one of five amiibo-exclusive Chamber Dungeon chambers",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "The Legend of Zelda: Tears of the Kingdom",
+					"gameID": [
+						"0100F2C0115B6000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Receive materials and a weapon or rare item",
+							"write": false
+						},
+						{
+							"Usage": "Unlock an amiibo-exclusive character-specific paraglider fabric",
+							"write": false
+						}
+					]
+				}
+			]
+		},
+		"0x010b000004a50902": {
+			"games3DS": [
+				{
+					"gameName": "Style Savvy: Styling Star",
+					"gameID": [
+						"00040000001C2500"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock a Legend of Zelda pattern",
+							"write": false
+						}
+					]
+				}
+			],
+			"gamesWiiU": [],
+			"gamesSwitch": [
+				{
+					"gameName": "Conga Master Party!",
+					"gameID": [
+						"01007EF00399C000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock a special costume",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Mario Kart 8 Deluxe",
+					"gameID": [
+						"0100152000022000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock a Legend of Zelda-themed Mii racing suit",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "The Legend of Zelda: Link's Awakening",
+					"gameID": [
+						"01006BB00C6F0000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Save your Chamber Dungeon to the amiibo to share with friends",
+							"write": true
+						},
+						{
+							"Usage": "Unlock one of five amiibo-exclusive Chamber Dungeon chambers",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "The Legend of Zelda: Tears of the Kingdom",
+					"gameID": [
+						"0100F2C0115B6000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Receive materials and a weapon or rare item",
+							"write": false
+						},
+						{
+							"Usage": "Unlock an amiibo-exclusive character-specific paraglider fabric",
+							"write": false
+						}
+					]
+				}
+			]
+		},
+		"0x010c000004a60902": {
+			"games3DS": [
+				{
+					"gameName": "Style Savvy: Styling Star",
+					"gameID": [
+						"00040000001C2500"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock a Legend of Zelda pattern",
+							"write": false
+						}
+					]
+				}
+			],
+			"gamesWiiU": [],
+			"gamesSwitch": [
+				{
+					"gameName": "Conga Master Party!",
+					"gameID": [
+						"01007EF00399C000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock a special costume",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Mario Kart 8 Deluxe",
+					"gameID": [
+						"0100152000022000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock a Legend of Zelda-themed Mii racing suit",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "The Legend of Zelda: Link's Awakening",
+					"gameID": [
+						"01006BB00C6F0000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Save your Chamber Dungeon to the amiibo to share with friends",
+							"write": true
+						},
+						{
+							"Usage": "Unlock one of five amiibo-exclusive Chamber Dungeon chambers",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "The Legend of Zelda: Tears of the Kingdom",
+					"gameID": [
+						"0100F2C0115B6000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Receive materials and a weapon or rare item",
+							"write": false
+						},
+						{
+							"Usage": "Unlock an amiibo-exclusive character-specific paraglider fabric",
+							"write": false
+						}
+					]
+				}
+			]
+		},
 		"0x0140000003550902": {
 			"games3DS": [
 				{
@@ -106653,6 +106953,92 @@
 				}
 			]
 		},
+		"0x34c0000104a81d02": {
+			"games3DS": [
+				{
+					"gameName": "Super Smash Bros. for Nintendo 3DS",
+					"gameID": [
+						"00040000000EDF00",
+						"00040000000EE000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Battle and train up a computer-controlled Figure Player of the character",
+							"write": true
+						}
+					]
+				},
+				{
+					"gameName": "Yoshi's Woolly World",
+					"gameID": [
+						"00040000001A4100",
+						"00040000001A4200",
+						"00040000001B6C00",
+						"00040000001B6D00"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Unlock a character-based Yoshi yarn pattern",
+							"write": false
+						}
+					]
+				}
+			],
+			"gamesWiiU": [
+				{
+					"gameName": "Super Smash Bros. for Wii U",
+					"gameID": [
+						"0005000010110E00",
+						"0005000010144F00",
+						"0005000010145000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Battle and train up a computer-controlled Figure Player of the character",
+							"write": true
+						}
+					]
+				}
+			],
+			"gamesSwitch": [
+				{
+					"gameName": "Resident Evil Revelations",
+					"gameID": [
+						"0100643002136000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Receive a lot of BP / Receive better supplies (compared to other amiibo)",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Resident Evil Revelations 2",
+					"gameID": [
+						"010095300212A000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Receive a lot of BP / Receive better supplies (compared to other amiibo)",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Super Smash Bros. Ultimate",
+					"gameID": [
+						"01006A800016E000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Battle and train up a computer-controlled Figure Player of the character",
+							"write": true
+						}
+					]
+				}
+			]
+		},
 		"0x34c1000003890002": {
 			"games3DS": [],
 			"gamesWiiU": [],
@@ -106670,6 +107056,139 @@
 					]
 				}
 			]
+		},
+		"0x34c1000104a91d02": {
+			"games3DS": [],
+			"gamesWiiU": [],
+			"gamesSwitch": [
+				{
+					"gameName": "Super Smash Bros. Ultimate",
+					"gameID": [
+						"01006A800016E000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Battle and train up a computer-controlled Figure Player of the character",
+							"write": true
+						}
+					]
+				}
+			]
+		},
+		"0x34c2000004aa1d02": {
+			"games3DS": [],
+			"gamesWiiU": [],
+			"gamesSwitch": []
+		},
+		"0x34c2000104ab1d02": {
+			"games3DS": [],
+			"gamesWiiU": [],
+			"gamesSwitch": []
+		},
+		"0x34c3000004ac1d02": {
+			"games3DS": [],
+			"gamesWiiU": [],
+			"gamesSwitch": []
+		},
+		"0x34c3000104ad1d02": {
+			"games3DS": [],
+			"gamesWiiU": [],
+			"gamesSwitch": []
+		},
+		"0x34c4000004ae1d02": {
+			"games3DS": [],
+			"gamesWiiU": [],
+			"gamesSwitch": []
+		},
+		"0x34c4000104af1d02": {
+			"games3DS": [],
+			"gamesWiiU": [],
+			"gamesSwitch": []
+		},
+		"0x34c5000104b01d02": {
+			"games3DS": [],
+			"gamesWiiU": [],
+			"gamesSwitch": []
+		},
+		"0x34c6000104b11d02": {
+			"games3DS": [],
+			"gamesWiiU": [],
+			"gamesSwitch": []
+		},
+		"0x34c7000104b21d02": {
+			"games3DS": [],
+			"gamesWiiU": [],
+			"gamesSwitch": []
+		},
+		"0x34c8000104b31d02": {
+			"games3DS": [],
+			"gamesWiiU": [],
+			"gamesSwitch": []
+		},
+		"0x34c9000104b41d02": {
+			"games3DS": [],
+			"gamesWiiU": [],
+			"gamesSwitch": []
+		},
+		"0x34ca000104b51d02": {
+			"games3DS": [],
+			"gamesWiiU": [],
+			"gamesSwitch": []
+		},
+		"0x34cb000104b61d02": {
+			"games3DS": [],
+			"gamesWiiU": [],
+			"gamesSwitch": []
+		},
+		"0x34cc000104b71d02": {
+			"games3DS": [],
+			"gamesWiiU": [],
+			"gamesSwitch": []
+		},
+		"0x34cd000104b81d02": {
+			"games3DS": [],
+			"gamesWiiU": [],
+			"gamesSwitch": []
+		},
+		"0x34ce000104b91d02": {
+			"games3DS": [],
+			"gamesWiiU": [],
+			"gamesSwitch": []
+		},
+		"0x34cf000104ba1d02": {
+			"games3DS": [],
+			"gamesWiiU": [],
+			"gamesSwitch": []
+		},
+		"0x34d0000104bb1d02": {
+			"games3DS": [],
+			"gamesWiiU": [],
+			"gamesSwitch": []
+		},
+		"0x34d1000104bc1d02": {
+			"games3DS": [],
+			"gamesWiiU": [],
+			"gamesSwitch": []
+		},
+		"0x34d2000104bd1d02": {
+			"games3DS": [],
+			"gamesWiiU": [],
+			"gamesSwitch": []
+		},
+		"0x34d3000104be1d02": {
+			"games3DS": [],
+			"gamesWiiU": [],
+			"gamesSwitch": []
+		},
+		"0x34d4000104bf1d02": {
+			"games3DS": [],
+			"gamesWiiU": [],
+			"gamesSwitch": []
+		},
+		"0x34d5000104c01d02": {
+			"games3DS": [],
+			"gamesWiiU": [],
+			"gamesSwitch": []
 		},
 		"0x3500010002e10f02": {
 			"games3DS": [
@@ -108772,151 +109291,6 @@
 					]
 				}
 			]
-		},
-		"0x010b000004a50902": {
-			"games3DS": [],
-			"gamesWiiU": [],
-			"gamesSwitch":  []
-		},
-		"0x010c000004a60902": {
-			"games3DS": [],
-			"gamesWiiU": [],
-			"gamesSwitch":  []
-		},
-		"0x010a000004a40902": {
-			"games3DS": [],
-			"gamesWiiU": [],
-			"gamesSwitch":  []
-		},
-		"0x0109000004a30902": {
-			"games3DS": [],
-			"gamesWiiU": [],
-			"gamesSwitch":  []
-		},
-		"0x34c2000004aa1d02": {
-			"games3DS": [],
-			"gamesWiiU": [],
-			"gamesSwitch":  []
-		},
-		"0x34c2000104ab1d02": {
-			"games3DS": [],
-			"gamesWiiU": [],
-			"gamesSwitch":  []
-		},
-		"0x34c3000004ac1d02": {
-			"games3DS": [],
-			"gamesWiiU": [],
-			"gamesSwitch":  []
-		},
-		"0x34c3000104ad1d02": {
-			"games3DS": [],
-			"gamesWiiU": [],
-			"gamesSwitch":  []
-		},
-		"0x34cc000104b71d02": {
-			"games3DS": [],
-			"gamesWiiU": [],
-			"gamesSwitch":  []
-		},
-		"0x34c4000004ae1d02": {
-			"games3DS": [],
-			"gamesWiiU": [],
-			"gamesSwitch":  []
-		},
-		"0x34c4000104af1d02": {
-			"games3DS": [],
-			"gamesWiiU": [],
-			"gamesSwitch":  []
-		},
-		"0x34cd000104b81d02": {
-			"games3DS": [],
-			"gamesWiiU": [],
-			"gamesSwitch":  []
-		},
-		"0x34d0000104bb1d02": {
-			"games3DS": [],
-			"gamesWiiU": [],
-			"gamesSwitch":  []
-		},
-		"0x34ce000104b91d02": {
-			"games3DS": [],
-			"gamesWiiU": [],
-			"gamesSwitch":  []
-		},
-		"0x34c7000104b21d02": {
-			"games3DS": [],
-			"gamesWiiU": [],
-			"gamesSwitch":  []
-		},
-		"0x34cb000104b61d02": {
-			"games3DS": [],
-			"gamesWiiU": [],
-			"gamesSwitch":  []
-		},
-		"0x34d1000104bc1d02": {
-			"games3DS": [],
-			"gamesWiiU": [],
-			"gamesSwitch":  []
-		},
-		"0x34c0000104a81d02": {
-			"games3DS": [],
-			"gamesWiiU": [],
-			"gamesSwitch":  []
-		},
-		"0x34ca000104b51d02": {
-			"games3DS": [],
-			"gamesWiiU": [],
-			"gamesSwitch":  []
-		},
-		"0x34c8000104b31d02": {
-			"games3DS": [],
-			"gamesWiiU": [],
-			"gamesSwitch":  []
-		},
-		"0x34c6000104b11d02": {
-			"games3DS": [],
-			"gamesWiiU": [],
-			"gamesSwitch":  []
-		},
-		"0x34c1000104a91d02": {
-			"games3DS": [],
-			"gamesWiiU": [],
-			"gamesSwitch":  []
-		},
-		"0x34c5000104b01d02": {
-			"games3DS": [],
-			"gamesWiiU": [],
-			"gamesSwitch":  []
-		},
-		"0x34cf000104ba1d02": {
-			"games3DS": [],
-			"gamesWiiU": [],
-			"gamesSwitch":  []
-		},
-		"0x34c9000104b41d02": {
-			"games3DS": [],
-			"gamesWiiU": [],
-			"gamesSwitch":  []
-		},
-		"0x34d2000104bd1d02": {
-			"games3DS": [],
-			"gamesWiiU": [],
-			"gamesSwitch":  []
-		},
-		"0x34d3000104be1d02": {
-			"games3DS": [],
-			"gamesWiiU": [],
-			"gamesSwitch":  []
-		},
-		"0x34d4000104bf1d02": {
-			"games3DS": [],
-			"gamesWiiU": [],
-			"gamesSwitch":  []
-		},
-		"0x34d5000104c01d02": {
-			"games3DS": [],
-			"gamesWiiU": [],
-			"gamesSwitch":  []
 		}
 	}
 }
