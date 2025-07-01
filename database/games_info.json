@@ -102292,20 +102292,6 @@
 					]
 				},
 				{
-					"gameName": "Super Smash Bros. for Wii U",
-					"gameID": [
-						"0005000010110E00",
-						"0005000010144F00",
-						"0005000010145000"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Battle and train up a computer-controlled Figure Player of the character",
-							"write": true
-						}
-					]
-				},
-				{
 					"gameName": "Yoshi's Woolly World",
 					"gameID": [
 						"0005000010131F00"
@@ -102564,20 +102550,6 @@
 						{
 							"Usage": "Unlock a character-based Mystery Mushroom costume",
 							"write": false
-						}
-					]
-				},
-				{
-					"gameName": "Super Smash Bros. for Wii U",
-					"gameID": [
-						"0005000010110E00",
-						"0005000010144F00",
-						"0005000010145000"
-					],
-					"amiiboUsage": [
-						{
-							"Usage": "Battle and train up a computer-controlled Figure Player of the character",
-							"write": true
 						}
 					]
 				},
@@ -106206,6 +106178,20 @@
 						{
 							"Usage": "Unlock a character-based Mystery Mushroom costume",
 							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Super Smash Bros. for Wii U",
+					"gameID": [
+						"0005000010110E00",
+						"0005000010144F00",
+						"0005000010145000"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Battle and train up a computer-controlled Figure Player of the character",
+							"write": true
 						}
 					]
 				},
