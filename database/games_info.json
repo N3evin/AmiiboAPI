@@ -5027,6 +5027,19 @@
 					]
 				},
 				{
+					"gameName": "Mario & Luigi: Bowser's Inside Story + Bowser Jr.'s Journey",
+					"gameID": [
+						"00040000001D1400",
+						"00040000001D1500"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Receive a helpful item",
+							"write": false
+						}
+					]
+				},
+				{
 					"gameName": "Mario & Luigi: Paper Jam",
 					"gameID": [
 						"0004000000132700",
@@ -5482,6 +5495,19 @@
 					"amiiboUsage": [
 						{
 							"Usage": "Get a chance to revive when you run out of health / Furniture hiding a Speedy Spirit will light up",
+							"write": false
+						}
+					]
+				},
+				{
+					"gameName": "Mario & Luigi: Bowser's Inside Story + Bowser Jr.'s Journey",
+					"gameID": [
+						"00040000001D1400",
+						"00040000001D1500"
+					],
+					"amiiboUsage": [
+						{
+							"Usage": "Receive a helpful item",
 							"write": false
 						}
 					]
