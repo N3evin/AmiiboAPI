@@ -9752,6 +9752,7 @@
 		"0x17": "Power Pros",
 		"0x1a": "Donkey Kong",
 		"0x1b": "Xenoblade Chronicles 3",
+		"0x1c": "My Mario Wooden Blocks",
 		"0x1d": "Street Fighter 6"
 	},
 	"game_series":
@@ -9880,7 +9881,8 @@
 		"0x01": "Card",
 		"0x00": "Figure",
 		"0x03": "Band",
-		"0x02": "Yarn"
+		"0x02": "Yarn",
+		"0x04": "Block"
 	},
 	"characters":
 	{
