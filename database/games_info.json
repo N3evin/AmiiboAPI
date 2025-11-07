@@ -13864,6 +13864,18 @@
 					"Usage": "Battle and train up a computer-controlled Figure Player of the character",
 					"write": true
 				}]
+			}],
+			"gamesSwitch2": [
+			{
+				"gameName": "Donkey Kong Bananza",
+				"gameID": [
+					"040074A01BF12000"
+				],
+				"amiiboUsage": [
+				{
+					"Usage": "Spawn explosive golden KONG tiles",
+					"write": false
+				}]
 			}]
 		},
 		"0x0008000002640102":
@@ -14202,6 +14214,18 @@
 					"Usage": "Battle and train up a computer-controlled Figure Player of the character",
 					"write": true
 				}]
+			}],
+			"gamesSwitch2": [
+			{
+				"gameName": "Donkey Kong Bananza",
+				"gameID": [
+					"040074A01BF12000"
+				],
+				"amiiboUsage": [
+				{
+					"Usage": "Spawn explosive golden KONG tiles",
+					"write": false
+				}]
 			}]
 		},
 		"0x000800030431ff02":
@@ -14284,6 +14308,18 @@
 				{
 					"Usage": "Battle and train up a computer-controlled Figure Player of the character",
 					"write": true
+				}]
+			}],
+			"gamesSwitch2": [
+			{
+				"gameName": "Donkey Kong Bananza",
+				"gameID": [
+					"040074A01BF12000"
+				],
+				"amiiboUsage": [
+				{
+					"Usage": "Spawn explosive golden KONG tiles",
+					"write": false
 				}]
 			}]
 		},
@@ -14598,6 +14634,22 @@
 					"Usage": "Battle and train up a computer-controlled Figure Player of the character",
 					"write": true
 				}]
+			}],
+			"gamesSwitch2": [
+			{
+				"gameName": "Donkey Kong Bananza",
+				"gameID": [
+					"040074A01BF12000"
+				],
+				"amiiboUsage": [
+				{
+					"Usage": "Unlock Pauline's Diva Dress early",
+					"write": false
+				},
+				{
+					"Usage": "Spawn explosive golden KONG tiles",
+					"write": false
+				}]
 			}]
 		},
 		"0x0008ff00023b0702":
@@ -14911,6 +14963,18 @@
 					"Usage": "Battle and train up a computer-controlled Figure Player of the character",
 					"write": true
 				}]
+			}],
+			"gamesSwitch2": [
+			{
+				"gameName": "Donkey Kong Bananza",
+				"gameID": [
+						"040074A01BF12000"
+				],
+				"amiiboUsage": [
+				{
+					"Usage": "Spawn explosive golden KONG tiles",
+					"write": false
+				}]
 			}]
 		},
 		"0x00090000000d0002":
@@ -15131,6 +15195,18 @@
 				{
 					"Usage": "Battle and train up a computer-controlled Figure Player of the character",
 					"write": true
+				}]
+			}],
+			"gamesSwitch2": [
+			{
+				"gameName": "Donkey Kong Bananza",
+				"gameID": [
+					"040074A01BF12000"
+				],
+				"amiiboUsage": [
+				{
+					"Usage": "Spawn explosive golden KONG tiles",
+					"write": false
 				}]
 			}]
 		},
@@ -15378,6 +15454,18 @@
 					"Usage": "Battle and train up a computer-controlled Figure Player of the character",
 					"write": true
 				}]
+			}],
+			"gamesSwitch2": [
+			{
+				"gameName": "Donkey Kong Bananza",
+				"gameID": [
+					"040074A01BF12000"
+				],
+				"amiiboUsage": [
+				{
+					"Usage": "Spawn explosive golden KONG tiles",
+					"write": false
+				}]
 			}]
 		},
 		"0x000900030432ff02":
@@ -15449,6 +15537,18 @@
 				{
 					"Usage": "Battle and train up a computer-controlled Figure Player of the character",
 					"write": true
+				}]
+			}],
+			"gamesSwitch2": [
+			{
+				"gameName": "Donkey Kong Bananza",
+				"gameID": [
+					"040074A01BF12000"
+				],
+				"amiiboUsage": [
+				{
+					"Usage": "Spawn explosive golden KONG tiles",
+					"write": false
 				}]
 			}]
 		},
@@ -17115,6 +17215,18 @@
 				{
 					"Usage": "Battle and train up a computer-controlled Figure Player of the character",
 					"write": true
+				}]
+			}],
+			"gamesSwitch2": [
+			{
+				"gameName": "Donkey Kong Bananza",
+				"gameID": [
+					"040074A01BF12000"
+				],
+				"amiiboUsage": [
+				{
+					"Usage": "Spawn explosive golden KONG tiles",
+					"write": false
 				}]
 			}]
 		},
