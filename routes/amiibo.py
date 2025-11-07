@@ -49,6 +49,9 @@ def route_api_amiibo():
         if 'switch_titleid' in args:
             filters['switch_titleid'] = args['switch_titleid']
 
+        if 'switch2_titleid' in args:
+            filters['switch2_titleid'] = args['switch2_titleid']
+
         if 'wiiu_titleid' in args:
             filters['wiiu_titleid'] = args['wiiu_titleid']
 

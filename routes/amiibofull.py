@@ -48,6 +48,9 @@ def route_api_amiibofull():
         if 'switch_titleid' in args:
             filters['switch_titleid'] = args['switch_titleid']
 
+        if 'switch2_titleid' in args:
+            filters['switch2_titleid'] = args['switch2_titleid']
+
         if 'wiiu_titleid' in args:
             filters['wiiu_titleid'] = args['wiiu_titleid']
 
@@ -104,6 +107,7 @@ def route_api_amiibofull():
                 'gameseries_id': 'game_series_id',
                 'gameseries_name': 'game_series_name',
                 'switch_titleid' : 'gamesSwitch',
+                'switch2_titleid' : 'gamesSwitch2',
                 '3ds_titleid' : 'games3DS',
                 'wiiu_titleid' : 'gamesWiiU',
                 'character': 'character_name',
