@@ -30,7 +30,7 @@ class AmiiboJSONEncoder(JSONEncoder):
                 'release': obj.release
             }
             try:
-                returner.update({'games3DS': obj.games3DS, 'gamesWiiU': obj.gamesWiiU, 'gamesSwitch': obj.gamesSwitch})
+                returner.update({'games3DS': obj.games3DS, 'gamesWiiU': obj.gamesWiiU, 'gamesSwitch': obj.gamesSwitch, 'gamesSwitch2': obj.gamesSwitch2})
             except AttributeError:
                 pass
             return returner

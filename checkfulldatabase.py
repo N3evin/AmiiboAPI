@@ -257,6 +257,7 @@ for key in game_info['amiibos']:
 		validateGamePlatform('games3DS', key)
 		validateGamePlatform('gamesWiiU', key)
 		validateGamePlatform('gamesSwitch', key)
+		validateGamePlatform('gamesSwitch2', key)
 	else:
 		printError(1, 'Formatting error on game info key: ' + key)
 

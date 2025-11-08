@@ -164,6 +164,10 @@ class AmiiboCollection(FilterableCollection):
     def filter_switch_titleid(self, value):
         return lambda x: any(value in game.get("gameID") for game in x.gamesSwitch)
 
+    @filterable('switch2_titleid')
+    def filter_switch2_titleid(self, value):
+        return lambda x: any(value in game.get("gameID") for game in x.gamesSwitch2)
+
     @filterable('wiiu_titleid')
     def filter_wiiu_titleid(self, value):
         return lambda x: any(value in game.get("gameID") for game in x.gamesWiiU)
